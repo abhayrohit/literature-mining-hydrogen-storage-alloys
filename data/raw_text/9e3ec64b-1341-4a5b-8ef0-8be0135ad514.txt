@@ -1,0 +1,1220 @@
+Contents lists available at ScienceDirect
+Scripta Materialia
+journal homepage: www.journals.elsevier.com/scripta-materialia
+A thermodynamic approach to modeling multicomponent FeTi-based alloys 
+for hydrogen storage
+Ebert Alvares a,
+,∗, Andrew J.E. Rowberg a,b,
+, Kai Sellschopp a,
+, Brandon C. Wood b,
+, 
+Thomas Klassen a,c,
+, Paul Jerabek a,
+,∗, Claudio Pistidda a,
+a Institute of Hydrogen Technology, Helmholtz-Zentrum Hereon, Max-Planck-Strasse 1, 21502 Geesthacht, Germany
+b Quantum Simulations Group and Laboratory for Energy Applications for the Future (LEAF), Lawrence Livermore National Laboratory, Livermore, CA 94550, USA
+c Helmut Schmidt University, Holstenhofweg 85, 22043 Hamburg, Germany
+A R T I C L E 
+I N F O 
+A B S T R A C T 
+Keywords:
+Substitutional species
+FeTi-based alloys
+Hydrogen storage
+DFT
+CALPHAD
+Modeling the impact of alloying on the hydrogenation properties of intermetallic compounds is a vital yet 
+challenging task for hydrogen storage materials design: not only do these processes occur under thermodynamic 
+para-equilibrium conditions, but for bcc-derived compounds, the task is further complicated through varying 
+composition-dependent ordering transitions. Here, we tackle these challenges by providing a multicomponent 
+thermodynamic modeling framework for FeTi, a representative bcc-derived material class, which is one of the 
+most relevant room-temperature interstitial metal hydrides. We aim speciﬁcally to describe para-equilibrium in 
+FeTi-based multicomponent hydrides while ensuring compatibility with previously evaluated metallic systems. 
+DFT point-defect calculations provide a physics-informed foundation to identify substitutional site preferences. 
+Not only does our approach give detailed guidance for the selection of model parameters to evaluate phase 
+equilibria for a broad range of FeTi-based multicomponent systems with high fidelity, but it also can be easily 
+adopted to other interstitial hydrogen storage compounds.
+Hydrogen is attracting signiﬁcant attention as a next-generation en­
+ergy carrier, particularly due to its high specific energy [1,2]. However, 
+hydrogen gas has a poor volumetric energy density, and compressing 
+or condensing it for storage requires considerable additional work and 
+heat, rendering poor eﬃciency. As such, solid-state storage in the form 
+of metal hydrides is notably promising [3]. Among metals that reversibly 
+form hydrides, FeTi-based alloys are of particular interest, on account of 
+their reversible hydrogenation at near-ambient temperatures and pres­
+sures and readily available constituent elements [4].
+Hydrogenation of metals is governed fundamentally by changes in 
+entropy and enthalpy related to the formation of the hydride phase, 
+which determines the temperature and pressure conditions needed dur­
+ing operation [5]. Entropy contributions are primarily due to diﬀer­
+ences between gas-phase H2 and atomic hydrogen within the crystal 
+lattice [6]. Meanwhile, the enthalpy of hydrogenation depends mainly 
+on the hydrogen ainity of constituent elements. Compositional tuning 
+through alloying is therefore a valuable tool for tailoring the thermody­
+namics of these materials for technological use. Multicomponent ther­
+modynamic modeling is a well-suited approach to guide alloy design and 
+* Corresponding authors.
+E-mail addresses: ebert.alvares@hereon.de (E. Alvares), paul.jerabek@hereon.de (P. Jerabek).
+to evaluate the role of additives and impurities, including those origi­
+nating from raw and recycled materials [10,11]. When modeling the 
+thermodynamics of material systems, a primary consideration is how 
+eﬀectively the model can be extrapolated to more complex systems. An 
+example is the two-sublattice bcc order-disorder model [12], which de­
+scribes both the bcc-derived A2 and B2 phases, containing one and two 
+metal sublattices, respectively [Fig. 1(𝑎) and (𝑏)], with a single Gibbs 
+energy expression. This model is just­fied because in many systems (e.g. 
+Al-Fe-Ni [13], Cu-Zn [14], and Fe-Si [15]), the bcc phase can undergo a 
+continuous ordering transition to B2, which characterizes it as a second­
+order thermodynamic transition. In contrast, the transition in the Fe-Ti 
+system has a first-order character and B2 can be modeled as a unique 
+phase. Nevertheless, the model is usually employed to ensure compati­
+bility and robust extrapolation to higher-order systems [7,16--20].
+The hydrogenation of intermetallics often occurs in a state of partial 
+equilibrium known as para-equilibrium. In this state, the alloy’s metal 
+composition remains constant due to the sluggish diﬀusion of metal 
+atoms at hydrogenation temperatures. Thus, only hydrogen equilibrates 
+within the system, meaning that at para-equilibrium, each phase has the 
+https://doi.org/10.1016/j.scriptamat.2024.116516
+Received 30 August 2024; Received in revised form 2 December 2024; Accepted 12 December 2024 
+Scripta Materialia 259 (2025) 116516 
+Available online 16 January 2025 
+1359-6462/© 2025 The Authors. 
+Published by Elsevier Inc. 
+on behalf of Acta Materialia Inc. 
+This is an open access article under the CC BY license 
+( http://creativecommons.org/licenses/by/4.0/ ). 
+
+E. Alvares, A.J.E. Rowberg, K. Sellschopp et al. 
+Fig. 1. Structural and thermodynamic properties of the bcc phase of the Fe-Ti-H system using the order-disorder model calculated with parameters from the works 
+of Santhy [7], Ukita [8], and Kim [9]. (𝑎) The disordered, A2 bcc phase structure; (𝑏) The fully ordered, B2 bcc phase structure; (𝑐) Enthalpy of mixing of the bcc 
+phase of the Fe-Ti system at 300 K, highlighting the highest enthalpy of ordering at equimolar composition; (𝑑) Gibbs energy surface at 1000 K.
+same hydrogen chemical potential, while the chemical potential gradi­
+ent of metallic species persists.
+In AB metal-hydrogen systems, metals A and B are generally selected 
+on the basis of their disparate hydrogen ainities [4], such that their as­
+sociated binary hydrides are stable under a targeted range of conditions. 
+This disparity in hydrogen ainity makes applying the order-disorder 
+model to para-equilibrium in these systems even more complex. Incor­
+porating interstitial hydrogen into the model must account for both the 
+para-equilibrium state that governs hydrogenation of the intermetallic 
+phase as well as the more stable complete-equilibrium state. This means 
+that for the monohydride FeTiH in the Fe–Ti--H system, equilibrium be­
+tween the intermetallic Laves phase, Fe2Ti, and the more stable binary 
+hydride, TiH2, must be considered. Recently, we proposed the first ap­
+proach to overcome this problem by treating interstitial hydrogen in 
+the FeTi bcc phase after constraining the metallic form with the ana­
+lytical derivation of the Gibbs energy for the perfectly ordered state of 
+the bcc order-disorder model, requiring the resulting thermodynamic 
+model to be compatible with the Fe–Ti system [21]. Even so, the suc­
+cessful extrapolation of our model to multicomponent alloys remained 
+elusive [22].
+To treat the order-disorder transition in bcc-derived phases [23], the 
+Gibbs energy model assumes two distinct contributions: one from the 
+disordered phase (A2), and another from the energy Δ𝐺ord to form an 
+ordered phase (B2). In the fully disordered state, the metallic sublattices 
+are indistinguishable (i.e. they have identical atomic concentrations), 
+whereas, in the ordered state, two metallic lattices are uniquely d­fined 
+by their distinct compositions. We denote these two sublattices with 
+superscripts ``(1)'' and ``(2)''; for A2, the single metallic sublattice is la­
+beled ``(1)''. Hydrogen occupies a third, interstitial sublattice, denoted 
+as ``(i)'', which can be described by the mixing of hydrogen atoms (H) 
+and unoccupied interstices (□).
+The compound energy formalism (CEF) [24,25] sublattice model de­
+ﬁnes the binary metallic disordered A2 phase, containing elements A 
+and B, as (A, B)(1)(H, □)(i)
+𝑏, with its Gibbs energy expressed as:
+𝐺A2 = 𝑦(1)
+A 𝑦(i)
+□𝐺A2
+A∶□+ 𝑦(1)
+B 𝑦(i)
+□𝐺A2
+B∶□
++ 𝑦(1)
+A 𝑦(i)
+H 𝐺A2
+A∶H + 𝑦(1)
+B 𝑦(i)
+H 𝐺A2
+B∶H
++ 𝑅𝑇
+(
+𝑦(1)
+A ln𝑦(1)
+A + 𝑦(1)
+B ln𝑦(1)
+B
+)
++ 𝑏𝑅𝑇
+(
+𝑦(i)
+□ln𝑦(i)
+□+ 𝑦(i)
+H ln𝑦(i)
+H
+)
+(1)
++
+∑
+𝑖,𝑗,𝑘
+𝑦(1)
+𝑖𝑦(1)
+𝑗𝑦(i)
+𝑘𝐿A2
+𝑖,𝑗∶𝑘
++
+∑
+𝑖,𝑗,𝑘
+𝑦(1)
+𝑖𝑦(i)
+𝑗𝑦(i)
+𝑘𝐿A2
+𝑖∶𝑗,𝑘
++
+∑
+𝑖,𝑗,𝑘,𝑙
+𝑦(1)
+𝑖𝑦(1)
+𝑗𝑦(i)
+𝑘𝑦(i)
+𝑙𝐿A2
+𝑖,𝑗∶𝑘,𝑙+ 𝐺mo.
+While the B2 phase, (A, B)(1)
+0.5(A, B)(2)
+0.5(H, □)(i)
+𝑏, has its Gibbs energy 
+expressed as:
+𝐺B2 = 𝑦(1)
+A 𝑦(2)
+A 𝑦(i)
+□𝐺B2
+A∶A∶□+ 𝑦(1)
+B 𝑦(2)
+B 𝑦(i)
+□𝐺B2
+B∶B∶□
++ 𝑦(1)
+A 𝑦(2)
+A 𝑦(i)
+H 𝐺B2
+A∶A∶H + 𝑦(1)
+B 𝑦(2)
+B 𝑦(i)
+H 𝐺B2
+B∶B∶H
++ 𝑦(1)
+A 𝑦(2)
+B 𝑦(i)
+□𝐺B2
+A∶B∶□+ 𝑦(1)
+B 𝑦(2)
+A 𝑦(i)
+□𝐺B2
+B∶A∶□
++ 𝑦(1)
+A 𝑦(2)
+B 𝑦(i)
+H 𝐺B2
+A∶B∶H + 𝑦(1)
+B 𝑦(2)
+A 𝑦(i)
+H 𝐺B2
+B∶A∶H
++ 0.5𝑅𝑇
+(
+𝑦(1)
+A ln𝑦(1)
+A + 𝑦(1)
+B ln𝑦(1)
+B
+)
++ 0.5𝑅𝑇
+(
+𝑦(2)
+A ln𝑦(2)
+A + 𝑦(2)
+B ln𝑦(2)
+B
+)
++ 𝑏𝑅𝑇
+(
+𝑦(i)
+□ln𝑦(i)
+□+ 𝑦(i)
+H ln𝑦(i)
+H
+)
++
+∑
+𝑖,𝑗,𝑘,𝑙
+𝑦(1)
+𝑖𝑦(1)
+𝑗𝑦(2)
+𝑘𝑦(i)
+𝑙𝐿B2
+𝑖,𝑗∶𝑘∶𝑙
++
+∑
+𝑖,𝑗,𝑘,𝑙
+𝑦(1)
+𝑘𝑦(2)
+𝑖𝑦(2)
+𝑗𝑦(i)
+𝑙𝐿B2
+𝑘∶𝑖,𝑗∶𝑙
++
+∑
+𝑖,𝑗,𝑘,𝑙
+𝑦(1)
+𝑖𝑦(2)
+𝑗𝑦(i)
+𝑘𝑦(i)
+𝑙𝐿B2
+𝑖∶𝑗∶𝑘,𝑙
++
+∑
+𝑖,𝑗,𝑘,𝑙,𝑚
+𝑦(1)
+𝑖𝑦(1)
+𝑗𝑦(2)
+𝑘𝑦(2)
+𝑙𝑦(i)
+𝑚𝐿B2
+𝑖,𝑗∶𝑘,𝑙∶𝑚
++
+∑
+𝑖,𝑗,𝑘,𝑙,𝑚
+𝑦(1)
+𝑖𝑦(1)
+𝑗𝑦(2)
+𝑚𝑦(i)
+𝑘𝑦(i)
+𝑙𝐿B2
+𝑖,𝑗∶𝑚∶𝑘,𝑙
++
+∑
+𝑖,𝑗,𝑘,𝑙,𝑚
+𝑦(1)
+𝑚𝑦(2)
+𝑖𝑦(2)
+𝑗𝑦(i)
+𝑘𝑦(i)
+𝑙𝐿B2
+𝑚∶𝑖,𝑗∶𝑘,𝑙+ 𝐺mo.
+(2)
+Here, the sublattices are separated by colons (:), while diﬀerent ele­
+ments within given sublattices are separated by commas (,). 𝑦𝑖refers 
+to the fraction of element 𝑖in a sublattice. 𝐿𝑖,𝑗∶∗, 𝐿∗∶𝑖,𝑗, 𝐿∗∶𝑖,𝑗∶∗, 
+𝐿𝑖,𝑗∶∗∶∗, 𝐿∗∶∗∶𝑖,𝑗are binary interaction parameters, often expressed with 
+temperature-dependent Redlich-Kister polynomials [26], and 𝐿𝑖,𝑗∶𝑘,𝑙, 
+𝐿𝑖,𝑗∶𝑘,𝑙∶∗, 𝐿𝑖,𝑗∶∗∶𝑘,𝑙, 𝐿∗∶𝑖,𝑗∶𝑘,𝑙represent reciprocal lattice interaction pa­
+rameters [12], where * represents any possible element in the sublattice. 
+The term 𝐺mo refers to the magnetic ordering as described by the Hillert­
+Jarl-Inden model [27,28].
+When the elemental compositions of the two metallic sublattices are 
+indistinguishable (𝑦(1)
+𝑖
+= 𝑦(2)
+𝑖
+∀ 𝑖), the ordered phase model (B2) becomes 
+Scripta Materialia 259 (2025) 116516 
+2 
+
+E. Alvares, A.J.E. Rowberg, K. Sellschopp et al. 
+disordered. The ordering contribution is represented by the diﬀerence 
+in energy between the ordered (𝐺B2
+ord) and disordered (𝐺B2
+dis) states:
+Δ𝐺ord = 𝐺B2
+ord
+(
+𝑦(1)
+𝑖,𝑦(2)
+𝑗,𝑦(i)
+𝑘
+)
+−𝐺B2
+dis
+(
+𝑦(1)
+𝑖
+= 𝑦(2)
+𝑖,𝑦(i)
+𝑘
+)
+.
+(3)
+The total free energy of the bcc phase is finally expressed as:
+𝐺bcc = 𝐺A2 + Δ𝐺ord.
+(4)
+Due to bcc symmetry, the following model parameters are equivalent:
+𝐺B2
+A∶B∶𝑖= 𝐺B2
+B∶A∶𝑖;
+(5)
+𝐿B2
+A,B∶𝑖∶𝑗= 𝐿B2
+𝑖∶A,B∶𝑗;
+(6)
+𝐿B2
+𝑖∶𝑗∶H,□= 𝐿B2
+𝑗∶𝑖∶H,□.
+(7)
+As discussed, complications may arise if the metal elements have 
+vastly diﬀerent hydrogen ainities. For instance, in the AB-H system, 
+the hydride of element A may be highly unstable (𝐺A2
+A∶H ≫0 and/or 
+𝐿A2
+𝐴∶□,𝐻≫0), while the hydride of B may be very stable (𝐺A2
+B∶H ≪0
+and/or 𝐿A2
+𝐵∶□,𝐻≪0). As a result, modeling the interstitial solution 
+within an equimolar AB bcc phase requires a complex combination of 
+the binary and reciprocal lattice interaction parameters. Even if these 
+parameters can be evaluated numerically, their physical meaning is un­
+clear.
+Figs. 1(𝑐) and (𝑑) illustrate the eﬀect of binary parameters on the 
+ternary bcc phase in the Fe-Ti-H system. The stability diﬀerence between 
+the binary Ti-H and Fe-H systems complicates the description of para­
+equilibrium. Fig. 1(𝑐) shows the signiﬁcant binary contributions of the 
+ordering enthalpy that aﬀect the shape of the internal-equilibrium Gibbs 
+energy surface [Fig. 1(𝑑)]. The ordering enthalpy (Δ𝐻ord) is maximized 
+for the equimolar composition, favoring the ordered state (B2) over the 
+disordered state (A2). Similarly, the enthalpy of the metal-hydrogen so­
+lution shifts the Gibbs energy surface of the bcc phase, maximizing it 
+for the Fe-H binary system, and minimizing it for Ti-H.
+Perfect metallic ordering in the bcc phase is achieved when the in­
+terstitial lattice is unoccupied, while each metal element occupies a 
+diﬀerent sublattice. Taking the example of an equimolar composition, 
+the elemental fractions in the single sublattice of the A2 model are 
+𝑦(1)
+A = 𝑦(1)
+B = 0.5, 𝑦(i)
+□= 1, and 𝑦(i)
+H = 0. If the equimolar bcc compound is 
+paramagnetic under standard application temperatures (as in the case of 
+bcc FeTi [29]), such that 𝐺mo ≈0, the resulting Gibbs energy expression 
+for the A2 bcc phase (Equation (1)) becomes:
+𝐺A2 =0.5𝐺A2
+A∶□+ 0.5𝐺A2
+B∶□
++ 𝑅𝑇(0.5ln0.5 + 0.5ln0.5)
++ 0.25𝐿A2
+A,B∶□.
+(8)
+For the fully ordered B2 state, two possible symmetrically equivalent 
+co­figurations generate an equimolar composition, i.e.(A)(1)
+0.5(B)(2)
+0.5(□)(i)
+𝑏, 
+and (B)(1)
+0.5(A)(2)
+0.5(□)(i)
+𝑏. Taking the first co­figuration as an example, the 
+sublattice compositions are 𝑦(1)
+A = 𝑦(2)
+B = 1, 𝑦(1)
+B = 𝑦(2)
+A = 0, 𝑦(i)
+□= 1, and 
+𝑦(i)
+H = 0. Applying Equation (2) to these co­figurations leads to a dra­
+matically reduced expression:
+𝐺B2
+ord = 𝐺B2
+A∶B∶□.
+(9)
+Note that with no mixing in the sublattices, the binary ideal entropy of 
+mixing is zero, i.e. lim𝑦𝑖→0
+[𝑦𝑖ln𝑦𝑖+ (1 −𝑦𝑖)ln(1 −𝑦𝑖)] = 0.
+For the same composition, in the fully disordered state, the B2 model 
+has equimolar composition in both metallic sublattices: 𝑦(1)
+A = 𝑦(2)
+A = 0.5, 
+𝑦(1)
+B = 𝑦(2)
+B = 0.5, 𝑦(i)
+□= 1, and 𝑦(i)
+H = 0. As a result, Equation (2) leads to:
+𝐺B2
+dis = + 0.5𝐺B2
+A∶B∶□
++ 𝑅𝑇(0.5ln0.5 + 0.5ln0.5)
++ 0.25𝐿B2
+A,B∶A∶□
++ 0.25𝐿B2
+A,B∶B∶□.
+(10)
+For equimolar quantities, the Redlich-Kister polynomials [26],
+𝐿𝜙
+𝑖,𝑗= 𝑦𝑖𝑦𝑗
+𝑛 
+∑
+𝑣=0 
+𝑣𝐿𝜙
+𝑖,𝑗
+(𝑦𝑖−𝑦𝑗
+)𝑣,
+(11)
+are represented solely by their 0th-order terms, 0𝐿𝜙
+𝑖,𝑗. Additionally, be­
+cause the ordering contribution is referenced to the disordered phase, 
+by deﬁnition, we have 𝐺B2
+A∶A∶□= 𝐺B2
+B∶B∶□= 0. The phase is instead ref­
+erenced to the standard element reference (SER) energies through the 
+A2 unary terms (𝐺A2
+A∶□= 𝐺bcc
+A −𝐻SER
+A
+, and 𝐺A2
+B∶□= 𝐺bcc
+B −𝐻SER
+B
+) [30]. 
+Substituting Equations (8), (9), and (10) into Equation (4) then yields 
+the general model for a perfectly ordered AB bcc system from the order­
+disorder model:
+𝐺bcc
+A∶B∶□= + 0.5◦𝐺bcc
+A + 0.5◦𝐺bcc
+B
++ 0.5𝐺B2
+A∶B∶□
++ 0.250𝐿A2
+A,B∶□
+−0.25
+(
+0𝐿B2
+A,B∶A∶□+ 0𝐿B2
+A,B∶B∶□
+)
+.
+(12)
+Note that immiscible bcc solutions have not yet been widely assessed in 
+the literature, and appropriate parameters for the order-disorder model 
+are not yet available. Moreover, calculations of hypothetical disordered 
+bcc structures from first-principles are computationally demanding, con­
+sidering the number of possible microstates for any given phase com­
+position. In this case, however, the 0𝐿A2
+A,B∶□interaction parameter from 
+Equation (12) can be, as an initial approximation, taken from the Miede­
+ma’s molar enthalpy of mixing (Δ ̄𝐻Miedema
+mix
+) [31--33]:
+0𝐿A2
+A,B∶□= 4Δ ̄𝐻Miedema
+A,B mix .
+(13)
+We now consider a dilute solution of some substitutional metal ele­
+ment M within an ordered bcc structure containing interstitial hydrogen, 
+which we call 𝛼. Equation (12) can be utilized for the end-members of 
+the 𝛼phase, helping to describe the impact of adding M on the rele­
+vant metallic sites. If M preferentially occupies the same sublattice as 
+A, giving rise to the chemical formula (A,M)(1)
+0.5(B)(2)
+0.5(H,□)(i)
+𝑏, the Gibbs 
+energy can be expressed as:
+𝐺𝛼=𝑦(1)
+A 𝑦(2)
+B 𝑦(i)
+□𝐺bcc
+A∶B∶□+ 𝑦(1)
+M 𝑦(2)
+B 𝑦(i)
+□𝐺bcc
+M∶B∶□
++ 𝑦(1)
+A 𝑦(2)
+B 𝑦(i)
+H 𝐺bcc
+A∶B∶H + 𝑦(1)
+M 𝑦(2)
+B 𝑦(i)
+H 𝐺bcc
+M∶B∶H
++ 0.5𝑅𝑇
+(
+𝑦(1)
+A ln𝑦(1)
+A + 𝑦(1)
+M ln𝑦(1)
+M
+)
++ 𝑏𝑅𝑇
+(
+𝑦(i)
+H ln𝑦(i)
+H + 𝑦(i)
+□ln𝑦(i)
+□
+)
++ 𝑦(1)
+A 𝑦(1)
+M 𝑦(2)
+B 𝑦(i)
+□𝐿𝛼
+A,M∶B∶□
++ 𝑦(1)
+A 𝑦(1)
+M 𝑦(2)
+B 𝑦(i)
+H 𝐿𝛼
+A,M∶B∶H
++ 𝑦(1)
+A 𝑦(2)
+B 𝑦(i)
+H 𝑦(i)
+□𝐿𝛼
+A∶B∶H,□
++ 𝑦(1)
+M 𝑦(2)
+B 𝑦(i)
+H 𝑦(i)
+□𝐿𝛼
+M∶B∶H,□
++ 𝑦(1)
+A 𝑦(1)
+M 𝑦(2)
+B 𝑦(i)
+H 𝑦(i)
+□𝐿𝛼
+A,M∶B∶H,□.
+(14)
+Treating the co­figurational entropy as an ideal mixing of the metals in 
+the first sublattice, i.e. cnf𝑆A,M = id𝑆A,M = 𝑅
+(
+𝑦(1)
+A ln𝑦(1)
+A + 𝑦(1)
+M ln𝑦(1)
+M
+)
+, is 
+generally suﬃcient to describe dilute solutions accurately. In this case, 
+the binary excess contributions 𝐿𝛼
+A,M∶B∶𝑖may be neglected, but whether 
+this assumption is reasonable depends on the specific system. The con­
+tribution of the interaction expressed by the reciprocal lattice parameter 
+𝐿A,M∶B∶H,□is likewise relatively unimportant: because it is multiplied 
+by four fractional values in Equation (14), only an unrealistically large 
+Scripta Materialia 259 (2025) 116516 
+3 
+
+E. Alvares, A.J.E. Rowberg, K. Sellschopp et al. 
+value would eﬀectively i­fluence the Gibbs energy. Such large values 
+should be avoided during model assessments.
+Additionally, the mixing of hydrogen usually deviates from the ideal 
+model due to the site-blocking eﬀect of hydrogen-hydrogen interac­
+tions. Recent work demonstrated that the site-blocking eﬀect of unary 
+interstitial element mixing can be more accurately described by the 
+Johnson-Mehl-Avrami-Kolmogorov (JMAK) model [34], which is solely 
+based on the number of sites blocked by the interstitial element. In 
+this case, the terms corresponding to hydrogen’s ideal entropy of mix­
+ing, 𝑅
+(
+𝑦(i)
+H ln𝑦(i)
+H + 𝑦(i)
+□ln𝑦(i)
+□
+)
+, and excess contributions, 𝐿A∶B∶H,□and 
+𝐿M∶B∶H,□, should be replaced by the JMAK description.
+Lastly, the terms 𝐺bcc
+𝑖∶𝑗∶H represent bcc structured compounds with 
+the interstitial lattice fully occupied by hydrogen and can be expressed 
+with the elemental reference energies as:
+𝐺bcc
+𝑖∶𝑗∶H = + 0.5
+(
+◦𝐺SER
+𝑖
++ ◦𝐺SER
+𝑗
++ 𝑏◦𝐺SER
+H2
+)
++ Δ𝐻𝑓
+𝑖∶𝑗∶H + 𝑇Δ𝑆𝑓
+𝑖∶𝑗∶H.
+(15)
+These compounds are generally not stable, making experimental de­
+termination of their energetics unfeasible. Instead, their formation en­
+thalpies Δ𝐻𝑓
+𝑖∶𝑗∶H should be calculated from first principles [35], which 
+results in an error of ≈10 kJmol−1 at room temperature [36]. The forma­
+tion entropy Δ𝑆𝑓
+𝑖∶𝑗∶H, which captures diﬀerences between gas-phase H2
+and interstitial hydrogen, can be estimated as 130 J K−1 mol−1 H2 [6]. 
+However, this estimate may require further r­finement to include sec­
+ondary entropic contributions [5].
+In FeTi, some elements preferentially substitute for either Fe or Ti, 
+while other elements do not have a pronounced site preference. How­
+ever, allowing the substitutional element M to occupy both sites in the 
+thermodynamic model would require the evaluation of the binary M­
+H system, due to the additional end-members that must be introduced 
+in Equation (14), i.e. 𝐺bcc
+M∶M∶□, and 𝐺bcc
+M∶M∶H. As discussed previously, M 
+metals may have a strong ainity to hydrogen and form highly stable hy­
+drides, leading to 𝐺A2
+M∶H ≪0 and/or 𝐿A2
+M∶□,H ≪0 and thus reintroducing 
+the problem of describing complete equilibrium and para-equilibrium 
+simultaneously. Therefore, for relevant alloying species, we determine 
+whether there is a preferred sublattice for substitution—and which one 
+if so—by calculating point defect energies from first principles using 
+density functional theory (DFT) [37,38]. Using first-principles calcula­
+tions to this end provides an invaluable, physics-based foundation for 
+our thermodynamic models, as it is often challenging to discern substi­
+tutional preferences from experimental analysis precisely. We employ 
+the generalized gradient approximation of Perdew, Burke, and Ernz­
+erhof (PBE-GGA) to approximate the exchange-correlation functional 
+[39]. More details on the DFT methodology are provided in the Sup­
+porting Information (SI).
+The formation energy 𝐸𝑓of an elemental defect 𝐷in a metallic 
+system is given by [40]:
+𝐸𝑓(𝐷) = 𝐸(𝐷) −𝐸bulk +
+∑
+𝑛A𝜇A.
+(16)
+Here, 𝐸(𝐷) is the total energy of a supercell containing 𝐷, 𝐸bulk is the 
+total energy of a pristine supercell, and 𝑛A is the number of atoms of 
+element A added (𝑛A < 0) or removed (𝑛A > 0) to create 𝐷. 𝜇A is the 
+chemical potential of A, d­fined as 𝜇A = 𝐸tot(A) + Δ𝜇A, where 𝐸tot(A)
+is the energy per atom of A in its reference phase, and Δ𝜇A represents 
+an energy deviation from that reference. To prevent precipitation of the 
+elemental phase, we require that Δ𝜇A ≤0.
+Additional bounds on Δ𝜇A are set by ensuring thermodynamic sta­
+bility of the reference phase. For FeTi, this condition corresponds to the 
+equality:
+Δ𝜇Fe + Δ𝜇Ti = Δ𝐻𝑓(FeTi),
+(17)
+where Δ𝐻𝑓(FeTi) is the enthalpy of formation of FeTi. We calcu­
+late Δ𝐻𝑓(FeTi) = −0.83 eV per formula unit (−40 kJmol−1), which is 
+Table 1
+Relative formation energies of alloying elements 𝐷substituting on the Ti and 
+Fe sites in FeTi. Δ𝐸𝑓is d­fined as the energy diﬀerence 𝐸𝑓(𝐷Ti) −𝐸𝑓(𝐷Fe), 
+such that a positive value indicates preferential substitution on a Fe site, while 
+a negative value indicates preferential substitution for Ti. The corresponding 
+substitutional site is stated explicitly; in cases where substitution on either site 
+is possible, the more preferred site across the widest range of conditions is indi­
+cated in parentheses.
+Element
+Δ𝐸𝑓(eV) 
+Δ𝐸𝑓(eV) 
+Site
+Ti-rich 
+Fe-rich 
+Al 
+−0.05 
+−1.70 
+Either (Ti) 
+Ca 
+−0.50 
+−2.16 
+Ti 
+Co 
+2.88 
+1.22 
+Fe 
+Cr 
+1.51 
+−0.15 
+Either (Fe) 
+Cu 
+1.29 
+−0.37 
+Either (Fe) 
+Li 
+1.17 
+−0.48 
+Either (Fe) 
+Mg 
+0.11 
+−1.55 
+Either (Ti) 
+Mn 
+1.99 
+0.33 
+Fe 
+Ni 
+2.13 
+0.48 
+Fe 
+Sc 
+−1.18 
+−2.83 
+Ti 
+Si 
+0.15 
+−1.51 
+Either (Ti) 
+V 
+0.09 
+−1.56 
+Either (Ti) 
+Y 
+−1.49 
+−3.15 
+Ti 
+Zn 
+0.79 
+−0.87 
+Either (Ti) 
+Zr 
+−1.61 
+−3.23 
+Ti 
+slightly larger in magnitude than experimentally reported enthalpies 
+[41] but agrees well with previous computational predictions [42]. 
+Equation (17) allows us to select diﬀerent chemical potential condi­
+tions for calculating formation energies; here, we focus on the Ti-rich 
+(Δ𝜇Ti = 0) and Fe-rich (Δ𝜇Fe = 0) limits. For each species under consid­
+eration, we have calculated the diﬀerence in formation energy between 
+substitution on the Ti and Fe sites. These results show quantitatively 
+how much more preferable substitution will be on one sublattice com­
+pared to the other, and whether that substitution depends on chemical 
+potential conditions.
+We visualize our results in Fig. 2 by highlighting elements on the Pe­
+riodic Table based on their substitutional preference. Elements shaded 
+dark blue or red have a pronounced energetic preference for the Ti or 
+Fe sites, respectively, under all conditions. Lighter-shaded elements still 
+generally prefer one site over the other, but they may substitute on the 
+opposite site under certain conditions, which are diﬃcult to specify pre­
+cisely because the metal atom chemical potentials defining the ``Ti-rich'' 
+and ``Fe-rich'' limits cannot easily be measured in experiments. The for­
+mation energy diﬀerences underlying our results shown in Fig. 2 are 
+listed in Table 1.
+The site preference for incorporation is strongly dependent on the 
+element. Generally, larger species such as Sc, Y, and Zr will prefer to 
+substitute for Ti, while smaller cations such as Mn, Co, and Ni prefer to 
+substitute for Fe. Very similar trends can be found for substitution in the 
+FeTiH monohydride (Table S1) and Fe2Ti C14 Laves phases (Table S2). 
+We find that our predicted site preferences align well with previous 
+ﬁndings [4,51--53], along with calculated phase diagrams of selected Fe--
+Ti--M ternary systems (Fig. 3) that are based on compiled experimental 
+and computational data [16--20]. Co, Cr, Mn, and Ni [Fig. 3(𝑎)--(𝑑)] each 
+display high solubility on the Fe site, based on the continuous, single­
+phase region for FeTi apparent for a fixed Ti mole fraction of 0.5 (shaded 
+blue). For Co and Ni, this region persists up to complete substitution 
+for Fe. Correspondingly, our calculated relative formation energies in 
+Table 1 show Fe substitution to be preferred for each of these elements; 
+furthermore, we find Co and Ni to have the greatest energetic preference 
+for Fe-site substitution among the elements we consider. Conversely, 
+the phase diagram for Ti–Fe--V [Fig. 3(𝑒)] shows solubility of V on both 
+Ti and Fe sites, again agreeing with our formation energy calculations. 
+As an aside, the phase diagrams also show signiﬁcant solubility on Fe 
+sites in Fe2Ti Laves phase (magenta shaded regions in Fig. 3), also in 
+agreement with our formation energy calculations (Table S2).
+Scripta Materialia 259 (2025) 116516 
+4 
+
+E. Alvares, A.J.E. Rowberg, K. Sellschopp et al. 
+Fig. 2. Periodic Table of the Elements indicating the site preference for substitutional species in FeTi, based on data in Table 1. Blue-shaded elements prefer to 
+substitute for Ti, while red-shaded elements prefer to substitute for Fe. Lighter shading indicates that substitution on the other site may be preferred under certain 
+conditions. For ease of viewing, the lanthanides and actinides are not depicted. (For interpretation of the colors in the figure(s), the reader is referred to the web 
+version of this article.)
+Fig. 3. Calculated Fe–Ti--M ternary phase diagrams at 1273 K using models from: (𝑎) M=Co [16]; (𝑏) M=Cr [19]; (𝑐) M=Mn [18]; (𝑑) M=Ni [17]; (𝑒) M=V [20]. 
+Continuous, single-phase regions are highlighted for the B2 phase (blue) and C14 Laves phase (magenta).
+In accordance with our predicted site preferences, we have collected 
+the parameters necessary to evaluate Equation (12) from thermody­
+namic data available in the literature. We report these parameters in 
+Table 2 and Table 3 for substitution on the Ti and Fe sublattices, respec­
+tively. For V, we provide values both for substitution on the Ti sublattice 
+and on the Fe sublattice, allowing the reader to choose the more rele­
+vant site based on the conditions of interest.
+We note that these evaluations capture only one end of para­
+equilibrium, namely, the metallic reference of the ordered bcc alloy. 
+To complete the model for hydrogenation of the AB alloy, a similar pro­
+cedure must be followed for the hydride phase, ABH. To that end, the 
+formation energies reported in Table S1 can be used to simplify the 
+selection of end-member compounds, and first-principles calculations 
+can be used to compute formation enthalpies (analogously to Equa­
+Scripta Materialia 259 (2025) 116516 
+5 
+
+E. Alvares, A.J.E. Rowberg, K. Sellschopp et al. 
+Table 2
+Thermodynamic model parameters for Ti-substituting ordered end-members. 
+For conciseness, binary parameters from Equation (12) that were not used in 
+the reference publication are omitted.
+Parameter 
+Value 
+Ref. 
+𝐺bcc
+Fe∶Al∶□
+0𝐿A2
+Fe,Al∶□= −122960 + 32𝑇
+[43]
+𝐺B2
+Fe∶Al∶□= −14300
+𝐺bcc
+Fe∶Ca∶□
+0𝐿A2
+Fe,Ca∶□= 110663.41
+[44]
+𝐺bcc
+Fe∶Cu∶□
+0𝐿A2
+Fe,Cu∶□= −3970.6
+[45]
+𝐺bcc
+Fe∶Mg∶□
+0𝐿A2
+Fe,Mg∶□= 65700
+[31]
+𝐺bcc
+Fe∶Sc∶□
+0𝐿A2
+Fe,Sc∶□= −27500
+[46]
+𝐺bcc
+Fe∶Si∶□
+0𝐿A2
+Fe,Si∶□= −153138.56 + 46.48𝑇
+[15]
+𝐺B2
+Fe∶Si∶□= −20951.28
+𝐺bcc
+Fe∶V∶□
+0𝐿A2
+Fe,V∶□= −21427 + 6.846𝑇
+[20]
+𝐺B2
+Fe∶V∶□= 5000
+𝐺bcc
+Fe∶Y∶□
+0𝐿A2
+Fe,Y∶□= 54000
+[47] 
+𝐺bcc
+Fe∶Zn∶□
+0𝐿A2
+Fe,Zn∶□= −1684.72 + 9.92𝑇
+[48] 
+𝐺bcc
+Fe∶Zr∶□
+0𝐿A2
+Fe,Zr∶□= −29828.6 + 6.7520𝑇
+[49] 
+Table 3
+Thermodynamic model parameters for Fe-substituting ordered end-members. 
+For conciseness, binary parameters from Equation (12) that were not used in 
+the reference publication are omitted.
+Parameter 
+Value 
+Ref. 
+𝐺bcc
+Co∶Ti∶□
+0𝐿A2
+Co,Ti∶□= −92966 + 12.38𝑇
+[50]
+0𝐿B2
+Co,Ti∶Co∶□= −33118
+0𝐿B2
+Co,Ti∶Ti∶□= 40388
+𝐺B2
+Co∶Ti∶□= −53950 + 14.03𝑇
+𝐺bcc
+Cr∶Ti∶□
+0𝐿A2
+Cr,Ti∶□= −2247.87 + 9.14𝑇
+[19]
+𝐺B2
+Cr∶Ti∶□= 82186.5 −50.5𝑇
+𝐺bcc
+Li∶Ti∶□
+0𝐿A2
+Li,Ti∶□= 136000
+[31]
+𝐺bcc
+Mn∶Ti∶□
+0𝐿A2
+Mn,Ti∶□= −57924.96
+[18]
+𝐺B2
+Mn∶Ti∶□= 1321.61
+𝐺bcc
+Ni∶Ti∶□
+0𝐿A2
+Ni,Ti∶□= −97427 + 12.11𝑇
+[17]
+0𝐿B2
+Ni,Ti∶Ni∶□= −55289 + 25.44𝑇
+0𝐿B2
+Ni,Ti∶Ti∶□= 60723.7 −15.40𝑇
+𝐺B2
+Ni∶Ti∶□= −33193.7 + 10.3𝑇
+𝐺bcc
+V∶Ti∶□
+0𝐿A2
+V,Ti∶□= 14000
+[20]
+𝐺B2
+V∶Ti∶□= 5000
+tion (15)). Then, after merging these formation enthalpies into the base 
+model for the hydride phase (Equation 6 in Ref. [21])-including pre­
+viously calculated Gibbs energies and binary interaction parameters as 
+a starting point—the temperature and pressure conditions necessary for 
+para-equilibrium between the metal and its hydride can be estimated. 
+Ultimately, this approach can enable proper evaluation of the role diﬀer­
+ent alloying elements play in determining hydrogen storage properties.
+In conclusion, we have proposed a model informed by first-principles 
+calculations that enables the description of para-equilibrium in mul­
+ticomponent AB metal hydride systems. Our point defect formation 
+energy calculations demonstrated the site preference for diﬀerent substi­
+tutional elements, which in turn determines the appropriate sublattice 
+model for constructing a streamlined thermodynamic reference expres­
+sion and modeling the Gibbs energy of the ordered bcc phase. We 
+validated the accuracy of these computational predictions through com­
+parison with phase diagrams. Our approach improves the assessment 
+of para-equilibrium conditions by circumventing spurious contributions 
+from the most stable binary bcc hydrides (e.g., Ti–H within the Fe–Ti--H 
+system). The consistency of our proposed models with previously as­
+sessed thermodynamic parameters enables the prediction of materials 
+interactions beyond simple chemical intuition. A further advantage of 
+our approach is that it establishes a direct relationship between phase 
+composition and sublattice composition. Such a relationship facilitates 
+the integration of these models into future work in the area of multi­
+scale simulations of metal hydride materials [54--57]. We expect that our 
+model will be valuable for thermodynamic assessments of FeTi-based 
+alloys for hydrogen storage, thereby accelerating their development in 
+large-scale energy storage applications.
+CRediT authorship contribution statement
+Ebert Alvares: Writing -- review & editing, Writing -- original draft, 
+Visualization, Software, Methodology, Investigation, Formal analysis, 
+Data curation, Conceptualization. Andrew J.E. Rowberg: Writing -- 
+review & editing, Writing -- original draft, Visualization, Software, 
+Methodology, Investigation, Formal analysis, Data curation. Kai Sell­
+schopp: Writing -- review & editing, Validation. Brandon C. Wood:
+Writing -- review & editing, Supervision, Funding acquisition. Thomas 
+Klassen: Writing -- review & editing, Supervision, Project administra­
+tion, Funding acquisition. Paul Jerabek: Writing -- review & editing, 
+Supervision, Project administration, Funding acquisition. Claudio Pis­
+tidda: Writing -- review & editing, Supervision, Project administration, 
+Funding acquisition.
+Declaration of competing interest
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to i­fluence 
+the work reported in this paper.
+Acknowledgements
+This publication was made possible by the NZMat4H2Sto project, 
+funded by the German Federal Ministry of Education and Research 
+(BMBF). The authors acknowledge support from the Hydrogen Mate­
+rials Advanced Research Consortium (HyMARC), established as part 
+of the Energy Materials Network by the U.S. Department of Energy 
+(DOE) under Contract DE-AC52-07NA27344, Oﬃce of Energy Eﬃciency 
+and Renewable Energy (EERE), Hydrogen and Fuel Cell Technologies 
+Oﬃce. AJER acknowledges the Helmholtz Information & Data Sci­
+ence Academy (HIDA) for providing financial support within the HIDA 
+Trainee Network program to enable a short-term stay at the Helmholtz­
+Zentrum Hereon. Part of this work was performed under the auspices 
+of the DOE by Lawrence Livermore National Laboratory under Con­
+tract DE-AC52-07NA27344. We acknowledge computational resources 
+from the Grand Challenge Program at LLNL. KS was funded by the 
+Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) 
+– 506703280.
+Appendix. Supplementary material
+Supplementary material related to this article can be found online at 
+https://doi.org/10.1016/j.scriptamat.2024.116516. 
+References
+[1] L. Schlapbach, A. Züttel, Hydrogen-storage materials for mobile applications, Nature 
+414 (6861) (2001) 353--358, https://doi.org/10.1038/35104634.
+[2] C. Pistidda, Solid-state hydrogen storage for a decarbonized society, Hydrogen 2 (4) 
+(2021) 428--443, https://doi.org/10.3390/hydrogen2040024.
+[3] J. Bellosta von Colbe, J.-R. Ares, J. Barale, M. Baricco, C. Buckley, G. Capurso, N. 
+Gallandat, D.M. Grant, M.N. Guzik, I. Jacob, E.H. Jensen, T. Jensen, J. Jepsen, T. 
+Klassen, M.V. Lototskyy, K. Manickam, A. Montone, J. Puszkiel, S. Sartori, D.A. Shep­
+pard, A. Stuart, G. Walker, C.J. Webb, H. Yang, V. Yartys, A. Züttel, M. Dornheim, 
+Scripta Materialia 259 (2025) 116516 
+6 
+
+E. Alvares, A.J.E. Rowberg, K. Sellschopp et al. 
+Application of hydrides in hydrogen storage and compression: achievements, out­
+look and perspectives, Int. J. Hydrog. Energy 44 (15) (2019) 7780--7808, https://
+doi.org/10.1016/j.ijhydene.2019.01.104.
+[4] E.M. Dematteis, N. Berti, F. Cuevas, M. Latroche, M. Baricco, Substitutional eﬀects 
+in TiFe for hydrogen storage: a comprehensive review, Mater. Adv. 2 (8) (2021) 
+2524--2560, https://doi.org/10.1039/D1MA00101A.
+[5] M. Witman, S. Ling, D.M. Grant, G.S. Walker, S. Agarwal, V. Stavila, M.D. Allendorf, 
+Extracting an empirical intermetallic hydride design principle from limited data via 
+interpretable machine learning, J. Phys. Chem. Lett. 11 (1) (2020) 40--47, https://
+doi.org/10.1021/acs.jpclett.9b02971.
+[6] J.-M. Joubert, CALPHAD modeling of metal–hydrogen systems: a review, JOM 64 
+(2012) 1438--1447, https://doi.org/10.1007/s11837-012-0462-6.
+[7] K. Santhy, K. Hari Kumar, Thermodynamic modelling of magnetic laves phase in Fe--
+Ti system using first principle method, Intermetallics 128 (2021) 106978, https://
+doi.org/10.1016/j.intermet.2020.106978.
+[8] S. Ukita, H. Ohtani, M. Hasebe, Thermodynamic analysis of the Ti-H and Zr-H binary 
+phase diagrams, Nippon Kinzoku Gakkaishi/J. Jpn Inst. Met. 71 (9) (2007) 721--729, 
+https://doi.org/10.2320/jinstmet.71.721.
+[9] K.-H. Kim, J.-H. Shim, B.-J. Lee, Eﬀect of alloying elements (Al, Co, Fe, Ni) on 
+the solubility of hydrogen in vanadium: a thermodynamic calculation, in: 7th Pe­
+tite Workshop on the Defect Chemical Nature of Energy Materials, 14-17 March 
+2011, Storaas, Kongsberg, Norway, Int. J. Hydrog. Energy 37 (9) (2012) 7836--7847, 
+https://doi.org/10.1016/j.ijhydene.2012.01.117.
+[10] L. Pasquini, K. Sakaki, E. Alvares, P. Jerabek, C. Pistidda, B.C. Wood, et al., 
+Magnesium- and intermetallic alloys-based hydrides for energy storage: modelling, 
+synthesis and properties, Prog. Energy 4 (3) (2022) 032007, https://doi.org/10.
+1088/2516-1083/ac7190.
+[11] Y. Shang, S. Liu, Z. Liang, F. Pyczak, Z. Lei, T. Heidenreich, A. Schökel, J.-j. Kai, G. 
+Gizer, M. Dornheim, T. Klassen, C. Pistidda, Developing sustainable FeTi alloys for 
+hydrogen storage by recycling, Commun. Mater. 3 (1) (2022) 101, https://doi.org/
+10.1038/s43246-022-00324-5.
+[12] H.L. Lukas, S.G. Fries, B. Sundman, Computational Thermodynamics: The Calphad 
+Method, Cambridge University Press, 2007.
+[13] L. Zhang, Y. Du, Thermodynamic description of the Al–Fe--Ni system over the whole 
+composition and temperature ranges: modeling coupled with key experiment, Cal­
+phad 31 (4) (2007) 529--540, https://doi.org/10.1016/j.calphad.2007.03.003.
+[14] W. Gierlotka, S.-w. Chen, Thermodynamic descriptions of the Cu–Zn system, J. 
+Mater. Res. 23 (1) (2008) 258--263, https://doi.org/10.1557/JMR.2008.0035.
+[15] J. Lacaze, B. Sundman, An assessment of the Fe-C-Si system, Metall. Trans. A 22 (10) 
+(1991) 2211--2223, https://doi.org/10.1007/BF02664987.
+[16] Y. Pan, C. Chen, Y. Du, C. Yuan, F. Luo, Experimental investigation and thermody­
+namic calculations of the Co-Fe-Ti system, J. Phase Equilib. Diﬀus. 38 (1) (2017) 
+5--16, https://doi.org/10.1007/s11669-016-0505-8.
+[17] J. De Keyzer, G. Cacciamani, N. Dupin, P. Wollants, Thermodynamic modeling and 
+optimization of the Fe–Ni--Ti system, Calphad 33 (1) (2009) 109--123, https://doi.
+org/10.1016/j.calphad.2008.10.003, Experimental and Computational investigation 
+of intermetallic systems: a Special Issue Dedicated to Prof. Riccardo Ferro.
+[18] A. Walnsch, A. Leineweber, M.J. Kriegel, A third generation CalPhaD assessment 
+of the Fe–Mn--Ti system Part II: the ternary system Fe–Mn--Ti, Calphad 81 (2023) 
+102553, https://doi.org/10.1016/j.calphad.2023.102553.
+[19] S. Wang, K. Wang, G. Chen, Z. Li, Z. Qin, X. Lu, C. Li, Thermodynamic modeling 
+of Ti-Fe-Cr ternary system, Calphad 56 (2017) 160--168, https://doi.org/10.1016/j.
+calphad.2016.12.007.
+[20] C. Guo, C. Li, X. Zheng, Z. Du, Thermodynamic modeling of the Fe–Ti--V system, 
+Calphad 38 (2012) 155--160, https://doi.org/10.1016/j.calphad.2012.06.010.
+[21] E. Alvares, P. Jerabek, Y. Shang, A. Santhosh, C. Pistidda, T.W. Heo, B. Sund­
+man, M. Dornheim, Modeling the thermodynamics of the FeTi hydrogenation under 
+para-equilibrium: an ab-initio and experimental study, Calphad 77 (2022) 102426, 
+https://doi.org/10.1016/J.CALPHAD.2022.102426.
+[22] M. Palumbo, E.M. Dematteis, L. Fenocchio, G. Cacciamani, M. Baricco, Advances in 
+CALPHAD methodology for modeling hydrides: a comprehensive review, J. Phase 
+Equilib. Diﬀus. (2024), https://doi.org/10.1007/s11669-024-01113-y.
+[23] N. Dupin, I. Ansara, On the sublattice formalism applied to the B2 phase, Int. J. 
+Mater. Res. 90 (1) (1999) 76--85, https://doi.org/10.1515/ijmr-1999-900114.
+[24] B. Sundman, J. Ågren, A regular solution model for phases with several components 
+and sublattices, suitable for computer applications, J. Phys. Chem. Solids 42 (4) 
+(1981) 297--301, https://doi.org/10.1016/0022-3697(81)90144-X.
+[25] M. Hillert, The compound energy formalism, J. Alloys Compd. 320 (2) (2001) 
+161--176, https://doi.org/10.1016/S0925-8388(00)01481-X, Materials Constitution 
+and Thermochemistry. Examples of Methods, Measurements and Applications. In 
+Memoriam Alan Prince.
+[26] O. Redlich, A.T. Kister, Algebraic representation of thermodynamic properties and 
+the class­fication of solutions, Ind. Eng. Chem. 40 (2) (1948) 345--348, https://doi.
+org/10.1021/ie50458a036.
+[27] M. Hillert, M. Jarl, A model for alloying in ferromagnetic metals, Calphad 2 (3) 
+(1978) 227--238, https://doi.org/10.1016/0364-5916(78)90011-1.
+[28] G. Inden, The role of magnetism in the calculation of phase diagrams, Phys. B + C 
+103 (1) (1981) 82--100, https://doi.org/10.1016/0378-4363(81)91004-4.
+[29] T. Saito, Magnetic properties of Ti–Fe alloy powders prepared by mechanical grind­
+ing, J. Alloys Compd. 364 (1) (2004) 113--116, https://doi.org/10.1016/S0925-
+8388(03)00532-2.
+[30] A.T. Dinsdale, SGTE data for elements, Calphad 15 (4) (1991) 317--425, https://
+doi.org/10.1016/0364-5916(91)90030-N.
+[31] Y. Shang, Z. Lei, E. Alvares, S. Garroni, T. Chen, R. Dore, M. Rustici, S. Enzo, A. 
+Schökel, Y. Shi, P. Jerabek, Z. Lu, T. Klassen, C. Pistidda, Ultra-lightweight composi­
+tionally complex alloys with large ambient-temperature hydrogen storage capacity, 
+Mater. Today 67 (2023) 113--126, https://doi.org/10.1016/j.mattod.2023.06.012.
+[32] M. Poletti, L. Battezzati, Electronic and thermodynamic criteria for the occurrence 
+of high entropy alloys in metallic systems, Acta Mater. 75 (2014) 297--306, https://
+doi.org/10.1016/j.actamat.2014.04.033.
+[33] A.R. Miedema, F.R. de Boer, R. Boom, Model predictions for the enthalpy of forma­
+tion of transition metal alloys, Calphad 1 (4) (1977) 341--359, https://doi.org/10.
+1016/0364-5916(77)90011-6.
+[34] O.A. 
+Pedroso, 
+Y. 
+Champion, 
+W.J. 
+Botta, 
+G. 
+Zepon, 
+Johnson--
+Mehl--Avrami--Kolmogorov model applied to describe the site blocking 
+eﬀect in interstitial solid solution, Acta Mater. 271 (2024) 119907, https://
+doi.org/10.1016/j.actamat.2024.119907.
+[35] B.P. Burton, N. Dupin, S.G. Fries, G. Grimvall, A.F. Guillermet, P. Miodownik, W.A. 
+Oates, V. Vinograd, Using ab initio calculations in the calphad environment, Int. J. 
+Mater. Res. 92 (6) (2001) 514--525, https://doi.org/10.3139/ijmr-2001-0105.
+[36] S.V. Alapati, J. Karl Johnson, D.S. Sholl, Using first principles calculations to iden­
+tify new destabilized metal hydride reactions for reversible hydrogen storage, Phys. 
+Chem. Chem. Phys. 9 (2007) 1438--1452, https://doi.org/10.1039/B617927D.
+[37] P. Hohenberg, W. Kohn, Inhomogeneous electron gas, Phys. Rev. 136 (1964) B864, 
+https://doi.org/10.1103/PhysRev.136.B864.
+[38] W. Kohn, L.J. Sham, Self-consistent equations including exchange and correlation 
+eﬀects, Phys. Rev. 140 (4) (1965) A1133--A1138, https://doi.org/10.1103/PhysRev.
+140.A1133.
+[39] J.P. Perdew, K. Burke, M. Ernzerhof, Generalized gradient approximation made sim­
+ple, Phys. Rev. Lett. 77 (1996) 3865--3868, https://doi.org/10.1103/PhysRevLett.
+77.3865.
+[40] C. Freysoldt, B. Grabowski, T. Hickel, J. Neugebauer, G. Kresse, A. Janotti, C.G. Van 
+de Walle, First-principles calculations for point defects in solids, Rev. Mod. Phys. 
+86 (1) (2014) 253, https://doi.org/10.1103/RevModPhys.86.253.
+[41] J.C. Gachon, M. Notin, J. Hertz, The enthalphy of mixing of the intermediate phases 
+in the systems FeTi, CoTi, and NiTi by direct reaction calorimetry, Thermochim. Acta 
+48 (1--2) (1981) 155--164, https://doi.org/10.1016/0040-6031(81)87031-1.
+[42] A. Jain, S.P. Ong, G. Hautier, W. Chen, W.D. Richards, S. Dacek, S. Cholia, D. Gunter, 
+D. Skinner, G. Ceder, K.A. Persson, Commentary: the materials project: a materi­
+als genome approach to accelerating materials innovation, APL Mater. 1 (1) (2013) 
+011002, https://doi.org/10.1063/1.4812323.
+[43] Z.-K. Liu, Y.A. Chang, Thermodynamic assessment of the Al-Fe-Si system, Metall. 
+Mater. Trans. A 30 (4) (1999) 1081--1095, https://doi.org/10.1007/s11661-999-
+0160-3.
+[44] S. Cui, M. Paliwal, I.-H. Jung, Thermodynamic optimization of Ca-Fe-Si system and 
+its applications to metallurgical grade Si-refining process, Metall. Mater. Trans. E 
+1 (1) (2014) 67--79, https://doi.org/10.1007/s40553-014-0010-0.
+[45] H. Yang, B. Zeng, H. Wang, H. Jin, C. Zhou, Phase equilibria and thermodynamic 
+re-assessment of the Cu–Ti system, Calphad 82 (2023) 102594, https://doi.org/10.
+1016/j.calphad.2023.102594.
+[46] X. Liu, P. Yu, C. Wang, K. Ishida, Thermodynamic evaluation of the Co–Sc and Fe--
+Sc systems, J. Alloys Compd. 466 (1) (2008) 169--175, https://doi.org/10.1016/j.
+jallcom.2007.11.069.
+[47] I. Saenko, O. Fabrichnaya, A. Udovsky, New thermodynamic assessment of the Fe-Y 
+system, J. Phase Equilib. Diﬀus. 38 (5) (2017) 684--699, https://doi.org/10.1007/
+s11669-017-0574-3.
+[48] W. Xiong, Y. Kong, Y. Du, Z.-K. Liu, M. Selleby, W.-H. Sun, Thermodynamic inves­
+tigation of the galvanizing systems, I: r­finement of the thermodynamic description 
+for the Fe–Zn system, Calphad 33 (2) (2009) 433--440, https://doi.org/10.1016/j.
+calphad.2009.01.002, tools for Computational Thermodynamics.
+[49] C. Guo, Z. Du, C. Li, B. Zhang, M. Tao, Thermodynamic description of the Al–Fe--Zr 
+system, Calphad 32 (4) (2008) 637--649, https://doi.org/10.1016/j.calphad.2008.
+08.007.
+[50] A.V. Davydov, U.R. Kattner, D. Josell, R.M. Waterstrat, W.J. Boettinger, J.E. Blendell, 
+A.J. Shapiro, Determination of the CoTi congruent melting point and thermodynamic 
+reassessment of the Co-Ti system, Metall. Mater. Trans. A 32 (9) (2001) 2175--2186, 
+https://doi.org/10.1007/s11661-001-0193-8.
+[51] W.-S. Ko, K.B. Park, H.-K. Park, Density functional theory study on the role of ternary 
+alloying elements in TiFe-based hydrogen storage alloys, J. Mater. Sci. Technol. 92 
+(2021) 148--158, https://doi.org/10.1016/j.jmst.2021.03.042.
+[52] E.M. Dematteis, D.M. Dreistadt, G. Capurso, J. Jepsen, F. Cuevas, M. Latroche, Fun­
+damental hydrogen storage properties of TiFe-alloy with partial substitution of Fe by 
+Ti and Mn, J. Alloys Compd. 874 (2021) 159925, https://doi.org/10.1016/j.jallcom.
+2021.159925.
+[53] E.M. Dematteis, J. Barale, G. Capurso, S. Deledda, M.H. Sørby, F. Cuevas, M. La­
+troche, M. Baricco, In-situ neutron diffraction during reversible deuterium loading 
+in Ti-rich and Mn-substituted Ti(Fe, Mn)0.90 alloys, J. Alloys Compd. 935 (2023) 
+168150, https://doi.org/10.1016/j.jallcom.2022.168150.
+[54] E. Alvares, K. Sellschopp, B. Wang, S. Kang, T. Klassen, B.C. Wood, T.W. Heo, P. Jer­
+abek, C. Pistidda, Multiscale modeling of metal-hydride interphases—quantification 
+of decoupled chemo-mechanical energies, npj Comput. Mater. 10 (1) (2024) 249, 
+https://doi.org/10.1038/s41524-024-01424-1.
+Scripta Materialia 259 (2025) 116516 
+7 
+
+E. Alvares, A.J.E. Rowberg, K. Sellschopp et al. 
+[55] Y.A. Coutinho, A. Kunwar, N. Moelans, Phas­-field approach to simulate BCC-B2 
+phase separation in the AlnCrFe2Ni2 medium-entropy alloy, J. Mater. Sci. 57 (23) 
+(2022) 10600--10612, https://doi.org/10.1007/s10853-022-07058-2.
+[56] D. Schwen, C. Jiang, L. Aagesen, A sublattice phas­-field model for direct calphad 
+database coupling, Comput. Mater. Sci. 195 (2021) 110466, https://doi.org/10.
+1016/j.commatsci.2021.110466.
+[57] T. Heo, K. Colas, A. Motta, L.-Q. Chen, A phas­-field model for hydride formation 
+in polycrystalline metals: application to 𝛿-hydride in zirconium alloys, Acta Mater. 
+181 (2019) 262--277, https://doi.org/10.1016/j.actamat.2019.09.047.
+Scripta Materialia 259 (2025) 116516 
+8 

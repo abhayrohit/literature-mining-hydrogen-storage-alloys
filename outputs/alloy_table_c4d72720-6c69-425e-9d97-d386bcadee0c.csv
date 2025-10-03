@@ -1,0 +1,12 @@
+﻿Alloy Name,Storage Capacity,Temperature Range,Pressure Range,Synthesis Method,Key Findings,Comments
+Cu,-,-,-,-,"Cu sub-nanoclusters exhibit weak side‑on H2 adsorption with minimal charge transfer.; Pure Cu sub-nanoclusters adsorb H2 side‑on, retain the H–H bond, and show lower adsorption energies compared to CuPt.","Stable sizes identified: n = 4, 6, 8, 10, 12.; Cu clusters bind H2 at top sites without dissociation."
+Cun,-,-,-,-,DFT identifies stable Cun sub‑nanoclusters (n=2–14) with favorable H2 adsorption sites.,AIMD confirms thermodynamic stability at 300 K.
+CuPt,-,-,-,-,"CuPt sub-nanoclusters show strong H2 interaction, molecular dissociation and significant charge transfer.; CuPt sub-nanoclusters exhibit higher adsorption energies (up to 0.5 eV increase) and favor H2 dissociation, whereas pure Cu clusters retain the H–H bond.","Stable sizes identified: n = 4, 6, 8, 10, 12.; Pt atom introduces stronger nanocluster‑H2 interaction and structural distortion."
+Cun sub-nanoclusters,-,-,-,-,Interaction energies 0.47–0.88 eV; H₂ adsorbs side‑on with weak interaction.,No molecular dissociation observed.
+Cun−1Pt sub-nanoclusters,-,-,-,-,Interaction energies 5.09–6.15 eV; Pt induces strong interaction and H₂ dissociation.,Significant charge transfer from cluster to H atoms; enhanced stabilization.
+CuPt sub-nanocluster,-,-,-,-,"Interaction energies increased to 6.15 eV, leading to H2 dissociation on CuPt sub-nanoclusters.",CuPt exhibits stronger H2 adsorption than pure Cu.
+Cun-1Pt,-,-,-,-,Pt substitution in Cun enhances H2 adsorption stability and catalytic performance.,Most stable Pt site determined via DFT‑PBE+D3 optimization.
+Cu_n,-,-,-,-,"DFT shows H2 adsorption energies on Cu_n sub‑nanoclusters, indicating alloying influences binding energy.",Clusters studied for n=2–14; planar to 3D transition observed.
+Cu_n sub-nanoclusters,-,-,-,-,"H2 adsorption on Cu_n clusters shows binding energy of H2 of –2.27 eV and interaction energy up to –0.88 eV, with the H–H bond remaining intact.",H2 stays molecular; H–H distance increases from 1.87 Å (n=4) to 2.27 Å (n=12).
+Cu_n-1Pt sub-nanoclusters,-,-,-,-,"Cu_n-1Pt clusters exhibit intensified H2 interaction energy (ΔEint) of –5.09 to –6.15 eV, causing H2 dissociation.",H2 dissociates on Cu_n-1Pt; stabilization up to 17.1% for n=4.
+Cu_n−1Pt,-,-,-,-,DFT reveals H2 adsorption on Cu_n−1Pt sub‑nanoclusters modifies binding energy compared to pure Cu.,Alloying with Pt examined for same size range (n=2–14).

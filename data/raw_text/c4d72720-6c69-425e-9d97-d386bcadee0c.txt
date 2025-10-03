@@ -1,0 +1,1611 @@
+Highlighting the Potential of Synergistic Cu−Pt Single-Atom Alloy
+Sub-nanoclusters for Enhanced H2 Adsorption: A DFT Investigation
+João Paulo Cerqueira Felix, Wanderson Souza Araújo, João Marcos Tomaz Palheta,
+Jônatas Favotto Dalmedico, Fabiano Pereira de Oliveira, Alexandre C. Dias, Diego Guedes-Sobrinho,
+Celso R. C. Rêgo, Renato L. T. Parreira, and Maurício J. Piotrowski*
+Cite This: ACS Nanosci. Au 2025, 5, 153−164
+Read Online
+ACCESS
+Metrics & More
+Article Recommendations
+*
+sı
+Supporting Information
+ABSTRACT: Single-atom alloy sub-nanoclusters offer promising potential
+for understanding intricate interfacial phenomena at the atomic level,
+enabling the rational design of efficient catalysts and nanomaterials for H2
+energy storage, purification, and conversion. Herein, we employed density
+functional theory calculations improved by van der Waals corrections to
+investigate H2 adsorption on pure copper (Cun) and copper−platinum
+(Cun−1Pt) sub-nanoclusters. We characterized Cun sub-nanoclusters ranging
+from n = 2 to n = 14, identifying the most stable sizes (4, 6, 8, 10, and 12)
+through a set of stability analysis. Subsequently, we substituted a single Cu
+atom with Pt to form single-atom alloy Cun−1Pt sub-nanoclusters, which
+showed enhanced stabilization and reactivity compared to pure Cu sub-
+nanoclusters. While Cu-only sub-nanoclusters exhibited weak side-on
+interactions with H2, resulting in minimal charge transfer and negligible
+structural changes, CuPt-based sub-nanoclusters showed strong interactions
+characterized by molecular dissociation (H−H bond breaking) and significant charge transfer from the sub-nanoclusters to the H
+atoms. These findings highlight the synergistic effects of the Cu−Pt combination and provide valuable insights into the fundamental
+processes of H2 adsorption on metal sub-nanoclusters, with significant implications for catalytic applications and materials design in
+hydrogen-related technologies.
+KEYWORDS: Density functional theory, Cu and CuPt sub-nanoclusters, H2 molecule, molecular adsorption, single-atom alloy
+1. INTRODUCTION
+Nanocluster metal-containing catalysts are essential in
+heterogeneous, homogeneous, and enzymatic catalysis, playing
+a pivotal role in achieving high selectivity, thermal stability,
+recyclability, and effective product-catalyst separation. These
+features are crucial in many fields, especially in the quest for
+sustainable energy generation.1−3 Among the promising
+candidates for efficient catalysts are metallic sub-nanoclusters,
+which are composed of a few atoms and exhibit unique
+physical and chemical properties.4−6 In the realm of energy
+generation and storage, hydrogen (H2) stands out for its
+potential to store energy through chemical bonds.7 The
+current landscape highlights a stark contrast between the
+production of H2 from renewable sources, known as green
+hydrogen, and fossil fuels.8
+Green hydrogen production methods, such as water
+electrolysis, catalysis, and biomass conversion, aim to minimize
+environmental impact by generating hydrogen without residual
+pollution. Thus, experimental and theoretical studies of
+metallic nanoclusters and, more recently, single-atom alloy
+(SAA) nanoclusters9 have identified them as promising
+catalysts.3,6,10,11 SAAs are a type of bimetallic catalyst where
+isolated atoms of one metal (often a noble or transition metal)
+are dispersed within the host lattice of another metal, forming a
+dilute alloy. In these systems, the single atoms serve as the
+active sites for catalytic reactions, while the surrounding metal
+atoms influence these sites’ electronic properties and stability.
+The unique combination of atomic dispersion and the
+synergistic effects between the different metals in SAAs often
+leads to enhanced catalytic performance, including improved
+selectivity and activity compared to traditional bimetallic
+catalysts.
+Catalysis, mainly via water electrolysis, is crucial for green
+hydrogen production. However, a significant barrier persists in
+the sluggish kinetics of water reduction to H2 and oxidation to
+O2.12 Overcoming this challenge requires the discovery of
+Received:
+September 19, 2024
+Revised:
+November 28, 2024
+Accepted:
+December 5, 2024
+Published: December 16, 2024
+Article
+pubs.acs.org/nanoau
+© 2024 The Authors. Published by
+American Chemical Society
+153
+https://doi.org/10.1021/acsnanoscienceau.4c00058
+ACS Nanosci. Au 2025, 5, 153−164
+This article is licensed under CC-BY 4.0
+Downloaded via 122.172.87.32 on September 28, 2025 at 05:11:42 (UTC).
+See https://pubs.acs.org/sharingguidelines for options on how to legitimately share published articles.
+
+efficient and durable catalysts. Metallic sub-nanoclusters have
+garnered significant attention due to their diverse applications
+in catalysis.10,13,14 These sub-nanoclusters exhibit enhanced
+reactivity and catalytic efficiency compared to bulk materials.4,5
+SAA systems enhance these properties by atomically dispersing
+one metal throughout the catalyst via alloy bonding. This
+approach combines the advantages of alloy catalysts with the
+unique properties of single-atom catalysts (SAC).15 The
+peculiar electronic structures of SACs can be finely tuned by
+adjacent bonding atoms through strong metal−support
+interaction and/or confinement.
+Considerable research has focused on understanding the
+relationship between structure and reactivity in sub-nano-
+clusters, SACs, and SAAs to improve catalytic performance;
+however, the complexity of these systems has made their
+rational design challenging, and they remain an area of intense
+research.2 SAAs, in particular, consist of single atoms of a
+catalytically active metal alloyed into the surface layer of a less
+reactive host metal. In the context of nanoclusters, this can be
+thought of as single atoms of metal A dispersed on
+nanoclusters of metal B.16,17 SAAs offer unique properties,
+including improved activity and selectivity compared to
+monometallic counterparts and resistance to deactivation and
+poisoning.9,16 Most research on these materials has focused on
+trace amounts of group 8−10 transition metals alloyed into
+group 11 metals.16−18
+Therefore, among metallic nanoclusters, copper (Cu) sub-
+nanoclusters stand out for their exceptional catalytic activity,
+electrical conductivity, and biocompatibility, making them
+highly desirable for applications in catalysis, electronics, and
+biomedicine.19,20 Understanding the structural stability,
+electronic properties, and reactivity of Cu sub-nanoclusters is
+crucial for tailoring their functionalities for specific applica-
+tions.21 Recent advancements in computational methods,
+particularly density functional theory (DFT), have facilitated
+accurate predictions of these properties, enabling the rational
+design and optimization of Cu sub-nanoclusters.22,23 In
+addition to standalone Cu sub-nanoclusters, there is growing
+interest in exploring the behavior of Pt-based SAAs, where
+individual Pt atoms are dispersed within a matrix of another
+metal.24 SAAs exhibit unique catalytic properties arising from
+synergistic interactions between the dispersed metal atoms and
+the Cu matrix, offering enhanced catalytic performance and
+selectivity compared to pure metal catalysts.25
+Understanding the interaction between H2 and Cu/CuPt
+sub-nanoclusters is crucial for advancing green hydrogen
+production catalysis since hydrogen adsorption on metal
+nanoclusters is particularly relevant for hydrogen storage and
+purification processes, as well as hydrogenation reactions in
+catalysis.19,20,26,27 Insights from such studies are instrumental
+in engineering nanomaterials tailored for sustainable energy
+technologies. By elucidating the interaction mechanisms
+between H2 molecules and Cu and CuPt sub-nanoclusters,
+this research aims to provide insights into the fundamental
+processes governing H2 adsorption on metal nanosystems,
+which is essential for developing efficient hydrogen storage
+materials and catalysts.
+Thus, this study investigates, via DFT calculations, the
+structural stability and electronic properties of Cun and Cun−1
+Pt sub-nanoclusters (n = 2 to 14), where a single Cu atom is
+substituted with a Pt atom. Incorporating Pt into Cu sub-
+nanoclusters enhance their catalytic performance and stability,
+making Cun−1Pt sub-nanoclusters promising candidates for H2
+adsorption and dissociation. By comprehensively characteriz-
+ing the structural, electronic, and adsorption properties of H2
+on Cun and Cun−1Pt sub-nanoclusters, we aim to provide
+fundamental insights into their behavior at the nanoscale. The
+findings presented here can help design novel catalysts and
+materials with tailored functionalities for H2 applications.
+2. METHODOLOGY
+2.1. Computational Details
+All calculations in this study were based on spin-polarized DFT28,29
+by using the (semilocal) generalized gradient approximation for the
+exchange-correlation energy functional, as proposed by Perdew,
+Burke, and Ernzerhof (PBE).30 Empirical D3 corrections, as proposed
+by Grimme,31,32 were included to account for attractive nonlocal long-
+range van der Waals (vdW) interactions. The Kohn−Sham (KS)
+equations were solved using the all-electron projected augmented
+wave (PAW) method,33,34 as implemented in the Vienna Ab initio
+Simulation Package (VASP).35,36 In this approach, the valence
+electrons were treated using a scalar-relativistic approximation, while
+the core electrons were described by fully relativistic calculations.37,38
+For the expansion of the KS orbitals, we considered plane waves up
+to a cutoff energy of 500 eV for all calculations, which is 20% higher
+than the highest value recommended by VASP (ENMAX) among the
+selected PAW files. For density of states (DOS) and total energy
+calculations, we used a cutoff energy value that was 1.5 times higher.
+Our nonperiodic systems were simulated in a cubic box with a side
+length of 20 Å, providing a minimum separation distance of
+approximately 12 Å, which is enough to avoid the self-interaction
+for the largest systems and their periodic images. For Brillouin zone
+integration, a single k-point (Γ-point) was used for the sub-
+nanoclusters, molecules, and free atoms. A small Gaussian smearing
+parameter of 1 meV was applied to prevent fractional occupation of
+electronic states.
+The convergence criteria for all optimizations were set as follows:
+for the ionic loop, equilibrium geometries were considered achieved
+when the atomic forces on every atom were smaller than 0.015 eV/Å,
+and for the electronic loop, the total energy convergence criterion was
+1.0 × 10−6 eV for electronic self-consistency. Additional details
+regarding the convergence tests are provided in the Supporting
+Information (SI) (Tables S1−S4). To determine the 3N −6 (3N −
+5) vibrational modes for three-dimensional (two-dimensional)
+systems, the Hessian matrix was calculated using finite differences,
+as implemented in VASP. This involved displacing each atom in each
+direction by ±0.01 Å. To confirm the thermodynamic stability of the
+most stable Cu and CuPt sub-nanoclusters, we employed Ab Initio
+Molecular Dynamics (AIMD) simulations using the Born−Oppen-
+heimer dynamics approach.39 These simulations began with the
+optimized configurations and aimed to verify thermodynamic stability
+through a thermalization procedure at 300 K, employing a Nosé−
+Hoover thermostat within an NVT ensemble.40,41 The AIMD
+simulations were conducted over 5 ps with a time step of 1 fs,
+resulting in final configurations that were subsequently structurally
+optimized using DFT-PBE+D3 calculations.
+2.2. Atomic Configurations
+We constructed a set of representative structural motifs following the
+structural design principles outlined in our previous works.23,42 From
+this set, we obtained the putative global minimum configurations, or
+the lowest energy configurations, of Cun (n = 2−14) sub-nanometric
+clusters (clu), as shown in Figure 1(a). Our representative set’s
+structural and magnetic diversity was based on physical principles
+such as symmetry and dimensionality. These included linear, planar,
+globular, compact, open, highly symmetric, and amorphous geo-
+metries. We also tested different spin configurations (magnetic-like
+orderings) and performed structural crossovers among the putative
+global minima for each size and transition metal species, as detailed in
+the systematic study by Chaves et al.42 for all 30 transition metal
+elements. Consequently, the lowest energy configurations of the Cu
+ACS Nanoscience Au
+pubs.acs.org/nanoau
+Article
+https://doi.org/10.1021/acsnanoscienceau.4c00058
+ACS Nanosci. Au 2025, 5, 153−164
+154
+
+sub-nanoclusters were obtained from DFT-PBE+D3 optimizations
+without imposing any geometric constraints. These results are in
+complete agreement with the literature,23,42 and the inclusion of the
+vdW D3 corrections did not alter the most stable configurations.43,44
+For the H2 adsorption step, we selected certain sub-nanoclusters to
+serve as substrates. To identify the most stable sizes of the Cun sub-
+nanoclusters, we used the stability function, Δ2E,22,45 a well-
+established energetic stability criterion in the context of sub-
+nanoclusters.42,46,47 The adapted equation for the stability function
+within the range of n = 2−14 is given by
+=
++
+E
+E
+E
+E
+2
+2
+tot
+Cu
+tot
+Cu
+tot
+Cu
+n
+n
+n
+1
+1
+(1)
+where Etot
+Cun represents the total energy of the Cun sub-nanoclusters.
+Figure 1(b) illustrates the evolution of Δ2E for Cun sub-nanoclusters
+as a function of the number of Cu atoms. Despite the entropic effects
+in the experimental apparatus for cluster generation, which produces
+many isomers, the sizes with remarkable stability are the most
+probable structures.48
+In addition to these configurations, we also constructed Cun−1Pt-
+type structures, which can be classified as SAA catalysts.9 These sub-
+nanoclusters predominantly consist of Cu (acting as the selective
+host) with a single Pt atom (serving as the reactive dopant), designed
+to leverage the enhanced chemical activity of Pt in a single-atom
+context.15 Figure 1(c) displays the lowest energy sizes for Cun sub-
+nanoclusters and the corresponding most stable Cun−1Pt sub-
+nanoclusters. These Cun−1Pt configurations were identified through
+a comprehensive search for the most stable Pt site among all possible
+nonequivalent Cu sites in each sub-nanocluster size, followed by
+DFT-PBE+D3 optimization.
+Using the two sets of configurations shown in Figure 1(c) as
+substrates, we explored the H2 molecular adsorption process,
+considering two bonding modes: H2 side-on and H2 end-on.49 We
+identified the lowest-energy adsorption sites by examining all
+nonequivalent positions. Following an approach similar to that used
+for low-Miller-index surfaces, we evaluated onefold (top), 2-fold
+(bridge), and 3-fold (hollow) sites on the sub-nanoclusters. However,
+the chemical diversity of the sub-nanoclusters increased the number
+of adsorption possibilities. This diversity stems from variations in
+coordination numbers and chemical compositions, particularly for
+Cun−1Pt sub-nanoclusters in both H2-bonding modes. Consequently,
+we systematically considered all nonequivalent sites with distinct
+coordination and composition, including top, bridge, and hollow sites
+with varying chemical neighborhoods, placing the H2 molecule in
+both side-on and end-on orientations on the sub-nanoclusters.
+2.3. Property Analysis
+In addition to the stability function and the relative total energy, both
+crucial for selecting stable configurations and sizes, we conducted an
+analysis of energetic properties, including the binding energy per
+atom, Eb
+clu:
+=
++
+E
+E
+nE
+mE
+n
+m
+b
+clu
+tot
+clu
+tot
+Cu
+tot
+Pt
+(2)
+where Etot
+clu represents the total energy calculated for the sub-
+nanoclusters, while Etot
+Cu, Etot
+Pt , n and m correspond to the total energies
+and number of atoms of the Cu and Pt atomic species, respectively, so
+that m = 0 for Cun and m = 1 for Cun−1Pt. We also calculated ΔEb
+clu,
+which compares the variations of Eb
+clu when substituting a Cu atom
+with a Pt atom in the sub-nanoclusters:
+=
+×
+E
+E
+E
+E
+(
+)
+100
+b
+clu
+b
+Cu
+Pt
+b
+Cu
+b
+Cu
+n
+n
+n
+1
+(3)
+This equation assesses the change in Eb
+clu as a percentage when
+transitioning from Cu to Pt atom incorporation in the sub-
+nanoclusters, providing insights into the impact of alloying on
+binding energies.
+For the energetic analysis of H2/clu systems, we computed both
+binding and adsorption energies by considering the total energies of
+individual constituents and the interaction between H2 and the sub-
+nanocluster.47,50,51 The adsorption energy, Eads, is defined as
+=
+=
++
++
++
+E
+E
+E
+E
+E
+n
+m
+E
+E
+(
+)
+ads
+tot
+H /clu
+tot
+clu
+tot
+H
+int
+dis
+clu
+dis
+H
+2
+2
+2
+(4)
+where Etot
+H /clu
+2
+represents the total energy of the H2/clu system. ΔEint
+is defined as
+=
+E
+E
+E
+E
+int
+tot
+H /clu
+tot
+clufrozen
+tot
+H frozen
+2
+2
+(5)
+Distortion energies, ΔEdis
+clu (per atom) and
+Edis
+H2 (per molecule), are
+calculated as
+=
++
+E
+E
+E
+n
+m
+dis
+clu
+tot
+clufrozen
+tot
+clu
+(6)
+and
+=
+E
+E
+E
+dis
+H
+tot
+H frozen
+tot
+H
+2
+2
+2
+(7)
+where Etot
+clu frozen and Etot
+H frozen
+2
+represent the total energies of the frozen
+sub-nanoclusters and H2 molecules, respectively, at their original
+positions within the H2/clu system. These values indicate the energy
+required to distort configurations from their initial to adsorbed stages.
+Furthermore, we define the binding energy per atom of the adsorbed
+system, Eb,ads, as
+=
++
++
+=
++
++
++
++
++
++
++
+E
+E
+E
+nE
+mE
+n
+m
+E
+n
+m
+E
+E
+E
+E
+n
+m
+2
+2
+2
+(
+)(
+)
+2
+b
+b,ads
+tot
+H /clu
+tot
+H
+tot
+Cu
+tot
+Pt
+H
+b
+clu
+dis
+clu
+int
+dis
+H
+2
+2
+2
+(8)
+This equation incorporates the main energy terms, comprehen-
+sively measuring the system’s binding energy.
+For structural analyses, we employed the Visualization for
+Electronic and Structural Analysis (VESTA) software,52 in addition
+to properties such as the average bond length, dav, and the effective
+coordination number, ECN, derived from the effective coordination
+concept.53,54 The values of dav, ads and ECNads were obtained for the
+sub-nanoclusters after adsorption, with molecules subsequently
+removed from the analyses. The relative deviation, or percentage
+difference between structural values before and after adsorption,
+denoted as Δdav and ΔECN, respectively, are given by
+=
+×
+d
+d
+d
+d
+(
+)
+100
+av
+av,ads
+av
+av
+(9)
+and
+Figure 1. Methodological process for selecting sub-nanocluster
+substrates: (a) the lowest energy structures of Cun (n = 2−14) sub-
+nanoclusters; (b) the stability function Δ2E versus the number of Cu
+atoms (n); (c) the most stable sizes for Cun sub-nanoclusters and the
+corresponding most stable Cun−1Pt sub-nanoclusters.
+ACS Nanoscience Au
+pubs.acs.org/nanoau
+Article
+https://doi.org/10.1021/acsnanoscienceau.4c00058
+ACS Nanosci. Au 2025, 5, 153−164
+155
+
+=
+×
+ECN
+(ECN
+ECN)
+100
+ECN
+ads
+(10)
+These represent the percentage expansion or contraction of the sub-
+nanocluster with molecular adsorption and relative percentage
+coordination. We also considered the equilibrium bond length
+distances of H−H molecules and the minimum cluster-molecule
+distance, dClu‑mol, using VESTA software. To estimate the alteration in
+the molecular bond length upon adsorption, we calculated the
+changes before and after adsorption using the equation:
+=
+×
+d
+d
+d
+d
+(
+)
+100
+H H
+H
+H,ads
+H
+H
+H
+H
+(11)
+Furthermore, electronic and charge distribution analyses were
+conducted to elucidate our systems’ electronic properties and
+interaction mechanisms. We considered the local density of states
+(LDOS) for electronic properties, while the charge analysis was based
+on a mechanism proposed by Bader.55 This method involves
+partitioning the atomic region into volumes known as Bader volumes,
+VBader, based on charge density. The zero-flow surface, S(rs),56 is
+defined as a surface where the electron density gradient, ∇n(rs), is
+perpendicular to the surface, i.e., it is defined as a surface where the
+electron density, n(rs), is a minimum, such that
+·
+=
+·
+=
+n
+S
+n
+r
+r
+r
+n r
+( ) ( )
+( )
+( )
+0
+s
+s
+s
+s
+(12)
+where n r( )
+s is the unit normal vector to the surface at point rs. This
+implies that S(rs) is a surface of minimum electron density flow,
+effectively separating regions of electron density into distinct Bader
+volumes. In other words, S(rs) serves as the boundary surface of a
+Bader volume, ∂VBader. The volume VBader = Vα,s around the atomic site
+α possesses an associated charge density, represented as
+=
+Q
+Z
+n
+r
+r( )d
+V
+s
+s
+Bader
+3
+s,
+(13)
+where Zα denotes the valence of the atomic site α. Various approaches
+can determine the volumes VBader, with charges optimized through
+topologies such as Voronoi polyhedra.57
+3. RESULTS AND DISCUSSION
+All calculations presented in this section were performed using
+the DFT-PBE+D3 protocol, which has been widely validated
+for the description of transition-metal nanoclusters, as
+demonstrated in our previous studies.23,42,46,47,50,58 To verify
+the appropriateness of the PBE functional, we conducted
+additional tests employing the Tao-Perdew-Staroverov-Scuse-
+ria (TPSS) meta-generalized gradient approximation (meta-
+GGA),59 which has been shown to be reliable in describing
+transition metals.60,61 Additionally, relativistic effects, such as
+spin−orbit coupling (SOC), can be significant for heavy
+transition metals like Pt, influencing the relative total energies.
+Thus, we performed supplementary calculations using the
+TPSS+D3 and PBE+D3+SOC protocols, comparing these
+results to those obtained with PBE+D3. The outcomes of these
+tests are provided in the SI (Figure S2 with Table S5, and
+Figure S3 with Table S6, respectively). While these tests are
+limited, they confirm the suitability of the PBE+D3 protocol
+for our systems, though its limitations and the need for
+cautious interpretation are acknowledged.
+3.1. Sub-nanocluster Characterization
+The lowest energy structures for Cun (n = 2−14) sub-
+nanoclusters as depicted in Figure 1(a) have been verified as
+true local minima, confirmed for each size through vibrational
+mode analysis. In this analysis, all the lowest energy
+configurations exhibited only positive (real) vibrational
+frequencies (see Figure S1(a)). The structural patterns and
+associated property trends of these putative global minimum
+structures (as obtained from our scalar-relativistic DFT-PBE
++D3 protocol) are in complete alignment with previous DFT-
+PBE studies.23,42 Essentially, the growth pattern of Cu sub-
+nanoclusters follows a bias toward triangular units, where
+planar structures are preferred up to 6 atoms. Between 6 and 7
+atoms, there is a transition from bi- to three-dimensional
+structures, as a triangular planar structure (Cu6) transforms
+into a close-packed pentagonal bipyramid (Cu7) with
+tetrahedral bonds. The Cu7 motif serves as the basic structure
+for larger sizes, with additional capped and merged pentagonal
+bipyramids forming polytetrahedrons.
+The characterization of Cu sub-nanoclusters, as indicated by
+the Eb
+clu, dav, ECN, and total magnetic moment (mtot) as a
+function of the number of atoms, n, is presented in Figure S4.
+The magnitude of Eb
+clu increases with increasing n, approaching
+the cohesive energy for the Cu bulk system (−3.49 eV).62 The
+results for dav and ECN can be interpreted through the bond-
+order-length-strength correlation,63,64 which suggests that
+lower-coordinated (higher-coordinated) atoms tend to have
+contracted (elongated) bonds, resulting in enhanced (de-
+creased) binding energy. The deviation from monotonic
+behavior observed for dav and ECN between 6 and 7 atoms
+can be attributed to the transition between planar and globular
+growth patterns. Regarding mtot, we observe the characteristic
+even−odd alternation typical of coinage-metal sub-nano-
+clusters.42,47 This alternation arises from spin polarization
+occurring in the delocalized s-like orbitals, which is directly
+associated with the Cu valence configuration, specifically, the
+presence of an opened s shell (4s1) and filled d states (3d10).
+Consequently, sub-nanoclusters with an odd number of atoms
+exhibit a total magnetic moment of mtot = 1.0 μB (indicative of
+one unpaired electron), while those with an even number of
+atoms exhibit mtot = 0.0 μB.
+We utilized Δ2E to ascertain the most stable sizes of Cun
+within the range of n = 2−14, considering the relative stability
+of each sub-nanocluster size with its neighboring sizes. As
+depicted in Figure 1(b), the presence of positive peaks enabled
+us to identify Cu sub-nanoclusters with an even number of
+atoms (4, 6, 8, 10, and 12) as the most energetically favorable
+sizes, consistent with prior research.23,42 From these specific
+sub-nanoclusters, we explored the substitution of a single Cu
+atom with a Pt atom. To achieve this, we subjected all
+nonequivalent Cu atoms from each lowest energy size sub-
+nanocluster to structural optimization calculations, aiming to
+identify the lowest energy Cun−1Pt configuration. Figure 1(c)
+presents the most stable configurations of Cun alongside their
+corresponding lowest-energy Cun−1Pt sub-nanoclusters. The
+stability of these structures was confirmed through vibrational
+mode analysis, which showed that all lowest-energy Cu and
+CuPt configurations exhibited only positive (real) vibrational
+frequencies (see Figure S1(b)). Additionally, thermodynamic
+stability was verified via AIMD simulations, as detailed in
+Figure S5. These simulations demonstrated that the most
+stable configurations remained structurally stable at room
+temperature, with properties before and after the AIMD
+simulations remaining consistent, as summarized in Table S7.
+Furthermore, a comparative analysis of the properties of Cun
+and Cun−1Pt sub-nanoclusters, including |Eb|, dav, ECN, and
+mtot, as a function of n, is provided in Figure 2.
+Qualitatively, the same structural motifs are found for both
+Cun and Cun−1Pt systems (see Figure 1(c)). Substituting a Cu
+atom with a Pt atom does not alter the overall geometry of the
+ACS Nanoscience Au
+pubs.acs.org/nanoau
+Article
+https://doi.org/10.1021/acsnanoscienceau.4c00058
+ACS Nanosci. Au 2025, 5, 153−164
+156
+
+sub-nanoclusters. However, as shown in Figure 2(a), the
+inclusion of a Pt atom increases the magnitude of Eb
+clu by
+between 6.1% (Cu11Pt) and 17.1% (Cu3Pt). This stabilization
+can be attributed to the higher cohesive energy of Pt (5.84 eV
+per atom) compared to Cu (3.49 eV per atom).62 Correspond-
+ingly, due to the larger atomic radius of Pt (1.39 Å) compared
+to Cu (1.28 Å),62 there is a 0.9% to 1.9% increase in the
+average bond length (dav) of CuPt sub-nanoclusters relative to
+their Cu counterparts (Figure 2(b)). In terms of geometry
+reflected in the ECN (Figure 2(c)), minimal changes were
+observed between the two sets. Finally, the well-established
+oscillatory zigzag behavior of the total magnetic moment (mtot)
+is altered (Figure 2(d)). The removal of a Cu atom causes mtot
+to shift from 0 to 1.0 μB, indicating that the dominant magnetic
+properties are still primarily influenced by the majority Cu
+atoms, with the Pt atom contributing to the electron density
+pool of the sub-nanocluster.
+Given the size of our sub-nanoclusters, the electronic
+character is within the molecular limit, resulting in a quasi-
+discrete DOS, as shown in Figure S6. For both Cun and
+Cun−1Pt systems, the total and local DOS of the occupied
+states is dominated by d-states, which is typical for transition-
+metal systems. This dominance increases with the number of
+atoms in the sub-nanoclusters due to the broadening of the d-
+states with increased coordination number. Additionally, the
+LDOS is sensitive to the atomic structure. Despite Cun and
+Cun−1Pt maintaining the same geometric motif, the sub-
+stitution of one Cu atom with a Pt atom breaks the structural
+symmetry. This symmetry breaking results in a broader LDOS
+for Cun−1Pt sub-nanoclusters compared to the narrower LDOS
+for Cun sub-nanoclusters. The Cun sub-nanoclusters exhibit
+many degenerate states, reflected in the well-defined,
+numerous sharp peaks in the LDOS. In contrast, Cun−1Pt
+systems show a more spread out LDOS due to the
+introduction of Pt breaking the symmetry and thus reducing
+the degeneracy.
+The trends observed in the average bond lengths and
+binding energies of the Cun−1Pt sub-nanoclusters can be
+attributed to the coordination environment of the Pt atom and
+the resulting strain on the sub-nanocluster. In smaller sub-
+nanoclusters like Cu3Pt, the lower coordination around the Pt
+atom results in weaker bonding interactions, reflected in larger
+average bond lengths and lower binding energy magnitudes.
+For Cu5Pt, the increased coordination enhances Pt−Cu
+bonding, leading to shorter bond lengths and higher binding
+energy magnitudes. This trend persists until Cu7Pt, where
+geometric factors become more dominant as the sub-
+nanocluster size increases. The LDOS analysis in Figure S6
+corroborates these findings, showing stronger hybridization
+between Pt d-states and Cu states for Cu5Pt compared to
+Cu3Pt. This enhanced hybridization explains the stronger
+bonding and higher binding energy magnitudes observed for
+Cu5Pt.
+The presence of Pt in the Cu sub-nanoclusters significantly
+influences the electronic structure, primarily by intensifying the
+d-state contributions around the Fermi level in the LDOS. This
+effect is evident from the qualitative charge density plots
+(Figure S7) and the increased isosurface concentration around
+Pt atoms, highlighted in the charge density difference plots
+(Figure S8). These analyses show that the charge density in
+pure Cu sub-nanoclusters remains relatively uniform, indicat-
+ing an equal charge distribution throughout the system. In
+contrast, CuPt sub-nanoclusters exhibit localized changes in
+charge density near the Pt atoms.
+The introduction of Pt breaks the structural symmetry of the
+sub-nanoclusters, which is reflected in the LDOS. The
+magnetization density further confirms this symmetry breaking,
+as illustrated in Figure S9. The magnetization density analysis
+reveals the contributions of unpaired spins per atom to the
+overall magnetization of the sub-nanocluster. All spins are
+paired in pure Cu sub-nanoclusters, resulting in no net local
+magnetic moment. However, in CuPt sub-nanoclusters,
+unpaired spins are observed around the Pt and nearby Cu
+atoms, indicating that these regions significantly contribute to
+the sub-nanocluster’s magnetic moment. This confirms that
+adding a Pt atom not only disrupts the charge distribution but
+also enhances the magnetic properties of the sub-nanoclusters
+by introducing unpaired spins.
+3.2. Molecular Adsorption
+After selecting and characterizing the substrates for molecular
+adsorption, i.e., the lowest energy Cun and Cun−1Pt sub-
+nanoclusters, we confirmed the main properties of the H2
+molecule: binding energy
+E
+(
+)
+b
+H2 , equilibrium bond length
+(dH−H), and vibrational frequency (ν). Specifically, we
+obtained
+=
+E
+2.27eV
+b
+H2
+, dH−H = 0.75 Å, and ν = 4328
+cm−1, which are in excellent agreement with experimental
+data.65,66 To provide a more accurate total energy for H2,
+including the zero-point energy (ZPE) reflecting the vibra-
+tional energy of the quantum mechanical ground state, we
+recalculated the H2 molecule’s energy. This calculation was
+performed at 1 atm pressure and 300 K, incorporating the
+Gibbs free energy. The ZPE value obtained is 0.268 eV,
+aligning well with the experimental value of ≈0.270 eV
+reported by Irikura.67
+Next, we investigated H2 adsorption on all nonequivalent
+top, bridge, and hollow sites of the Cun and Cun−1Pt sub-
+nanoclusters (n = 4, 6, 8, 10, and 12), leading to the formation
+of H2/Cun and H2/Cun−1Pt systems, considering both H2-
+bonding modes: side-on and end-on.49 The resulting lowest
+energy configurations are shown in Figure 3. For all sizes of
+Cun sub-nanoclusters, H2 preferentially adsorbs on the Cu top
+(1-fold) sites, where each H atom interacts with a Cu atom. In
+this case, the lowest energy H2Cun configurations are
+characterized by side-on motifs, with both H atoms aligned
+parallel to the Cun sub-nanoclusters (dihydrogen binding). In
+contrast, for Cun−1Pt sub-nanoclusters, H2 prefers to bind at
+the Pt top sites, resulting in each H atom interacting with a Pt
+atom after structural optimization. Consequently, the lowest
+Figure 2. Comparison between Cun and Cun−1Pt properties: (a) the
+magnitude of the binding energy (|Eb
+clu|), (b) the average bond length
+(dav), (c) the effective coordination number (ECN), and (d) the total
+magnetic moment (mtot), as a function of the atoms number (n).
+ACS Nanoscience Au
+pubs.acs.org/nanoau
+Article
+https://doi.org/10.1021/acsnanoscienceau.4c00058
+ACS Nanosci. Au 2025, 5, 153−164
+157
+
+energy H2/Cun−1Pt configurations lead to H2 dissociation.
+While we did not specifically test for the dissociation mode of
+H2, it emerges as the result of our structural optimizations. The
+inclusion of the Pt atom introduces significant changes
+compared to Cu-only sub-nanoclusters, such as an increased
+equilibrium distance within the H2 molecule, weakening the
+H−H bond and potentially causing chemical dissociation,
+leading to hydridic-like bonding (see our discussion on charge
+analysis).
+Notably, for n = 10, we observe H atoms binding to both Cu
+and Pt, indicating the potential breakage of the H2 molecular
+bond due to the influence of the Pt atom. Additionally, for n =
+12, we observe significant structural distortion triggered by H2
+adsorption on the Pt atom. These findings underscore the
+significant impact of Pt substitution on the adsorption behavior
+and structural stability of Cu sub-nanoclusters, revealing
+enhanced interactions and potential chemical activation sites
+due to the presence of Pt.
+To deepen our understanding of adsorbed systems, we
+calculated several relevant properties: |Eads|, dClu‑mol, Δdav,
+ΔECN, mtot, ΔdH−H upon molecular adsorption as a function
+of n. These adsorption properties are depicted in Figure 4 for
+the lowest energy H2/Cun systems, which retain the H−H
+bond (w/ H−H); the most stable state among those
+configurations with relatively higher energy level H2/Cun−1Pt
+systems, which also retain the H−H bond (w/ H−H); and the
+lowest energy H2/Cun−1Pt systems, which do not retain the
+H−H bond (w/o H−H). In Figure 4(a), the |Eads| trend is
+shown. Since adsorption energy measures the magnitude of the
+binding energy of the H2 molecule to the sub-nanocluster, we
+can see that CuPt sub-nanoclusters have higher |Eads| values,
+indicating a stronger nanocluster-molecule interaction. This
+underscores the significant role of the Pt atom in the Cu-based
+sub-nanoclusters. The highest adsorption energy magnitudes
+occur for the smallest sub-nanoclusters (n = 4), while the
+lowest occur for the largest (n = 12). Sub-nanoclusters with n =
+6, 8, and 10 atoms exhibit intermediate values that follow this
+trend consistently.
+Even when considering higher energy H2/CuPt systems that
+maintain the H−H bond, the most stable isomers after
+adsorption are still more energetically favorable than H2/Cu
+systems, with one exception at n = 10 (practically degenerate at
+0.04 eV). Consequently, this result reveals that the presence of
+Pt not only intensifies the interaction but also naturally
+promotes the breaking of the H2 bond due to the significant
+distance between the H atoms in these systems. Our results for
+the Eads concerning H2/Cun systems are in good agreement
+with the literature,26 while the findings for H2/Cun−1Pt
+corroborate the beneficial synergistic effects of combining Cu
+and Pt.58
+Comparing the adsorption energies (Eads) of H2 on CuPt
+(w/o H−H) and Cu (w/ H−H) systems, we observe that the
+presence of Pt and its interaction with H2 generally intensifies
+the interaction by at least 0.5 eV for most cluster sizes.
+However, for n = 12, the shift in adsorption energy is only 0.2
+eV. This slight decrease is due to part of the interaction energy
+being directed toward the structural change of the sub-
+nanocluster, altering its geometry in the region close to the
+adsorption site. The stronger interaction of the molecule with
+the CuPt (w/o H−H) systems compared to Cu (w/ H−H)
+and CuPt (w/ H−H) systems is supported by the closer
+proximity of the molecule to the sub-nanocluster, as shown by
+dClu‑mol in Figure 4(b).
+The greater nanocluster-molecule interaction from a
+structural standpoint is evident in the higher values of relative
+deviation given by Δdav and ΔECN upon molecular adsorption
+for PtCu relative to Cu systems, as shown in Figure 4(c) and
+(d), respectively. While purely Cu systems (and CuPt w/ H−
+H) exhibit almost constant relative deviation, indicating a
+slight expansion of the sub-nanocluster bonds after adsorption
+and unchanged coordination of the sub-nanoclusters, systems
+with CuPt (w/o H−H) show a greater expansion of dav as the
+size of the sub-nanoclusters decreases. This expansion
+transforms into a contraction and compaction for n = 12,
+reflecting the change in structural motif due to adsorption and
+resulting in a decrease in coordination assumed by the new
+distorted structure.
+In terms of magnetic properties, we observed from Figure
+4(e) that the adsorption of H2 does not significantly alter the
+spin configuration to the extent of changing the mtot values.
+Figure 3. Lowest energy H2/Cun and H2Cun−1Pt systems, where n =
+4, 6, 8, 10, and 12.
+Figure 4. Comparison between H2/Cun and H2/Cun−1Pt properties:
+(a) adsorption energy magnitude (|Eads|), (b) minimum cluster-
+molecule distance (dClu‑mol), (c) relative deviation for dav (Δdav) upon
+molecular adsorption, (d) relative deviation for ECN (ΔECN) upon
+molecular adsorption, (e) total magnetic moment (mtot), and (f)
+relative deviation for dH−H (ΔdH−H) upon molecular adsorption, as a
+function of the number of atoms (n), where n = 4, 6, 8, 10, and 12.
+Data in blue filled circles (continuous line) describe the lowest energy
+H2/Cun systems where there is a H−H bond (w/ H−H); data in red
+filled squares (continuous line) describe the most stable higher energy
+H2/Cun−1Pt systems where there is a H−H bond (w/ H−H); data in
+red empty squares (dashed line) describe the lowest energy H2/
+Cun−1Pt systems where there is not a H−H bond (w/o H−H).
+ACS Nanoscience Au
+pubs.acs.org/nanoau
+Article
+https://doi.org/10.1021/acsnanoscienceau.4c00058
+ACS Nanosci. Au 2025, 5, 153−164
+158
+
+The magnetic moment trend continues to be dictated by the
+electronic character of Cu atoms for the adsorbed systems,
+where we have mtot = 0.0 μB or 1.0 μB for clusters with even or
+odd numbers of Cu atoms, respectively. However, in electronic
+terms, we observed a greater influence of H2 adsorption on the
+sub-nanoclusters in the LDOS, as depicted in Figure S10. Due
+to the limited number of reactive sites in finite sub-
+nanoclusters, the adsorption of just one molecule onto the
+sub-nanocluster surface is adequate to reduce the highest
+density of states in the region close to the Fermi level. This
+effect is illustrated in Figure S11, where we compare the center
+of gravity of the occupied d-states (εd)68 for the sub-
+nanoclusters before and after adsorption. The εd can be
+associated with the adsorption energy of H2, which can
+indirectly influence the reactivity of the systems; the closer the
+εd approaches the Fermi level, the more reactive they become.
+Notably, the εd for Cu is closer to the Fermi level than the εd
+for Pt d-states, even though Cu d-states are filled. This
+observation can be explained by the localized nature of the Cu
+3d-states.
+Finally, Figure 4(f) shows the relative deviation in the
+equilibrium distance of the H2 molecule upon adsorption,
+compared to its value in the gas phase (0.75 Å). Notably, the
+values of ΔdH−H are presented for Cu (w/ H−H bond) and
+CuPt (w/ H−H bond), representing cases where the H−H
+bond remains intact. This comparison is crucial because, for
+the most stable H2/CuPt configurations, H2 dissociates.
+Adsorption on Cun sub-nanoclusters increases the H−H
+bond distance compared to the gas-phase molecule, with the
+distance increasing further until the molecule dissociates on
+Cun−1Pt systems. The distances between H atoms range from
+1.87 Å for n = 4 to 2.27 Å for n = 12, indicating a very weak
+interaction between the H atoms. This result is corroborated
+by Figure S12, which shows a significant decrease in the
+vibrational frequency values, from the gas-phase H2 molecule
+to the Cu-based sub-nanoclusters, and further to the CuPt-
+based sub-nanoclusters, where only a very weak chemical bond
+exists between the H atoms. The lowest ν values between H
+atoms on CuPt, relative to Cu, are fully consistent with the
+highest Eads magnitudes and dH−H values. Furthermore, the
+most stable configurations, dihydrogen (H2 side-on) adsorp-
+tion for Cun sub-nanoclusters and H2 dissociation for Cun−1Pt
+sub-nanoclusters, are further supported by the estimation of
+activation and reaction energies, as presented in Figure S13.
+Additionally, the atomic configurations for H2/Cun−1Pt sub-
+nanoclusters, considering the most stable higher-energy H2/
+Cun−1Pt systems where the H−H bond is intact (w/ H−H),
+are presented in Figure S14, along with the corresponding
+relative total energies compared to the lowest-energy H2/
+Cun−1Pt configurations (w/o H−H).
+3.3. Interaction Mechanism
+To enhance our understanding of the enhanced interaction
+between Cun−1Pt and H2 facilitated by the Pt atom, we
+conducted detailed energetic analyses. First, in Figure 5(a), we
+present a comparative analysis of the binding energies of the
+two sub-nanocluster compositions using eq 3 to calculate
+ΔEb
+clu. Both compositions exhibit stability with negative
+binding energies. However, a clear energetic preference for
+Cun−1Pt sub-nanoclusters over Cun sub-nanoclusters for the
+same n values is observed. Furthermore, the greater
+stabilization is more pronounced in smaller sub-nanoclusters
+due to the presence of the Pt atom. Specifically, we find values
+of ΔEb
+clu following the order: 17.1% for n = 4, 9.3% for n = 6,
+7.9% for n = 8, 7.5% for n = 10, and 6.1% for n = 12.
+In principle, the higher stability observed for CuPt sub-
+nanoclusters might suggest lower reactivity toward the H2
+molecule. However, our analysis in Figure 5(b) reveals the
+competition among the main additive energy terms of the
+adsorbed systems (see eq 8). For the H2/Cun systems, the
+highest energetic contribution (in absolute value) originates
+from the binding energy of the molecule (−2.27 eV), followed
+by that of the sub-nanocluster (ranging from −1.61 eV for n =
+4 to −2.36 eV for n = 12), with the H2-clu interaction energy
+being the third in magnitude (from −0.88 eV for n = 4 to
+−0.47 eV for n = 12). For the H2/Cun-1Pt systems, we observe
+a significantly intensified interaction energy due to the
+presence of the Pt atom, with ΔEint ranging from −5.09 to
+−6.15 eV. Here, Eb
+H2 contributes the second largest magnitude,
+while Eb
+clu ranks third (from −1.88 eV for n = 4 to −2.51 eV for
+n = 12). Consequently, we have demonstrated that, apart from
+being more stable, CuPt-based sub-nanoclusters are also the
+most reactive, exhibiting high interaction energy values with
+H2.
+In Figure 5(c), we present a comprehensive overview of the
+energy term contributions that govern the definitions of Eads
+(eq 4) and Eb,ads (eq 8). Essentially, we observe that all terms
+involved in these equations are additive (account for negative
+energy values), except for the distortion energy terms ( Edis
+H2
+and ΔEdis
+clu), which represent penalties or positive energy terms.
+These distortion energies reflect energy losses due to structural
+adjustments arising from adsorption, leading to changes in the
+configurations of the sub-nanoclusters and the molecule from
+their lowest energy structures. In this context, we can correlate
+the values of
+Edis
+H2 and ΔEdis
+clu with the Δdav, ΔECN, and
+ΔdH−H values. We observe minimal structural penalties for
+most systems, except for molecules adsorbed in CuPt-based
+Figure 5. Energetic analysis: (a) relative binding energy, involving
+ΔEb
+clu for comparing sub-nanoclusters; (b) energy competition among
+Eb
+H2, Eb
+clu, and ΔEint (per atom); and (c) the main energy terms for the
+energetic analysis, considering the adsorption (Eads) and binding
+(Eb,ads) energies for the lowest energy H2/clu systems.
+ACS Nanoscience Au
+pubs.acs.org/nanoau
+Article
+https://doi.org/10.1021/acsnanoscienceau.4c00058
+ACS Nanosci. Au 2025, 5, 153−164
+159
+
+systems, which exhibit high
+Edis
+H2 values. This is attributed to
+the dissociation (breaking of H−H bonds) of these molecules
+due to the substantial interaction (ΔEint) with CuPt-based sub-
+nanoclusters.
+Combining the insights from Figure 5(b) and (c), we can
+delineate the mechanism underlying H2 adsorption on the sub-
+nanoclusters. In the H2/Cun scenario, the binding energies of
+the sub-nanocluster and the molecule overlap the interaction
+energy, indicating a typical adsorption process characterized by
+moderate interaction, which allows for potential molecular
+desorption. This suggests that the sub-nanoclusters and the
+molecules maintain structural and constitutional integrity.
+However, for the H2/Cun-1Pt systems, we observe a distinct
+scenario. Here, the interaction with the Pt atom plays a pivotal
+role by providing an interaction energy that exceeds the
+binding energies of the sub-nanocluster and the molecule.
+Furthermore, the binding energy of the cluster surpasses that
+of the molecule. Consequently, the H2−Cun-1Pt interaction is
+sufficiently strong to induce molecule dissociation initially,
+observed across all studied sub-nanocluster sizes, and
+subsequently lead to greater distortions in the sub-nano-
+clusters, as evidenced in the case of n = 12.
+In Figure 6, our energy analysis is complemented by effective
+Bader charge analysis, where the charge transfer is calculated as
+ΔQBader = Zval −QBader, with Zval representing the number of
+valence electrons and QBader the Bader charge, for the most
+stable H2/clu systems. A minimal charge exchange indicates
+weak interaction between H2 and Cun sub-nanoclusters,
+whereas a pronounced charge exchange is observed in H2
+and Cun−1Pt systems, which reflects a net charge transfer from
+the CuPt sub-nanocluster (cationic) to the H atoms (anionic).
+As noted by Lamanec et al.,69 a standard hydrogen bond
+involves a protonic hydrogen (with a partial positive charge)
+interacting with an electron donor, similar to the dihydrogen
+binding motifs in H2/Cun. In contrast, the H2/Cun−1Pt system
+resembles a hydridic hydrogen bond, where a hydridic
+hydrogen (with a partial negative charge) interacts with an
+electron acceptor, albeit with some reservations.
+Our findings on H2 adsorption on Cu and CuPt sub-
+nanoclusters corroborate well-established knowledge regarding
+the different chemical nature of these binding situations.70−72
+The dihydrogen binding motifs in the H2/Cun sub-nano-
+clusters represent a weak interaction, where the H2 molecule
+interacts with a metal surface atom from Cun, a site capable of
+accepting electron density. This interaction typically involves
+charge transfer from the metal into the H−H antibonding
+orbital, leading to some back-donation and slight weakening of
+the H−H bond without breaking it. The H2 molecule retains
+its molecular form, and the bonding is primarily physisorption
+or weak chemisorption. This interaction is not a hydridic
+hydrogen bond because the H2 molecule remains intact, with
+no evidence of hydridic or protic character in the individual
+hydrogen atoms.
+In contrast, in the H2/Cun−1Pt system, the H2 molecule
+dissociates, resulting in two H atoms adsorbed on the sub-
+nanocluster. This occurs because the Pt atom introduces
+stronger interaction between the molecule and the sub-
+nanocluster, activating the H−H bond breaking, facilitated
+by the electronic properties of Pt, which has a higher ability to
+stabilize the resulting H atoms via chemisorption (due to its
+higher affinity for H). This activation is supported by our
+Bader charge analysis, where substantial charge transfer from
+the sub-nanocluster to the hydrogen molecule occurs. The Pt
+atom draws electron density from the sub-nanocluster,
+enabling the H−H bond to break and leaving two adsorbed
+H atoms. The resulting system involves metal−hydrogen
+bonds, with the individual H atoms chemisorbed to the sub-
+nanocluster surface. Hydric bonding typically involves a
+hydride (H−) species forming an attractive interaction with
+an electrophilic center. In the case of H2/Cun−1Pt, the
+dissociated H atoms are negatively charged upon adsorption,
+but they do not act as hydrides. Instead, they are individually
+chemisorbed, with their bonding dominated by localized
+Figure 6. Bader charge flow, ΔQBader, for H2/Cun and H2/Cun−1Pt systems. The yellow isosurface represents charge density losses per atom, while
+the cyan isosurface represents corresponding gains per atom. Effective charge exchanges between sub-nanoclusters and molecules are also depicted
+in nominal values, in units of e. The ΔQBader values of the adsorption site atoms are highlighted in the figure. In all cases, the isosurfaces are set to
+0.005.
+ACS Nanoscience Au
+pubs.acs.org/nanoau
+Article
+https://doi.org/10.1021/acsnanoscienceau.4c00058
+ACS Nanosci. Au 2025, 5, 153−164
+160
+
+metal−hydrogen interactions. The positive charge on the CuPt
+sub-nanocluster indicates that the sub-nanocluster is donating
+electron density, likely facilitated by the Pt atom, which
+exhibits higher catalytic activity and a strong affinity for
+adsorbates like H2. While electron density transfer creates a
+partial hydridic character in H2, the bonding mechanism is
+more accurately described as H2 dissociation, forming direct
+metal−hydrogen bonds. For hydridic bonding, negative charge
+would need to be predominantly localized on the hydrogen
+atoms (not on the intact H2 molecule), with weak interactions
+between hydridic hydrogens and electrophilic species, such as
+secondary interactions rather than strong chemisorption.
+Therefore, the charge transfer observed in the Bader analysis
+suggests a strong interaction with partial hydridic character. In
+essence, the substitution of a Cu atom with a Pt atom enhances
+electron density flow from Cu to Pt. Finally, Table S8 presents
+the hybridization indices, supporting our interaction mecha-
+nism, showing larger sd hybridization and negligible sp
+hybridization for the systems.
+4. CONCLUSIONS
+Our DFT-PBE+D3 calculations provide valuable insights into
+the intricate interactions between H2 molecules and both Cun
+and Cun−1Pt sub-nanoclusters. We elucidated the adsorption
+behavior and underlying mechanisms governing these inter-
+actions through rigorous computational simulations and
+energetic analyses. Initially, we conducted a thorough
+investigation of Cun sub-nanoclusters (n = 2−14) as potential
+substrates for adsorption. This involved comprehensive
+energetic, structural, and electronic characterizations, culmi-
+nating in the selection of the lowest energy sizes (4, 6, 8, 10,
+and 12) using a stability function. Subsequently, we explored
+the substitution of a single Cu atom with a Pt atom in the
+context of SAA sub-nanoclusters, resulting in the formation of
+Cun−1Pt sub-nanoclusters. Despite structural similarities
+between Cun and Cun−1Pt systems, the presence of Pt
+significantly enhanced the stabilization, as indicated by the
+binding energy and corroborated by vibrational frequency
+analyses and AIMD simulations. Upon identifying the lowest
+energy adsorption sites for both H2/Cun and H2/Cun−1Pt
+systems, we observed distinct behaviors. While Cu-only sub-
+nanoclusters exhibited a H2-bonding mode known as H2 side-
+on, with weak interactions and minimal charge exchange, the
+SAA sub-nanoclusters displayed a different H2-bonding mode,
+characterized by molecular dissociation. This resulted in strong
+interactions, marked by substantial charge transfer from the
+sub-nanoclusters to the H2 molecules. The presence of Pt not
+only intensified the interaction but also facilitated the breaking
+of the H2 bond. This effect was further underscored by
+significantly enhanced interaction energies in CuPt-based
+systems (interaction energy magnitude from 5.09 to 6.15
+eV), surpassing those in Cu-only systems (interaction energy
+magnitude from 0.47 to 0.88 eV). In the H2/Cu scenario, the
+binding energies of the sub-nanocluster and the molecule
+overlapped with the interaction energy, suggesting a typical
+adsorption process with moderate interaction. Conversely, in
+H2/CuPt systems, the interaction with Pt atoms exceeded the
+binding energies of both the sub-nanocluster and the molecule,
+leading to molecular dissociation and subsequent distortions in
+the sub-nanoclusters. Our findings highlight the pivotal role of
+Pt atoms in enhancing the interaction between H2 molecules
+and sub-nanocluster substrates. The presence of Pt introduces
+significant energetic modifications, resulting in intensified
+adsorption energies and altered charge transfer dynamics.
+Notably, SAA CuPt-based sub-nanoclusters exhibited clear
+preferences over pure Cu counterparts in terms of stability and
+reactivity toward H2 adsorption, underscoring the synergistic
+effects arising from the Cu−Pt combination. In addition to
+our computational approaches, we recognize the potential of
+machine learning (ML) algorithms in exploring more extensive
+and more complex sub-nanocluster systems. By leveraging
+advanced ML techniques, such as the Bayesian Optimization
+algorithm, it is possible to efficiently navigate the vast
+configurational space of sub-nanoclusters with more significant
+numbers of atoms. This approach can identify promising
+candidates for enhanced H2 adsorption and catalytic activity by
+predicting stable and active sub-nanocluster configurations
+without exhaustive computational resources. Integrating ML
+algorithms with our DFT-PBE+D3 calculations could sig-
+nificantly accelerate the discovery and optimization of high-
+performance nanocatalysts, paving the way for innovative
+advancements in hydrogen-related technologies.
+■ASSOCIATED CONTENT
+*
+sı Supporting Information
+The Supporting Information is available free of charge at
+https://pubs.acs.org/doi/10.1021/acsnanoscienceau.4c00058.
+Convergence tests, sub-nanocluster vibrational frequen-
+cies, the impact of alternative functionals (TPSS), the
+relativistic effects of spin−orbit coupling (SOC), sub-
+nanoclusters properties, ab initio molecular dynamics
+(AIMD) simulations, density of states for sub-nano-
+clusters, electronic charge analysis, magnetic analysis,
+density of states for adsorbed systems, center of gravity
+of the occupied d state, H2 vibrational frequencies,
+estimation of activation energy, H2/Cun−1Pt atomic
+configuration (w/ H−H), hybridization index, and
+atomic coordinates (PDF)
+■AUTHOR INFORMATION
+Corresponding Author
+Maurício J. Piotrowski −Department of Physics, Federal
+University of Pelotas, 96010-900 Pelotas, Rio Grande do Sul,
+Brazil;
+orcid.org/0000-0003-3477-4437;
+Email: mauriciomjp@gmail.com
+Authors
+João Paulo Cerqueira Felix −Institute of Physics “Armando
+Dias Tavares”, Rio de Janeiro State University, 20550-900
+Rio de Janeiro, Rio de Janeiro, Brazil;
+orcid.org/0000-
+0002-7064-9660
+Wanderson Souza Araújo −Department of Physics, Federal
+University of Pelotas, 96010-900 Pelotas, Rio Grande do Sul,
+Brazil;
+orcid.org/0000-0003-1106-7350
+João Marcos Tomaz Palheta −Department of Physics,
+Federal University of Pelotas, 96010-900 Pelotas, Rio Grande
+do Sul, Brazil
+Jônatas Favotto Dalmedico −Department of Physics, Federal
+University of Pelotas, 96010-900 Pelotas, Rio Grande do Sul,
+Brazil
+Fabiano Pereira de Oliveira −Department of Physics, Federal
+University of Pelotas, 96010-900 Pelotas, Rio Grande do Sul,
+Brazil
+ACS Nanoscience Au
+pubs.acs.org/nanoau
+Article
+https://doi.org/10.1021/acsnanoscienceau.4c00058
+ACS Nanosci. Au 2025, 5, 153−164
+161
+
+Alexandre C. Dias −Institute of Physics and International
+Center of Physics, University of Brasília, 70919-970 Brasília,
+Federal District, Brazil
+Diego Guedes-Sobrinho −Chemistry Department, Federal
+University of Paraná, 81531-980 Curitiba, Paraná, Brazil;
+orcid.org/0000-0002-3313-2822
+Celso R. C. Rêgo −Institute of Nanotechnology Hermann-
+von-Helmholtz-Platz, Karlsruhe Institute of Technology,
+76021 Karlsruhe, Germany
+Renato L. T. Parreira −Núcleo de Pesquisas em Ciências
+Exatas e Tecnológicas, Universidade de Franca, 14404−600
+Franca, São Paulo, Brazil;
+orcid.org/0000-0002-5623-
+9833
+Complete contact information is available at:
+https://pubs.acs.org/10.1021/acsnanoscienceau.4c00058
+Author Contributions
+CRediT: João Paulo Cerqueira Felix data curation,
+investigation, validation; Wanderson Souza Araújo formal
+analysis, investigation, validation; Joao Marcos Tomaz Palheta
+data curation, formal analysis, validation; Jônatas Favotto
+Dalmedico formal analysis, methodology, validation; Fabiano
+Pereira de Oliveira formal analysis, methodology, validation;
+Alexandre C. Dias data curation, validation, writing - review &
+editing; Diego Guedes-Sobrinho data curation, validation,
+writing - review & editing; Celso R. C. Rêgo data curation,
+validation, writing - review & editing; Renato Luis Tame
+Parreira data curation, validation, writing - review & editing;
+Maurício Jeomar Piotrowski conceptualization, funding
+acquisition, project administration, resources, supervision,
+writing - original draft, writing - review & editing.
+Funding
+The Article Processing Charge for the publication of this
+research was funded by the Coordination for the Improvement
+of Higher Education Personnel - CAPES (ROR identifier:
+00x0ma614).
+Notes
+The authors declare no competing financial interest.
+■ACKNOWLEDGMENTS
+The authors thank the Rio Grande do Sul Research
+Foundation (FAPERGS, grant 24/2551−0001551−5), the
+Federal District Research Support Foundation (FAPDF, grants
+00193−00001817/2023−43 and 00193−00002073/2023−
+84), the São Paulo Research Foundation −FAPESP
+(R.L.T.P. grant numbers 2011/07623-8 and 2017/24856-2),
+the National Council for Scientific and Technological
+Development −CNPq (M.J.P. grant number 307345/2021-
+1, A.C.D. grant numbers 408144/2022−0 and 305174/2023−
+1, and R.L.T.P. grant number 311122/2021-3), the Coordi-
+nation for Improvement of Higher Level Education −CAPES
+(finance Code 001) for the financial support. C.R.C.R. thanks
+the German Federal Ministry of Education and Research
+(BMBF) for financial support of the project Innovation-
+Platform MaterialDigital (www.materialdigital.de) through
+project funding FKZ number: 13XP5094A. Part of this work
+was performed on the HoreKa supercomputer funded by the
+Ministry of Science, Research and the Arts Baden-Württem-
+berg and by the Federal Ministry of Education and Research.
+The authors also thank the infrastructure provided to our
+computer cluster by the Department of Physics from the
+Federal University of Pelotas. This work also used resources of
+the “Centro Nacional de Processamento de Alto Desempenho
+em São Paulo” (CENAPAD−SP, UNICAMP/FINEP -
+MCTI), projects 897 and 570; of the “Centro Nacional de
+Supercomputação (CESUP−UFRGS)”; of the Lobo Carneiro
+HPC (NACAD) at the Federal University of Rio de Janeiro
+(UFRJ) for resources for project 133; of the CIMATEC
+SENAI at Salvador −BA, for their partnership and support
+through the Ogun Supercomputer; and of the “Laboratório
+Central de Processamento de Alto Desempenho” (LCPAD)
+financed by FINEP through CT-INFRA/UFPR projects.
+■REFERENCES
+(1) Bell, A. T. The Impact of Nanoscience on Heterogeneous
+Catalysis. Science 2003, 299, 1688−1691.
+(2) Friend, C. M.; Xu, B. Heterogeneous Catalysis: A Central
+Science for a Sustainable Future. Acc. Chem. Res. 2017, 50, 517−521.
+(3) Li, X.; Mitchell, S.; Fang, Y.; Li, J.; Perez-Ramirez, J.; Lu, J.
+Advances in heterogeneous single-cluster catalysis. Nat. Rev. Chem.
+2023, 7, 754−767.
+(4) Alonso, J. A. Electronic and Atomic Structure, and Magnetism of
+Transition-Metal Clusters. Chem. Rev. 2000, 100, 637−678.
+(5) Fernando, A.; Weerawardene, K. L. D. M.; Karimova, N. V.;
+Aikens, C. M. Quantum Mechanical Studies of Large Metal, Metal
+Oxide, and Metal Chalcogenide Nanoparticles and Clusters. Chem.
+Rev. 2015, 115, 6112−6216.
+(6) Liu, L.; Corma, A. Metal Catalysts for Heterogeneous Catalysis:
+From Single Atoms to Nanoclusters and Nanoparticles. Chem. Rev.
+2018, 118, 4981−5079.
+(7) Yue, M.; Lambert, H.; Pahon, E.; Roche, R.; Jemei, S.; Hissel, D.
+Hydrogen energy systems: A critical review of technologies,
+applications, trends and challenges. Renewable Sust. Energy Rev.
+2021, 146, 111180.
+(8) Singla, M. K.; Nijhawan, P.; Oberoi, A. S. Hydrogen fuel and fuel
+cell technology for cleaner future: a review. Environ. Sci. Pollut. Res.
+2021, 28, 15607−15626.
+(9) Hannagan, R. T.; Giannakakis, G.; Flytzani-Stephanopoulos, M.;
+Sykes, E. C. H. Single-Atom Alloy Catalysis. Chem. Rev. 2020, 120,
+12044−12088.
+(10) Du, Y.; Sheng, H.; Astruc, D.; Zhu, M. Atomically Precise
+Noble Metal Nanoclusters as Efficient Catalysts: A Bridge between
+Structure and Properties. Chem. Rev. 2020, 120, 526−622.
+(11) Janjua, M. R. S. A. Prediction and Understanding: Quantum
+Chemical Framework of Transition Metals Enclosed in a B12N12
+Inorganic Nanocluster for Adsorption and Removal of DDT from the
+Environment. Inorg. Chem. 2021, 60, 10837.
+(12) Wang, S.; Lu, A.; Zhong, C.-J. Hydrogen production from water
+electrolysis: role of catalysts. Nano Converg 2021, 8, 4.
+(13) Tyo, E. C.; Vajda, S. Catalysis by clusters with precise numbers
+of atoms. Nat. Nanotechnol. 2015, 10, 577−588.
+(14) Tang, Q.; Hu, G.; Fung, V.; Jiang, D. Insights into interfaces,
+stability, electronic properties, and catalytic activities of atomically
+precise metal nanoclusters from first principles. Acc. Chem. Res. 2018,
+51, 2793−2802.
+(15) Zhang, W.; Fu, Q.; Luo, Q.; Sheng, L.; Yang, J. Understanding
+Single-Atom Catalysis in View of Theory. JACS Au 2021, 1, 2130−
+2145.
+(16) Darby, M. T.; Stamatakis, M.; Michaelides, A.; Sykes, E. C. H.
+Lonely Atoms with Special Gifts: Breaking Linear Scaling Relation-
+ships in Heterogeneous Catalysis with Single-Atom Alloys. J. Phys.
+Chem. Lett. 2018, 9, 5636−5646.
+(17) Giannakakis, G.; Flytzani-Stephanopoulos, M.; Sykes, E. C. H.
+Single-Atom Alloys as a Reductionist Approach to the Rational
+Design of Heterogeneous Catalysts. Acc. Chem. Res. 2019, 52, 237−
+247.
+(18) Bunting, R. J.; Wodaczek, F.; Torabi, T.; Cheng, B. Reactivity
+of Single-Atom Alloy Nanoparticles: Modeling the Dehydrogenation
+of Propane. J. Am. Chem. Soc. 2023, 145, 14894−14902.
+ACS Nanoscience Au
+pubs.acs.org/nanoau
+Article
+https://doi.org/10.1021/acsnanoscienceau.4c00058
+ACS Nanosci. Au 2025, 5, 153−164
+162
+
+(19) Liu, X.; Astruc, D. Atomically precise copper nanoclusters and
+their applications. Coord. Chem. Rev. 2018, 359, 112−126.
+(20) Baghdasaryan, A.; Bürgi, T. Copper nanoclusters: designed
+synthesis, structural diversity, and multiplatform applications. Nano-
+scale 2021, 13, 6283−6340.
+(21) Wu, Q.-J.; Si, D.-H.; Sun, P.-P.; Dong, Y.-L.; Zheng, S.; Chen,
+Q.; Ye, S.-H.; Sun, D.; Cao, R.; Huang, Y.-B. Atomically Precise
+Copper Nanoclusters for Highly Efficient Electroreduction of CO2
+towards Hydrocarbons via Breaking the Coordination Symmetry of
+Cu Site. Angew. Chem., Int. Ed. 2023, 62, No. e202306822.
+(22) Chu, X.; Xiang, M.; Zeng, Q.; Zhu, W.; Yang, M. Competition
+Between Monomer and Dimer Fragmentation Pathways of Cationic
+Cun Clusters of n = 2 −20. J. Phys. B: At. Mol. Opt. Phys. 2011, 44,
+205103.
+(23) Chaves, A. S.; Rondina, G. G.; Piotrowski, M. J.; Tereshchuk,
+P.; Da Silva, J. L. F. The Role of Charge States in the Atomic
+Structure of Cun and Ptn (n = 2 −14 Atoms) Clusters: A DFT
+Investigation. J. Phys. Chem. A 2014, 118, 10813−10821.
+(24) Zhang, L.; Liu, H.; Liu, S.; Banis, M. N.; Song, Z.; Li, J.; Yang,
+L.; Markiewicz, M.; Zhao, Y.; Li, R.; Zheng, M.; Ye, S.; Zhao, Z.-J.;
+Botton, G. A.; Sun, X. Pt/Pd Single-Atom Alloys as Highly Active
+Electrochemical Catalysts and the Origin of Enhanced Activity. ACS
+Catal. 2019, 9, 9350−9358.
+(25) Zhang, X.; Cui, G.; Feng, H.; Chen, L.; Wang, H.; Wang, B.;
+Zhang, X.; Zheng, L.; Hong, S.; Wei, M. Platinum-copper single atom
+alloy catalysts with high performance towards glycerol hydrogenolysis.
+Nat. Commun. 2019, 10, 5812.
+(26) Kuang, X.-J.; Wang, X.-Q.; Liu, G.-B. A density functional study
+on the adsorption of hydrogen molecule onto small copper clusters. J.
+Chem. Sci. 2011, 123, 743−754.
+(27) Janjua, M. R. S. A. Hydrogen as an energy currency:
+Encapsulation of inorganic Ga12N12 with alkali metals for efficient
+H2 adsorption as hydrogen storage materials. J. Phys. Chem. Solids
+2022, 160, 110352.
+(28) Hohenberg, P.; Kohn, W. Inhomogeneous Electron Gas. Phys.
+Rev. 1964, 136, B864−B871.
+(29) Kohn, W.; Sham, L. J. Self-Consistent Equations Including
+Exchange and Correlation Effects. Phys. Rev. 1965, 140, A1133−
+A1138.
+(30) Perdew, J. P.; Burke, K.; Ernzerhof, M. Generalized Gradient
+Approximation Made Simple. Phys. Rev. Lett. 1996, 77, 3865−3868.
+(31) Grimme, S.; Antony, J.; Ehrlich, S.; Krieg, H. A Consistent and
+Accurate Ab Initio Parametrization of Density Functional Dispersion
+Correction (DFT-D) for the 94 Elements H-Pu. J. Chem. Phys. 2010,
+132, 154104.
+(32) Grimme, S.; Hansen, A.; Brandenburg, J. G.; Bannwarth, C.
+Dispersion-Corrected Mean-Field Electronic Structure Methods.
+Chem. Rev. 2016, 116, 5105−5154.
+(33) Blöchl, P. E. Projector Augmented-Wave Method. Phys. Rev. B
+1994, 50, 17953−17979.
+(34) Kresse, G.; Joubert, D. From Ultrasoft Pseudopotentials to the
+Projector Agumented-Wave Method. Phys. Rev. B 1999, 59, 1758−
+1775.
+(35) Kresse, G.; Hafner, J. Ab Initio Molecular Dynamics for Open-
+Shell Transition Metals. Phys. Rev. B 1993, 48, 13115−13126.
+(36) Kresse, G.; Furthmüller, J. Efficient Iterative Schemes for Ab
+Initio Total-Energy Calculations Using a Plane-Wave Basis Set. Phys.
+Rev. B 1996, 54, 11169−11186.
+(37) Koelling, D. D.; Harmon, B. N. A technique for relativistic spin-
+polarised calculations. J. Phys. C: Solid State Phys. 1977, 10, 3107.
+(38) Takeda, T. The Scalar Relativistic Approximation. Z. Phys. B:
+Condens. Matter Quanta 1978, 32, 43−48.
+(39) Sun, L.; Hase, W. L. Born−Oppenheimer Direct Dynamics
+Classical Trajectory Simulations. In Reviews in Computational
+Chemistry; John Wiley & Sons, Ltd., 2003; Chapter 3, pp 79−146.
+(40) Nosé, S. A molecular dynamics method for simulations in the
+canonical ensemble. Mol. Phys. 1984, 52, 255−268.
+(41) Hoover, W. G. Canonical dynamics: Equilibrium phase-space
+distributions. Phys. Rev. A 1985, 31, 1695−1697.
+(42) Chaves, A. S.; Piotrowski, M. J.; Da Silva, J. L. F. Evolution of
+the Structural, Energetic, and Electronic Properties of the 3d, 4d, and
+5d Transition-Metal Clusters (30 TMn Systems for n= 2−15): A
+Density Functional Theory Investigation. Phys. Chem. Chem. Phys.
+2017, 19, 15484−15502.
+(43) Rêgo, C. R. C.; Oliveira, L. N.; Tereshchuk, P.; Da Silva, J. L. F.
+Comparative study of van der Waals corrections to the bulk properties
+of graphite. J. Phys.: Condens. Matter 2015, 27, 415502.
+(44) Rêgo, C. R. C.; Tereshchuk, P.; Oliveira, L. N.; Da Silva, J. L. F.
+Graphene-supported small transition-metal clusters: A density func-
+tional theory investigation within van der Waals corrections. Phys. Rev.
+B 2017, 95, 235422.
+(45) Molayem, M.; Grigoryan, V. G.; Springborg, M. Theoretical
+Determination of the Most Stable Structures of NimAgn Bimetallic
+Nanoalloys. J. Phys. Chem. C 2011, 115, 7179−7192.
+(46) de Amorim, R. V.; Batista, K. E. A.; Nagurniak, G. R.; Orenha,
+R. P.; Parreira, R. L. T.; Piotrowski, M. J. CO, NO, and SO adsorption
+on Ni nanoclusters: a DFT investigation. Dalton Trans 2020, 49,
+6407−6417.
+(47) Felix, J. P. C. S.; Batista, K. E. A.; Morais, W. O.; Nagurniak, G.
+R.; Orenha, R. P.; Rêgo, C. R. C.; Guedes-Sobrinho, D.; Parreira, R. L.
+T.; Ferrer, M. M.; Piotrowski, M. J. Molecular adsorption on coinage
+metal subnanoclusters: A DFT+D3 investigation. J. Comput. Chem.
+2023, 44, 1040−1051.
+(48) de Heer, W. A. The physics of simple metal clusters:
+experimental aspects and simple models. Rev. Mod. Phys. 1993, 65,
+611−676.
+(49) Müllerová, S.; Malček, M.; Bucinsky, L.; Cordeiro, M. N. D. S.
+Exploring hydrogen binding and activation on transition metal?
+modified circumcoronene. Carb. Lett. 2024, 34, 1495−1506.
+(50) Yonezawa, A. F.; Nagurniak, G. R.; Orenha, R. P.; da Silva, E.
+H.; Parreira, R. L. T.; Piotrowski, M. J. Stability Changes in Iridium
+Nanoclusters via Monoxide Adsorption: A DFT Study within the van
+der Waals Corrections. J. Phys. Chem. A 2021, 125, 4805−4818.
+(51) Sousa, K. A. P.; Morawski, F. M.; de Campos, C. E. M.;
+Parreira, R. L. T.; Piotrowski, M. J.; Nagurniak, G. R.; Jost, C. L.
+Electrochemical, theoretical, and analytical investigation of the
+phenylurea herbicide fluometuron at a glassy carbon electrode.
+Electrochim. Acta 2022, 408, 139945.
+(52) Momma, K.; Izumi, F. VESTA: A Three-Dimensional
+Visualization System for Electronic and Structural Analysis. J. Appl.
+Crystallogr. 2008, 41, 653−658.
+(53) Hoppe, R. The Coordination Number −an ”Inorganic
+Chameleon. Angew. Chem., Int. Ed. 1970, 9, 25−34.
+(54) Hoppe, R. Effective Coordination Numbers (ECoN) and Mean
+Active Fictive Ionic Radii (MEFIR). Z. Kristallogr. 1979, 150, 23−52.
+(55) Bader, R. F. W. Atoms in Molecules: A Quantum Theory;
+International Series of Monographs on Chemistry; Clarendon Press,
+1994.
+(56) Tang, W.; Sanville, E.; Henkelman, G. A Grid-Based Bader
+Analysis Algorithm without Lattice Bias. J. Phys.: Condens. Matter
+2009, 21, 084204.
+(57) Montoro, J. C. G.; Abascal, J. L. F. The Voronoi Polyhedra as
+Tools for Structure Determination in Simple Disordered Systems. J.
+Phys. Chem. 1993, 97, 4211−4215.
+(58) Chaves, A. S.; Piotrowski, M. J.; Guedes-Sobrinho, D.; Da Silva,
+J. L. F. Theoretical Investigation of the Adsorption Properties of CO,
+NO, and OH on Monometallic and Bimetallic 13 −Atom Clusters:
+The Example of Cu13, Pt7Cu6, and Pt13. J. Phys. Chem. A 2015, 119,
+11565−11573.
+(59) Tao, J.; Perdew, J. P.; Staroverov, V. N.; Scuseria, G. E.
+Climbing the Density Functional Ladder: Nonempirical Meta-
+Generalized Gradient Approximation Designed for Molecules and
+Solids. Phys. Rev. Lett. 2003, 91, 146401.
+(60) Lechtken, A.; Neiss, C.; Stairs, J.; Schooss, D. Comparative
+study of the structures of copper, silver, and gold icosamers: Influence
+of metal type and charge state. J. Chem. Phys. 2008, 129, 154304.
+(61) Bumüller, D.; Yohannes, A. G.; Kohaut, S.; Kondov, I.; Kappes,
+M. M.; Fink, K.; Schooss, D. Structures of Small Platinum Cluster
+ACS Nanoscience Au
+pubs.acs.org/nanoau
+Article
+https://doi.org/10.1021/acsnanoscienceau.4c00058
+ACS Nanosci. Au 2025, 5, 153−164
+163
+
+Anions Ptn-: Experiment and Theory. J. Phys. Chem. A 2022, 126,
+3502−3510.
+(62) Kittel, C. Introduction to Solid State Physics, 7th ed.; John Wiley
+& Sons: New York, 1996.
+(63) Pauling, L. Atomic radii and interatomic distances in metals. J.
+Am. Chem. Soc. 1947, 69, 542−553.
+(64) Feibelman, P. J. Relaxation of hcp(0001) surfaces: A chemical
+view. Phys. Rev. B 1996, 53, 13740.
+(65) Huber, K.-P. Molecular Spectra and Molecular Structure: IV.
+Constants of Diatomic Molecules; Springer Science & Business Media,
+2013.
+(66) Computational Chemistry Comparison and Benchmark DataBase
+(CCCBDB); http://cccbdb.nist.gov (accessed 2024−05−23).
+(67) Irikura, K. K. Experimental Vibrational Zero-Point Energies:
+Diatomic Molecules. J. Phys. Chem. Ref. Data 2007, 36, 389−397.
+(68) Hammer, B.; Nørskov, J. K. Advances in Catalysis; Academic
+Press Inc.: San Diego, 2000.
+(69) Lamanec, M.; Zienertová, J.; Špet́ko, M.; Nachtigallová, D.;
+Hobza, P. Similarities and Differences of Hydridic and Protonic
+Hydrogen Bonding. ChemPhysChem 2024, 25, No. e202400403.
+(70) Hobza, P.; Havlas, Z. Blue-Shifting Hydrogen Bonds. Chem.
+Rev. 2000, 100, 4253−4264.
+(71) Belkova, N. V.; Epstein, L. M.; Filippov, O. A.; Shubina, E. S.
+Hydrogen and Dihydrogen Bonds in the Reactions of Metal Hydrides.
+Chem. Rev. 2016, 116, 8545−8587.
+(72) Civiš, S.; Lamanec, M.; Špirko, V.; Kubišta, J.; Špet́ko, M.;
+Hobza, P. Hydrogen Bonding with Hydridic Hydrogen-Experimental
+Low-Temperature IR and Computational Study: Is a Revised
+Definition of Hydrogen Bonding Appropriate? J. Am. Chem. Soc.
+2023, 145, 8550−8559.
+ACS Nanoscience Au
+pubs.acs.org/nanoau
+Article
+https://doi.org/10.1021/acsnanoscienceau.4c00058
+ACS Nanosci. Au 2025, 5, 153−164
+164
