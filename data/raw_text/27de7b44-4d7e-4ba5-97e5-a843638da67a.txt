@@ -1,0 +1,1059 @@
+La-Ni-H metal hydride system aging effects identification
+Yuanyuan Shang a,*, Ting Chen b, Fahim Karimi a, Thi Thu Le a, Jürgen Markmann c,d
+,  
+Jan Peter Embs e, Benjamin Klusemann b,f
+, Thomas Klassen a,c,g, Claudio Pistidda a,*
+a Department of Materials Design, Institute of Hydrogen Technology, Helmholtz-Zentrum hereon GmbH, 21502 Geesthacht, Germany
+b Department of Solid State Materials Processing, Institute of Material and Process Design, Helmholtz-Zentrum hereon GmbH, 21502 Geesthacht, Germany
+c Department of Hybrid Materials Systems, Institute of Hydrogen Technology, Helmholtz-Zentrum hereon GmbH, 21502 Geesthacht, Germany
+d Institute of Materials Physics and Technology, Hamburg University of Technology, 21073 Hamburg, Germany
+e PSI Center for Neutron and Muon Sciences, 5232 Villigen PSI, Switzerland
+f Institute for Production Technology and Systems, Leuphana University Lüneburg 21335 Lüneburg, Germany
+g Helmut Schmidt University, Holstenhofweg 85, 22043 Hamburg, Germany
+A R T I C L E  I N F O
+Keywords:
+Metal hydride
+Aging effect
+Hydrogen storage
+A B S T R A C T
+One of the most commonly used materials for sorption compression in space applications is based on the La-Ni-H 
+system. The degradation of the material properties and, therefore, the system lifetime is of great importance for 
+the final success of a potential space mission. Considering that satellites and other equipment that have to 
+operate in space are expected to be fully functional for more than 10 years, in this work, an accelerated aging 
+method is designed and carried out to predict the La-Ni-H system properties after 12 years under specific 
+operating conditions. For this test, several specimens of fully hydrogenated LaNi5 are exposed to specific 
+hydrogen pressures (i.e., 20, 35, 58 and 96 bar) at different temperatures (i.e., 50, 90, 130 and 160 ◦C) for a 
+duration of 90 days. Sievert’s type apparatus, synchrotron radiation powder X-ray diffraction (SR-PXD), quasi- 
+elastic neutron scattering (QENS), scanning electron microscopy (SEM), and small-angle X-ray scattering 
+(SAXS) methods are used to investigate the material aging and its impact on the material chemical and micro­
+structural properties.
+1. Introduction
+Many highly sensitive instruments designed for space applications, e. 
+g., infrared, gamma-ray and X-ray detectors, require constant cryogenic 
+operating temperatures. While stored cryogens and passive cryo­
+radiators have both been used for cryogenic cooling on numerous space 
+missions, the ultimate goal of scientists and mission planners has always 
+been to develop refrigerators capable of reaching relatively low cryogen 
+temperatures (much lower than what passive radiators can achieve) and 
+having a lifespan of several years [1]. In this regard, cryogenic coolers 
+(cryocoolers) are essential for achieving accurate cryogenic temperature 
+control in space [2,3]. However, the mechanical compressors that drive 
+the first cryocoolers have moving parts and produce vibration, which 
+significantly hinders their practical applications when combined with 
+highly sensitive equipment.
+With features like low vibration, no electromagnetic interference, 
+high reliability, and extended operating life, sorption compressors based 
+on the Joule–Thomson (J–T) effect are becoming viable solutions for 
+space applications [4]. The sorbents used for the sorption compressors 
+can be divided into two types based on the working mechanism, i.e., 
+physical and chemical. Metal-based systems with a particular affinity for 
+hydrogen can serve as sorbent materials in sorption compressors, 
+regulating temperatures by varying hydrogen pressures and flow rates 
+[5,6]. Moreover, metal hydride sorbents are non-corrosive, non-toxic, 
+and easy to handle, rendering them appealing for such purposes. LaNi5, 
+a well-studied low-temperature metal hydride [7], has been already 
+utilized in these space sorption compressors for the European Space 
+Agency (ESA) Planck Mission [3,8].
+In light of the fact that satellites and other space-related equipment 
+must run flawlessly for often more than ten years, an accelerated aging 
+method was developed in this work to forecast the La-Ni-H system fea­
+tures after twelve years of operation. The as received and aged samples’ 
+hydrogen storage properties were investigated by Sievert’s type appa­
+ratus and microstructures were characterized by synchrotron radiation 
+* Corresponding authors at: Department of Materials Design, Institute of Hydrogen Technology, Helmholtz-Zentrum hereon GmbH, 21502 Geesthacht, Germany 
+(Y. Shang).
+E-mail addresses: yuanyuan.shang@hereon.de (Y. Shang), claudio.pistidda@hereon.de (C. Pistidda). 
+Contents lists available at ScienceDirect
+Chemical Engineering Journal
+journal homepage: www.elsevier.com/locate/cej
+https://doi.org/10.1016/j.cej.2025.161682
+Received 16 December 2024; Received in revised form 21 February 2025; Accepted 16 March 2025  
+Chemical Engineering Journal 510 (2025) 161682 
+Available online 17 March 2025 
+1385-8947/© 2025 The Authors. Published by Elsevier B.V. This is an open access article under the CC BY license ( http://creativecommons.org/licenses/by/4.0/ ). 
+
+powder X-ray diffraction (SR-PXD), quasi-elastic neutron scattering 
+(QENS), small-angle X-ray scattering (SAXS), and scanning electron 
+microscopy (SEM) methods.
+2. Experimental methods
+The investigated material in this study was extracted from a 
+rechargeable hydrogen container model BL-30, purchased from 
+Hydrogen Components, Inc. The extracted material consisted of LaNi5 
+plus ca. 5 wt% of TeflonTM i.e., polytetrafluoroethylene (PTFE), which is 
+referred to as LaNi5 in the following. The opening of the tank and the 
+powder material handling were carried out in an Ar-filled glovebox (O2 
+and H2O levels < 1 ppm).
+To characterize the materials’ hydrogen storage properties, the 
+samples were loaded into a PCT-Pro Setaram & Hy-Energy manometric 
+Sievert-type apparatus and evacuated for 30 min at room temperature. 
+Then the samples were exposed to helium for volume calibration 
+(pressure in the range of 3 – 5 bar). The overall procedure lasted about 
+15 min. Pressure composition isotherm (PCI) measurements were per­
+formed at different temperatures, i.e., 20, 30, 40, and 50 ◦C. The tem­
+perature of the sample holder was controlled by a water bath (CORIO 
+CD-601F, Julabo GmbH). The variations of reaction enthalpy (ΔH) 
+and entropy (ΔS) for hydrogenation/dehydrogenation were obtained 
+utilizing the van’t Hoff equation (Eq. (1)) and previously acquired PCI 
+measurements: 
+ln Peq
+P0
+= ΔH
+RT −ΔS
+R
+(1) 
+where P0 is the standard pressure, Peq is the equilibrium pressure, R is 
+the universal gas constant and T represents the sample temperature. The 
+kinetic properties of the as received sample were investigated by using a 
+PCT-Pro Setaram and a Hy-Energy manometric Sievert-type apparatus. 
+The measurements were carried out at 20, 30, 40 and 50 ◦C, while the 
+hydrogen pressures applied to the specimens for the hydrogenation and 
+the dehydrogenation measurements were 45 and 0.5 −
+2 bar, 
+respectively.
+An accelerated calendar aging method [9] was used to predict the 
+aging behavior of the material, assuming that the aging follows an 
+Arrhenius behavior: 
+α = A • exp
+(−Ea
+RT
+)
+(2) 
+where A is a fitting parameter based on the relationship of the properties 
+and the temperatures and Ea is the activation energy of the reaction that 
+happens at temperature T. Note that α represents different factors that 
+are related to the material properties, i.e. change of capacity and equi­
+librium pressure. The original batch of LaNi5 was divided into several 
+smaller batches and subjected to 20, 35, 58 and 96 bar of hydrogen 
+pressure for 90 days at temperatures of 50, 90, 130 and 160 ◦C, 
+respectively. The samples were loaded into stainless sample holders and 
+were kept at the above-mentioned temperatures by using oil baths and 
+ceramic ovens. Aluminum foils were employed to cover the conical 
+flasks to mitigate heat and oil losses.
+Microstructural investigations using synchrotron radiation powder 
+X-ray diffraction (SR-PXD) were conducted at beamline P02.1, PETRA 
+III of DESY in Hamburg, Germany. A Varex 4343CT detector was used, 
+and the wavelength was set at 0.2074 Å. A LaB6 standard from NIST was 
+used to calibrate the sample-to-detector distance (SDD). The samples 
+were loaded into the glass capillaries and sealed with glue inside an Ar- 
+Fig. 1. Hydrogen storage properties of the as received LaNi5 sample. a Pressure composition isotherm (PCI) curves of the as received material at 20, 30, 40 and 
+50 ◦C. b-c The corresponding ΔH and ΔS for hydrogenation and dehydrogenation, respectively. d-e Hydrogenation and dehydrogenation kinetic curves of the as 
+received material at 20, 30, 40 and 50 ◦C, respectively. The hydrogenation pressures are around 45 bar of hydrogen, whilst the dehydrogenation pressures are around 
+0.5 bar of hydrogen.
+Y. Shang et al.                                                                                                                                                                                                                                   
+Chemical Engineering Journal 510 (2025) 161682 
+2 
+
+filled glovebox (O2 and H2O levels < 1 ppm). FIT2D software was used to 
+convert the recorded 2D images into numerical data [10].
+Quasi-elastic neutron scattering (QENS) measurements were con­
+ducted with cold neutrons using the time-of-flight neutron spectrometer 
+(FOCUS) located at the continuous spallation source SINQ at the Paul 
+Scherrer Institute (Villigen, Switzerland). The incident neutron wave­
+length was 4.4 Å, and the elastic scattering energy resolution, δ(E), was 
+0.223 meV (full width at half maximum, FWHM), corresponding to an 
+observable time τ ≈2ℏ/FWHM of 5.9 ps. The samples were loaded into 
+sealed aluminum cylinders (6-mm diameter) inside the Ar-continuously 
+filled glovebox. The spectra were recorded in a range of scattering 
+vectors from Q = 0.3 to 2.5 Å-1. Data reduction was carried out using the 
+DAVE software (data analysis and visualization environment). The ac­
+quired QENS spectra were analyzed using the curve fitting utility PAN 
+included in DAVE. The measured total incoherent scattering function S 
+(Q,ω) (Eq. (3)) can be expressed as a convolution of an elastic scattering 
+described by the delta function δ(ω) and a quasi-elastic contribution 
+described by the Lorentzian function L(Q,ω), with a flat background (bg) 
+to account for fast motions and the resolution function of the instrument 
+R(Q,ω) determined using a vanadium standard:
+S(Q,ω) = R(Q,ω) ⊗[Ielδ(ω) + Iqe L(Q,ω)] + bg (3).
+where Iel and Iqe are the elastic and integrated quasi-elastic scattering 
+intensities, respectively.
+The morphologies of the materials were revealed by using a field- 
+emission scanning electron microscope (FEI Quanta 650 SEM) in both 
+secondary electron (SE) and backscattered electron (BSE) modes. The 
+preparation of the sample was handled in an Ar-filled glovebox with 
+values of O2 and H2O < 1 ppm. For each sample, 200 particles were 
+selected in order to get the average particle size and analyze the particle 
+size distribution. Energy dispersive X-ray spectroscopy (EDS) with an 
+EDAX system equipped in the SEM was used to analyze the elemental 
+compositions of the targeted areas for the samples.
+The microstructural features of the investigated samples were further 
+investigated using a laboratory SAXS instrument (Xenocs Xeuss 3.0 
+system). The instrument was equipped with a Dectris Pilatus3 R 300 K 
+detector and microfocus tubes with Cu and Mo anodes as sources 
+operated at 50 kV and 0.6 mA (Cu) and 1.0 mA (Mo). In this investi­
+gation, the Kα radiation line (0.71 Å) of the Molybdenum source was 
+applied to acquire the SAXS data. All SAXS samples were prepared inside 
+a glovebox with a continuously running purified Argon flow. The 
+powdered samples were placed inside a circular hole of an aluminum 
+holder and sealed on both sides with Kapton tape to avoid any change in 
+the oxidation state of the samples by the transfer to the SAXS instrument 
+and during the measurements. Furthermore, all measurements were 
+conducted under dynamic vacuum to prevent possible oxidation state of 
+the samples and to avoid any air scattering during the SAXS measure­
+ments. In addition, the primary beam and an empty holder only with 
+Kapton tape were measured to determine the transmission values of the 
+samples. For all SAXS measurements, the area of illumination on the 
+samples was set to roughly 500 × 500 μm2. The measurements were 
+carried out at two SDD (dshort = 900 mm and dlong = 1800 mm) in order 
+to cover the desired q-range, with an exposure time of 240 s and 3000 s, 
+respectively. The aforementioned quantity q describes the scattering 
+vector of the incident beam, which is given by: q = (4π/λ)sinθ, where 2θ 
+refers to the scattering angle of the elastically scattered photons and λ is 
+the corresponding monochromatic wavelength. All the fittings were 
+done by SASfit software [11].
+3. Results and discussion
+3.1. Properties of the as received material
+Firstly, the thermodynamic and kinetic properties of the as received 
+LaNi5 were investigated. As the material readily absorbs hydrogen, no 
+activation process was carried out prior to starting these investigations. 
+Fig. 1a-c illustrates the PCI curves and the corresponding calculations of 
+the ΔH and ΔS for both hydrogenation and dehydrogenation processes. 
+The overall capacity of the as received material is around 1.27 wt%. The 
+hydrogenation and dehydrogenation plateau pressures measured at half 
+of the plateau length, for the PCI measurement carried out at 20 ◦C, are 
+1.76 and 1.26 bar, respectively. At 30 ◦C, the plateau pressures for hy­
+drogenation and dehydrogenation are 2.54 and 1.87 bar, respectively. 
+At 40 ◦C, the values are 3.52 and 2.80 bar, respectively. Whereas the 
+hydrogenation and dehydrogenation plateau pressures at 50 ◦C are 5.17 
+and 4.06 bar, respectively. The plateau pressure values of this specimen 
+and for the aged ones are reported in Table 1. By using the plateau 
+pressure values measured at 20, 30, 40 and 50 ◦C, for the hydrogenation 
+process, an enthalpy of reaction (ΔH) equals to −27.96 ± 0.95 kJ⋅mol−1 
+and an entropy variation (ΔS) equals to −100.00 ± 3.09 J⋅mol-1K−1 
+were obtained. Whereas for the dehydrogenation process, the obtained 
+Table 1 
+Thermodynamic properties obtained from PCI curves for the as received, 50, 90, 130 and 160 ◦C aged LaNi5.
+Sample
+Temperature 
+(◦C)
+Hydrogenation
+Dehydrogenation
+Equilibrium pressure 
+(bar)
+Enthalpy 
+(kJ⋅mol¡1)
+Entropy (J⋅mol- 
+1K¡1)
+Equilibrium pressure 
+(bar)
+Enthalpy 
+(kJ⋅mol¡1)
+Entropy (J⋅mol- 
+1K¡1)
+As 
+received
+20
+1.76
+−27.96 ± 0.95
+−100.00 ± 3.09
+1.26
+30.73 ± 0.41
+106.69 ± 1.33
+​
+30
+2.54
+1.87
+​
+40
+3.52
+2.80
+​
+50
+5.17
+4.06
+50 ◦C aged
+20
+1.77
+−29.95 ± 0.13
+−106.89 ± 0.42
+1.10
+33.73 ± 0.81
+116.03 ± 2.63
+​
+30
+2.64
+1.83
+​
+45
+4.66
+3.32
+​
+55
+6.54
+4.88
+90 ◦C aged
+20
+1.50
+–32.99 ± 0.92
+−115.81 ± 2.96
+1.14
+32.77 ± 0.12
+112.85 ± 0.37
+​
+30
+2.31
+1.77
+​
+45
+4.15
+3.26
+​
+55
+6.44
+4.79
+130 ◦C 
+aged
+20
+1.45
+−29.68 ± 2.58
+−103.78 ± 8.33
+0.92
+34.44 ± 0.31
+116.78 ± 1.01
+​
+30
+1.87
+1.45
+​
+45
+3.40
+2.77
+​
+55
+5.25
+4.18
+160 ◦C 
+aged
+20
+0.68
+−21.50 ± 2.29
+−69.60 ± 7.38
+0.42
+29.40 ± 0.36
+92.98 ± 1.18
+​
+30
+0.78
+0.61
+​
+45
+1.28
+1.06
+​
+55
+1.67
+1.51
+Y. Shang et al.                                                                                                                                                                                                                                   
+Chemical Engineering Journal 510 (2025) 161682 
+3 
+
+values were ΔH = 30.73 ± 0.41 kJ⋅mol−1 and ΔS = 106.69 ± 1.33 
+J⋅mol-1K−1. The kinetic properties of the materials at 20, 30, 40 and 
+50 ◦C are reported in Fig. 1d. From these measurements, a hydrogen 
+storage capacity of the as received material of around 1.25 wt% is 
+observed. For all the investigated temperatures, the hydrogenation 
+process is faster than the dehydrogenation process. For all temperatures 
+tested, the hydrogenation process takes less than 1 min to reach 90 % of 
+the entire hydrogenation capacity (Fig. 1e). Under all temperatures 
+investigated, the dehydrogenation process takes less than 6 min; how­
+ever, as the temperature decreases, the reaction rate steadily decreases.
+3.2. Accelerated aging tests
+To identify potential aging phenomena, accelerated aging tests were 
+carried out. The applied temperatures and hydrogen pressures for the 
+accelerated aging test were selected based on the equilibrium pressur­
+e–temperature curves of the as received LaNi5 and based on a hypo­
+thetical practical operating temperature of 50 ◦C in a hydrogenated 
+state. To know the conditions of pressure and temperature where the 
+material is in a fully hydrogenated state, a series of PCI measurements 
+were carried out, see Fig. 1a. From the obtained data (Table 1), an 
+equilibrium pressure curve was extrapolated for temperatures up to 
+200 ◦C, see Fig. 2a. Based on this, the temperatures chosen for aging the 
+as received material were 50, 90, 130 and 160 ◦C at hydrogen pressures 
+of 20, 35, 58 and 96 bar, respectively. The temperatures for the accel­
+erated aging measurements were chosen arbitrarily in a way that sig­
+nificant information on the material’s aging in a reasonable time frame 
+could be acquired, taking into account the instrumental limitations of 
+the setup (e.g., 100 bar maximum hydrogen pressure applicable to 
+prevent the metal hydride from decomposing). The tests were performed 
+on the setup shown in Fig. 2b. The specimens were kept under constant 
+temperature and pressure conditions for 90 days.
+Fig. 3a exhibits the PCI curves of the material aged at 50 ◦C for 90 
+days measured at 20, 30, 45 and 55 ◦C. After aging at 50 ◦C for 90 days, 
+the measured hydrogen storage capacity is around 1.22 wt%, which is 
+comparable to that of the as received material. As can be seen in Table 1, 
+the PCI’s curves measured at 20 and 30 ◦C show hydrogenation plateau 
+pressures higher (0.01 to 0.1 bar) than those of the as received materials. 
+However, for the dehydrogenation plateau pressures at 20 and 30 ◦C, the 
+values are ca. 0.16 and 0.04 bar lower than those of the as received 
+material. The hydrogenation and dehydrogenation plateau pressures at 
+45 ◦C are 4.66 and 3.32 bar, respectively. Whereas the hydrogenation 
+and dehydrogenation plateau pressures at 55 ◦C are 6.54 and 4.88 bar, 
+respectively. This indicates that after aging, the difference between 
+hydrogenation and dehydrogenation, i.e. hysteresis, increases. Fig. 3b 
+and c illustrate the van’t Hoff plots and associated hydrogenation and 
+dehydrogenation ΔH and ΔS values for LaNi5 aged at 50 ◦C. For the 
+hydrogenation process, ΔH = −29.95 ± 0.13 kJ⋅mol−1 and ΔS =
+−106.89 ± 0.42 J⋅mol-1K−1 were determined, whereas for the dehy­
+drogenation process, ΔH = 33.73 ± 0.81 kJ⋅mol−1; ΔS = 116.03 ± 2.63 
+J⋅mol-1K-1were obtained. The values for the ΔH and ΔS are greatly 
+different from the as received materials, indicating that the material’s 
+microstructure may be changed due to aging.
+Similar to at 50 ◦C, Fig. 3d displays the PCI curves of the material 
+aged at 90 ◦C for 90 days. The material has a hydrogen storage capability 
+of around 1.2 wt%. Also in this case, the hydrogenation plateau pres­
+sures for the curves measured at 20 and 30 ◦C are 0.24 and 0.44 bar 
+higher than the values of the as received LaNi5. The dehydrogenation 
+plateau pressures at 20 and 30 ◦C are 1.14 and 1.77 bar, respectively. 
+The hydrogenation plateau pressures at 45 and 55 ◦C are 4.15 and 6.44 
+bar, respectively. The dehydrogenation plateau pressures at 45 and 
+55 ◦C are 3.26 and 4.79 bar, respectively, see Table 1. The corresponding 
+ΔH and ΔS for hydrogenation and dehydrogenation are ΔH = –32.99 ±
+0.92 kJ⋅mol−1 and ΔS = −115.81 ± 2.96 J⋅mol-1K-1and ΔH = 32.77 ±
+0.12 kJ⋅mol−1 and ΔS = 112.85 ± 0.37 J⋅mol-1K−1, respectively (Fig. 3e 
+and f). In this case too, the ΔH and ΔS values differ significantly from 
+those of the materials received, although they are similar to the sample 
+that was aged for 90 days at 50 ◦C (Fig. 3b-c).
+The PCI curves of the material aged at 130 ◦C for 90 days at 20, 30, 
+45 and 55 ◦C in Fig. 3g demonstrate a material hydrogen storage ca­
+pacity of 1.05 wt%, thus significantly lower than the previously inves­
+tigated specimens. Additionally, for the curves measured at 20 and 
+30 ◦C, the average hydrogenation plateau pressures (1.45 bar at 20 ◦C 
+and 1.87 bar at 30 ◦C) are close to that of the as received materials but 
+the plateaus present significant slopes. Similar to previous aged samples, 
+the dehydrogenation plateau pressures at 20 and 30 ◦C for the 130 ◦C 
+aged sample are around 0.34 and 0.42 bar lower than the values for the 
+as received material. The hydrogenation plateau pressures at 45 and 
+55 ◦C are 3.40 and 5.25 bar, respectively. The dehydrogenation plateau 
+pressures at 45 and 55 ◦C are 2.77 and 4.18 bar, respectively, see 
+Table 1. From the calculations in Fig. 3h and i, the following values of 
+enthalpy and entropy variations for the hydrogenation and dehydroge­
+nation processes were obtained, i.e., ΔH = −29.68 ± 2.58 kJ⋅mol−1 and 
+ΔS = −103.78 ± 8.33 J⋅mol-1K−1, and ΔH = 34.44 ± 0.31 kJ⋅mol−1 and 
+ΔS = 116.78 ± 1.01 J⋅mol-1K−1.
+When aged at 160 ◦C for 90 days, the overall material hydrogen 
+storage capacity significantly decreases to 0.68 wt%, whereas the 
+plateau length is only 0.5 wt% (see Fig. 3j), and the plateaus are 
+markedly sloppy. At a given temperature, PCI curves should show a flat 
+plateau consequent to the continuous conversion between α phase (alloy 
+Fig. 2. Setup of the accelerated aging measurements. a Equilibrium pressure–temperature curves of the investigated LaNi5 materials and selected temperatures 
+and corresponding pressures for aging measurements. b Setup for the accelerated aging measurements for 90 days.
+Y. Shang et al.                                                                                                                                                                                                                                   
+Chemical Engineering Journal 510 (2025) 161682 
+4 
+
+Fig. 3. Thermodynamic properties of the materials after accelerated aging tests. a PCI curves of the material aging at 50 ◦C for 90 days. b, c The corresponding 
+ΔH and ΔS for hydrogenation and dehydrogenation of 50 ◦C aged LaNi5, respectively. d PCI curves of the material aging at 90 ◦C for 90 days. e, f The corresponding 
+ΔH and ΔS for hydrogenation and dehydrogenation of 90 ◦C aged LaNi5, respectively. g PCI curves of the material aging at 130 ◦C for 90 days. h, i The corresponding 
+ΔH and ΔS for hydrogenation and dehydrogenation of 130 ◦C aged LaNi5, respectively. j The PCI curves of the material aging at 160 ◦C for 90 days. k, l The 
+corresponding ΔH and ΔS for hydrogenation and dehydrogenation of 160 ◦C aged LaNi5, respectively.
+Y. Shang et al.                                                                                                                                                                                                                                   
+Chemical Engineering Journal 510 (2025) 161682 
+5 
+
+Fig. 4. Kinetic properties of the materials after accelerated aging tests. a-d Hydrogenation and dehydrogenation kinetic curves (at 20, 30, 40 and 50 ◦C) of the 
+50 ◦C, 90 ◦C, 130 ◦C and 160 ◦C aged materials, respectively. The hydrogenation pressures are around 45 bar of hydrogen, whilst the dehydrogenation pressures are 
+around 0.5 bar of hydrogen. e-h The time needed to reach 90 % of the overall hydrogenation and dehydrogenation capacities for the 50 ◦C, 90 ◦C, 130 ◦C and 160 ◦C 
+aged materials, respectively.
+Y. Shang et al.                                                                                                                                                                                                                                   
+Chemical Engineering Journal 510 (2025) 161682 
+6 
+
+−
+hydrogen solid solution) and β phase (hydride phase), but metal hy­
+drides often do not exhibit a perfectly flat plateau due to local chemical 
+inhomogeneities. This is the case of the materials investigated in this 
+work. In the case of the 160 ◦C aged sample, the PCI measurements do 
+not show clear plateaus. To keep consistency with the other samples, the 
+pressure values in the middle of the absorption curve were considered 
+for determining the hydrogenation/dehydrogenation enthalpies and 
+entropies. The identification of the material aging mechanism did not 
+take the pressure values of 160 ◦C aged sample into account. The hy­
+drogenation plateau pressures at 20 and 30 ◦C significantly decrease to 
+Fig. 5. Synchrotron radiation powder X-ray diffraction (SR-PXD) analyses of the as received and aged materials (λ ¼ 0.2074 Å). a SR-PXD patterns of the 
+sample as received and the samples aged at 50, 90, 130 and 160 ◦C for 90 days. b Lattice constants and c to a ratios of the sample as received and the samples aged at 
+50, 90, 130 and 160 ◦C for 90 days. c Lattice strains of some lattice planes for the sample as received and the samples aged at 50, 90, 130 and 160 ◦C for 90 days. 
+d The change of full width at half maximum (FWHM) for the sample as received and the samples aged at 50, 90, 130 and 160 ◦C for 90 days.
+Fig. 6. Defects analyses from SR-PXD data (λ ¼ 0.2074 Å) for the sample as received and the samples aged at 50, 90, 130 and 160 ◦C for 90 days. a Physical 
+line broadening ΔK versus KC1/2 by using the modified Williamson-Hall method. Where K is the peak position and C is the average contrast factor. b Dislocation 
+densities of the sample as received and the samples aged at 50, 90, 130 and 160 ◦C for 90 days.
+Y. Shang et al.                                                                                                                                                                                                                                   
+Chemical Engineering Journal 510 (2025) 161682 
+7 
+
+0.67 and 0.78 bar, respectively. Compared to the dehydrogenation 
+plateau pressures for the as received LaNi5, the values at 20 and 30 ◦C 
+decrease to 0.42 and 0.61 bar, respectively. The hydrogenation plateau 
+pressures at 45 and 55 ◦C are 1.28 and 1.67 bar, respectively. The 
+dehydrogenation plateau pressures at 45 and 55 ◦C are 1.06 and 1.51 
+bar, respectively, see Table 1. The corresponding ΔH and ΔS for hy­
+drogenation and dehydrogenation are shown in Fig. 3k and l, respec­
+tively. The absolute enthalpy and entropy values for both hydrogenation 
+and dehydrogenation are smaller than those of the previously mentioned 
+samples. For the hydrogenation process, ΔH = −21.50 ± 2.29 kJ⋅mol−1 
+and ΔS = −69.60 ± 7.38 J⋅mol-1K−1; For the dehydrogenation process, 
+ΔH = 29.40 ± 0.36 kJ⋅mol−1 and ΔS = 92.98 ± 1.18 J⋅mol-1K−1. 
+However, due to the fact that the obtained ΔH and ΔS for the 160 ◦C 
+aged sample have large errors, they were not used for subsequent aging 
+calculations.
+The kinetic properties of the 50 ◦C aged material at 20, 30, 40 and 
+50 ◦C are shown in Fig. 4a. The overall capacity of the sample is about 
+1.18 wt%. The hydrogenation process can reach 90 % capacity within 1 
+min at all the investigated temperatures, see Fig. 4e. For the dehydro­
+genation process, it is worth noting that the dehydrogenation at 20 ◦C 
+proceeds rather slowly, and only 0.70 wt% of hydrogen can be released 
+within the timeframe of 30 min. When the dehydrogenation tempera­
+ture increases, the time decreases to less than 6 min. Fig. 4b shows the 
+results of hydrogenation and dehydrogenation at 20, 30, 40 and 50 ◦C 
+for 90 ◦C aged LaNi5, with an overall hydrogen capacity of about 1.18 wt 
+%. Similar to the 50 ◦C aged sample, the hydrogenation process is 
+relatively faster than the dehydrogenation process, completing 90 % of 
+the reaction in less than 1 min. For the dehydrogenation process, only 
+0.75 wt% hydrogen can be released in 30 min at 20 ◦C. As the measuring 
+temperature is increased, the kinetic rates increase, as illustrated in 
+Fig. 4b and Fig. 4f. Under identical experimental conditions, the 
+hydrogen concentration of the sample aged at 130 ◦C is 0.99 wt%, as 
+illustrated in Fig. 4c. Note that there is a significant difference between 
+the dehydrogenation kinetic properties at 20, 30 ◦C and other 
+Fig. 7. Quasi-elastic neutron scattering spectrum of as received and 
+160 ◦C aged LaNi5, measured at 25 ◦C using 4.4 Å incident neutron. The red 
+line represents the fitting to the data with two components: Delta function (blue 
+line) and Lorentzian profile (green line). (For interpretation of the references to 
+colour in this figure legend, the reader is referred to the web version of 
+this article.)
+Fig. 8. Scanning electron microscope (SEM) results of the as received LaNi5. a, c, e Secondary electron (SE) images of the as received material at different 
+magnifications. b, d, f The corresponding backscattered electron (BSE) images of the as received material at different magnifications. g The particle size distribution 
+obtained by SEM. h The SE image of the as received material and corresponding energy dispersive X-ray spectroscopy (EDS) mapping for the elements of C, F, La, and 
+Ni, respectively.
+Y. Shang et al.                                                                                                                                                                                                                                   
+Chemical Engineering Journal 510 (2025) 161682 
+8 
+
+temperatures. For instance, only 0.43 and 0.77 wt% hydrogen can be 
+released when dehydrogenating for 30 min at 20 and 30 ◦C, respectively. 
+Whereas, the material can desorb 0.99 wt% hydrogen at 40 and 50 ◦C. 
+The 130 ◦C aged sample takes less than 0.8 min to reach 90 % of the total 
+hydrogenation hydrogen content than the other samples, as demon­
+strated in Fig. 4g. There are no significant differences in the dehydro­
+genation time between this material and the materials that were aged at 
+50 and 90 ◦C. Fig. 4d displays the hydrogenation and dehydrogenation 
+kinetics of the 160 ◦C aged sample measured at 20, 30, 40 and 50 ◦C. 
+Consistently with the PCI findings, this material has a hydrogen storage 
+capacity of 0.49 wt%. For all investigated temperatures, the time needed 
+to complete 90 % of the hydrogenation process is under 0.3 min 
+(Fig. 4h). Whereas, for all the investigated temperatures, the time 
+required to achieve 90 % of the dehydrogenation capacity is under 3 
+min. In particular, at 20 ◦C, these findings show that the hydrogenation 
+and dehydrogenation rates of the material as well as its achievable 
+hydrogen storage capacity are affected by material aging.
+Based on the PCI and kinetic curves, it is clear that the exposures to 
+increasing temperatures and pressures affect the material properties 
+(including hydrogen storage capacity and thermodynamic properties) in 
+a discernible way, thus indicating that the aging effects are indeed 
+sensible. For understanding the reason behind the observed phenomena, 
+in-depth microstructural investigations were carried out via SR-PXD, 
+QENS, SEM-EDS and SAXS techniques in the following.
+3.3. Microstructure evolutions
+To analyze the microstructure evolution of the different specimens, 
+SR-PXD analyses of the samples before and after aging were carried out. 
+The SR-PXD pattern of the as received material (Fig. 5a) indicates that 
+LaNi5 is the main phase in all samples, with no detectable reflections 
+corresponding to other phases such as Ni or La. However, due to the 
+aging process, the intensities for different Bragg reflection peaks were 
+changed. For example, the intensities of the (1–1–1) and (2–2–2) re­
+flections decrease after aging, while the intensities of the (200) and 
+(002) reflections show clear increments after aging. Note that the in­
+tensities of the peaks were normalized to ensure that the comparison is 
+meaningful. Fig. 5b illustrates the lattice constants of the samples. LaNi5 
+crystallizes in the hexagonal structure of space group P6/mmm. The 
+lattice constants a and c obtained for the as received sample are 5.0242 
+± 1.9 × 10-4 Å and 3.9822 ± 8.5 × 10-4 Å, respectively and the c/a ratio 
+is equal to 0.793. The c value for samples aged at 50, 90, and 130 ◦C 
+exhibits a clear increasing trend. The a values decrease after aging 
+except for the sample aged at 160 ◦C. Additionally, a noticeable increase 
+in the c/a ratio is observed. These changes reveal that there may be some 
+residual compressive stresses on the a-axis and some residual tensile 
+stresses on the c-axis after the aging studies.
+Understanding the evolution of the lattice strain is apparently 
+essential for revealing the aging mechanism. The lattice strain (ε) for 
+each lattice plane was calculated by the following equation: 
+εhkl = dhkl −dhkl,0
+dhkl,0
+(4) 
+where dhkl is the d-spacing of the hkl lattice plane, and dhkl,0 is the d- 
+spacing of the hkl lattice plane of the reference samples, in this case, the 
+as received LaNi5. As can be seen in Fig. 5c, the lattice strain depends on 
+the crystallographic planes, indicating the materials’ behavior during 
+aging is anisotropic. The (001) plane shows the largest lattice strain, 
+which means that this plane has the lowest elastic stiffness by assuming 
+the stress for each material is identical. Also notice that the lattice strain 
+on most of the planes increases after aging. The changes of FWHM were 
+also calculated, see Fig. 5d. The FWHM increases after aging for all 
+planes, especially for the (200). Note that particle size decrement and 
+Fig. 9. SEM results of the LaNi5 material aging at 50 ◦C for 90 days. a, c, e SE images of the 50 ◦C aged material at different magnifications. b, d, f The 
+corresponding BSE images of the 50 ◦C aged material at different magnifications. g The particle size distribution obtained by SEM. h The SE image of the 50 ◦C aged 
+material and corresponding EDS mapping for the elements of C, F, La, and Ni, respectively.
+Y. Shang et al.                                                                                                                                                                                                                                   
+Chemical Engineering Journal 510 (2025) 161682 
+9 
+
+lattice strain increment are potential causes of peak broadening.
+To further unveil the reason behind the observed aging phenomena, 
+the parameters related to defects, such as dislocation density (ρ) were 
+analyzed by using the SR-PXD data. Williamson and Hall [12] proposed 
+that the physical line broadening ΔK can be determined by the following 
+equations: 
+ΔK = 0.9
+D + εK
+(5.1) 
+ΔK = 2Δθ cosθ
+λ
+(5.2) 
+K = 2sinθ
+λ
+= q
+2π
+(5.3) 
+where D is the crystallite size, Δθ is the FWHM in the SR-PXD patterns, λ 
+is the wavelength and ε is the lattice strain. The relation between lattice 
+strain and dislocation density can be written as: 
+ρ = B
+(ε
+b
+)2
+(6) 
+where b is the length of the Burgers vector, and B is a uniform parameter 
+related to the elastic modulus and dislocation configuration of the 
+material.
+However, if we consider that the elastic module for the lattice is 
+anisotropic, dislocations on a specific crystal plane cause different dis­
+tortions on different crystal planes. Therefore, the value of B is influ­
+enced by the anisotropic behavior of the material. Ung´ar and Borb´ely 
+[13] considered the distortion caused by dislocations on different crystal 
+planes, and pointed out to use the average contrast factor (C) to modify 
+the K parameter, which is called the modified Williamson-Hall method: 
+ΔK = 0.9
+d +
+(
+πM2b2
+2
+)1
+2
+ρ
+1
+2KC
+1
+2 + O
+(
+K2C
+)
+(7) 
+where O(K2C) is a high-order term of KC1/2 and is usually ignored. M is a 
+parameter that depends on the effective outer cut-out radius (Re) of 
+dislocations and the dislocation density (M = Reρ
+1
+2 [14], of which ln Re
+b =
+2π). The value of C is affected by the elastic constants, dislocation type 
+and crystal plane index. For the hexagonal structure, C is given by the 
+following equation [15,16]: 
+C = Chk,0
+(
+1 + q1H2
+1 + q2H2
+2
+)
+(8) 
+of which H2
+1 =
+[h2+k2+(h+k)2 ]l2
+[
+h2+k2+(h+k)2+3
+2
+(
+a
+c
+)2
+l2
+]2 and H2
+2 =
+l4
+[
+h2+k2+(h+k)2+3
+2
+(
+a
+c
+)2
+l2
+]2. 
+Here, the h, k and l are the Miller indices corresponding to each 
+diffraction peak. The C values in this case were calculated by using the 
+ANIZC [17] software.
+Note that the instrumental broadening also contributes to the profile 
+line broadening of the samples, therefore, it has to be deducted before 
+calculating the ρ values. Here we used the following function to get the 
+peak broadening from the samples: 
+ΔKsample =
+(
+ΔK2
+mesaure −ΔK2
+instrument
+)1
+2
+(9) 
+where ΔKmeasure and ΔKinstrument are the peak broadening values from the 
+Fig. 10. SEM results of the LaNi5 material aging at 90 ◦C for 90 days. a, c, e SE images of the 90 ◦C aged material at different magnifications. b, d, f The 
+corresponding BSE images of the 90 ◦C aged material at different magnifications. g The particle size distribution obtained by SEM. h The SE image of the 90 ◦C aged 
+material and corresponding EDS mapping for the elements of C, F, La, and Ni, respectively.
+Y. Shang et al.                                                                                                                                                                                                                                   
+Chemical Engineering Journal 510 (2025) 161682 
+10 
+
+measurement and instrument, respectively. The instrumental broad­
+ening was obtained from the standard LaB6 material.
+By applying linear fitting of the ΔK versus KC1/2 (Fig. 6a), the value 
+of ρ can be obtained from the slope. The obtained dislocation densities 
+for each sample are shown in Fig. 6b. If we assume that all the dislo­
+cations in the samples are edge dislocations, we can see that for the as 
+received LaNi5, the dislocation density is 6.72 × 1014 m−2. After aging, 
+the dislocation density increases gradually with temperature, where the 
+dislocation density is around 16.77 × 1014 m−2 for the sample aged at 
+160 ◦C, which is more than 2 times of that for the as received material. If 
+we would assume that all the dislocations are screw dislocations, the 
+dislocation densities are smaller than those for edge dislocation, but 
+with aging at different temperatures, the same trend is observed. The 
+results indicate that aging has a strong influence on the dislocation 
+density and thus affects the materials’ properties.
+The QENS spectra of the as received and 160 ◦C aged samples are 
+shown in Fig. 7. These measured spectra were fitted according to Eq. 
+(3). The fit comprises two components: an elastic contribution repre­
+sented by the Delta function, δ(ω), and a quasi-elastic broadening 
+component described by the Lorentzian function L(Q,ω). The spectra of 
+both samples appear similar, suggesting a comparable chemical envi­
+ronment across the samples. Furthermore, the fit results show no quasi- 
+elastic broadening, indicating the absence of observable motion in these 
+samples. The results are in good agreement with the SR-PXD data, 
+indicating that there is no hydrogen-related phase presented in all aged 
+samples even for the LaNi5 aged at the highest temperature (160 ◦C) for 
+90 days.
+Scanning electron microscopy with SEM-EDS was used to study the 
+material particles’ morphology and particle size distribution. Addi­
+tionally, the mapping of elemental distribution was carried out. SEM 
+images of the as received material are shown in Fig. 8. Both the sec­
+ondary electron (SE) and backscattered electron (BSE) images (Fig. 8a-f) 
+show that the size distribution of metal hydride particles is not homo­
+geneous, while the metal hydride particles are embedded well in Teflon. 
+For each sample, 200 particles were selected, and their size was 
+measured using ImageJ software. This data was subsequently analyzed 
+and fitted to a Gaussian distribution model, yielding the average particle 
+size. The average particle length of the as received material was calcu­
+lated to be 28.96 μm, see Fig. 8g. From the EDS mappings for the ele­
+ments of C, F, La, and Ni (Fig. 8h), it appears clear that the LaNi5 metal 
+hydride is embedded in a polymeric matrix. One particle of the metal 
+hydride was selected to check the elemental composition, see Fig. S1. 
+The quantitative results are shown in Table S1. Although the atomic 
+ratios between La and Ni are not exactly 5:1, they are still in the range of 
+4:1 to 5:1, confirming that the investigated phase is LaNi5.
+Images from SEM of the material after 90 days of aging at 50 ◦C 
+indicate that the size of metal hydride particles is smaller than that of the 
+as received material. Cracks are visible in some particles (Fig. 9a-f). As 
+clearly shown in Fig. 9g, the average particle size decreases to 16.77 μ m 
+in comparison to Fig. 8g. It is evident from the EDS mappings (Fig. 9h) 
+that the LaNi5 metal hydride is embedded in the Teflon. Next, the 
+elemental compositions of a single metal hydride particle in three sites 
+were determined, as shown in Fig. S2, where Table S2 summarizes the 
+relevant EDS quantitative results. Since La and Ni appear always in 
+combination and with the ratio close to 1 to 5, the main phase after aging 
+at 50 ◦C is still LaNi5.
+For the material aged at 90 ◦C for 90 days, SE and BSE images in 
+Fig. 10a-f illustrate that the size of metal hydride particles decreases, 
+and several micro-cracks are present in some particles. The average 
+particle size further decreases to 9.06 μ m, as displayed in Fig. 10g. From 
+the EDS mappings for the elements of C, F, La, and Ni in Fig. 10h, It is 
+evident that the distribution of Ni and La share an abundance of simi­
+larities and consistency. The elemental compositions (see Table S3) of 
+some selected spots in Fig. S3 also prove that the precipitation of LaH 
+Fig. 11. SEM results of the LaNi5 material aging at 130 ◦C for 90 days. a, c, e SE images of the 130 ◦C aged material at different magnifications. b, d, f The 
+corresponding BSE images of the 130 ◦C aged material at different magnifications. g The particle size distribution obtained by SEM. h The SE image of the 130 ◦C 
+aged material and corresponding EDS mapping for the elements of C, F, La, and Ni, respectively.
+Y. Shang et al.                                                                                                                                                                                                                                   
+Chemical Engineering Journal 510 (2025) 161682 
+11 
+
+and Ni did not occur.
+The SEM analyses of the material aged at 130 (Fig. 11) and 160 ◦C 
+(Fig. 12), similar to the samples aged at 50 and 90 ◦C, present sizes of 
+metal hydride particles smaller than that of the as received materials. 
+Several cracks in the particles are observed in this case too. Note that the 
+average particle sizes for 130 ◦C aged and 160 ◦C aged samples are 10.55 
+(Fig. 11g) and 15.59 μ m (see Fig. 12g), respectively. The EDS mappings 
+for the elements of C, F, La, and Ni in Fig. 11h and Fig. 12h demonstrate 
+that the distributions of these elements are homogeneous. The EDS 
+findings for several selected spots for the 130 ◦C aged (Fig. S4 and 
+Table S4) and 160 ◦C aged (Fig. S5 and Table S5) samples indicate that 
+the overall specimen consists of LaNi5. In summary, micro-cracks were 
+detected in the aged samples, but not in the as received material. The 
+lattice expansion induced by hydrogenation during aging can be the 
+predominant factor for this [18]. Upon hydrogenation, the cell volume 
+expansion of LaNi5 can reach values from 20 % up to 27 % [19]. Other 
+factors such as temperature and hydrogen pressure can minorly 
+contribute to the lattice expansion. As can be seen in Fig. 10f-11f, the 
+fracture in the alloy powders is transverse, implying a hydrogenation- 
+induced micro-crack mechanism, which is in good agreement with the 
+results reported by Kastrissios et al. [20]. It is crucial to note that since 
+the hydrogenation does not occur in all locations at the same time, the 
+stresses caused by the mismatch between the metal and metal hydride 
+matrixes will then cause cracks to form and propagate [20]. The ana­
+lyses indicate that within the resolution of SEM, the average particle size 
+of the LaNi5 after aging gets smaller than the as received material, 
+although it does not linearly depend on the aging temperature. It is 
+important to point out that the observed changes are merely a few mi­
+crometers, despite SEM analyses revealing that the average particle sizes 
+for samples aged at 130 and 160 ◦C (10.55 and 15.59 μm, respectively) 
+exceed those of samples aged at 90 ◦C (9.06 μm). The selection of only 
+200 particles for quantitative analysis may have contributed to the 
+observed discrepancies, as the particle size distribution within the 
+sample was not homogeneous. In addition, no phase segregation of 
+LaNi5 was observed after aging.
+As these results clearly show, the aging process of the samples has 
+been accompanied by structural changes at the microscopic level. To 
+further detail these changes, the material microstructural features in the 
+nanoscale were investigated via the SXAS technique. The experimental 
+data and the fitted curves for all samples are shown in Fig. 13a-e, and the 
+corresponding size distributions are shown in Fig. 13f-k. For the fitting 
+of the scattering curves, a spherical geometry of the particle distribution 
+was assumed, as a first approximation. Due to the system’s complexity, 
+the particle size distributions were analyzed using SASfit software, 
+employing a Log-Normal distribution fitting, which yielded results that 
+closely matched the experimental data (Fig. 13). From the size distri­
+bution of the samples, we can see a clear trend in the decrement of 
+particle sizes with respect to increasing of aging temperatures. The 
+average particle sizes, in the observed q-range of the SAXS setup, for the 
+as received LaNi5 are roughly 116.6 nm, whereas for those aged at 50, 
+90, 130 and 160 ◦C are about 82.3, 58, 54.9 and 38 nm, respectively. The 
+particle sizes are significantly reduced with aging, which further sup­
+ports the microscopic SEM findings at the nanoscopic scales. Therefore, 
+in general, it can be stated that the aging process of the LaNi5 leads to an 
+overall structural refinement of the system.
+3.4. Aging mechanisms
+In this section, the aim is to acquire information on the material 
+behavior after a lifetime of 12 years. Therefore, a lifetime model should 
+be obtained from the accelerated aging tests. Two essential parameters 
+were considered for expressing the hydrogen storage properties of the 
+materials. One parameter is the hydrogen storage capacity, reflecting 
+the hydrogen content in the metal hydrides, while the other is the 
+Fig. 12. SEM results of the LaNi5 material aging at 160 ◦C for 90 days. a, c, e SE images of the 160 ◦C aged material at different magnifications. b, d, f The 
+corresponding BSE images of the 160 ◦C aged material at different magnifications. g The particle size distribution obtained by SEM. h The SE image of the 160 ◦C 
+aged material and corresponding EDS mapping for the elements of C, F, La, and Ni, respectively.
+Y. Shang et al.                                                                                                                                                                                                                                   
+Chemical Engineering Journal 510 (2025) 161682 
+12 
+
+Fig. 13. Small-angle X-ray scattering (SAXS) data of the as received material as well as the materials aging for 90 days at 50, 90, 130 and 160 ◦C. a-e 
+Experimental and fitting data of as received material as well as the materials aging for 90 days at 50, 90, 130 and 160 ◦C. f-k Size distributions of the particles 
+obtained from a-e for the as received material as well as the materials aging for 90 days at 50, 90, 130 and 160 ◦C.
+Y. Shang et al.                                                                                                                                                                                                                                   
+Chemical Engineering Journal 510 (2025) 161682 
+13 
+
+equilibrium dehydrogenation pressure, which reflects the thermody­
+namic characteristics of the metal hydrides. First, the plateau capacity 
+was taken as one factor and the data aging for 90 days for fitting was 
+utilized. In this case, α = ΔCapacity/t, where ΔCapacity is the capacity 
+change compared to the original capacity, and t is the aging time. 
+Fig. 14a shows the relationship between the aging factor of hydrogen 
+storage capacity and the temperature. The linear regression shows that 
+the fitted equation is ln(ΔCapacity/t) = 8.77697 −8915.22823/T. 
+Therefore, based on this equation, we can calculate that after 12 years, if 
+operating at 30 ◦C, ΔCapacity is around 0.152 % of the original plateau 
+capacity (0.0016 wt%). In the case of operating at 50 ◦C for 12 years, 
+ΔCapacity is around 0.415 % of the original plateau capacity (0.0044 wt 
+%).
+Secondly, we took the equilibrium pressure for dehydrogenation at 
+30 ◦C as one factor and used the data of aging for 90 days for fitting. 
+Fig. 14b exhibits the relationship between the aging factor of equilib­
+rium pressure for hydrogenation and the temperature. In this case, α =
+ΔPeq/t, where ΔPeq is the equilibrium pressure change compared to the 
+original value, and t is the aging time. The linear regression shows that 
+the fitted equation is ln
+(
+ΔPeq/t
+)
+= −2.13849 −4232.96495/T. Based 
+on this equation, we can calculate that after 12 years, if operating at 
+30 ◦C, ΔPeq for 30 ◦C might decrease around 38.47 % of the original 
+equilibrium pressure. If operating at 50 ◦C for 12 years, ΔPeq for 30 ◦C 
+might decrease around 91.28 % of the original equilibrium pressure.
+From the microstructure characterizations, it is clear that no phase 
+segregation was observed after aging. This is quite interesting since, 
+according to some earlier research [21], cycling studies indicate that 
+phase segregation to LaH and Ni may be the source of the LaNi5 dete­
+rioration. Therefore, after careful study, it can be concluded that the 
+LaNi5 hydrogen storage properties’ degradation is not related to the 
+formation of new phases, which gives a new perspective on the regen­
+eration/reactivation of LaNi5. From one point of view, we noticed that 
+after aging, the dislocation density increases and particle size decreases, 
+indicating that the degradation may mainly come from the nano­
+structuring of the materials. The hydrogen pressure stresses the LaNi5 
+lattice, which causes the lattice strain to rise. This raises the lattice 
+parameter of c, which in turn impacts the concentration of defects, 
+primarily dislocation density. It can be observed that the particle size 
+also reduces with aging because, after strain accumulates up to a certain 
+level, some cracks begin to form in order to release the strain. Even 
+though it isn’t included in this study, the findings will make it easier for 
+the degraded materials to regenerate or reactivate by applying heat 
+treatments to the samples to relieve any remaining strain inside the 
+lattice. From another point of view, despite thermodynamic 
+expectations, the precipitation of LaH and Ni during aging was not 
+observed in this work. However, previous studies have demonstrated 
+that the precipitation of LaH and Ni occurs upon thermal or pressure 
+cycling [22–26]. This finding can be related to the fact that static con­
+ditions were applied in this study (the material was continuously in the 
+hydrogenated state). Whereas in the works reported in the literature, by 
+extensive cycling, the material has been subjected to continuous 
+expansive and contractive forces that locally might have generated 
+stresses, which led to the overcoming of the precipitation barrier of LaH 
+and Ni. One possible explanation for the degradation of the storage 
+capacity is that during aging, the overall hydrogen sites may be lost due 
+to samples’ continued cracking, formation of grain boundaries and 
+localized amorphization.
+4. Conclusions
+A series of tests were performed on LaNi5 materials and the results 
+obtained from the accelerated aging tests indicate that after 12 years, the 
+materials’ capacity degradation lies between around 0.152 % (operating 
+at 30 ◦C) and 0.415 % (operating at 50 ◦C) of the original capacity. After 
+12 years, the plateau pressure for dehydrogenation at 30 ◦C will 
+decrease from around 38.47 % (operating at 30 ◦C) to 91.28 % (oper­
+ating at 50 ◦C). No phase segregation was observed after aging but only 
+the dislocation density increases and particle size decreases, indicating 
+that the degradation may mainly come from the nanostructuring of the 
+materials. This work provides some insights into the designing strategies 
+for predicting the degradation of the metal hydride’s hydrogen storage 
+properties and bodes well for providing practical guidance and methods 
+to prolong the metal hydride life for the manufacturers. This work sheds 
+light on how to establish approaches for predicting degradation of the 
+metal hydrides’ hydrogen storage properties. It also paves the way for 
+offering manufacturers useful guidance and strategies to prolong the 
+metal hydrides’ life.
+CRediT authorship contribution statement
+Yuanyuan Shang: Writing – original draft, Visualization, Valida­
+tion, Methodology, Investigation, Data curation, Conceptualization. 
+Ting Chen: Writing – review & editing, Investigation. Fahim Karimi: 
+Writing – review & editing, Investigation. Thi Thu Le: Writing – review 
+& editing, Data curation. Jürgen Markmann: Writing – review & 
+editing, Resources. Jan Peter Embs: Visualization, Resources. 
+Benjamin Klusemann: Writing – review & editing, Resources. Thomas 
+Klassen: Supervision, Project administration, Funding acquisition. 
+Claudio Pistidda: Writing – review & editing, Supervision, Resources, 
+Fig. 14. a Temperature dependency of the aging factor of hydrogen storage capacity over temperature for tests performed for 90 days together with a linear 
+regression. b Temperature dependency of the aging factor of dehydrogenation equilibrium pressure at 30 ◦C over temperature for tests performed for 90 days 
+together with a linear regression.
+Y. Shang et al.                                                                                                                                                                                                                                   
+Chemical Engineering Journal 510 (2025) 161682 
+14 
+
+Project administration, Funding acquisition.
+Declaration of competing interest
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper.
+Acknowledgement
+This research was partially funded by dtec.bw – Digitalization and 
+Technology Research Center of Bundeswehr which we gratefully 
+acknowledge. We acknowledge DESY (Hamburg, Germany), a member 
+of the Helmholtz Association HGF, for the provision of experimental 
+facilities. Parts of this research were carried out at PETRA III and we 
+would like to thank Dr. Alexander Sch¨okel for assistance in using photon 
+beamline P02.1. Beamtime was allocated for proposal I-20231121.
+Appendix A. Supplementary data
+Supplementary data to this article can be found online at https://doi. 
+org/10.1016/j.cej.2025.161682.
+Data availability
+Data will be made available on request.
+References
+[1] R.G. Ross, Aerospace coolers: a 50-year quest for long-life cryogenic cooling in 
+space, Cryogenic Engineering, Springer (2007) 225-284, https://doi.org/10.1007/ 
+0-387-46896-X_11.
+[2] H.S. Cao, B.Q. Liu, L.X. Qin, Sorption cryogenic cooling: Fundamentals, progress, 
+and outlook, Appl. Therm. Eng. 213 (2022) 118680, https://doi.org/10.1016/j. 
+applthermaleng.2022.118680.
+[3] R.C. Bowman, Metal Hydride Compressors with Gas-Gap Heat Switches: Concept, 
+Development, Testing, and Space Flight Operation for the Planck Sorption 
+Cryocoolers, Inorganics 7 (12) (2019) 139, https://doi.org/10.3390/ 
+inorganics7120139.
+[4] R. Levenduski, R. Scarlotti, Joule-Thomson cryocooler for space applications, 
+Cryogenics 36 (1996) 859–866, https://doi.org/10.1016/0011-2275(96)00049-5.
+[5] K. Malleswararao, P. Dutta, M.S. Srinivasa, Applications of metal hydride based 
+thermal systems: A review, Appl. Therm. Eng. 215 (2022) 118816, https://doi.org/ 
+10.1016/j.applthermaleng.2022.118816.
+[6] M.V. Lototskyy, V.A. Yartys, B.G. Pollet, R.C. Bowman, Metal hydride hydrogen 
+compressors: A review, Int. J. Hydrogen Energ. 39 (2014) 5818–5851, https://doi. 
+org/10.1016/j.ijhydene.2014.01.158.
+[7] J.N. Yang, A. Zavabeti, Y.L. Guo, Z. Yu, L. Dehdari, J.N. Guo, C. Wu, D.Q. Wang, J. 
+M. Goh, P.Y. Xiao, G.K. Li, Recovery of low-concentration hydrogen using alloy 
+LaNi5 based pressure swing adsorption, Chem. Eng. J. 493 (2024) 152395, https:// 
+doi.org/10.1016/j.cej.2024.152395.
+[8] D. Pearson, R. Bowman, M. Prina, P. Wilson, The Planck sorption cooler: Using 
+metal hydrides to produce 20 K, J. Alloy Compd. 446 (2007) 718–722, https://doi. 
+org/10.1016/j.jallcom.2006.11.202.
+[9] J. Wise, K.T. Gillen, R.L. Clough, An Ultrasensitive Technique for Testing the 
+Arrhenius Extrapolation Assumption for Thermally Aged Elastomers, Polym. 
+Degrad. Stabil. 49 (1995) 403–418, https://doi.org/10.1016/0141-3910(95) 
+00137-B.
+[10] A.P. Hammersley, FIT2D: an introduction and overview, European synchrotron 
+radiation facility internal report, ESRF97HA02T 68 (1997) 58.
+[11] I. Bressler, J. Kohlbrecher, A.F. Thunemann, SASfit: a tool for small-angle 
+scattering data analysis using a library of analytical expressions, J. Appl. 
+Crystallogr. 48 (2015) 1587–1598, https://doi.org/10.1107/ 
+S1600576715016544.
+[12] G.K. Williamson, W.H. Hall, X-Ray Line Broadening from Filed Aluminium and 
+Wolfram, Acta Metall. Mater. 1 (1953) 22–31, https://doi.org/10.1016/0001-6160 
+(53)90006-6.
+[13] T. Ungar, A. Borbely, The effect of dislocation contrast on x-ray line broadening: A 
+new approach to line profile analysis, Appl. Phys. Lett. 69 (1996) 3173–3175, 
+https://doi.org/10.1063/1.117951.
+[14] O.B. Pedersen, The Flow-Stress of Copper, Acta Metall. Mater. 35 (1987) 
+2567–2581, https://doi.org/10.1016/0001-6160(87)90154-4.
+[15] T. Ung´ar, G. Rib´arik, L. Balogh, R. Thomas, O. Koc, M. Preuss, C.P. Race, 
+P. Frankel, Fractional densities and character of dislocations in different slip modes 
+from powder diffraction patterns, J. Nucl. Mater. 589 (2024) 154828, https://doi. 
+org/10.1016/j.jnucmat.2023.154828.
+[16] I.C. Dragomir, T. Ung´ar, Contrast factors of dislocations in the hexagonal crystal 
+system, J. Appl. Crystallogr. 35 (2002) 556–564, https://doi.org/10.1107/ 
+S0021889802009536.
+[17] A. Borb´ely, J. Dragomir-Cernatescu, G. Rib´arik, T. Ung´ar, Computer program 
+ANIZC for the calculation of diffraction contrast factors of dislocations in 
+elastically anisotropic cubic, hexagonal and trigonal crystals, J. Appl. Crystallogr. 
+36 (2003) 160–162, https://doi.org/10.1107/S0021889802021581.
+[18] E. Alvares, K. Sellschopp, B. Wang, S.Y. Kang, T. Klassen, B.C. Wood, T.W. Heo, 
+P. Jerabek, C. Pistidda, Multiscale modeling of metal-hydride interphases- 
+quantification of decoupled chemo-mechanical energies, Npj Comput Mater 10 
+(2024) 249, https://doi.org/10.1038/s41524-024-01424-1.
+[19] C. Briki, P. de Rango, S. Belkhiria, M.H. Dhaou, A. Jemni, Measurements of 
+expansion of LaNi5 compacted powder during hydrogen absorption/desorption 
+cycles and their influences on the reactor wall, Int J Hydrogen Energ 44 (2019) 
+13647–13654, https://doi.org/10.1016/j.ijhydene.2019.04.010.
+[20] T. Kastrissios, E. Kisi, S. Myhra, Hydrogen activation of LaNi5: Implications of 
+fracture mechanisms on hydriding properties, J. Mater. Sci. 30 (1995) 4973–4979, 
+https://doi.org/10.1007/BF01154511.
+[21] F.T. Zohra, C.J. Webb, K.E. Lamb, E.M. Gray, Degradation of metal hydrides in 
+hydrogen-based thermodynamic machines: A review, Int. J. Hydrogen Energ. 64 
+(2024) 417–438, https://doi.org/10.1016/j.ijhydene.2024.03.228.
+[22] S. Ono, K. Nomura, E. Akiba, H. Uruno, Phase Transformations of the LaNi5-H2 
+System, J. Less-Common Met. 113 (1985) 113–117, https://doi.org/10.1016/ 
+0022-5088(85)90153-5.
+[23] T. Matsumoto, A. Matsushita, A New Intermediate Hydride in the LaNi5-H2 System 
+Studies by Insitu X-Ray-Diffractometry, J. Less-Common Met. 123 (1986) 135–144, 
+https://doi.org/10.1016/0022-5088(86)90123-2.
+[24] J.E. Bonnet, P. Dantzer, H. Dexpert, J.M. Esteva, R. Karnatak, Modifications near 
+the Surface Owing to Hydrogen Cycling of the Intermetallics LaNi5 and LaNi5- 
+XAlx, J. Less-Common Met. 130 (1987) 491–495, https://doi.org/10.1016/0022- 
+5088(87)90146-9.
+[25] E.M. Gray, T.P. Blach, C.E. Buckley, Stability of the hydrogen absorption and 
+desorption plateaux in LaNi-H -: Part 5: H capacity, J. Alloy Compd. 293 (1999) 
+57–61, https://doi.org/10.1016/S0925-8388(99)00301-1.
+[26] M.L. Post, J.J. Murray, Calorimetric Identification of a Eutectoid Phase-Separation 
+in the Lani5-H-2 System at T Almost-Equal-to 350-K, J. Solid State Chem. 86 
+(1990) 160–163, https://doi.org/10.1016/0022-4596(90)90130-P.
+Y. Shang et al.                                                                                                                                                                                                                                   
+Chemical Engineering Journal 510 (2025) 161682 
+15 

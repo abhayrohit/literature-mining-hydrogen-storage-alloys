@@ -1,0 +1,12 @@
+﻿Alloy Name,Storage Capacity,Temperature Range,Pressure Range,Synthesis Method
+Ti0.16Cr0.24V0.6 alloy (Mg‑20 wt% composite),5.67 wt% hydrogen,270 °C,0.01 MPa,reactive ball milling
+Ti45Cr40Nb15,-,-,-,Melt spinning; melt spinning
+Ti45Cr40Nb15 (TiCrNbHx‑MS) BCC‑type alloy,-,-,-,arc melting (100–140 A) followed by melt‑spinning at 25 m/s
+Ti45Cr40Nb15Hx -MS,-,-,-,melt spinning then hydrogenation
+TiCrNb,-,-,-,melt spinning
+TiCrNb hydride,-,-,-,melt spinning
+TiCrNb-AC,-,-,-,as-cast
+TiCrNb-MS,2.83 wt% H2,25 °C to 150 °C,50 bar H2,melt spinning
+TiCrNbHx-MS,2.83 wt% H2; 2.83 wt% at 150 °C,25 °C to 150 °C; 310-370 °C,50 bar H2; 2.02-8.58 bar,"melt spinning, followed by rehydrogenation; melt spinning"
+TiCrVMn BCC alloy,-,"dehydrogenation at 290 °C (30 min), rehydrogenation at 100 °C (100 min)",-,-
+V-based BCC-type hydrogen storage alloy,4.0 wt% H2,-,-,-

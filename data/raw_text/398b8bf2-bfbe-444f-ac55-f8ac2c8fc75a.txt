@@ -1,0 +1,981 @@
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; January 29, 2025;14:24 ] 
+Available online at www.keaipublishing.com/en/journals/journal-of-magnesium-and-alloys/ 
+Journal of Magnesium and Alloys xxx (xxxx) xxx 
+www.elsevier.com/locate/jma 
+Full Length Article 
+TiCrNb hydride fabricated by melt spinning as the efﬁcient catalyst for 
+enhancing the hydrogen storage properties of MgH2 
+Houqun Xiao a , b , # , Luocai Yi a , # , Huxu Lei a , Yu Xu a , Xiaoxuan Zhang a , Huazhou Hu a , 
+Ruizhu Tang a , Qian Li c , ∗, Qingjun Chen a , ∗
+a Key Laboratory of Rare Earths, Jiangxi Institute of Rare Earths, Ganjiang Innovation Academy, Chinese Academy of Sciences, Ganzhou, 341000, China 
+b School of Intelligent Manufacturing and Materials Engineering, Gannan University of Science and Technology, Ganzhou 341000, China 
+c National Engineering Research Center for Magnesium Alloys, College of Materials Science and Engineering, Chongqing University, Chongqing 400044, 
+China 
+Received 18 October 2024; received in revised form 26 December 2024; accepted 7 January 2025 
+Available online xxx 
+Abstract 
+Magnesium hydride (MgH2 ) has garnered signiﬁcant attention as a promising material for high-capacity hydrogen storage. However, 
+its commercial application remains challenging due to the high operating temperature and slow reaction kinetics. In this study, melt-spun 
+Ti45 Cr40 Nb15 (with a BCC phase) hydride (designated as TiCrNbHx−MS) was synthesized and used to form a nano-multiphase composite to 
+improve the de-/rehydrogenation properties of MgH2 through ball milling. The incorporation of TiCrNbHx−MS was shown to signiﬁcantly 
+enhance the hydrogen de-/rehydrogenation properties of MgH2 . The MgH2 + 20 wt% TiCrNbHx−MS composite exhibits an appealing initial 
+dehydrogenation temperature of 163 °C and can absorb hydrogen at room temperature. Notably, it releases 5.8 wt% hydrogen in 700 s at 
+230 °C and recharges 4.3 wt% hydrogen in just 2 mins at 150 °C. Even after 100 cycles, it retains a reversible hydrogen capacity of 4.98 
+wt%. Kinetic analysis revealed that the dehydrogenation rate follows the Chou surface penetration model. Microstructural analysis showed 
+that the FCC phase of the melt-spun TiCrNbHx−MS hydride reversibly transformed into the BCC phase during the de-/rehydrogenation 
+process in the composite. Numerous phase interfaces were generated and uniformly dispersed on the MgH2 surface, providing additional 
+hydrogen diffusion pathways and heterogeneous nucleation sites for Mg/MgH2 , thereby further improving the hydrogen de-/rehydrogenation 
+kinetics of the system. This study offers valuable insights into the use of multiphase composites to enhance MgH2 performance. 
+© 2025 Chongqing University. Publishing services provided by Elsevier B.V. on behalf of KeAi Communications Co. Ltd. 
+This is an open access article under the CC BY license ( http://creativecommons.org/licenses/by/4.0/ ) 
+Peer review under responsibility of Chongqing University 
+Keywords: MgH2 ; BCC; Hydrogen storage; Structural evolution; Multiphasic composite. 
+1. Introduction 
+Hydrogen, the simplest element in the periodic table, has 
+increasingly emerged as a key component in addressing the 
+complex challenges of climate change and the energy cri- 
+sis. The global consensus is to develop hydrogen energy as 
+part of efforts to reduce carbon emissions and achieve energy 
+∗Corresponding author at: Key Laboratory of Rare Earths, Jiangxi Insti- 
+tute of Rare Earths, Ganjiang Innovation Academy, Chinese Academy of 
+Sciences, Ganzhou, 341000, China. 
+E-mail addresses: cquliqian@cqu.edu.cn (Q. Li), qjchen@gia.cas.cn (Q. 
+Chen) . 
+# These authors contributed equally to this work. 
+transformation [ 1 , 2 ]. However, ﬁnding a low-cost, efﬁcient, 
+reversible, and safe method for hydrogen storage remains 
+critical to the advancement of the hydrogen economy [ 3 , 4 ]. 
+Compared to storing hydrogen in its gaseous form, which 
+requires signiﬁcant compression, or in liquid form, which ne- 
+cessitates cooling to below −253 °C, solid-state hydrogen 
+storage offers greater potential in terms of safety and en- 
+ergy efﬁciency [ 5–7 ]. Early hydrogen storage materials, such 
+as LaNi5 , TiMn2 , and TiFe, could readily and reversibly ab- 
+sorb and release hydrogen under moderate conditions after 
+full activation. However, their low hydrogen storage capac- 
+ities (1.4–2.0 wt%) limit their practical application [ 8–10 ]. 
+Magnesium hydride (MgH2 ), by contrast, has attracted more 
+https://doi.org/10.1016/j.jma.2025.01.005 
+2213-9567/© 2025 Chongqing University. Publishing services provided by Elsevier B.V. on behalf of KeAi Communications Co. Ltd. This is an open access 
+article under the CC BY license ( http://creativecommons.org/licenses/by/4.0/ ) Peer review under responsibility of Chongqing University 
+Please cite this article as: H. Xiao, L. Yi, H. Lei et al., TiCrNb hydride fabricated by melt spinning as the efﬁcient catalyst for enhancing the hydrogen 
+storage properties of MgH2 , Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.01.005 
+
+2 
+H. Xiao, L. Yi, H. Lei et al. / Journal of Magnesium and Alloys xxx (xxxx) xxx 
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; January 29, 2025;14:24 ] 
+attention due to its high hydrogen storage capacity (7.6 wt%), 
+along with the abundance and low cost of magnesium [ 11 , 12 ]. 
+Despite these advantages, the high operating temperature re- 
+quired for dehydrogenation ( > 300 °C) and the slow hydro- 
+gen de-/rehydrogenation rates have hindered its large-scale 
+industrial use [ 13 , 14 ]. To overcome these challenges, a range 
+of modiﬁcation strategies, such as alloying, catalyst doping, 
+nanosizing, and compositing, have been widely explored to 
+improve the thermodynamics and kinetics of hydrogen de- 
+/rehydrogenation in Mg/MgH2 systems [ 15–20 ]. 
+It is worth noting that catalytic doping has been proven 
+to be one of the most practical and effective methods for 
+enhancing the de-/rehydrogenation properties of MgH2 [ 21–
+23 ]. Multivalent transition metals (TMs) and their compounds 
+have been extensively studied for their ability to accelerate the 
+breaking and recombination of Mg-H and H-H bonds. This 
+enhancement is attributed to the unsaturated D -band electrons 
+of TMs, which cause greater perturbation compared to Mg 
+when interacting with the hydrogen antibonding orbitals [ 24 ]. 
+Cui et al. [ 25 ] demonstrated closed correlation on the elec- 
+tronegativities of TMs against the dehydrogenation of MgH2 , 
+ranking from Ti, Nb, Ni, V, Co to Mo. Zhang et al. [ 26 ] em- 
+ployed the synthesized multivalent NbHx , ball milled with 
+MgH2 , and achieved 7 wt% of hydrogen dehydrogenation 
+within 9 mins upon 3 kPa at 300 °C. Jangir et al. [ 27 ] adopted 
+5 wt% TiH2 doped into MgH2 and the composites exhibited 
+a much lower dehydrogenated activation energy (−77.56 kJ 
+/mol) than the pristine MgH2 (−137.13 kJ /mol). Dan et al. 
+[ 28 ] developed Nb-doped TiO2 for MgH2 , and achieved that 
+6 wt% H2 releasing in 12 mins at 225 °C and 5 wt% H2 
+absorbing for 20 s at room temperature when incorporated 8 
+wt% Ti(30Nb)O2 to MgH2 . Liu et al. [ 29 ] synthesized a novel 
+nanosized NiCoFeCuMg HEA@C catalysts modiﬁed MgH2 , 
+and achieved an initial dehydrogenation temperature down to 
+167.2 °C, accompanied by a stable 97 % reversible hydrogen 
+capacity retention over 20 cycles. 
+Additionally, intermetallic compounds of multivalent tran- 
+sition metals (TMs), such as TiAl, Ti3 Al, TiV, TiNb, ZrMn2 , 
+LaNi5 , and TiCrV, have gained signiﬁcant attention due 
+to their synergistic catalytic effects [ 30–33 ]. A particularly 
+favoured approach involves doping intrinsic hydrogen storage 
+compounds like TiFe [ 34 ], LaNi5 [ 10 ], V-based solid solution 
+[ 35 ] into the Mg/MgH2 system, capitalizing on the strengths 
+of each component. This method not only harnesses syner- 
+gistic catalytic effects but also maintains the system’s higher 
+hydrogen storage capacity, avoiding the added weight associ- 
+ated with conventional catalysts. 
+For instance, Lu et al. [ 36 ] prepared a composite of MgH2 
+doped with 10 wt% TiFe and 5 wt% CNTs, which released 
+6.5 wt% hydrogen in 10 mins at 300 °C and reabsorbed 5.3 
+wt% H2 at 125 °C under 3 MPa pressure. Liang et al. [ 37 ] 
+demonstrated excellent low-temperature hydrogenation kinet- 
+ics in Mg + 50 at% LaNi5 composites, prepared via me- 
+chanical milling under an Ar atmosphere. The enhanced per- 
+formance was attributed to numerous phase boundaries and 
+porous surfaces formed during the de-/rehydrogenation pro- 
+cess, particularly the phases Mg, LaHx , and Mg2 Ni. 
+Moreover, V-based BCC-type hydrogen storage alloys, 
+which offer a capacity of approximately 4.0 wt% H2 , have 
+been widely introduced to modify MgH2 , signiﬁcantly im- 
+proving both the de-/rehydrogenation properties and cyclic 
+performance of Mg/MgH2 systems. For example, Yu et al. 
+[ 38 ] showed that the hydride of TiCrVMn BCC alloys cat- 
+alyzed MgH2 , releasing 5.7 wt% hydrogen in 30 mins at 
+290 °C and reabsorbing over 90 % of the initial hydrogen ca- 
+pacity within 100 mins at 100 °C. This improvement was at- 
+tributed to the increased hydrogen diffusion channels provided 
+by micro- and nanosized particles and defects in the nano 
+or amorphous phases on the MgH2 surface. Similarly, Zhang 
+et al. [ 39 ] utilized nanocrystalline Mg-20 wt% Ti0.16 Cr0.24 V0.6 
+composites via reactive ball milling, achieving 5.67 wt% hy- 
+drogen dehydrogenation in 20 mins at 270 °C and 0.01 MPa. 
+However, V-based BCC type alloys are costly due to the 
+high price and challenging smelting process of V raw mate- 
+rials. To address this, recent developments have focused on 
+low-V or V-free BCC-type alloys to reduce costs. Researchers 
+have successfully substituted V with Fe or Mo, achieving rea- 
+sonable hydrogen storage properties in these alloys [ 40 ]. Our 
+group has also developed economical V-free BCC-type al- 
+loys with a single BCC phase, using Nb or Mo as substitutes 
+for V through rapid solidiﬁcation techniques such as water 
+quenching, suction casting, and melt spinning [ 41 , 42 ]. Both 
+Ti and Nb have demonstrated superior catalytic effects in re- 
+ducing dehydrogenation temperatures and accelerating hydro- 
+gen sorption kinetics in MgH2 . 
+In this study, a self-synthesized hydride of melt-spun 
+Ti45 Cr40 Nb15 BCC-type hydrogen storage alloy (abbrevi- 
+ated as TiCrNbHx -MS) was designed and, for the ﬁrst 
+time, employed as a catalyst to regulate the hydrogen de- 
+/rehydrogenation performance of MgH2 . We systematically 
+investigated the catalytic effects of TiCrNbHx -MS on the de- 
+/rehydrogenation kinetics, thermodynamics, and cyclic sta- 
+bility of MgH2 . The microstructure evolution and catalytic 
+mechanisms were also explored, providing valuable insights 
+for the potential commercial application of Mg-based multi- 
+phase composite hydrogen storage materials. 
+2. Experimental section 
+2.1. Sample preparation 
+The starting materials, including titanium (Ti, sponge, 
+99.9 %), chromium (Cr, granules, 99.9 %), and niobium (Nb, 
+Aladin, metal powders, 99.99 %), were commercially ob- 
+tained and used without further puriﬁcation. The metals Ti 
+and Cr were purchased from Zhongnuo Advanced Material 
+(Beijing) Technology Co., Ltd. The Ti45 Cr40 Nb15 ingots and 
+melt-spun samples (denoted as TiCrNb-AC and TiCrNb-MS, 
+respectively) were synthesized as described in our previous 
+work [ 39 ]. Brieﬂy, 10 g ingots of Ti45 Cr40 Nb15 were pro- 
+duced using an arc melting process (WK Series Vacuum Arc 
+Melter, Physcience, China) with a melting current of 100–
+140 A, and were ﬂipped and remelted four times to ensure 
+compositional homogeneity. The prepared as-cast alloys were 
+Please cite this article as: H. Xiao, L. Yi, H. Lei et al., TiCrNb hydride fabricated by melt spinning as the efﬁcient catalyst for enhancing the hydrogen 
+storage properties of MgH2 , Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.01.005 
+
+H. Xiao, L. Yi, H. Lei et al. / Journal of Magnesium and Alloys xxx (xxxx) xxx
+3 
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; January 29, 2025;14:24 ] 
+subsequently polished to achieve a clean surface and cut into 
+smaller pieces. Approximately 5 g of these particles were 
+loaded into a quartz tube to prepare ribbons using a single- 
+roller melt-spinning device (VSD500, AutoVac, China) at a 
+roller surface speed of 25 m/s under an argon atmosphere. 
+The resulting melt-spun ribbons (2 g) were loaded into a re- 
+actor and sealed for complete hydrogenation using a Sievert- 
+type PCT apparatus (ZDHM-4, Zhejiang University, China) 
+following activation at 400 °C. The ﬁnal product, melt-spun 
+Ti45 Cr40 Nb15 hydride (labeled as TiCrNbHx -MS), was suc- 
+cessfully synthesized. 
+MgH2 was synthesized via high-temperature hydrogenation 
+followed by mechanical ball milling. Speciﬁcally, magnesium 
+powder (Sinopharm Group, 99.95 %) was hydrogenated in a 
+stainless-steel reactor using the aforementioned Sieverts-type 
+apparatus at 400 °C for 6 h under 50 bar of hydrogen pres- 
+sure. The hydrogenated Mg powder was subsequently trans- 
+ferred to a milling jar under 30 bar of hydrogen and subjected 
+to ball milling at 500 r/m for 5 h, utilizing a ball-to-powder 
+weight ratio of 40:1 in a planetary ball mill (QM-3SP2, Nan- 
+jing, China). The process was repeated twice, resulting in the 
+ﬁnal MgH2 product. TiCrNbHx -MS-modiﬁed MgH2 compos- 
+ites, containing 20 wt% of the hydride, were prepared through 
+mechanical ball milling at 500 r/m under 50 bar of hydrogen 
+for 18 h with a ball-to-sample ratio of 120:1. The milling pro- 
+cedure was set by alternating 12 mins of milling with 6 mins 
+pause to avoid overheating. Every 6 h milling was ﬁnished, 
+the jar will be taken back to the glove box for further scrap- 
+ing powder. For comparison, stoichiometrically equivalent Ti 
+(Aladdin, metal powders, 99.99 %) and Nb powders (Aladdin, 
+99.99 %) were also ball-milled with MgH2 , with a ball-to- 
+sample ratio of 120:1. All sample handling procedures were 
+conducted in an argon-ﬁlled Etelux Lab2000 glove box. 
+2.2. Sample characterization 
+Phase identiﬁcation was conducted using X-ray diffraction 
+(XRD, PANalytical X’Pert, Netherlands) with Cu K α radia- 
+tion (40 kV, 40 mA). To prevent exposure to air and mois- 
+ture during the XRD analysis, the samples were covered with 
+polyimide ﬁlm. Morphological and microstructural analyses 
+were performed using ﬁeld emission scanning electron mi- 
+croscopy (SEM, JEOL JSM-IT800, Japan) and high-resolution 
+transmission electron microscopy (TEM, FEI Talos-F200s, 
+USA). Elemental distributions were characterized using an 
+energy dispersive X-ray spectrometer (EDX, Max) attached 
+to the TEM. Dehydrogenation onset and peak temperatures 
+were measured using differential scanning calorimetry (DSC, 
+Netzsch STA 449F5, Germany) at various heating rates (2, 5, 
+8, 10 °C ·min−¹) under ﬂowing argon as the purge gas. 
+2.3. Hydrogen storage measurements 
+For non-isothermal temperature-programmed desorption 
+(TPD) tests, samples were heated from room temperature 
+to 400 °C at a rate of 2 °C ·min−¹ using a resistance fur- 
+nace under vacuum. The dehydrogenated samples were then 
+recharged at a rate of 1 °C ·min−¹ under an initial pres- 
+sure of 50 bar H2 . Isothermal de-/rehydrogenation measure- 
+ments were carried out using the aforementioned Sieverts-type 
+apparatus. Speciﬁcally, isothermal hydrogen rehydrogenation 
+was conducted under an initial pressure of 50 bar H2 , while 
+isothermal hydrogen dehydrogenation was performed under 
+a backpressure of 0.001 bar, with samples rapidly heated to 
+the desired temperature and maintained throughout the entire 
+process. 
+Pressure-Concentration-Temperature (PCT) measurements 
+were performed using a commercial Sieverts apparatus 
+(HPSA-autoPro device, China), with approximately 150 mg 
+of sample used for each test. Cycling hydrogen de- 
+/rehydrogenation tests were also conducted using this device, 
+with approximately 200 mg of sample subjected to dehydro- 
+genation at a constant temperature of 300 °C under 3 bar H2 
+and rehydrogenation under 50 bar H2 for reversible cycling 
+evaluation. 
+3. Results and discussion 
+3.1. Structure and morphological characterizations 
+Fig. 1 a displays the XRD patterns of TiCrNb alloys at 
+various preparation stages. The TiCrNb-AC alloy is charac- 
+terized by the presence of the primary NbCr2 (C15 Laves) 
+phase and a Ti-rich body-centered cubic (BCC) phase. Af- 
+ter melt spinning, the TiCrNb-MS sample exhibits the typical 
+BCC phase. Upon full rehydrogenation after several activation 
+cycles, the TiCrNbHx -MS is entirely converted into a hydride 
+with a face-centered cubic (FCC) phase, which aligns well 
+with previously reported ﬁndings [ 43–45 ]. Fig. 1 b presents 
+the SEM image of the TiCrNb-MS alloy, revealing a sur- 
+face morphology with uniform ﬁne equiaxed crystal grains in 
+the melt-spun alloy. Fig. 1 c shows that the alloy morphology 
+develops several microcracks on the surface upon full hydro- 
+gen recharging. To further examine the microstructure and 
+investigate the alloy’s composition, TEM analysis was per- 
+formed on the fully rehydrogenated TiCrNbHx -MS alloy. The 
+elemental mapping obtained from EDX ( Fig. 1 d) indicates 
+that Ti, Cr, and Nb are homogeneously distributed throughout 
+the hydride. Fig. 1 e-f depict high-resolution TEM (HRTEM) 
+images of the TiCrNbHx -MS hydride, showing characteristic 
+lattice spacings of 0.2263 nm and 0.2306 nm, which corre- 
+spond to the (1 ¯1 1) and (1 ¯1 ¯1 ) planes of the FCC phase, re- 
+spectively. The selected area electron diffraction (SAED) pat- 
+tern ( Fig. 1 g) conﬁrms that the alloy exhibits a typical FCC 
+phase with the [ ¯1 ¯1 0] zone axis. Additionally, the microcrys- 
+talline structure of the TiCrNb-MS alloy was analyzed using 
+TEM to verify the structural evolution during hydrogen de- 
+/rehydrogenation (shown in Fig. S1a-d). Fig.S1a shows con- 
+tinuous diffraction rings corresponding to the (110), (200), 
+and (211) planes of the BCC phase in the TiCrNb-MS alloy. 
+The lattice spacing of 0.2078 nm is attributed to the (110) 
+plane of the BCC phase, as illustrated in Fig. S1c and d. The 
+TEM results corroborate the XRD analysis, conﬁrming the 
+Please cite this article as: H. Xiao, L. Yi, H. Lei et al., TiCrNb hydride fabricated by melt spinning as the efﬁcient catalyst for enhancing the hydrogen 
+storage properties of MgH2 , Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.01.005 
+
+4 
+H. Xiao, L. Yi, H. Lei et al. / Journal of Magnesium and Alloys xxx (xxxx) xxx 
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; January 29, 2025;14:24 ] 
+Fig. 1. (a) XRD patterns of the different prepared states of the alloys. (b) SEM image of the TiCrNb-MS alloy. (c) SEM image and (d) STEM and EDX 
+elemental mappings, (e, f) the HRTEM images, (g) SAED pattern of the TiCrNbHx -MS alloy. 
+structural characteristics of both the TiCrNbHx -MS hydride 
+and the TiCrNb-MS alloy. 
+3.2. Hydrogen storage performance of TiCrNbHx−MS 
+modiﬁed MgH2 
+To assess the catalytic effects of the TiCrNbHx -MS- 
+modiﬁed MgH2 system, non-isothermal and isothermal dehy- 
+drogenation experiments were conducted on MgH2 + 20 wt% 
+TiCrNbHx -MS, stoichiometric MgH2 -Ti and MgH2 -Nb (with 
+equal amounts of Ti and Nb), and ball-milled MgH2 samples. 
+Fig. 2 a displays the TPD volumetric hydrogen release curves 
+of the modiﬁed MgH2 samples, conﬁrming that the catalysts 
+effectively reduce the onset dehydrogenation temperature to 
+varying degrees. The temperature at which the composite re- 
+leases 0.1 wt% H2 is denoted as the onset dehydrogenation 
+Please cite this article as: H. Xiao, L. Yi, H. Lei et al., TiCrNb hydride fabricated by melt spinning as the efﬁcient catalyst for enhancing the hydrogen 
+storage properties of MgH2 , Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.01.005 
+
+H. Xiao, L. Yi, H. Lei et al. / Journal of Magnesium and Alloys xxx (xxxx) xxx
+5 
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; January 29, 2025;14:24 ] 
+Fig. 2. Temperature-programmed dehydrogenation curves of the MgH2 /TiCrNbHx -MS/AC, and MgH2 /Ti/Nb composites (a); Isothermal dehydrogenation curves 
+of MgH2 + 20 wt% TiCrNbHx -MS (b), MgH2 -Nb (c) and MgH2 -Ti (d) at different temperature; Isothermal rehydrogenation curves of TiCrNb-MS (e) and the 
+MgH2 + 20 wt% TiCrNbHx -MS composite(f) at different temperature. 
+temperature [ 46 ]. Pristine MgH2 began releasing hydrogen at 
+approximately 286 °C and fully desorbed ∼7.44 wt% H2 . By 
+adding 20 wt% TiCrNbHx -MS to MgH2 , the onset dehydro- 
+genation temperature was signiﬁcantly reduced to ∼163 °C, 
+with ∼6.6 wt% H2 fully desorbed—representing a reduction 
+of 123 °C compared to pristine MgH2 . Even with the addi- 
+tive amount increased to 20 wt%, the MgH2 + TiCrNbHx -MS 
+composite retains a high total hydrogen storage capacity, at- 
+tributed to the intrinsic hydrogen de-/rehydrogenation proper- 
+ties of the melt-spun TiCrNb alloys with a single BCC phase. 
+Furthermore, MgH2 catalyzed with Ti or Nb showed a similar 
+onset temperature of ∼196 °C. 
+Fig. 2 b-d present the isothermal dehydrogenated curves 
+for MgH2 samples with the respective catalysts. As shown 
+in Fig. 2 b, the MgH2 + 20 wt% TiCrNbHx -MS compos- 
+ite desorbed approximately 6.34 wt% hydrogen within 230 s 
+at 270 °C and around 5.80 wt% hydrogen within 700 s at 
+230 °C. The isothermal dehydrogenation and rehydrogena- 
+tion curves of pristine MgH2 at different temperatures are 
+depicted in Fig. S2, showing that nearly no hydrogen release 
+was detected from ball-milled MgH2 even at 250 °C. Un- 
+der the same temperature, the dehydrogenation kinetics of 
+the MgH2 + 20 wt% TiCrNbHx -MS composite was signiﬁ- 
+cantly better compared to MgH2 catalyzed by either Ti or Nb 
+alone, as illustrated in Figs. 2 c and d. Speciﬁcally, MgH2 cat- 
+alyzed with stoichiometric amounts of Ti and Nb released ap- 
+proximately 4.53 wt% and 4.80 wt% hydrogen, respectively, 
+within 1000 s at 250 °C. At 200 °C (Fig. S3), MgH2 cat- 
+alyzed with Ti and Nb each released 1.0 wt% hydrogen within 
+3000 s, whereas TiCrNbHx -MS-catalyzed MgH2 desorbed ap- 
+proximately 2.5 wt% under the same conditions. Clearly, the 
+MgH2 + TiCrNbHx -MS composite exhibited the fastest de- 
+hydrogenation rates among the tested samples. 
+Fig. 2 e shows the hydrogen rehydrogenated kinetics curves 
+of the TiCrNb-MS alloy from 25 °C to 150 °C, indicating a 
+maximum hydrogen absorption of 2.83 wt% at 150 °C. Fur- 
+thermore, with the addition of TiCrNbHx -MS, the composite 
+could absorb hydrogen even at room temperature (25 °C). 
+The isothermal rehydrogenation tests of the MgH2 + 20 wt% 
+TiCrNbHx -MS composite at various temperatures ( Fig. 2 f) re- 
+veal that it recharged 1.6 wt% hydrogen within 1 h at 50 °C. 
+The rehydrogenation kinetics improved as the temperature in- 
+creased, with the composite recharging 2.6 wt% hydrogen in 
+10 mins and 3.2 wt% in 1 h at 100 °C, and absorbing 4.3 
+wt% hydrogen within 2 mins at 150 °C. These results in- 
+dicate that TiCrNbHx -MS-catalyzed MgH2 exhibits excellent 
+rehydrogenation kinetics even at low temperatures. 
+3.3. De-/rehydrogenation kinetics calculation by Chou model 
+To understand the mechanism behind the enhanced dehy- 
+drogenation kinetics, all isothermal dehydrogenation curves 
+were analyzed using the Chou model [ 47 , 48 ]. According 
+to the basically consensus about the hydrogen adsorption 
+process, which can be described as following steps [ 49 ]: (a) 
+surface physical/chemical hydrogen adsorption process; (b) 
+surface hydrogen dissociation, penetration and diffusion pro- 
+cess of H atoms in β-phase; (c) nucleation and growth process 
+of β-phase; (d) interface chemical reaction process. Actually, 
+the hydrogen diffusion coefﬁcient when passing through the 
+Please cite this article as: H. Xiao, L. Yi, H. Lei et al., TiCrNb hydride fabricated by melt spinning as the efﬁcient catalyst for enhancing the hydrogen 
+storage properties of MgH2 , Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.01.005 
+
+6 
+H. Xiao, L. Yi, H. Lei et al. / Journal of Magnesium and Alloys xxx (xxxx) xxx 
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; January 29, 2025;14:24 ] 
+Fig. 3. The reaction fraction and rate control lines at different temperature of MgH2 + TiCrNbHx -MS (a), MgH2 -Nb (b), MgH2 -Ti (c); Experiment data of 
+dehydrogenated and curves obtained by Chou penetration model prediction of MgH2 + TiCrNbHx -MS (d), MgH2 - Nb (e), MgH2 -Ti (f) at different temperature. 
+passivation layer is very small. Furthermore, the diffusion 
+reaction becomes inactive due to the hydrogen diffusion 
+difference crossing the different phase interfaces. The Chou 
+model provides a physical interpretation of the generalized 
+rate constant and offers a clear expression for calculation and 
+theoretical analysis, which is used to analyze the hydrogen 
+de-/absorption reaction by describing step (b). Speciﬁcally, the 
+Chou model describes the functional relationship between the 
+rate and factors such as temperature, pressure, particle size, 
+and equilibrium pressure. It introduces the concept of “charac- 
+teristic reaction time, tc ” and determines the activation energy 
+Ea to assess the inﬂuence of temperature on the rate constant. 
+In summary, when the rate-controlling step is diffusion, the 
+equations can be represented as shown in Eq. (1) [ 50 ]: 
+ξ = 1 −
+
+1 −
+ t 
+tc 
+3 
+(1) 
+when the rate-controlling step is surface penetration, the 
+formulae can be listed as Eq. (2) : 
+ξ = 1 −
+
+1 −t 
+tc 
+3 
+(2) 
+where ξ is the reaction fraction, and t is the reaction time, 
+respectively. When t = tc , ξ = 1, tc represents the time re- 
+quired for the complete reaction, referred to as “characteristic 
+reaction time.” A smaller tc indicates faster reaction rate. The 
+calculated tc values and the predicted dehydrogenation kinetic 
+curves using the Chou model for the respective samples are 
+presented in Table S1 and Figs. 3 a-c, respectively. The ﬁtting 
+results indicate that surface penetration is the rate-determining 
+step for MgH2 modiﬁed with Ti, Nb, and TiCrNbHx -MS. The 
+tc value of the MgH2 + 20 wt% TiCrNbHx -MS composite 
+decreases with increasing temperature, from 815 s at 230 °C 
+to 362 s at 270 °C, which is also the lowest among the three 
+catalyst-modiﬁed MgH2 samples, even at 270 °C. To eval- 
+uate the enhancement in dehydrogenation kinetics achieved 
+by TiCrNbHx -MS catalysis, the apparent dehydrogenation 
+activation energy Des- Ea can be calculated using Eq. (3) of 
+the Chou penetration model [ 51 ]: 
+ξ = 1 −
+
+1 −exp 
+
+−Ea 
+RT 
+ t 
+Bt 
+3 
+(3) 
+Where Ea is the activation energy, T is the temperature, 
+R is the gas constant, and Bt is the pressure coefﬁcient. 
+Therefore, the Des- Ea can be calculated as 73.29 kJ ·mol−1 , 
+and the calculated Des- Ea is much lower than that of the 
+investigated Ti, Nb catalysts and the pristine MgH2 , which 
+further clariﬁed the enhanced kinetics catalyzed by the 
+TiCrNbHx -MS. It is worth noting that the dehydrogenation 
+curves of Ti-, Nb catalyzed MgH2 (in Fig. 2 c, d) show an 
+anti “S” type, which is considered as a typical feature of the 
+nucleation and growth process [ 12 ]. 
+To further verify the dehydrogenation activation energy 
+Des- Ea , DSC measurements were conducted, and the corre- 
+sponding DSC curves for the catalyst-modiﬁed and pristine 
+MgH2 at different temperatures, using heating rates of 2, 5, 
+8, and 10 °C ·min−¹, are shown in Figs. 4 a-b. Based on the 
+Kissinger Eq. (4) : 
+ln 
+ β
+Tm 2 
+
+= −Ea 
+RTm 
++ A
+(4) 
+Please cite this article as: H. Xiao, L. Yi, H. Lei et al., TiCrNb hydride fabricated by melt spinning as the efﬁcient catalyst for enhancing the hydrogen 
+storage properties of MgH2 , Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.01.005 
+
+H. Xiao, L. Yi, H. Lei et al. / Journal of Magnesium and Alloys xxx (xxxx) xxx
+7 
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; January 29, 2025;14:24 ] 
+Fig. 4. DSC curves of ball-milled MgH2 + TiCrNbHx -MS(a) and undoped ball milled MgH2 (b) under the different heating rates (2, 5, 8, 10 °C ·min−1 ); The 
+dehydrogenated activation energy ﬁtted by the Kissinger plots of different catalysts doped and undoped MgH2 (c). 
+Table 1 
+Comparison of properties of different additions catalyzed MgH2 systems. 
+Additions catalyzed MgH2 
+Onset dehydrogenated 
+temperature ( °C) 
+Dehydrogenation activation 
+energy Des-Ea (kJ ·mol−1 ) 
+Method calculated 
+Refs. 
+10 wt%V80 Ti8 Cr12 
+208 
+104.2 
+Chou model 
+[ 49 ] 
+20 wt%Ti0.16 Cr0.24 V0.6 
+224 
+131.34 
+Kissinger equation 
+[ 39 ] 
+10 wt%Ti 
+–
+104 
+Kissinger equation 
+[ 52 ] 
+5 wt%Nb 
+186.7 
+90.04 
+JMAK model 
+[ 53 ] 
+5 wt% αFe-ZIF 
+–
+104.5 
+Chou model 
+[ 54 ] 
+10 wt%TiVNbCrFe 
+200 
+63.03 
+Ozawa-Flynn-Wall 
+[ 32 ] 
+10 wt%CrMnFeCoNi 
+198 
+75.81 
+Chou model 
+[ 55 ] 
+5 wt%FeCoNiCrMn 
+209.1 
+90.24 
+JMAK model 
+[ 17 ] 
+5 wt%NiCoFeCuMg@C 
+167.3 
+112.4 
+Kissinger equation 
+[ 29 ] 
+20 wt%TiCrNbHx -MS 
+163 
+73.29 
+Chou model 
+This work 
+Where β is the heating rate, Tm is the peak temperature, 
+and A is the temperature-independent constant. By ﬁtting the 
+Kissinger plots derived from the relationship between β and 
+Tm (shown in Fig. 4 c), the dehydrogenated activation en- 
+ergy Des- Ea values were calculated to be 62.63 kJ ·mol−1 
+for the TiCrNbHx -MS-catalyzed MgH2 composite and 120.54 
+kJ ·mol−1 for ball-milled pristine MgH2 . Furthermore, the 
+comparative Nb- and Ti- catalyzed MgH2 composites were 
+also performed by DSC testing with the same condition. The 
+results are shown in Fig. S4. The Des- Ea values of Nb- and 
+Ti- catalyzed MgH2 were determined to be 110.82 and 91.66 
+kJ ·mol−1 , respectively. It represents approximately a 50 % 
+reduction in Des- Ea for TiCrNbHx -MS-catalyzed MgH2 com- 
+pared to ball-milled MgH2 . Table 1 presents the initial dehy- 
+drogenation temperature and the dehydrogenation activation 
+energy of different additions catalyzed MgH2 systems. It is 
+found from the table that the TiCrNbHx−MS has superior ad- 
+vantages in achieving the lower Des- Ea and the onset dehy- 
+drogenation temperature than that of the V-based BCC solid 
+solution catalyzed MgH2 . Even its catalytic effect is better 
+than the HEAs catalyst prepared by the chemical synthesis. 
+It is demonstrated that the melt spun TiCrNb indeed has ex- 
+cellent catalytic effect on tuning the comprehensive hydrogen 
+storage performance of MgH2 . 
+3.4. Thermodynamic behavior of TiCrNbHx -MS modiﬁed 
+MgH2 
+To further evaluate the thermodynamic performance of 
+the samples, the dehydrogenation reaction enthalpy changes 
+of the composite and ball-milled MgH2 were calculated 
+using the van’t Hoff equation. Figs. 5 a-c show the de- 
+/rehydrogenation PCT curves for MgH2 + TiCrNbHx -MS 
+and pristine MgH2 . The dehydrogenated plateau pressures 
+for MgH2 + TiCrNbHx -MS were determined to be 2.02, 
+2.91, 5.19, and 8.58 bar at 310, 330, 350, and 370 °C, re- 
+spectively, while those for ball-milled MgH2 were measured 
+as 2.42, 4.16, 7.33, and 11.38 bar at 315, 335, 355, and 
+375 °C, respectively. The corresponding dehydrogenation en- 
+thalpy changes ( H ) were also calculated and are shown in 
+Fig. 5 c. Notably, the calculated H value for TiCrNbHx -MS- 
+modiﬁed MgH2 was 75.5 kJ ·mol−1 H2 , which was slightly 
+Please cite this article as: H. Xiao, L. Yi, H. Lei et al., TiCrNb hydride fabricated by melt spinning as the efﬁcient catalyst for enhancing the hydrogen 
+storage properties of MgH2 , Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.01.005 
+
+8 
+H. Xiao, L. Yi, H. Lei et al. / Journal of Magnesium and Alloys xxx (xxxx) xxx 
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; January 29, 2025;14:24 ] 
+Fig. 5. PCT curves of MgH2 + TiCrNbHx -MS(a); undoped MgH2 (b) at different temperature; The Van’t Hoff and enthalpies of MgH2 + TiCrNbHx -MS and 
+undoped MgH2 (c). 
+lower than that of pristine MgH2 (78.1 kJ ·mol−1 H2 ). Thus, 
+it indicates that incorporating TiCrNbHx -MS has minimal ef- 
+fect on the thermodynamic properties of MgH2 . 
+3.5. Cycling performance of TiCrNbHx -MS modiﬁed MgH2 
+Reversible cycling stability is a critical parameter for the 
+practical application of magnesium-based hydrogen storage 
+systems [ 55 , 56 ]. To further evaluate the cycling stability of 
+the MgH2 + 20 wt% TiCrNbHx -MS composite, hydrogen de- 
+/rehydrogenation cycling tests were conducted at 300 °C. As 
+shown in Fig. 6 a, the reversible hydrogen capacity decreased 
+from 6.18 wt% to 5.03 wt% after 10 cycles. This is often at- 
+tributed to an “activation process” that occurs during the ini- 
+tial de-/rehydrogenation cycles, as reported in previous studies 
+[ 19 , 57 , 58 ]. The detailed data proﬁles (Fig. S5) for the 1st, 30 
+th, 50 th, and 100 th cycle indicate that it took about 5 mins 
+for the composite to release its full hydrogen content dur- 
+ing the ﬁrst dehydrogenation, while subsequent cycles only 
+took approximately 3 mins. The composite exhibited a rapid 
+hydrogen uptake and release rate over 100 cycles, with a ca- 
+pacity degradation from 6.18 wt% to 4.98 wt%. This corre- 
+sponds to a hydrogen capacity retention of 81 %, as shown 
+in Fig. 6 c. The results demonstrate that the rapid decline in 
+hydrogen capacity occurred during the initial few cycles in 
+the MgH2 + 20 wt% TiCrNbHx -MS system, after which the 
+dehydrogenation capacity remained stable in the following cy- 
+cles. The XRD patterns results (shown in Fig. S6) reveal that 
+there is no new phase generated after cycling. In order to fur- 
+ther explore the effect of cycling on kinetic performance, the 
+de-/rehydrogenation data were computationally analyzed by 
+kinetic model. According to the previous analysis, it implies 
+that the rate-controlling step of hydrogen de-/rehydrogenation 
+process of the MgH2 + 20 wt% TiCrNbHx -MS composite 
+was the surface penetration. Actually, Mg can instantaneously 
+nucleate on the particle surface and it is feasible for metal 
+atoms to achieve the long-range diffusion and the diffusion 
+of H atoms into the hydride layer under high temperature. 
+The nucleation and growth of Mg and H diffusion during 
+dehydrogenation can be rapidly ﬁnished. The tc values calcu- 
+lated by the Chou-penetration model were analyzed to evalu- 
+ate the variation of the dehydrogenated kinetic property dur- 
+ing the cycle, as presented in Fig. 6 b. The tc values rapidly 
+decrease at the beginning and then slightly increase with cy- 
+cling numbers ascending. The kinetic performance from 40 
+to 100 cycles is relatively stable. As reported, the phase tran- 
+sition between Mg-MgH2 will occur 32 % volume expansion 
+or contraction [ 12 ]. However, the powder agglomeration will 
+inevitably exist under long-term high temperature. This phe- 
+nomenon will make hydrogen penetration more difﬁcult dur- 
+ing few initial cycles. After that, particle cracking happens 
+and smaller particles and larger speciﬁc surface area can be 
+achieved. It is beneﬁcial to hydrogen penetration ascribed that 
+there are more active sites and providing more penetration 
+driving energy. 
+3.6. Microstructure evolution and mechanism analysis of 
+TiCrNbHx -MS modiﬁed MgH2 
+The TiCrNbHx -MS catalyst exhibited a remarkable cat- 
+alytic effect on the hydrogen storage behavior of MgH2 , 
+as demonstrated in the above analysis. To further under- 
+stand the role of TiCrNbHx -MS in enhancing the hydrogen 
+storage properties of MgH2 , the microstructural evolution 
+of ball-milled TiCrNbHx -MS-modiﬁed MgH2 during the 
+de-/rehydrogenation process was investigated using X-ray 
+diffraction (XRD). Fig. 7 a shows the XRD patterns of the 
+ball-milled, rehydrogenated, and dehydrogenated states of the 
+TiCrNbHx -MS-modiﬁed MgH2 composite. From the XRD 
+patterns of the ball-milled state, the main diffraction peaks 
+are identiﬁed as belonging to the MgH2 phase (P42/mnm, 
+JCPDS: 12–0697). Additionally, a diffraction peak at 41.6 °
+corresponds to the TiCrNbHx -MS hydride, while peaks 
+at 43.1 ° and 45.2 ° correspond to the NbCr2 phase. This 
+indicates that no reaction occurred between MgH2 and the 
+catalyst, as no new phases were detected after ball milling. 
+When the composite was ball-milled under 50 bar hy- 
+drogen pressure, the TiCrNbHx -MS hydride was clearly 
+detected. In the XRD pattern of the dehydrogenated state, the 
+predominant phase was α-Mg (P63/mmc, JCPDS: 65–3365), 
+along with some diffraction peaks belonging to the BCC and 
+FCC phases of the melt-spun TiCrNb alloy [ 59 ]. After full 
+Please cite this article as: H. Xiao, L. Yi, H. Lei et al., TiCrNb hydride fabricated by melt spinning as the efﬁcient catalyst for enhancing the hydrogen 
+storage properties of MgH2 , Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.01.005 
+
+H. Xiao, L. Yi, H. Lei et al. / Journal of Magnesium and Alloys xxx (xxxx) xxx
+9 
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; January 29, 2025;14:24 ] 
+Fig. 6. The dehydrogenation performance of the MgH2 + TiCrNbHx -MS composite for the ﬁrst 10 cycles at 300 °C (a); The characteristic time ( tc ) with cycling 
+numbers corresponding to the dehydrogenated kinetics of the MgH2 + TiCrNbHx -MS sample(b); 100 cycling rehydrogenation and dehydrogenation curves of 
+the MgH2 + TiCrNbHx -MS sample (c). 
+Fig. 7. XRD patterns of the MgH2 + TiCrNbHx−MS composite in the ball milled; and de/rehydrogenated states(a); XRD patterns of the MgH2 + TiCrNbHx−MS 
+composite under the different dehydrogenated temperature(b). 
+Please cite this article as: H. Xiao, L. Yi, H. Lei et al., TiCrNb hydride fabricated by melt spinning as the efﬁcient catalyst for enhancing the hydrogen 
+storage properties of MgH2 , Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.01.005 
+
+10 
+H. Xiao, L. Yi, H. Lei et al. / Journal of Magnesium and Alloys xxx (xxxx) xxx 
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; January 29, 2025;14:24 ] 
+Fig. 8. HRTEM images (a, c, e), HAADF images and corresponding EDS mappings (b, d, f) of the ball milled, dehydrogenated and rehydrogenated state of 
+the MgH2 + TiCrNbHx -MS composite. 
+rehydrogenation, the composite consisted mainly of MgH2 , 
+the FCC phase of the melt-spun TiCrNb alloy, and a minor 
+Mg phase. Furthermore, Fig. 7 b shows the XRD patterns of 
+the composite under different dehydrogenation temperatures. 
+The XRD results indicate that the MgH2 phase was detected 
+after dehydrogenation at 200 °C and disappeared when the 
+process was carried out at 250 °C. At higher temperatures, 
+the hydrogenated TiCrNbHx -MS transformed into the BCC 
+structure of the TiCrNb-MS alloy during ball milling with 
+MgH2 in the dehydrogenation process. 
+To further reveal the microstructural features of this sys- 
+tem, TEM analysis was conducted on MgH2 + TiCrNbHx -MS 
+in different states. As shown in Fig. 8 a, the measured inter- 
+planar spacing d value of 0.249 nm corresponds to the (101) 
+lattice plane of the MgH2 phase in the ball-milled state. The 
+measured d values of 0.216 nm and 0.211 nm match the (200) 
+plane of the FCC phase of the TiCrNbHx -MS alloy. Addition- 
+ally, elemental mapping results ( Fig. 8 b) show that Ti, Cr, and 
+Nb from the TiCrNb nanoparticles are uniformly distributed 
+in the MgH2 matrix. After dehydrogenation, the characteristic 
+spacing values of 0.273 nm and 0.276 nm were assigned to 
+the (100) lattice plane of the α-Mg phase (P63/mmc, JCPDS: 
+65–3365), as depicted in Fig. 8 c. The measured spacing val- 
+ues of 0.210 nm and 0.208 nm were attributed to the (110) 
+lattice plane of the BCC phase of the TiCrNb-MS alloy. It is 
+evident that the dehydrogenated composite consists of nano- 
+sized dark-gray TiCrNb phase spots embedded in the MgH2 
+matrix. The HRTEM image of the sample after rehydrogena- 
+tion is presented in Fig. 8 e, showing a spacing of 0.219 nm 
+and 0.231 nm, corresponding to the (200) lattice plane of 
+the MgH2 phase and the (200) lattice plane of the FCC 
+phase of the TiCrNbHx -MS alloy, respectively. As depicted in 
+Please cite this article as: H. Xiao, L. Yi, H. Lei et al., TiCrNb hydride fabricated by melt spinning as the efﬁcient catalyst for enhancing the hydrogen 
+storage properties of MgH2 , Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.01.005 
+
+H. Xiao, L. Yi, H. Lei et al. / Journal of Magnesium and Alloys xxx (xxxx) xxx
+11 
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; January 29, 2025;14:24 ] 
+Fig. 9. Schematic summary of catalytic mechanism of the TiCrNbHx -MS modiﬁed MgH2 . 
+Fig. 8 f, the distribution of the elements Ti, Cr, and Nb indi- 
+cates that the nanosized TiCrNb phase is uniformly embedded 
+in the MgH2 matrix. 
+Based on the aforementioned hydrogen storage properties 
+and microstructural analysis, the de-/rehydrogenation mecha- 
+nism of the MgH2 + TiCrNbHx -MS composite is illustrated 
+in Fig. 9 . The uniformly dispersed TiCrNbHx -MS particles 
+act as “hydrogen pumps,” accelerating hydrogen absorption 
+and dissociation due to their superior kinetics. Certainly, the 
+electronegativity of Ti (1.54) or Nb (1.6), being between that 
+of H (2.2) and Mg (1.31), which has been veriﬁed to in- 
+deed weaken the Mg-H bond energy [ 60–62 ]. Additionally, 
+the melt-spun TiCrNbHx -MS alloy contains signiﬁcant lattice 
+distortion and defects, further facilitating hydrogen diffusion 
+into the Mg lattice via the interfaces. During dehydrogena- 
+tion, Mg-H bonds at the MgH2 /TiCrNb interfaces are prefer- 
+entially weakened due to additional interface energy, which 
+subsequently induces lattice distortion in Mg, promoting hy- 
+drogen release. 
+Moreover, the fully hydrogenated TiCrNb alloy with the 
+FCC phase transforms into the BCC phase when the compos- 
+ite undergoes dehydrogenation at elevated temperatures. This 
+phase transformation provides numerous hydrogen diffusion 
+channels and active nucleation sites for Mg/MgH2 . During re- 
+hydrogenation, hydrogen ﬁrst diffuses into the TiCrNb alloy 
+and then migrates into the Mg matrix along the Mg/TiCrNb 
+interfaces, ultimately forming the MgH2 phase. The BCC 
+phase then reversibly transforms back to the FCC phase 
+of the TiCrNb alloy upon rehydrogenation. Therefore, the 
+TiCrNbHx -MS alloy actively catalyzes hydrogen combination 
+and dissociation, enhancing the overall de-/rehydrogenation 
+performance of MgH2 . 
+4. Conclusion 
+In this study, the Ti45 Cr40 Nb15 alloy was synthesized via 
+melt spinning and then fully hydrogenated. The catalytic ef- 
+fect of adding 20 wt% Ti45 Cr40 Nb15 Hx -MS to MgH2 through 
+ball milling was investigated to enhance the hydrogen storage 
+performance of MgH2 . The TiCrNbHx -MS-catalyzed MgH2 
+composite exhibited an impressive initial dehydrogenation 
+temperature of 163 °C, and the dehydrogenated state was able 
+to readily absorb hydrogen at room temperature. According to 
+the Chou model, the rate-controlling step of dehydrogenation 
+was determined to be surface penetration, and the dehydro- 
+genation activation energy Ea was reduced to 73.29 kJ ·mol−1 . 
+Furthermore, the composite demonstrated a reversible hydro- 
+gen capacity retention of 81 % over 100 cycles at 300 °C. 
+Microstructural analyses using XRD and TEM revealed 
+that the FCC phase of the melt-spun TiCrNbHx -MS hydride, 
+when ball-milled, reversibly transformed into the BCC phase 
+during the de-/rehydrogenation process. This phase transfor- 
+mation generated additional interfaces dispersed on the MgH2 
+surface, providing more hydrogen diffusion channels and nu- 
+cleation sites for Mg/MgH2 , thereby enhancing the hydrogen 
+de-/rehydrogenation kinetics of the system. This work serves 
+Please cite this article as: H. Xiao, L. Yi, H. Lei et al., TiCrNb hydride fabricated by melt spinning as the efﬁcient catalyst for enhancing the hydrogen 
+storage properties of MgH2 , Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.01.005 
+
+12 
+H. Xiao, L. Yi, H. Lei et al. / Journal of Magnesium and Alloys xxx (xxxx) xxx 
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; January 29, 2025;14:24 ] 
+as a reference for using multiphase composite modiﬁcation 
+methods to improve the hydrogen storage characteristics of 
+MgH2 . 
+Declaration of competing interest 
+The authors declare that they have no known competing 
+ﬁnancial interests or personal relationships that could have 
+appeared to inﬂuence the work reported in this paper. 
+CRediT authorship contribution statement 
+Houqun Xiao: Writing – original draft, Methodology, In- 
+vestigation, Formal analysis, Data curation, Conceptualiza- 
+tion. Luocai Yi: Writing – review & editing, Investiga- 
+tion, Formal analysis, Conceptualization. Huxu Lei: Soft- 
+ware, Formal analysis, Data curation. Yu Xu: Visualization, 
+Methodology, Formal analysis, Conceptualization. Xiaoxuan 
+Zhang: Software, Methodology, Investigation, Data curation. 
+Huazhou Hu: Resources, Project administration, Investiga- 
+tion, Formal analysis. Ruizhu Tang: Validation, Resources, 
+Formal analysis, Conceptualization. Qian Li: Writing – re- 
+view & editing, Supervision, Resources, Funding acquisition. 
+Qingjun Chen: Writing – review & editing, Supervision, Re- 
+sources, Investigation, Funding acquisition. 
+Acknowledgments 
+This work was ﬁnancially supported by the Na- 
+tional Key Research and Development program of China 
+(2022YFB3504700), the National Natural Science Foundation 
+of China ( U23A20128 ), the Strategic Priority Research Pro- 
+gram of the Chinese Academy of Sciences (XDA0400304) 
+and the Research Projects of Ganjiang Innovation Academy, 
+Chinese Academy of Sciences (No. E355B0020). 
+Supplementary materials 
+Supplementary material associated with this article can be 
+found, in the online version, at doi:10.1016/j.jma.2025.01. 
+005 . 
+References 
+[1] M.D. Allendorf, V. Stavila, J.L. Snider, M. Witman, M.E. Bowden, 
+K. Brooks, B.L. Tran, T. Autrey, Nat Chem 14 (2022) 1214–1223 . 
+[2] T. He, P. Pachfule, H. Wu, Q. Xu, P. Chen, Nat Rev Mater 1 (2016) 
+16059 . 
+[3] M.R. Usman, Renew Sustainable Energy Rev 167 (2022) 112743 . 
+[4] H.T. Guan, Y.J. Liu, X.M. Hu, J.Z. Wu, T.N. Ye, Y.F. Lu, H. Hosono, 
+Q. Li, F.S. Pan, Angewandte Chemie-Int Edition 63 (2024) e202400119 . 
+[5] G.Kubilay Karayel, N. Javani, I. Dincer, Energy Convers Manag 291 
+(2023) 117311 . 
+[6] Z.Y. Li, S.Y. Liu, Y.H. Pu, G. Huang, Y.B. Yuan, R.Q. Zhu, X.F. Li, 
+C.Y. Chen, G. Deng, H.H. Zou, P. Yi, M. Fang, X. Sun, J.Z. He, H. Cai, 
+J.X. Shang, X.F. Liu, R.H. Yu, J.L. Shui, Nat. Commun. 14 (2023) 7966 . 
+[7] S. Niaz, T. Manzoor, A.H. Pandith, Renew Sustainable Energy Rev 50 
+(2015) 457–469 . 
+[8] T. Ha, J.-H. Kim, C. Sun, Y.-S. Lee, D.-I. Kim, J.-Y. Suh, J.-I. Jang, 
+J. Lee, Y. Kim, J.-H. Shim, Nano Energy 112 (2023) 108483 . 
+[9] W.F. Qiao, D.M. Yin, S.L. Zhao, N. Ding, L. Liang, C.L. Wang, 
+L.M. Wang, M. He, Y. Cheng, Chem. Eng. J. 465 (2023) 142837 . 
+[10] S. Thiangviriya, P. Thongtan, N. Thaweelap, P. Plerdsranoy, R. Utke, 
+Int. J. Hydrogen Energy 49 (2024) 59–66 . 
+[11] Q. Li, Y.F. Lu, Q. Luo, X.H. Yang, Y. Yang, J. Tan, Z.H. Dong, J. Dang, 
+J.B. Li, Y. Chen, B. Jiang, S.H. Sun, F.S. Pan, J Magnesium Alloys 9 
+(2021) 1922–1941 . 
+[12] B. Li, X. Sun, H. Chen, Y. Yang, Q. Luo, X.H. Yang, Y.A. Chen, 
+G.B. Wei, Q. Li, F.S. Pan, J Mater Sci Technol 180 (2024) 45–54 . 
+[13] Q. Luo, Q. Cai, Q.F. Gu, Y. Shi, B. Liu, X.Q. Tran, S. Matsumura, 
+T.Y. Zhang, K. Nogita, T. Lyu, Q. Li, F.S. Pan, J Magnes Alloys 11 
+(2023) 3338–3349 . 
+[14] H.Y. Wang, J. Li, X.L. Wei, Y. Zheng, S.L. Yang, Y.F. Lu, Z. Ding, 
+Q. Luo, Q. Li, F.S. Pan, Adv Funct Mater (2024) 2406639 . 
+[15] Z. Ding, Y.T. Li, H. Yang, Y.F. Lu, J. Tan, J.B. Li, Q. Li, Y.A. Chen, 
+L.L. Shaw, F.S. Pan, J Magnesium and Alloys 10 (2022) 2946–
+2967 . 
+[16] X.F. Tan, M.J. Kim, K. Yasuda, K. Nogita, J Materials Sci Technol 153 
+(2023) 139–158 . 
+[17] H.Y. Wan, X. Yang, S.M. Zhou, L. Ran, Y.F. Lu, Y.A. Chen, J.F. Wang, 
+F.S. Pan, J Mater Sci Technol 149 (2023) 88–98 . 
+[18] Y.X. Yang, X. Zhang, L.C. Zhang, W.X. Zhang, H.F. Liu, Z.G. Huang, 
+L.M. Yang, C.D. Gu, W.P. Sun, M.X. Gao, Y.F. Liu, H.G. Pan, J Mater 
+Sci Technol 163 (2023) 182–211 . 
+[19] S.Y. Shen, W.F. Liao, Z.J. Cao, J.W. Liu, H. Wang, L.Z. Ouyang, J 
+Mater Sci Technol 178 (2024) 90–99 . 
+[20] H.Y. Shao, J. Matsuda, H.W. Li, E. Akiba, A. Jain, T. Ichikawa, Y. Ko- 
+jima, Int. J. Hydrogen Energy 38 (2013) 7070–7076 . 
+[21] G. Han, Y.F. Lu, H.X. Jia, Z. Ding, L. Wu, Y. Shi, G.Y. Wang, Q. Luo, 
+Y.A. Chen, J.F. Wang, G.S. Huang, X.Y. Zhou, Q. Li, F.S. Pan, J Mag- 
+nesium and Alloys 11 (2023) 3896–3925 . 
+[22] B. Zhang, X.B. Xie, Y.K. Wang, C.X. Hou, X.Q. Sun, Y.P. Zhang, 
+X.Y. Yang, R.H. Yu, W. Du, J Magnesium and Alloys 12 (2024) 
+1356–1370 . 
+[23] K. Zhang, Y. Chang, J.J. Lei, J. Chen, T.Z. Si, X.L. Ding, P. Cui, 
+H.W. Li, Q.A. Zhang, Y.T. Li, J Magnesium and Alloys 12 (2024) 
+2462–2471 . 
+[24] L.C. Zhang, X. Zhang, W.X. Zhang, Z.G. Huang, F. Fang, J. Li, 
+L.M. Yang, C.D. Gu, W.P. Sun, M.X. Gao, H.G. Pan, Y.F. Liu, ACS 
+Appl. Mater. Interfaces 15 (2023) 40558–40568 . 
+[25] J. Cui, J.W. Liu, H. Wang, L.Z. Ouyang, D.L. Sun, M. Zhu, X.D. Yao, 
+J Mater Chemistry A 2 (2014) 9645–9655 . 
+[26] L.T. Zhang, X.Z. Xiao, C.C. Xu, J.G. Zheng, X.L. Fan, J. Shao, 
+S.Q. Li, H.W. Ge, Q.D. Wang, L.X. Chen, J. Phys. Chem. C 119 (2015) 
+8554–8562 . 
+[27] M. Jangir, A. Jain, S. Agarwal, T.F. Zhang, S. Kumar, S. Selvaraj, 
+T. Ichikawa, I.P. Jain, Int J Energy Res 42 (2018) 1139–1147 . 
+[28] L. Dan, H. Wang, X.B. Yang, J.W. Liu, L.Z. Ouyang, M. Zhu, ACS 
+Appl. Mater. Interfaces 15 (2023) 30372–30382 . 
+[29] Y.F. Liu, M.Y. Yue, Y.S. Guo, Y.R. Jiang, Y. Sun, L.Z. Feng, Y.J. Wang, 
+J Magnesium and Alloys (2024) avaliable online . 
+[30] M.X. Wei, Y.J. Liu, X.F. Xing, Z. Zhang, T. Liu, Chem. Eng. J. 476 
+(2023) 146639 . 
+[31] J.X. Zhang, H. Liu, C.S. Zhou, P. Sun, X.Y. Guo, Z. Z. Fang, J Mater 
+Chemistry A 11 (2023) 4789–4800 . 
+[32] K. Kitabayashi, K. Edalati, H.W. Li, E. Akiba, Z. Horita, Adv Eng 
+Mater 22 (2020) 1900027 . 
+[33] C.S. Zhou, Z.G.Z. Fang, C. Ren, J.Z. Li, J. Lu, J. Phys. Chem. C 117 
+(2013) 12973–12980 . 
+[34] Z.F. Li, Y.F. Lu, J.F. Wang, Y.A. Chen, Q. Li, F.S. Pan, Mater Rep 
+(2023) 100247 . 
+[35] Z.Q. Lu, H.Z. Liu, H. Luo, Z.Y. Wu, H. Ning, Y. Fan, X.H. Wang, 
+X.T. Huang, C.K. Huang, Z.Q. Lan, W.Z. Zhou, J. Guo, Chem. Eng. J. 
+479 (2024) 147893 . 
+[36] X. Lu, L.T. Zhang, H.J. Yu, Z.Y. Lu, J.H. He, J.G. Zheng, F.Y. Wu, 
+L.X. Chen, Chem. Eng. J. 422 (2021) 130101 . 
+[37] G. Liang, J. Huot, S. Boily, A. Van Neste, R. Schulz, J Alloys Compd 
+297 (2000) 261–265 . 
+Please cite this article as: H. Xiao, L. Yi, H. Lei et al., TiCrNb hydride fabricated by melt spinning as the efﬁcient catalyst for enhancing the hydrogen 
+storage properties of MgH2 , Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.01.005 
+
+H. Xiao, L. Yi, H. Lei et al. / Journal of Magnesium and Alloys xxx (xxxx) xxx
+13 
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; January 29, 2025;14:24 ] 
+[38] X.B. Yu, Y.H. Guo, H. Yang, Z. Wu, D.M. Grant, G.S. Walker, J. Phys. 
+Chem. C 113 (2009) 5324–5328 . 
+[39] J.F. Zhang, Z.N. Li, Y.F. Wu, X.M. Guo, J.H. Ye, B.L. Yuan, H.P. Yuan, 
+S.M. Wang, L.J. Jiang, J. Phys. Chem. C 123 (2019) 15963–15976 . 
+[40] K. Kubo, H. Itoh, T. Takahashi, T. Ebisawa, T. Kabutomori, Y. Naka- 
+mura, E. Akiba, J Alloys Compd 356-357 (2003) 452–455 . 
+[41] H.Q. Xiao, H.Z. Hu, J. Li, C.M. Ma, Q.J. Chen, Int. J. Hydrogen Energy 
+48 (2023) 22174–22182 . 
+[42] H.Z. Hu, H.Q. Xiao, J. Li, C.M. Ma, L.C. Yi, Q.J. Chen, Chem. Eng. 
+J. 455 (2023) 140970 . 
+[43] M. Wang, Y. Wang, H. Kong, Q. Xie, C. Wu, Y. Wang, Y. Chen, Y. Yan, 
+J Alloys Compd 958 (2023) 170294 . 
+[44] E. Halpren, X. Yao, Z.W. Chen, C.V. Singh, Acta Mater 270 (2024) 
+119841 . 
+[45] T. Tamura, T. Kazumi, A. Kamegawa, H. Takamura, M. Okada, J Alloys 
+Compd 356-357 (2003) 505–509 . 
+[46] N. Ding, W.Q. Liu, B.B. Chen, S.H. Wang, S.L. Zhao, Q.S. Wang, 
+C.L. Wang, D.M. Yin, L.M. Wang, Y. Cheng, Chem. Eng. J. 470 (2023) 
+144143 . 
+[47] Y.P. Pang, Q. Li, Int. J. Hydrogen Energy 41 (2016) 18072–18087 . 
+[48] S. Guemou, L.T. Zhang, S. Li, Y.Q. Jiang, T. Zhong, Z.C. Lu, R. Zhou, 
+F.Y. Wu, Q. Li, J Mater Sci Technol 172 (2024) 83–93 . 
+[49] L.Z. Shen, Z.F. Li, Y.F. Lu, G.B. Wei, Q. Li, Y. Yang, F.S. Pan, J Alloys 
+Compd 1010 (2025) 177591 . 
+[50] X. Sun, X.H. Yang, Y.F. Lu, Q. Luo, C.Z. Wu, Y. Zhang, T. Lyu, 
+Q.F. Gu, Q. Li, F.S. Pan, J Mater Sci Technol 202 (2024) 119–128 . 
+[51] H.M. Yang, X. Sun, Q. Luo, Y.F. Lu, Q. Li, F.S. Pan, Scr. Mater. 239 
+(2024) 115782 . 
+[52] Y.J. Choi, J.W. Choi, H.Y. Sohn, T. Ryu, K.S. Hwang, Z.Z. Fang, Int. 
+J. Hydrogen Energy 34 (2009) 7700–7706 . 
+[53] F.M. Nyahuma, L.T. Zhang, M.C. Song, X. Lu, B.B. Xiao, J.G. Zheng, 
+F.Y. Wu, Int J Minerals, Metall Mater 29 (2022) 1788–1797 . 
+[54] S.K. Verma, S.S. Mishra, N.K. Mukhopadhyay, T.P. Yadav, Int. J. Hy- 
+drogen Energy 50 (2024) 749–762 . 
+[55] J.Y. Lin, W.W. Luo, Z.W. Wu, H.Y. Leng, C.H. Sun, Q. Li, C.Z. Wu, J 
+Alloys Compd 1000 (2024) 175082 . 
+[56] L.W. Lu, H. Luo, G.X. Li, Y. Li, X.H. Wang, C.K. Huang, Z.Q. Lan, 
+W.Z. Zhou, J. Guo, M. Ismail, H.Z. Liu, Rare Metals 43 (2024) 
+1153–1166 . 
+[57] V.V. Berezovets, R.V. Denys, I.Y. Zavaliy, Y.V. Kosarchyn, Int J Hy- 
+drogen Energy 47 (2022) 7289–7298 . 
+[58] G. Liu, L. Wang, Y. Hu, C. Sun, H. Leng, Q. Li, C. Wu, J Alloys 
+Compd 881 (2021) 160644 . 
+[59] Z.L. Ma, Q.K. Tang, J.L. Ni, Y.F. Zhu, Y. Zhang, H.W. Li, J.G. Zhang, 
+Y.N. Liu, Z.X. Ba, L.Q. Li, Chem. Eng. J. 433 (2022) 134489 . 
+[60] H.W. Shang, W. Zhang, X. Wei, Y.Q. Li, Z.M. Yuan, J. Li, Y.H. Zhang, 
+J Magnesium and Alloys 12 (2024) 1593–1607 . 
+[61] H. Lu, J.B. Li, X. Zhou, Y.F. Lu, Y.A. Chen, Q. Li, F.S. Pan, J Mater 
+Sci Technol 190 (2024) 135–144 . 
+[62] Z.L. Yuan, X.X. Zhang, Y.T. Wu, S.Y. Guan, S.Q. Zhao, L.Q. Ji, 
+Q.M. Peng, S.M. Han, Y.P. Fan, B.Z. Liu, J Magnesium and Alloys 
+(2024) avaliable online . 
+Please cite this article as: H. Xiao, L. Yi, H. Lei et al., TiCrNb hydride fabricated by melt spinning as the efﬁcient catalyst for enhancing the hydrogen 
+storage properties of MgH2 , Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.01.005 

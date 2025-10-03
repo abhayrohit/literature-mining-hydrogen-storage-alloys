@@ -22,6 +22,7 @@ import requests
 import traceback
 import re
 from typing import List, Dict, Tuple, Any
+from llm_extractor import get_table_few_shot_block  # centralized few-shot helper
 
 OLLAMA_URL = os.environ.get("OLLAMA_URL", "http://localhost:11434")
 MODEL_NAME = os.environ.get("MODEL_NAME", "gpt-oss:120b-cloud")
@@ -45,7 +46,15 @@ os.makedirs(UPLOAD_DIR, exist_ok=True)
 os.makedirs(RAW_TEXT_DIR, exist_ok=True)
 os.makedirs(RESULT_DIR, exist_ok=True)
 
-ALLOY_TABLE_HEADER = ["Alloy Name", "Storage Capacity", "Temperature Range", "Pressure Range", "Synthesis Method"]
+ALLOY_TABLE_HEADER = [
+    "Alloy Name",
+    "Storage Capacity",
+    "Temperature Range",
+    "Pressure Range",
+    "Synthesis Method",
+    "Key Findings",
+    "Comments"
+]
 
 # ----- NEW MULTI-CHUNK EXTRACTION LOGIC -----
 # Rationale: Single-pass prompt was truncating papers (12000 char cap) causing missed alloys.
@@ -58,6 +67,11 @@ MAX_CHUNKS = int(os.environ.get("MAX_CHUNKS", 15))  # safety limit
 LLM_TIMEOUT_SECONDS = int(os.environ.get("LLM_TIMEOUT", 600))
 RETRY_COUNT = int(os.environ.get("LLM_RETRIES", 2))
 KEEP_EMPTY_ALLOYS = bool(int(os.environ.get("KEEP_EMPTY_ALLOYS", "0")))  # set to 1 to keep placeholder-only alloys
+FILTER_TITLE_ABSTRACT = bool(int(os.environ.get("FILTER_TITLE_ABSTRACT", "1")))  # enforce only alloys in title/abstract
+INCLUDE_FEW_SHOT = bool(int(os.environ.get("INCLUDE_FEW_SHOT", "1")))  # whether to include few-shot examples in prompts
+MIN_FILLED_FIELDS = int(os.environ.get("MIN_FILLED_FIELDS", "2"))  # minimum non-empty property columns (excluding name)
+MAX_ALLOYS_OUTPUT = int(os.environ.get("MAX_ALLOYS_OUTPUT", "50"))  # hard cap after scoring
+MIN_OUTPUT_FILLED_FIELDS = int(os.environ.get("MIN_OUTPUT_FILLED_FIELDS", "4"))  # strict minimum for final output rows
 
 def chunk_text(text: str, max_chars: int = MAX_CHARS_PER_CHUNK, overlap: int = CHUNK_OVERLAP) -> List[str]:
     """Split long text into overlapping character chunks to fit model context."""
@@ -76,36 +90,40 @@ def chunk_text(text: str, max_chars: int = MAX_CHARS_PER_CHUNK, overlap: int = C
         end = start + max_chars
     return chunks
 
-def build_chunk_prompt(chunk_text: str, chunk_index: int, total_chunks: int) -> str:
-    """Prompt instructing model to return ONLY JSON with list of alloy objects for a chunk."""
-    return f"""
-You are an expert materials science extraction assistant focused on hydrogen storage alloys.
-You will be given PART {chunk_index+1} of {total_chunks} of a research paper.
+def build_chunk_prompt(chunk_text: str, chunk_index: int, total_chunks: int, allowed_alloys: List[str]) -> str:
+    """Prompt instructing model to return ONLY JSON with list of alloy objects for a chunk (central few-shot reference)."""
+    if allowed_alloys:
+        allowed_section = (
+            "ONLY extract alloys whose normalized formula/name appears in this allowed list (case-insensitive, subscripts=digits): " +
+            "; ".join(allowed_alloys[:40]) + "\n"
+        )
+    else:
+        allowed_section = "No restricted alloy list; include any hydrogen storage alloys explicitly present in this chunk.\n"
 
-Extract ONLY factual hydrogen storage alloy data explicitly present in THIS PART (do NOT guess content from other parts).
-Return STRICT JSON with this schema (no markdown, no comments):
-{{
-  "alloys": [
-    {{
-      "name": "string",                  # alloy composition or identifier; keep Unicode subscripts/superscripts
-      "storage_capacity": "string|null",  # value + units exactly as written (e.g., "2.3 wt% H2"), or null
-      "temperature_range": "string|null", # exact temperature or range with units, or null
-      "pressure_range": "string|null",    # exact pressure or range with units, or null
-      "synthesis_method": "string|null"   # method/process as stated (e.g., mechanical alloying, arc melting), or null
-    }}
-  ]
-}}
+    few_shot_block = get_table_few_shot_block(enabled=INCLUDE_FEW_SHOT and chunk_index == 0)
 
-Rules:
-1. If no alloys appear in this part, output {{"alloys": []}}.
-2. Do NOT invent or infer values not explicitly written.
-3. Avoid duplicate alloy entries inside the same chunk.
-4. Keep numbers & units exactly.
-5. One alloy entry per composition (merge repeated mentions).
-
-TEXT PART START\n---\n{chunk_text[:max(0, MAX_CHARS_PER_CHUNK)]}\n---\nTEXT PART END
-
-Return ONLY the JSON object now:"""
+    return (
+        f"You are extracting hydrogen storage alloy data (chunk {chunk_index+1}/{total_chunks}).\n\n"
+        f"{allowed_section}{few_shot_block}Return ONLY JSON with structure:\n"
+        '{"alloys":[{'
+        '  "name":"...",'
+        '  "storage_capacity":"value + units or ''",'
+        '  "temperature_range":"... or ''",'
+        '  "pressure_range":"... or ''",'
+        '  "synthesis_method":"... or ''",'
+        '  "key_findings":"concise primary experimental or computational result (<=160 chars) or ''",'
+        '  "comments":"optional clarification / notes (<=120 chars) or ''"'
+        '}]}\n\n'
+        "Rules:\n"
+        "- Use exact numbers & units from THIS CHUNK only.\n"
+        "- No hallucination; leave '' when absent.\n"
+        "- Key Findings: salient result (capacity, stability, kinetics, thermodynamics).\n"
+        "- Comments: secondary note (e.g., phase change, cycle count, degradation).\n"
+        "- No duplicates within this chunk (normalize subscripts to digits for matching).\n"
+        "- If none found output {\"alloys\": []}.\n\n"
+        f"TEXT START\n---\n{chunk_text[:MAX_CHARS_PER_CHUNK]}\n---\nTEXT END\n\n"
+        "Output JSON only:"
+    )
 
 def query_ollama_raw(prompt: str) -> str:
     payload = {
@@ -159,6 +177,8 @@ def sanitize_alloy_entries(entries: List[Dict[str, Any]]) -> List[Dict[str, str]
             "temperature_range": _clean_nullable(e.get("temperature_range")),
             "pressure_range": _clean_nullable(e.get("pressure_range")),
             "synthesis_method": _clean_nullable(e.get("synthesis_method")),
+            "key_findings": _clean_nullable(e.get("key_findings")),
+            "comments": _clean_nullable(e.get("comments")),
         })
     return cleaned
 
@@ -183,6 +203,8 @@ def aggregate_alloys(list_of_lists: List[List[Dict[str, str]]]) -> List[Dict[str
                     "Temperature Range": alloy["temperature_range"],
                     "Pressure Range": alloy["pressure_range"],
                     "Synthesis Method": alloy["synthesis_method"],
+                    "Key Findings": alloy.get("key_findings", ""),
+                    "Comments": alloy.get("comments", ""),
                 }
             else:
                 existing = merged[norm]
@@ -191,6 +213,8 @@ def aggregate_alloys(list_of_lists: List[List[Dict[str, str]]]) -> List[Dict[str
                     ("Temperature Range", "temperature_range"),
                     ("Pressure Range", "pressure_range"),
                     ("Synthesis Method", "synthesis_method"),
+                    ("Key Findings", "key_findings"),
+                    ("Comments", "comments"),
                 ]:
                     out_key, src_key = key_map
                     new_val = alloy[src_key]
@@ -209,6 +233,134 @@ def filter_informative_alloys(alloys: List[Dict[str, str]]) -> List[Dict[str, st
         if any(a.get(col, "").strip() for col in ALLOY_TABLE_HEADER[1:]):
             informative.append(a)
     return informative
+
+def count_filled_properties(alloy: Dict[str, str]) -> int:
+    return sum(1 for col in ALLOY_TABLE_HEADER[1:] if alloy.get(col, '').strip() and alloy.get(col, '-') != '-')
+
+def compute_frequency_map(text: str, alloys: List[Dict[str, str]]) -> Dict[str, int]:
+    freq = {}
+    lower_text = text.lower()
+    for a in alloys:
+        name = a.get('Alloy Name', '')
+        norm = normalize_alloy_name(name)
+        if not norm:
+            freq[norm] = 0
+            continue
+        # Simple frequency: count occurrences of base element tokens sequence ignoring subscripts/spaces
+        # Use regex on raw name with digits/subscripts normalized
+        pattern = re.escape(re.sub(r'[₀₁₂₃₄₅₆₇₈₉]', lambda m: str('₀₁₂₃₄₅₆₇₈₉'.index(m.group(0))), name.lower()))
+        try:
+            matches = re.findall(pattern, lower_text)
+            freq[norm] = len(matches)
+        except re.error:
+            freq[norm] = 0
+    return freq
+
+def apply_prominence_filter(alloys: List[Dict[str, str]], text: str) -> Tuple[List[Dict[str, str]], Dict[str, Any]]:
+    """Filter alloys to those with at least MIN_FILLED_FIELDS properties; if that empties list, fallback to max filled.
+    Then rank by (filled_properties * 10 + frequency) and trim to MAX_ALLOYS_OUTPUT."""
+    if not alloys:
+        return alloys, {"prominence_applied": False}
+    freq_map = compute_frequency_map(text, alloys)
+    # Annotate
+    enriched = []
+    for a in alloys:
+        filled = count_filled_properties(a)
+        enriched.append((a, filled, freq_map.get(normalize_alloy_name(a.get('Alloy Name','')), 0)))
+    # Filter by min filled
+    filtered = [t for t in enriched if t[1] >= MIN_FILLED_FIELDS]
+    min_filter_removed = len(enriched) - len(filtered)
+    if not filtered:  # fallback: take those with max filled even if < MIN_FILLED_FIELDS
+        max_filled = max(t[1] for t in enriched)
+        filtered = [t for t in enriched if t[1] == max_filled]
+    # Score and sort
+    scored = sorted(filtered, key=lambda x: (x[1]*10 + x[2], x[1], x[2]), reverse=True)
+    if len(scored) > MAX_ALLOYS_OUTPUT:
+        scored = scored[:MAX_ALLOYS_OUTPUT]
+    final = [t[0] for t in scored]
+    stats = {
+        "prominence_applied": True,
+        "min_filled_required": MIN_FILLED_FIELDS,
+        "removed_by_min_fields": min_filter_removed,
+        "after_min_filter": len(filtered),
+        "final_after_cap": len(final),
+        "max_alloys_output_cap": MAX_ALLOYS_OUTPUT
+    }
+    return final, stats
+
+# -------- TITLE / ABSTRACT ALLOY FILTERING --------
+SUBSCRIPT_MAP = str.maketrans('₀₁₂₃₄₅₆₇₈₉', '0123456789')
+
+def normalize_formula(s: str) -> str:
+    if not s:
+        return ''
+    s = s.translate(SUBSCRIPT_MAP)
+    s = s.replace('−', '-').replace('–', '-').replace('—', '-')
+    # Remove spaces and parentheses that wrap the whole thing
+    s = re.sub(r'[^A-Za-z0-9\.]+', '', s)  # keep letters, digits, dots
+    return s.lower()
+
+def extract_title_and_abstract(full_text: str) -> Tuple[str, str]:
+    """Heuristic extraction: title = first non-empty line (<150 chars), abstract = text after 'Abstract' until first heading or excessive newline.
+    Fallbacks if patterns not found."""
+    lines = [l.strip() for l in full_text.splitlines()]
+    title = ''
+    for l in lines[:30]:  # search first 30 lines
+        if l and len(l) < 160 and not l.lower().startswith(('abstract', 'doi')):
+            title = l
+            break
+    # Abstract detection
+    lower = full_text.lower()
+    abs_idx = lower.find('abstract')
+    abstract = ''
+    if abs_idx != -1:
+        after = full_text[abs_idx:abs_idx+8000]  # slice
+        # Remove leading 'Abstract' word
+        after = re.sub(r'^[Aa]bstract[:\s.-]*', '', after)
+        # Stop at common section starts (e.g., 1. Introduction)
+        m = re.search(r'\n\s*\d+\s*[\.|)]\s*(introduction|experimental|materials|results)\b', after, flags=re.IGNORECASE)
+        abstract = after[:m.start()] if m else after[:4000]
+    return title, abstract.strip()
+
+def find_alloy_candidates(text: str) -> List[str]:
+    """Extract candidate alloy formulas from given text (title + abstract)."""
+    # Regex: sequences of element symbols with optional numeric/subscript parts, at least 2 elements.
+    pattern = r'(?:\b(?:[A-Z][a-z]?)(?:[0-9₀₁₂₃₄₅₆₇₈₉\.]{0,3})){2,8}'
+    matches = re.findall(pattern, text)
+    # Keep those containing at least one digit/subscript OR length >5 (to avoid generic element pairs) OR containing Mn/Fe/Ti/Ni/La etc composite patterns
+    filtered = []
+    for m in matches:
+        if len(m) < 4:
+            continue
+        if re.search(r'[0-9₀₁₂₃₄₅₆₇₈₉]', m) or len(m) > 5:
+            filtered.append(m)
+    # Deduplicate by normalized form
+    seen = set()
+    out = []
+    for f in filtered:
+        norm = normalize_formula(f)
+        if norm and norm not in seen:
+            seen.add(norm)
+            out.append(f)
+    return out[:60]  # cap list
+
+def filter_to_allowed(alloys: List[Dict[str, str]], allowed_raw: List[str]) -> Tuple[List[Dict[str, str]], int]:
+    if not FILTER_TITLE_ABSTRACT or not allowed_raw:
+        return alloys, 0
+    allowed_norm = {normalize_formula(a) for a in allowed_raw if normalize_formula(a)}
+    kept = []
+    removed = 0
+    for a in alloys:
+        n = normalize_formula(a.get('Alloy Name', ''))
+        if not n:
+            removed += 1
+            continue
+        # Keep if exact or substring either way
+        if any( (n == an) or (n in an) or (an in n) for an in allowed_norm ):
+            kept.append(a)
+        else:
+            removed += 1
+    return kept, removed
 
 def normalize_alloy_name(name: str) -> str:
     # Lowercase, remove spaces & common separators for dedup (keep subscripts/superscripts characters)
@@ -285,7 +437,12 @@ def extract_text_from_pdf(path: str) -> str:
 
 def build_alloy_table_prompt(paper_text: str) -> str:
     """Legacy single-pass prompt (kept for fallback)."""
-    instructions = f"You are an assistant. Return ONLY the CSV table. Text truncated.\n{paper_text[:8000]}"
+    header = " | ".join(ALLOY_TABLE_HEADER)
+    body = paper_text[:8000]
+    instructions = (
+        "Extract hydrogen storage alloy data from the provided text and output ONLY a pipe-separated table with this exact header: "
+        f"{header}\nRules: Use '-' for missing cells. 'Key Findings' = concise main result (<=160 chars). 'Comments' = brief note (<=120 chars) if helpful. No markdown, no extra lines before the header. Text (truncated) below:\n" + body
+    )
     return instructions
 
 def query_ollama(prompt: str) -> str:
@@ -378,11 +535,13 @@ async def extract(file: UploadFile = File(...)):
         f.write(text)
 
     # Multi-chunk processing
+    title, abstract = extract_title_and_abstract(text)
+    allowed_alloys = find_alloy_candidates(title + "\n" + abstract) if FILTER_TITLE_ABSTRACT else []
     chunks = chunk_text(text)
     all_chunk_results: List[List[Dict[str, str]]] = []
     chunk_errors = 0
     for idx, chunk in enumerate(chunks):
-        prompt = build_chunk_prompt(chunk, idx, len(chunks))
+        prompt = build_chunk_prompt(chunk, idx, len(chunks), allowed_alloys)
         alloys = []
         for attempt in range(RETRY_COUNT + 1):
             try:
@@ -400,6 +559,19 @@ async def extract(file: UploadFile = File(...)):
     pre_filter_count = len(aggregated)
     if not KEEP_EMPTY_ALLOYS:
         aggregated = filter_informative_alloys(aggregated)
+    # Apply title/abstract allowed filter
+    filtered_out = 0
+    aggregated, removed_count = filter_to_allowed(aggregated, allowed_alloys)
+    filtered_out += removed_count
+    prominence_stats = {}
+    aggregated, prominence_stats = apply_prominence_filter(aggregated, text)
+    # Final stricter filter: require at least MIN_OUTPUT_FILLED_FIELDS filled properties (excluding name)
+    output_filter_removed = 0
+    if aggregated:
+        filtered_final = [a for a in aggregated if count_filled_properties(a) >= MIN_OUTPUT_FILLED_FIELDS]
+        output_filter_removed = len(aggregated) - len(filtered_final)
+        if filtered_final:  # Only apply if it doesn't wipe out everything
+            aggregated = filtered_final
     csv_text, final_rows = alloys_to_csv_rows(aggregated)
 
     # Fallback: legacy single-pass if no alloys detected
@@ -426,6 +598,13 @@ async def extract(file: UploadFile = File(...)):
             # Apply filtering on fallback result too if configured
             if not KEEP_EMPTY_ALLOYS:
                 parsed_rows = [r for r in parsed_rows if any(r.get(col,'').strip() for col in ALLOY_TABLE_HEADER[1:])]
+            if FILTER_TITLE_ABSTRACT and allowed_alloys:
+                pruned = []
+                for r in parsed_rows:
+                    n = normalize_formula(r.get('Alloy Name',''))
+                    if any( (n == normalize_formula(a)) or (n in normalize_formula(a)) or (normalize_formula(a) in n) for a in allowed_alloys):
+                        pruned.append(r)
+                parsed_rows = pruned
             final_rows = parsed_rows
         except Exception:
             # Keep empty result with header
@@ -454,7 +633,13 @@ async def extract(file: UploadFile = File(...)):
             "fallback_used": fallback_used,
             "total_alloys": len(final_rows),
             "pre_filter_alloys": pre_filter_count,
-            "kept_empty_alloys": KEEP_EMPTY_ALLOYS
+            "kept_empty_alloys": KEEP_EMPTY_ALLOYS,
+            "filter_title_abstract": FILTER_TITLE_ABSTRACT,
+            "allowed_alloys_source_count": len(allowed_alloys),
+            "removed_by_title_abstract": filtered_out
+            ,"min_output_filled_fields": MIN_OUTPUT_FILLED_FIELDS
+            ,"removed_by_output_min_fields": output_filter_removed
+            ,**prominence_stats
         }
     })
 

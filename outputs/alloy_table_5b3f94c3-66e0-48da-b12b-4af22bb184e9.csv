@@ -1,0 +1,8 @@
+﻿Alloy Name,Storage Capacity,Temperature Range,Pressure Range,Synthesis Method
+(Ce0.1La0.9)(Ni4.47Al0.06Fe0.2Mn0.27),-,-,40 bar,-
+Alloy_1_as-cast (Ce0.1La0.9(Ni4.47Al0.06Fe0.2Mn0.27)),1.36 (4%),373 K,1.31 bar,arc-melting
+Alloy_1_heat-treated (Ce0.1La0.9(Ni4.47Al0.06Fe0.2Mn0.27)),1.33 (2%),373 K,11.6 bar,arc-melting and heat treatment at 1273 K for 7 days
+Alloy_2_as-cast ((Ce0.65La0.35)(Ni3.8Al0.4Fe0.4Mn0.4)),1.11 (8%),393 K,1.21 bar,arc-melting
+Alloy_2_heat-treated ((Ce0.65La0.35)(Ni3.8Al0.4Fe0.4Mn0.4)),1.11 (8%),393 K,7.66 bar,arc-melting and heat treatment at 1273 K for 7 days
+Alloy_3_as-cast ((Ce0.65La0.35)(Ni3.5Al0.5Fe0.5Mn0.5)),1.01 (13%),433 K,1.16 bar,arc-melting
+Alloy_3_heat-treated ((Ce0.65La0.35)(Ni3.5Al0.5Fe0.5Mn0.5)),1.05 (10%),433 K,6.20 bar,arc-melting and heat treatment at 1273 K for 7 days

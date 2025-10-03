@@ -115,6 +115,90 @@ Abstract: Mg₂Ni is considered a promising candidate for hydrogen storage mater
     }
 ]
 
+# ============================================================================
+# Few-shot table examples (multi-alloy extraction) central helper
+# Source: user-provided scenarios (HEAs, Mg-based high capacity, review style)
+# Output schema for table mode: name, storage_capacity, temperature_range, pressure_range, synthesis_method
+# We keep these compact to minimize token usage. Use ensure_ascii=False to preserve subscripts/Unicode.
+# ============================================================================
+
+FEW_SHOT_TABLE_SCENARIOS = [
+    {
+        "scenario": "Multiple BCC HEAs with different capacities and shared processing",
+        "examples": [
+            {
+                "name": "Ti35Cr20Mn20Fe15Ni10",
+                "storage_capacity": "2.1 wt% (50°C)",
+                "temperature_range": "30 to 200°C",
+                "pressure_range": "",
+                "synthesis_method": "Vacuum arc melting; Melt spinning"
+            },
+            {
+                "name": "Ti30V25Zr20Nb15Ni10",
+                "storage_capacity": "1.7 wt% (100 cycles)",
+                "temperature_range": "30 to 200°C",
+                "pressure_range": "",
+                "synthesis_method": "Vacuum arc melting; Melt spinning; Rapid quenching"
+            }
+        ]
+    },
+    {
+        "scenario": "High-capacity Mg alloy with explicit P,T",
+        "examples": [
+            {
+                "name": "Mg-Ni-La",
+                "storage_capacity": "6.3 wt%",
+                "temperature_range": "300°C",
+                "pressure_range": "35 atm",
+                "synthesis_method": "Reactive ball milling; Ni & La nanoparticle doping"
+            }
+        ]
+    },
+    {
+        "scenario": "Review style alloys with shared conditions",
+        "examples": [
+            {
+                "name": "TiFe",
+                "storage_capacity": "",
+                "temperature_range": "RT to 300°C",
+                "pressure_range": "5-10 MPa",
+                "synthesis_method": "Conventional smelting"
+            },
+            {
+                "name": "LaNi5",
+                "storage_capacity": "",
+                "temperature_range": "RT to 300°C",
+                "pressure_range": "5-10 MPa",
+                "synthesis_method": "Conventional smelting"
+            },
+            {
+                "name": "Mg2Ni",
+                "storage_capacity": "",
+                "temperature_range": "RT to 300°C",
+                "pressure_range": "5-10 MPa",
+                "synthesis_method": "Conventional smelting"
+            }
+        ]
+    }
+]
+
+def get_table_few_shot_block(enabled: bool = True, max_scenarios: int = 3) -> str:
+    """Return a compact few-shot block for table alloy extraction.
+    Only included when 'enabled' to minimize tokens. max_scenarios limits examples.
+    """
+    if not enabled:
+        return ""
+    lines = ["FEW-SHOT TABLE EXAMPLES"]
+    count = 0
+    for scen in FEW_SHOT_TABLE_SCENARIOS:
+        if count >= max_scenarios:
+            break
+        lines.append(f"# {scen['scenario']}")
+        lines.append(json.dumps(scen["examples"], ensure_ascii=False))
+        count += 1
+    lines.append("END FEW-SHOT EXAMPLES")
+    return "\n".join(lines) + "\n"
+
 class LLMExtractor:
     def __init__(self, model_name: str = "gpt-oss:120b-cloud", api_url: str = "http://localhost:11434"):
         self.model_name = model_name
