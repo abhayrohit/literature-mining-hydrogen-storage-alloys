@@ -1,0 +1,1033 @@
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; July 14, 2025;13:16 ] 
+Available online at www.keaipublishing.com/en/journals/journal-of-magnesium-and-alloys/ 
+Journal of Magnesium and Alloys xxx (xxxx) xxx 
+www.elsevier.com/locate/jma 
+Full Length Article 
+Enhancing hydrogen storage performance of MgH2 with hollow Bi2 Ti2 O7 
+catalyst: Synergistic effects of Bi2 Mg3 alloy phase and Ti polyvalency 
+Xiaoying Yang a , Xinqiang Wang a , ∗, Ruijie Liu a , Yanxia Liu a , Zhenglong Li a , Wengang Cui a , 
+Fulai Qi a , Yaxiong Yang a , Jian Chen a , ∗, Hongge Pan a , b , ∗
+a Institute of Science and Technology for New Energy, Xi’an Technological University, Xi’an, 710021, PR China 
+b School of Materials Science and Engineering State Key Laboratory of Clean Energy Utilization, Zhejiang University, Hangzhou, 310027, PR China 
+Received 26 February 2025; received in revised form 30 April 2025; accepted 7 June 2025 
+Available online xxx 
+Abstract 
+The role of catalysts in enhancing the hydrogen storage kinetics of the Mg/MgH2 system is pivotal. However, the exploration of efﬁcient 
+catalysts and the underlying principles of their design remain both a prominent focus and a signiﬁcant challenge in current research. In 
+this study, we present a bimetallic oxide of Bi2 Ti2 O7 hollow sphere as a highly effective catalyst for MgH2 . As a result, the Bi2 Ti2 O7 - 
+catalyzed Mg/MgH2 system lowers the hydrogen desorption initiation temperature to 194.3 °C, reduces the peak desorption temperature to 
+245.6 °C, decreases the dehydrogenation activation energy to 82.14 kJ ·mol−1 , and can absorb 5.4 wt. % of hydrogen within 60 s at 200 °C, 
+demonstrating outstanding hydrogen ab/desorption kinetics, compared to pure MgH2 . Additionally, it can maintain a high hydrogen capacity 
+of 5.2 wt. %, even after 50 dehydrogenation cycles, showing good cycle stability. The characterization results show that the high-valent Bi 
+and Ti in Bi2 Ti2 O7 are reduced to their low-valent or even zero-valent metallic states during the dehydrogenation and hydrogenation process, 
+thus establishing an in-situ multivalent and multi-element catalytic environment. Density functional theory calculations further reveal that the 
+synergistic effects between Bi and Ti in the Bi-Ti mixed oxide facilitate the cleavage of Mg-H bonds and lower the kinetic barrier for the 
+dissociation of hydrogen molecules, thereby substantially enhancing the kinetics of the Mg/MgH2 system. This study presents a strategic 
+method for developing efﬁcient catalysts for hydrogen storage materials by harnessing the synergistic effects of metal elements. 
+© 2025 Chongqing University. Publishing services provided by Elsevier B.V. on behalf of KeAi Communications Co. Ltd. 
+This is an open access article under the CC BY-NC-ND license ( http://creativecommons.org/licenses/by-nc-nd/4.0/ ) 
+Keywords: Hydrogen storage; MgH2 ; Bimetallic oxide; Catalysts; Synergistic effects. 
+1. Introduction 
+Energy serves as a fundamental material cornerstone for 
+the survival and advancement of human society. As global 
+progress accelerates and living standards continue to rise, the 
+escalating energy demand coupled with the gradual depletion 
+of fossil fuels presents an urgent and profound challenge that 
+the world must confront [1–5] . In order to meet future en- 
+ergy demands, particularly in the transportation sector, which 
+Peer review under the responsibility of Chongqing University. 
+∗Corresponding authors. 
+E-mail 
+addresses: 
+wangxinqiang@xatu.edu.cn 
+(X. 
+Wang), 
+chenjian@xatu.edu.cn (J. Chen), honggepan@zju.edu.cn , hgpan@zju.edu.cn 
+(H. Pan) . 
+accounts for nearly 60 % of global energy consumption, there 
+is an immediate need to identify green, efﬁcient alternatives 
+to traditional fossil fuels [6–10] . Among the various poten- 
+tial sources of alternative energy, hydrogen stands out as a 
+premier option, owing to its superior energy density, environ- 
+mental benignity, and abundant availability. However, hydro- 
+gen storage limits its utilization of hydrogen energy. Various 
+approaches for hydrogen storage have been explored, with 
+solid-state hydrogen storage emerging as the predominant fo- 
+cus due to its high gravimetric hydrogen density, superior 
+safety characteristics, and cost-effectiveness. 
+Magnesium hydride (MgH2 ), known for its high theoreti- 
+cal mass capacity (7.6 wt. %), high security, exceptional re- 
+versibility, cost-effectiveness, and non-toxicity, has emerged 
+as a promising option for solid-state hydrogen storage mate- 
+https://doi.org/10.1016/j.jma.2025.06.014 
+2213-9567/© 2025 Chongqing University. Publishing services provided by Elsevier B.V. on behalf of KeAi Communications Co. Ltd. This is an open access 
+article under the CC BY-NC-ND license ( http://creativecommons.org/licenses/by-nc-nd/4.0/ ) 
+Please cite this article as: X. Yang, X. Wang, R. Liu et al., Enhancing hydrogen storage performance of MgH2 with hollow Bi2 Ti2 O7 catalyst: Synergistic 
+effects of Bi2 Mg3 alloy phase and Ti polyvalency, Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.06.014
+
+2 
+X. Yang, X. Wang, R. Liu et al. / Journal of Magnesium and Alloys xxx (xxxx) xxx 
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; July 14, 2025;13:16 ] 
+rials [11–14] . However, the thermodynamic stability and slow 
+kinetic of the Mg/MgH2 system require high temperatures, 
+signiﬁcantly hindering its practical application [15–19] . In re- 
+cent years, ongoing advancements in the study of magnesium- 
+based hydrogen storage materials have led to signiﬁcant im- 
+provements in their hydrogen absorption and desorption per- 
+formance [20–22] . So far, signiﬁcant efforts have been ded- 
+icated to developing highly efﬁcient catalysts and gaining a 
+deeper understanding of their catalytic mechanisms, such as 
+additive modiﬁcation, [23] alloying, [24] and nano structuring 
+[25–26] . 
+Among these approaches, the incorporation of catalysts 
+into MgH2 to enhance hydrogen storage properties remains 
+the most widely adopted due to its simplicity and effec- 
+tiveness. Catalyst research to date has largely concentrated 
+on a range of transition metals, such as nickel, cobalt, ti- 
+tanium, niobium, vanadium, molybdenum, and their com- 
+pounds. Among these, Ti-based catalysts have demonstrated 
+relatively high catalytic activity. For instance, Liang et al. 
+[27] compared the catalytic performance of metals such as 
+titanium, vanadium, manganese, nickel, and iron, and estab- 
+lished the following sequence of catalytic activity for hydro- 
+genation Mg-based hydrogen storage materials: Ti > V > 
+Fe > Mn > Ni. Han et al. [28] employed ﬁrst-principles 
+calculations to show that Ti doping weakens the ionic in- 
+teraction between Mg-H, which not only reduces the micro- 
+scopic energy required for hydrogen atom removal but also 
+lowers the macroscopic hydrogen desorption temperature. Al- 
+though the catalytic performance of Ti has been extensively 
+studied, single Ti-based catalysts still fail to meet the applica- 
+tion demands of the Mg/MgH2 system, necessitating further 
+enhancement of their catalytic activity. Recent studies have 
+demonstrated that the synergistic effects between two metal 
+elements in bimetallic oxides can signiﬁcantly improve the 
+catalytic performance of various reactions. This synergy is 
+also applicable to the catalysis of hydrogen storage materi- 
+als based on magnesium materials and remains an active area 
+of exploration. For example, Xian et al. [29] synthesized a 
+two-dimensional Ti-Nb oxide nanosheet, TiNb2 O7 , which was 
+incorporated into MgH2 via ball milling. The observed reduc- 
+tion in the hydrogen desorption onset temperature of MgH2 
+to 178 °C upon the incorporation of 3 wt. % catalysts can 
+be ascribed to the combined catalytic effect between the two 
+metal elements, resulting in a substantial 100 °C decrease 
+compared to pure MgH2 . Moreover, unique structures that 
+may form during the catalyst preparation process have the 
+potential to further enhance catalytic performance to some 
+extent. Zhang et al. [4] employed a hydrothermal synthesis 
+method to produce o-Nb2 O5 , resulting in a distinctive hollow 
+morphology with porous structures. Their ﬁndings demon- 
+strated that the incorporation of 7 wt. % o-Nb2 O5 notably low- 
+ered the initial dehydrogenation temperature of MgH2 from 
+260 °C to a range between 250 °C and 195 °C. At 300 °C, 
+the MgH2 composite containing o-Nb2 O5 rapidly desorbed 
+over 5.5 wt. % H2 , and at 200 °C, it efﬁciently re-absorbed 
+5 wt. % of hydrogen within 30 s. The author proposed that 
+the unique structural characteristics of the o-Nb2 O5 were in- 
+strumental in facilitating these enhanced hydrogenation and 
+dehydrogenation behaviors. In addition, the hydrogen diffu- 
+sion rate in magnesium-based alloys is markedly higher than 
+that in pure MgH2 . Consequently, the introduction of alloy- 
+ing elements to form multicomponent alloys or intermetal- 
+lic compounds emerges as a potent strategy to improve both 
+the kinetics and thermodynamics of the MgH2 system. Chen 
+et al. [8] introduced an efﬁcient alloy catalyst for MgH2 par- 
+ticles, comprising low-activity elements Mo and Ni (MoNi 
+alloy). The in-situ generated MoNi and Mg2 Ni nanoparticles 
+tightly and uniformly encapsulate the MgH2 core, establish- 
+ing extensive interfaces that facilitate both hydrogen reaction 
+sites and diffusion pathways. The MoNi-catalyzed Mg/MgH2 
+system demonstrated a remarkable hydrogen absorption and 
+release capacity of 6.7 wt. % at 300 °C, with hydrogen ab- 
+sorption occurring within 60 s and desorption within 10 min. 
+This system exhibited exceptional cyclic stability and supe- 
+rior low-temperature hydrogen storage performance. These 
+advancements provide signiﬁcant impetus for further inves- 
+tigations into harnessing the synergistic interactions between 
+metal elements to develop high-performance bimetallic cata- 
+lysts [30–34] . 
+Despite considerable advances in enhancing the hydrogen 
+storage performance of MgH2 , its properties still fall short of 
+meeting the practical demands for solid-state hydrogen stor- 
+age applications [18 , 35–36] . In this work, the innovative hol- 
+low microsphere structure of the Bi2 Ti2 O7 catalyst is pre- 
+sented, which substantially enhances the hydrogen desorption 
+and absorption processes of the Mg/MgH2 system. The ad- 
+dition of only 10 wt. % Bi2 Ti2 O7 hollow spheres reduces the 
+MgH2 desorption peak temperature to 245.6 °C, lowering the 
+activation energy for dehydrogenation to 82.14 kJ ·mol−1 —an 
+approximately 43 % reduction compared to pure MgH2 . The 
+investigation into the synergistic effects between elements re- 
+veals their signiﬁcant impact on the hydrogen storage capabil- 
+ities of the Mg/MgH2 system. DFT calculations demonstrate 
+that the alloying of Bi with Mg modulates the hydrogen bind- 
+ing free energy at the surface by altering the D -band electron 
+density, thereby enabling the Bi2 Mg3 alloy to exhibit superior 
+hydrogen adsorption and desorption properties. Additionally, 
+through the hydrogen uptake and release processes, the in-situ 
+synthesis of TiO2 and other multivalent Ti species not only 
+promotes extensive interactions between catalytic active sites 
+and MgH2 but also offers notable advantages in facilitating 
+rapid electron transfer and the diffusion of hydrogen atoms or 
+molecules. These attributes underscore the synergistic interac- 
+tion between Bi and Ti, positioning Bi2 Ti2 O7 as a promising 
+catalyst for the Mg/MgH2 system. This work provides a new 
+highly effective bimetallic oxide as a catalyst for MgH2 , and 
+the proposed mechanism underlying its catalytic action. 
+2. Experimental and computational section 
+2.1. Synthesis of catalysts 
+Fig. 1 (a) illustrates the synthesis of Bi2 Ti2 O7 via the 
+solvothermal method, along with a schematic representa- 
+Please cite this article as: X. Yang, X. Wang, R. Liu et al., Enhancing hydrogen storage performance of MgH2 with hollow Bi2 Ti2 O7 catalyst: Synergistic 
+effects of Bi2 Mg3 alloy phase and Ti polyvalency, Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.06.014
+
+X. Yang, X. Wang, R. Liu et al. / Journal of Magnesium and Alloys xxx (xxxx) xxx
+3 
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; July 14, 2025;13:16 ] 
+Fig. 1. (a) Schematic diagram of the preparation of Bi2 Ti2 O7 particles; (b) XRD pattern of Bi2 Ti2 O7 and (c, d) Bi 4f and Ti 2p XPS spectra for Bi2 Ti2 O7 
+sample; the (e) SEM, (f) HRTEM, (g) corresponding EDS Mapping ﬁles of Bi2 Ti2 O7 derivative. 
+tion of the preparation process. In the synthesis process, 
+Mg (99.8 %, Macklin), Bi(NO3 )3 ·5H2 O (99.0 %, Macklin), 
+Ti(OC4 H9 )4 (99 %, Aladdin), and acetone (99 %, SCRC) were 
+utilized. All chemicals were of analytical reagent grade and 
+did not require further puriﬁcation. Bi2 Ti2 O7 microspheres 
+were fabricated through a simple solvothermal method, em- 
+ploying bismuth nitrate (Bi(NO3 )3 ·5H2 O) and Ti(OC4 H9 )4 as 
+the precursor materials. Bi(NO3 )3 ·5H2 O (1 mmol) was dis- 
+solved in 20 mL of acetone solution, to which 1 mmol of 
+TBOT was gradually added under vigorous stirring. The mix- 
+ture was agitated for 2 h and treated with ultrasound for 
+15 min, after which the solution was transferred into a 50 mL 
+Teﬂon-lined stainless autoclave and maintained at 120 °C for 
+12 h. The product was then ﬁltered three times using an- 
+hydrous ethanol and deionized water, it was oven-dried at 
+60 °C for 2 h and then heated in air at 600 °C for 3 h. The 
+calcined material was subsequently ground into a ﬁne, uni- 
+form powder, yielding Bi2 Ti2 O7 microspheres. For compar- 
+ative analysis, Bi2 O3 and TiO2 were synthesized by adding 
+only Bi(NO3 )3 ·5H2 O or Ti(OC4 H9 )4 , respectively, during the 
+preparation process, employing the control-variable approach. 
+2.2. Preparation of MgH2 -x wt. % Bi2 Ti2 O7 ( x = 6, 8, 10, 
+12) composites 
+MgH2 was prepared independently by calcination in the 
+laboratory. The MgH2 –10 wt. % Bi2 Ti2 O7 composite was fab- 
+ricated through high-energy ball milling. A mixture of 0.03 g 
+of Bi2 Ti2 O7 and 0.27 g of MgH2 was placed in the milling 
+jar, with a ball-to-material ratio of 60:1. The milling process 
+was carried out within an argon-ﬁlled glove box. Milling was 
+conducted at a rotational speed of 400 rpm for 6 h, employing 
+a program that alternated between 24 min of operation and 
+6 min of rest. The resulting product was designated MgH2 –
+10 wt. % Bi2 Ti2 O7 . Similarly, MgH2 composites with varying 
+Bi2 Ti2 O7 contents ( x = 6, 8, 12 wt. %) were prepared under 
+the same milling conditions for comparative analysis. 
+2.3. Characterization and hydrogen storage performance 
+tests 
+The phase composition of the samples was assessed us- 
+ing an X-ray diffractometer (XRD, Empyrean from Malvern 
+Panalytical) under an inert nitrogen atmosphere in an anaer- 
+obic glove box, employing a step size of 2 θ = 0.02 ° and a 
+scan speed of 10 °/min. The X-ray source used was Cu-K α
+radiation with a wavelength of 0.15406 ˚A. The microstruc- 
+tural characterization and lattice analysis of the samples were 
+conducted using ﬁeld emission scanning electron microscopy 
+(FESEM, AMBER GMH from TESCAN) and transmission 
+electron microscopy (TEM, JEM-F200 from Electron). El- 
+emental distribution was mapped using TEM coupled with 
+energy-dispersive spectroscopy (EDS, Super-X). Surface com- 
+position and elemental valence states were analyzed via X- 
+Please cite this article as: X. Yang, X. Wang, R. Liu et al., Enhancing hydrogen storage performance of MgH2 with hollow Bi2 Ti2 O7 catalyst: Synergistic 
+effects of Bi2 Mg3 alloy phase and Ti polyvalency, Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.06.014
+
+4 
+X. Yang, X. Wang, R. Liu et al. / Journal of Magnesium and Alloys xxx (xxxx) xxx 
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; July 14, 2025;13:16 ] 
+ray photoelectron spectroscopy (XPS, ESCALAB Xi + from 
+Thermo Scientiﬁc). Hydrogen storage performance was eval- 
+uated using a custom Sievert-type apparatus, following the 
+volume method. In the temperature-programmed desorption 
+test (TPD), the reactor was evacuated to 0.0001 MPa, and the 
+sample was heated to 450 °C at a heating rate of 5 °C ·min−1 . 
+During the non-isothermal hydrogenation process, the sample 
+was exposed to 3 MPa H2 and heating rate at 10 °C ·min−1 
+from room temperature to 300 °C. The hydrogen release peak 
+temperature of various samples was measured using a Net- 
+zsch STA-449 differential scanning calorimeter (DSC). Addi- 
+tionally, the pressure-composition-temperature (PCT) curve of 
+the dehydrogenation process was monitored using the Sievert- 
+type apparatus, with dehydrogenation cycles performed at hy- 
+drogen pressures of 8 MPa and 0.0001 MPa, at 450 °C for 
+desorption and 300 °C for absorption. 
+2.4. Computational models and methods 
+All density functional theory (DFT) calculations were 
+performed using the Vienna Ab-initio Simulation Package 
+(VASP) [37–38] . The exchange-correlation interactions were 
+modeled using the Perdew-Burke-Ernzerhof (PBE) functional 
+within the framework of the generalized gradient approxi- 
+mation (GGA) method [39] . Core-valence interactions were 
+treated using the projected augmented wave (PAW) method 
+[40] . A plane-wave energy cutoff of 480 eV was applied, 
+and a 3 × 3 × 1 Monkhorst-Pack k-point grid was used to 
+sample the Brillouin zone. A vacuum space of 15 ˚A was in- 
+troduced above the surfaces to eliminate periodic interactions. 
+Structural optimization was performed using energy and force 
+convergence criteria set to 1.0 × 10−4 eV and 0.02 eV ˚A−1 , 
+respectively. 
+3. Results and discussion 
+3.1. Characterization of Bi2 Ti2 O7 catalysts 
+The synthesized catalyst was thoroughly characterized, and 
+phase analysis of Bi2 Ti2 O7 was performed XRD, as shown 
+in Fig. 1 (b). In the XRD pattern of the composite material, 
+the peaks corresponding to Bi2 Ti2 O7 at various diffraction 
+peaks were in excellent agreement with the standard XRD 
+card (JCPDS: PDF#32–0118). Notable diffraction peaks ap- 
+peared at 14.877 °, 28.68 °, and 29.96 °, which are assigned 
+to the (222), (622), and (444) planes, respectively. No addi- 
+tional diffraction peaks were observed and conﬁrming that the 
+synthesized material is predominantly composed of Bi2 Ti2 O7 
+with high purity. 
+To further elucidate the elemental valence states, XPS 
+was employed on the Bi2 Ti2 O7 hollow spheres. As shown 
+in Figs. 1 (c) and (d), the XPS spectrum for Bi 4f ( Fig. 1 (c)) 
+displays binding energy peaks at 158.8 eV and 164.2 eV, 
+corresponding to the Bi 4f7/2 and Bi 4f5/2 peaks, respec- 
+tively. These features are indicative of the presence of Bi3+ 
+in the octahedral structure of Bi2 Ti2 O7 , consistent with the 
+expected valence state. The Ti 2p XPS spectrum ( Fig. 1 (d)) 
+shows Ti 2p3/2 and Ti 2p1/2 peaks at 463.7 eV and 457.6 eV, 
+respectively, conﬁrming that Ti is primarily in the Ti
+4 + 
+oxidation state on the sample surface. A broad peak near 
+465.0 eV, resulting from the overlap of Ti 2p1/2 and Bi 
+4d3/2 peaks, further supports this interpretation. These ﬁnd- 
+ings are in agreement with previous studies. Moreover, the 
+full XPS spectrum of Bi2 Ti2 O7 , together with the XPS spec- 
+tra for the O and C elements, is presented in Supplemen- 
+tary Fig. S1. The C 1s spectrum facilitates the correction of 
+peak positions, with a reference binding energy of 248.8 eV. 
+The binding energy of O 1s, approximately 528.5 eV, fur- 
+ther substantiates the oxidation state of the bimetallic ox- 
+ide. SEM analysis of Bi2 Ti2 O7 reveals a hollow microsphere 
+structure, with the spheres adopting a clumped morphology 
+( Fig. 1 (e)). Building on previous studies [5] , it is proposed 
+that this hollow spherical architecture can substantially in- 
+crease the material’s speciﬁc surface area, thereby enhanc- 
+ing the number of active sites and, in turn, improving its 
+catalytic efﬁciency. To investigate the crystalline structure, 
+HRTEM was employed to measure lattice spacings in selected 
+regions, as illustrated in Fig. 1 (f). The interplanar distances 
+of 0.312 nm and 0.595 nm correspond to the (622) and (222) 
+planes of Bi2 Ti2 O7 , respectively, which are in agreement with 
+the XRD results. EDS mapping, presented in Fig. 1 (g), re- 
+veals a uniform distribution of elements across the catalyst 
+surface, with Bi, Ti, and O regions showing substantial over- 
+lap, thereby further validating the successful synthesis of 
+Bi2 Ti2 O7 . 
+For comparison purposes, XRD analysis was also per- 
+formed on samples containing only Bi2 O3 and TiO2 , as shown 
+in Fig. S2. The diffraction peaks from the Bi-only sample 
+were identiﬁed as Bi2 O3 , exhibiting a strong match with the 
+standard XRD card (JCPDS no.32–0118). Similarly, the Ti- 
+only sample displayed diffraction peaks consistent with TiO2 , 
+which also matched the standard XRD card (JCPDS no.32–
+0118). Fig. S3(a–d) illustrates the SEM images of the sam- 
+ples, offering a comprehensive comparison of their morpho- 
+logical characteristics. Bi2 O3 displays an irregular, rod-like 
+structure, while TiO2 is manifested as ﬁne particulate aggre- 
+gates. The distinctive morphology of the Bi2 Ti2 O7 bimetallic 
+oxide is likely to have played a signiﬁcant role in enhancing 
+its hydrogen storage performance. 
+3.2. Characterization of MgH2 –10 wt. % Bi2 Ti2 O7 
+composites 
+Fig. 2 (a) displays the XRD patterns of the Bi2 Ti2 O7 cat- 
+alyst before and after ball milling with MgH2 . In the XRD 
+pattern of the MgH2 –10 wt. % Bi2 Ti2 O7 composite post-ball 
+milling, characteristic peaks of MgH2 appear at 27.946 °, 
+35.743 °, 39.855 °, and 54.616 °, corresponding to the (110), 
+(101), (200), and (211) planes, respectively. The diffraction 
+peaks of Bi2 Ti2 O7 in the composite are observed at 14.877 °, 
+28.68 °, and 29.96 °, corresponding to the (222), (622), and 
+(444) planes, respectively, conﬁrming the thorough mixing 
+of the two materials. Additionally, ball milling induces a 
+partial reaction between Bi2 Ti2 O7 and MgH2 , resulting in 
+Please cite this article as: X. Yang, X. Wang, R. Liu et al., Enhancing hydrogen storage performance of MgH2 with hollow Bi2 Ti2 O7 catalyst: Synergistic 
+effects of Bi2 Mg3 alloy phase and Ti polyvalency, Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.06.014
+
+X. Yang, X. Wang, R. Liu et al. / Journal of Magnesium and Alloys xxx (xxxx) xxx
+5 
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; July 14, 2025;13:16 ] 
+Fig. 2. (a) XRD pattern, (b) TEM, (c) HRTEM, (d) SAED pattern and (e) corresponding EDS elemental mapping ﬁles of as-prepared MgH2 –10 wt. % 
+Bi2 Ti2 O7 . 
+the formation of a small amount of Bi2 Mg3 alloy phase. 
+Diffraction peaks observed at 23.966 ° and 25.063 ° corre- 
+spond to the (002) and (101) planes of Bi2 Mg3 . Nonethe- 
+less, MgH2 and Bi2 Ti2 O7 remain the dominant phases. The 
+milling process effectively reduces the particle size of both 
+MgH2 and Bi2 Ti2 O7 . The TEM image in Fig. 2 (b) reveals 
+dark spots, which are tentatively identiﬁed as the Bi2 Mg3 
+alloy formed during milling. As shown in Fig. 2 (c), lattice 
+spacing measurements from selected regions yield values of 
+d = 0.258 nm, 0.159 nm, 0.234 nm, corresponding to the 
+(800) plane of Bi2 Ti2 O7 , the (220) plane of MgH2 , and the 
+(110) plane of Bi2 Mg3 , respectively. Furthermore, the SAED 
+rings shown in Fig. 2 (d) correspond to the (800) plane of 
+Bi2 Ti2 O7 , the (220) plane of MgH2 , and the (110) plane of 
+Bi2 Mg3 , further validating the presence of these three phases 
+in the composite material. The increased number of crystal 
+planes facilitates the destabilization of MgH2 , enhancing its 
+propensity for hydrogen release. Moreover, the distribution of 
+MgH2 , Bi2 Mg3 , and Bi2 Ti2 O7 is discernible through EDS el- 
+emental mapping ( Fig. 2 (e)). The overlapping regions of Mg 
+and Bi enrichments correspond to Bi2 Ti2 O7 , while the par- 
+tial overlap of the Mg and Bi enrichments corresponds to 
+the Bi2 Mg3 alloy. The EDS mapping conﬁrms the uniform 
+distribution of the elements within the composite material 
+( Fig. 2 (e)). 
+3.3. Hydrogen storage properties 
+To assess the synergistic effect of the Bi-Ti bimetallic cata- 
+lyst, the dehydrogenation performance of the MgH2 –10 wt. % 
+Bi2 Ti2 O7 composite was compared to that of control sam- 
+ples. As shown in Fig. 3 (a), under identical catalyst load- 
+ing conditions, the MgH2 –10 wt. % Bi2 Ti2 O7 composite ex- 
+hibits the lowest hydrogen desorption temperature and the 
+most rapid dehydrogenation kinetics. For the composite ma- 
+terial doped with 10 wt. % TiO2 , the initial desorption temper- 
+Please cite this article as: X. Yang, X. Wang, R. Liu et al., Enhancing hydrogen storage performance of MgH2 with hollow Bi2 Ti2 O7 catalyst: Synergistic 
+effects of Bi2 Mg3 alloy phase and Ti polyvalency, Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.06.014
+
+6 
+X. Yang, X. Wang, R. Liu et al. / Journal of Magnesium and Alloys xxx (xxxx) xxx 
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; July 14, 2025;13:16 ] 
+Fig. 3. (a) The rising temperature dehydrogenation curve for different catalysts and (b) MgH2 -x wt. % Bi2 Ti2 O7 ; (c) the histograms of dehydrogenation 
+activation energy of different composites, composites 1 to 7 are MgH2 –10 wt. % Bi2 Ti2 O7 , MgH2 –8 wt. % Bi2 Ti2 O7 , MgH2 –12 wt. % Bi2 Ti2 O7 , MgH2 –
+10 wt. % TiO2 , MgH2 –6 wt. % Bi2 Ti2 O7 , MgH2 –10 wt. % Bi2 O3 and MgH2 ; (d) isothermal dehydrogenation curve prepared at 300 °C of different catalysts; 
+(e) isothermal dehydrogenation (f) absorption curves at different temperatures for MgH2 and MgH2 –10 wt. % Bi2 Ti2 O7 . 
+ature is reduced to 220 °C, representing a notable improve- 
+ment over pure MgH2 ; however, it remains higher than that 
+of the MgH2 –10 wt. % Bi2 Ti2 O7 composite. Surprisingly, the 
+incorporation of Bi2 O3 did not lead to a signiﬁcant enhance- 
+ment in the dehydrogenation performance of MgH2 . While 
+a modest reduction in the initial desorption temperature was 
+observed, decreasing from 337 °C to 321.3 °C, the peak des- 
+orption temperature remained similar to that of pure MgH2 . 
+Furthermore, the overall hydrogen release was even lower, 
+dropping from approximately 7.5 wt. % to 6.3 wt. %, thus un- 
+derscoring the absence of any appreciable catalytic activity. 
+To elucidate the catalytic role of Ti species, XRD character- 
+ization was performed on both MgH2 -Bi2 Ti2 O7 and MgH2 - 
+Bi2 O3 composites in their as-milled state and after initial de- 
+hydrogenation. Fig. S4(a) reveals that no Bi2 Mg3 alloy phase 
+formed in the MgH2 -Bi2 O3 composite after ball-milling, re- 
+sulting in a lack of catalytic active sites during initial dehy- 
+drogenation. Fig. S4(b) shows that there is a distinct Bi2 Mg3 
+alloy phase in the composite material after dehydrogenation. 
+From this, it can be inferred that the Bi2 Mg3 alloy phase is 
+more likely to form under high-temperature conditions, and 
+the presence of Ti4 + in Bi2 Ti2 O7 accelerates this process. 
+These ﬁndings underscore the indispensable role of multiva- 
+lent metal oxides in the catalytic modiﬁcation of MgH2 , par- 
+ticularly highlighting the advantages of Ti-containing catalysts 
+in maintaining reversible redox cycles and stable catalytic 
+interfaces. 
+To further explore the catalytic role of the hollow-sphere 
+Bi2 Ti2 O7 bimetallic oxide in improving the hydrogen stor- 
+age performance of MgH2 , the dehydrogenation performance 
+of ball-milled composites containing varying amounts of 
+Bi2 Ti2 O7 (MgH2 -x wt. % Bi2 Ti2 O7 ) was investigated, as 
+shown in Fig. 3 (b). Pure MgH2 exhibited a high initial desorp- 
+tion temperature of 335 °C. The comparison of dehydrogena- 
+tion performances reveals that the MgH2 –10 wt. % Bi2 Ti2 O7 
+composite demonstrates the most remarkable results, exhibit- 
+ing an initial desorption temperature of 194.3 °C and a ﬁnal 
+hydrogen desorption of 6.59 wt. %. The difference in initial 
+desorption temperature between target and control samples 
+is highlighted in Fig. 3 (c). Furthermore, as shown in Fig. 
+S5, compared to previously reported catalytic systems, our 
+catalyst showed excellent performance at initial desorption 
+temperatures, maintaining a high amount of dehydrogenation 
+even at relatively low starting temperatures. Comprehensive 
+comparative data of representative samples are provided in 
+Table S1 of the Supporting Information [4 , 11 , 29 , 41–45] . To 
+further elucidate the differences in hydrogen storage capabil- 
+ities, isothermal hydrogen absorption tests were conducted at 
+200 °C and 3 MPa, as depicted in Fig. 3 (d). Under the same 
+conditions, the MgH2 –10 wt. % Bi2 Ti2 O7 composite reaches 
+a hydrogen absorption of 5.14 wt. % within approximately 
+30 min, whereas the MgH2 –10 wt. % TiO2 composite absorbs 
+only 3.95 wt. % H2 . Interestingly, the MgH2 –10 wt. % Bi2 O3 
+composite even shows poorer hydrogen absorption than pure 
+MgH2 , suggesting that this material is almost non-recyclable. 
+By observing Fig. S4(b), it was found that Bi2 O3 was almost 
+completely consumed after dehydrogenation, lacking a re- 
+versible electron transfer pathway. Therefore, Bi2 O3 can only 
+be irreversibly reduced to Bi0 (Bi3 + → Bi0 ), which hinders the 
+continuous supply of active sites in subsequent cycles and 
+Please cite this article as: X. Yang, X. Wang, R. Liu et al., Enhancing hydrogen storage performance of MgH2 with hollow Bi2 Ti2 O7 catalyst: Synergistic 
+effects of Bi2 Mg3 alloy phase and Ti polyvalency, Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.06.014
+
+X. Yang, X. Wang, R. Liu et al. / Journal of Magnesium and Alloys xxx (xxxx) xxx
+7 
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; July 14, 2025;13:16 ] 
+leads to a poor hydrogen absorption effect. From the compar- 
+ative hydrogen absorption and desorption data, it is evident 
+that the synergistic interaction between the Bi and Ti metal 
+elements within the catalyst signiﬁcantly enhances the kinetic 
+properties of MgH2 [46] . 
+Subsequent measurements were conducted on the isother- 
+mal hydrogen absorption and desorption curves of pure MgH2 
+and MgH2 –10 wt. % Bi2 Ti2 O7 composites across a range of 
+temperatures. As illustrated in Fig. 3 (e), the MgH2 –10 wt. % 
+Bi2 Ti2 O7 composite achieved a hydrogen desorption capac- 
+ity of 6.3 wt. % within 15 min at 290 °C, whereas pure 
+MgH2 showed no detectable desorption initiation under iden- 
+tical conditions. Even at an elevated temperature of 350 °C, 
+pure MgH2 released only 1.63 wt. % hydrogen after 20 min. 
+These results demonstrate that Bi2 Ti2 O7 incorporation signif- 
+icantly enhances the dehydrogenation performance of MgH2 , 
+enabling higher hydrogen release yields at substantially re- 
+duced temperatures. Fig. 3 (f) presents the isothermal hydro- 
+gen absorption data for both pure MgH2 and MgH2 –10 wt. % 
+Bi2 Ti2 O7 composites under 3 MPa pressure at various temper- 
+atures. At 200 °C, the fully dehydrogenated MgH2 –10 wt. % 
+Bi2 Ti2 O7 composite absorbed 5.29 wt. % H2 within 60 min, 
+while pure MgH2 achieved merely 1.66 wt. % H2 absorption 
+under identical conditions. These ﬁndings conclusively indi- 
+cate that undoped MgH2 requires signiﬁcantly higher opera- 
+tional temperatures to attain hydrogen sorption performance 
+comparable to the Bi2 Ti2 O7 -modiﬁed material. In summary, 
+the catalytic doping strategy developed in this study substan- 
+tially enhances both hydrogen absorption and release proper- 
+ties of MgH2 , presenting a promising pathway for advancing 
+magnesium-based hydrogen storage materials. 
+3.4. Dehydrogenation kinetics and thermodynamics 
+The thermodynamic and kinetic impacts of the Bi2 Ti2 O7 
+catalyst on the dehydrogenation behavior of MgH2 were fur- 
+ther examined through DSC, and the Kissinger method [47] . 
+Figs. 4 (a–b) present the DSC curves for both pure MgH2 
+and the MgH2 –10 wt. % Bi2 Ti2 O7 composite, recorded at 
+heating rates of 3 °C ·min−1 , 5 °C ·min−1 , 7 °C ·min−1 and 
+10 °C ·min−1 . The DSC curve of pure MgH2 at a heating 
+rate of 3 °C ·min−1 shows a dehydrogenation peak at approx- 
+imately 339 °C. In contrast, when Bi2 Ti2 O7 is incorporated, 
+the dehydrogenation peak for the MgH2 –10 wt. % Bi2 Ti2 O7 
+composite shifts to a signiﬁcantly lower temperature. Speciﬁ- 
+cally, the dehydrogenation peak temperature for this compos- 
+ite drops to 245.6 °C, marking a reduction of 93.4 °C com- 
+pared to pure MgH2 . This marked decrease in the dehydro- 
+genation peak temperature underscores the enhanced catalytic 
+activity of Bi2 Ti2 O7 . To further probe the dehydrogenation 
+kinetics of the composite material, the activation energy ( Ea ) 
+for hydrogen desorption was calculated using the Kissinger 
+method (Equation (1)), derived from the DSC data: 
+ln 
+ 
+β
+T 2 
+p 
+ 
+= −Ea 
+RTp 
++ ln ( AR /Ea ) 
+(1) 
+The parameters β, Tp , A , and R represent the heating rate, 
+the absolute temperature at the peak desorption rate, the factor 
+before the exponential term, and the gas constant, respectively. 
+The value of Tp is derived from the DSC curves shown in 
+Fig. 4 (c). The activation energy ( Ea ) of the samples was deter- 
+mined by ﬁtting the data presented in Figs. 4 (a–b). As shown 
+in Fig. 4 (c), in comparison to the high Ea of pure MgH2 (ap- 
+proximately 141.67 kJ ·mol−1 ), the Ea for the MgH2 –10 wt. % 
+Bi2 Ti2 O7 composite is notably reduced to 82.14 kJ ·mol−1 . 
+This substantial reduction directly attests to the ability of the 
+Bi2 Ti2 O7 catalyst to lower the dehydrogenation kinetic bar- 
+rier of MgH2 . Furthermore, as shown in Fig. S6 and Table 
+S2, MgH2 –10 wt. % Bi2 Ti2 O7 composites have a relatively 
+low Ea compared to many other hydrogen storage materials 
+of the same type [11 , 29 , 42 , 48–49] . 
+In addition, PCT measurements were carried out to further 
+explore the thermodynamic properties of the MgH2 –10 wt. % 
+Bi2 Ti2 O7 composite, as illustrated in Figs. 4 (d–e). During the 
+dehydrogenation process, each PCT curve shows a single ﬂat 
+plateau at a given temperature, corresponding to the decom- 
+position of MgH2 into Mg and H2 . Based on PCT data, the 
+decomposition enthalpy ( H ) was estimated using the Van’t 
+Hoff equation [50] ( Eq. (2) ): 
+ln P = H 
+R T −S/ R 
+(2) 
+The parameters P, S, R, and T correspond to pressure, de- 
+composition entropy, the ideal gas constant, and temperature, 
+respectively. The Van’t Hoff plot derived from these measure- 
+ments is shown in Fig. 4 (f). These PCT curves are employed 
+to assess the effect of the Bi2 Ti2 O7 catalyst on the thermody- 
+namic behavior of MgH2 . The curves for the MgH2 –10 wt. % 
+Bi2 Ti2 O7 composite at temperatures of 320, 340, and 360 °C 
+are presented in Fig. 4 (e). At the four temperatures, the equi- 
+librium pressure of hydrogen absorption is 0.251, 0.381, 0.702 
+and 0.989 MPa, respectively. Based on PCT data and using 
+Van’t Hoff equation (calculation of decomposition heat H ), 
+the ﬁtting Fig. 4 (f) obtained shows that the H of the de- 
+hydrogenation process of MgH2 –10 wt. % Bi2 Ti2 O7 is 80.97 
+kJ ·mol−1 , which is close to the 81.72 kJ ·mol−1 of the mea- 
+sured MgH2 .This ﬁnding suggests that the enthalpy change 
+of the MgH2 –10 wt. % Bi2 Ti2 O7 composite material remains 
+largely unchanged, in line with previous reports that the ad- 
+dition of catalysts does not signiﬁcantly affect the thermody- 
+namic properties of MgH2 [51–52] . 
+3.5. Cycling hydrogen storage properties 
+To assess the cycling stability of the hydrogen storage 
+material, the dehydrogenation performance of the MgH2 –
+10 wt. % Bi2 Ti2 O7 composite was evaluated at 300 °C over 
+multiple cycles, as depicted in Fig. 5 (a). The results demon- 
+strate the composite’s excellent cycling stability. During the 
+initial desorption cycle, a hydrogen release of 6.59 wt. % was 
+achieved. However, subsequent cycles revealed a noticeable 
+decline in hydrogen desorption, with the release decreasing 
+to 5.3 wt. % after the fourth cycle. Notably, by the ﬁftieth cy- 
+Please cite this article as: X. Yang, X. Wang, R. Liu et al., Enhancing hydrogen storage performance of MgH2 with hollow Bi2 Ti2 O7 catalyst: Synergistic 
+effects of Bi2 Mg3 alloy phase and Ti polyvalency, Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.06.014
+
+8 
+X. Yang, X. Wang, R. Liu et al. / Journal of Magnesium and Alloys xxx (xxxx) xxx 
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; July 14, 2025;13:16 ] 
+Fig. 4. (a-c) DSC curves and corresponding Kissinger plots of MgH2 and MgH2 –10 wt. % Bi2 Ti2 O7 ; (d-f) PCT curves and corresponding van’t Hoff plots of 
+MgH2 and MgH2 –10 wt. % Bi2 Ti2 O7 . 
+Fig. 5. (a) Cycling proﬁle of the MgH2 –10 wt. % Bi2 Ti2 O7 ; (b) XRD patterns of MgH2 –10 wt. % Bi2 Ti2 O7 dehydrogenated after 1 cycle, 15 cycles, and 50 
+cycles; (c) TEM, (d) HRTEM and its SAED pattern; (e) corresponding EDS elemental mapping ﬁles of MgH2 –10 wt. % Bi2 Ti2 O7 dehydrogenated after 15 
+cycles. 
+cle, hydrogen desorption stabilized at 5.2 wt. %, maintaining 
+98.1 % of its initial capacity from the ﬁfth to the ﬁftieth cy- 
+cle. In practical applications, maintaining superior hydrogen 
+storage performance over repeated cycles is essential for the 
+advancement of magnesium-based hydrogen storage materi- 
+als. 
+To explore the underlying reasons for the observed de- 
+crease in hydrogen desorption, comprehensive characteriza- 
+tion analyses were performed on the material before and af- 
+ter hydrogen absorption/desorption as well as during cycling. 
+XRD was conducted on the material after the ﬁrst, ﬁfteenth, 
+and ﬁftieth desorption cycles, as shown in Fig. 5 (b). The re- 
+sults reveal that, after 15 and 50 cycles, the material’s com- 
+position remained largely unchanged compared to the ﬁrst 
+desorption cycle. Mg still predominated, but a small amount 
+of MgH2 remained, as evidenced by a diffraction peak at 
+Please cite this article as: X. Yang, X. Wang, R. Liu et al., Enhancing hydrogen storage performance of MgH2 with hollow Bi2 Ti2 O7 catalyst: Synergistic 
+effects of Bi2 Mg3 alloy phase and Ti polyvalency, Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.06.014
+
+X. Yang, X. Wang, R. Liu et al. / Journal of Magnesium and Alloys xxx (xxxx) xxx
+9 
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; July 14, 2025;13:16 ] 
+Fig. 6. (a) XRD patterns of MgH2 –10 wt. % Bi2 Ti2 O7 after ball milling, hydrogen absorption and desorption; (b) in-situ XRD patterns of MgH2 –10 wt. % 
+Bi2 Ti2 O7 with temperature variation; (c-d) high resolution XPS spectra of Bi 4f, and Ti 2p of MgH2 –10 wt. % Bi2 Ti2 O7 composites after ball milling, 
+hydrogen absorption and desorptio. 
+39.855 °, corresponding to the (200) plane. Incomplete de- 
+hydrogenation was identiﬁed as a contributing factor to the 
+decrease in cycling capacity. Fig. S7 presents the XRD pat- 
+terns of the composite after ball milling, as well as after the 
+1st, 15th, and 50th hydrogen absorption cycles. The anal- 
+ysis reveals that the diffraction peaks corresponding to the 
+Bi2 Mg3 alloy phase and metallic Mg are signiﬁcantly inten- 
+siﬁed compared to those after the initial hydrogen absorp- 
+tion. The enhanced peaks of the Bi2 Mg3 phase suggest that 
+this alloy becomes more stable during repeated hydrogena- 
+tion/dehydrogenation cycles due to the optimized interfacial 
+structure. The increased intensity of the Mg peaks indicates 
+that the dehydrogenation of MgH2 proceeds more completely, 
+with the released Mg not being fully rehydrogenated. These 
+ﬁndings demonstrate that the composite develops a stable 
+catalytic-alloy synergistic mechanism during cycling. In the 
+TEM characterization of Fig. 5 (c), the dark spots consistent 
+with that in Fig. 2 (b) can be clearly observed, corresponding 
+to the stable Bi2 Mg3 alloy phase in the process of hydrogen 
+absorption and desorption. The measurement results of lattice 
+spacing in selected areas are shown in Fig. 5 (d). The part of 
+crystal plane spacing of 0.234 nm corresponds to the (110) 
+crystal face of Bi2 Mg3 , and the part of crystal plane spacing 
+of 0.324 nm corresponds to the (110) crystal face of TiO2 , 
+and the measurement results are also reﬂected in the SAED 
+diffraction ring. The above characterization analysis conﬁrms 
+the accuracy of XRD. In addition, EDS observations of the 
+material in Fig. 5 (e) show that Mg elements partially overlap 
+with Bi elements, which also conﬁrms the above speculation. 
+Additionally, SEM images of the composite material after ball 
+milling, dehydrogenation, and 15 cycles are shown in Fig. S8. 
+SEM observations revealed signiﬁcant particle agglomeration 
+after hydrogen absorption, which contributed to a reduction 
+in desorbed hydrogen during the second cycle. However, af- 
+ter ten cycles, the particles were observed to disperse into 
+ﬁner particles, which likely accounts for the stabilization of 
+desorption capacity from the sixth cycle onward. 
+3.6. Analysis of catalytic mechanisms 
+Fig. 6 (a) displays the XRD patterns of the composite ma- 
+terial following ball milling and subsequent hydrogen absorp- 
+Please cite this article as: X. Yang, X. Wang, R. Liu et al., Enhancing hydrogen storage performance of MgH2 with hollow Bi2 Ti2 O7 catalyst: Synergistic 
+effects of Bi2 Mg3 alloy phase and Ti polyvalency, Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.06.014
+
+10 
+X. Yang, X. Wang, R. Liu et al. / Journal of Magnesium and Alloys xxx (xxxx) xxx 
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; July 14, 2025;13:16 ] 
+tion/desorption cycles. The results demonstrate that, after de- 
+hydrogenation, the MgH2 phase largely vanishes, with Mg 
+emerging as the predominant phase. Characteristic diffrac- 
+tion peaks at 32.193 °, 34.398 °, and 36.619 ° correspond to 
+the (100), (002), and (101) planes, respectively. The Bi2 Mg3 
+alloy phase becomes more discernible, while a small amount 
+of TiO2 is also detected, with a peak at 39.187 ° corresponding 
+to the (200) plane. Due to the relatively low catalyst content, 
+the TiO2 peaks are subtle. After hydrogen reabsorption, the 
+Mg characteristic peaks remain partially visible at 36.619 °
+(the (101) plane), indicating that the hydrogenation of the 
+Mg phase is incomplete. The presence of the Bi2 Mg3 alloy 
+phase remains evident, conﬁrming that it stabilizes during the 
+hydrogen absorption and desorption cycles, contributing cat- 
+alytically to the process. Further in-situ XRD measurements 
+were performed during the heating desorption process within 
+the temperature range of 150 °C to 400 °C, as shown in 
+Fig. 6 (b). At temperatures of 250 °C and 300 °C, the Mg 
+diffraction peaks emerge, while the MgH2 peaks persist, sug- 
+gesting partial decomposition of MgH2 . At 350 °C, only Mg 
+peaks are observed, indicating nearly complete decomposition 
+of MgH2 . Additionally, weak peaks associated with the MgO 
+phase appear alongside the main Mg peaks, likely due to the 
+slight oxidation of the material, resulting in the formation of 
+a MgO layer on the surface of the Mg particles. 
+In addition, XPS analysis was performed to gain deeper 
+insights into the changes in the valence states of Bi and Ti 
+during the ball milling, dehydrogenation, and hydrogenation 
+processes. Figs. 6 (c–d) depict the evolution of the valence 
+states of these elements. The Bi 4f XPS spectrum of the 
+ball-milled product was deconvoluted into two pairs of XPS 
+peaks corresponding to the 4f5/2 and 4f7/2 spin-orbit compo- 
+nents, revealing the presence of Bi3 + (162.34 eV/157.43 eV) 
+and Bi0 (160.56 eV/155.24 eV). This conﬁrms that, during 
+ball milling, a portion of the Bi was reduced from the Bi3 + 
+state to the metallic Bi0 state. During dehydrogenation, the 
+catalyst continued to undergo reduction, and Bi reacted with 
+Mg to form the Bi2 Mg3 alloy. Additionally, the XPS spec- 
+tra collected after hydrogen absorption and desorption cycles 
+exhibited no signiﬁcant changes, indicating that both the ox- 
+idation and metallic states of Bi remained stable through- 
+out the hydrogenation and dehydrogenation processes. During 
+ball milling, the MgH2 –10 wt. % Bi2 Ti2 O7 composite inter- 
+acted with MgH2 to form TiO2 , which persisted throughout 
+the process. Reduction reactions also occurred, resulting in 
+the formation of small amounts of Ti3 + and Ti0 , which can 
+serve as an electron transfer mediator that accelerates the de- 
+hydrogenation reaction, thereby promoting the formation of 
+the Bi2 Mg3 alloy phase. Although the Ti content was rela- 
+tively low, preventing the appearance of distinct Ti peaks in 
+the XRD data, these changes were identiﬁed by the XPS spec- 
+tra. The involvement of multivalent Ti in the reaction aided 
+electron transfer between Mg2 + and H−, thus promoting the 
+dehydrogenation [50] . In addition, As shown in Fig. S9(b), 
+after hydrogen absorption, the binding energy of lattice oxy- 
+gen in the composite recovers to a level close to that of the 
+ball-milled state, while the surface hydroxyl binding energy 
+slightly decreases. Concurrently, new surface-adsorbed oxy- 
+gen peaks emerge, accompanied by the formation of oxygen 
+vacancies. During catalysis, these oxygen vacancies function 
+as preferential adsorption and reaction sites. By providing 
+speciﬁc chemical environments, they facilitate reaction pro- 
+gression. Moreover, the oxygen vacancies enhance the charge 
+transfer of electrons or holes, thereby altering the chemical 
+reaction rates and inﬂuencing the kinetic processes of the re- 
+action. 
+To further explore the catalytic role of Bi2 Ti2 O7 in enhanc- 
+ing the hydrogen storage capacity of MgH2 , DFT calculations 
+were performed to elucidate the underlying mechanisms. The 
+initial computational model, as previously described, under- 
+went structural optimization to achieve a more stable con- 
+ﬁguration. The (444) crystal plane of Bi2 Ti2 O7 was selected 
+for analysis, as it is the most likely to be exposed during the 
+process. Charge transfer between MgH2 and Bi2 Ti2 O7 was in- 
+vestigated using electron density difference (EDD) and Bader 
+charge distribution analyses ( Fig. 7 (a)), Fig. S10 shows other 
+supported views. The EDD diagram in Fig. 7 (a) indicates that 
+MgH2 adsorbs onto the O atom, and charge transfer occurs 
+between the MgH2 and Bi2 Ti2 O7 interface, making the Mg-H 
+bond unstable. This catalyzes the decomposition of MgH2 and 
+promotes the formation of the Bi2 Mg3 alloy. Meanwhile, the 
+DOS result in Fig. 7 (e) shows a hybridization between the Bi 
+p orbitals and the Mg p orbitals, indicating that the Bi2 Mg3 
+alloy phase can be easily generated after the interaction with 
+Bi2 Ti2 O7 and MgH2 , further verifying the above conclusion. 
+Furthermore, the hybridization was found between Ti 3d and 
+H 1s in the DOS diagram, indicating a strong interaction be- 
+tween Ti and H, which led to an increase in the polarity of 
+the Mg-H bond and an elongation of the bond length, thereby 
+reducing the kinetic barrier of hydrogen release. 
+In order to deeply study the mechanism of action of 
+Bi2 Ti2 O7 , Bi2 Mg3 was incorporated into the computational 
+model and discussed and analyzed together with Bi2 Ti2 O7 
+and the comparison sample TiO2 . The results in Fig. 7 (b) and 
+Fig. S11 demonstrate that the Mg-H bond lengths in MgH2 - 
+Bi2 Ti2 O7 , MgH2 -Bi2 Mg3 , and MgH2 -TiO2 systems measure 
+1.83 ˚A, 1.792 ˚A, and 1.70 ˚A, respectively. Among them, the 
+Mg-H bond under the inﬂuence of Bi2 Ti2 O7 and Bi2 Mg3 
+was signiﬁcantly longer than the 1.71 ˚A bond length of 
+the original MgH2 [53] . This elongation demonstrates that 
+the Bi2 Ti2 O7 and Bi2 Mg3 alloy can weaken the Mg-H bond 
+strength, facilitating bond cleavage and consequently lower- 
+ing the dehydrogenation temperature of MgH2 [54] . Fig. 7 (c) 
+shows the negative adsorption energies of the three systems, 
+conﬁrming the exothermic H2 adsorption process. The lower 
+adsorption energy is associated with higher system stability, 
+indicating that both Bi2 Ti2 O7 and Bi2 Mg3 have good adsorp- 
+tion capacities. Compared to the reference 1.21 eV disso- 
+ciation barrier on Mg(0001) surfaces (the rate-limiting step 
+in hydrogenation) [55] , Fig. 7 (d) shows that Bi2 Ti2 O7 and 
+its derived Bi2 Mg3 phase signiﬁcantly reduce this barrier to 
+0.33 eV and 0.47 eV respectively, while TiO2 only reaches 
+1.14 eV. This indicates that Bi2 Ti2 O7 and Bi2 Mg3 promote 
+the dissociation of H2 , highlighting their special catalytic ac- 
+Please cite this article as: X. Yang, X. Wang, R. Liu et al., Enhancing hydrogen storage performance of MgH2 with hollow Bi2 Ti2 O7 catalyst: Synergistic 
+effects of Bi2 Mg3 alloy phase and Ti polyvalency, Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.06.014
+
+X. Yang, X. Wang, R. Liu et al. / Journal of Magnesium and Alloys xxx (xxxx) xxx
+11 
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; July 14, 2025;13:16 ] 
+Fig. 7. (a) Optimized structures for MgH2 absorbed near Bi2 Ti2 O7 ; (b) calculated Mg-H bonds on the MgH2 -Bi2 Ti2 O7 and MgH2 -Bi2 Mg3 ; (c) hydrogen 
+dissociation paths and associated activation energies of Bi2 Ti2 O7 , Bi2 Mg3 and TiO2 ; (d) adsorption energy of MgH2 -Bi2 Ti2 O7 , Bi2 Mg3 and MgH2 -TiO2 ; (e) 
+DOS of the MgH2 -Bi2 Ti2 O7 system. 
+tivity. Figs. S12 and S13 show the optimized structures of 
+Bi2 Ti2 O7 and Bi2 Mg3 after hydrogen dissociation in different 
+transition states. 
+The catalytic mechanism of the Bi2 Ti2 O7 on MgH2 can 
+be thoroughly clariﬁed by integrating results from a range of 
+analyses, including XRD, XPS, TEM, SAED, and DFT, of- 
+fering a more detailed and comprehensive understanding. In 
+pure MgH2 , the lack of an electron transfer medium impedes 
+the efﬁcient dissociation of hydrogen molecules. In contrast, 
+Bi2 Ti2 O7 , a bimetallic oxide, although less stable than the 
+monometallic Bi2 O3 , exhibits high reactivity of the Bi species. 
+This reactivity facilitates its interaction with MgH2 during the 
+ball milling process, leading to the formation of the Bi2 Mg3 
+alloy phase. The in-situ formation of this alloy phase effec- 
+tively enhances the kinetics of the MgH2 system, primarily 
+by creating additional hydrogen diffusion channels through 
+the increased number of interfaces. This catalysis lowers the 
+dehydrogenation temperature and accelerates the overall de- 
+hydrogenation kinetics. 
+Fig. 8 shows the mechanism diagram of the catalytic pro- 
+cess. MgH2 -Bi2 Ti2 O7 composites formed rich interfaces in 
+the process of hydrogen absorption and discharge reaction, 
+where the multivalent Ti species act as mediators for elec- 
+tron transfer between Mg2 + and H−. During ball milling, the 
+MgH2 –10 wt. % Bi2 Ti2 O7 sample reacts with MgH2 , forming 
+TiO2 , which remains present throughout the process. Concur- 
+rently, reduction reactions occur, converting a portion of Ti4 + 
+to Ti3 + and Ti0 . This multivalent titanium-based catalyst not 
+only offers a large number of active catalytic sites through 
+its extensive interaction with MgH2 but also facilitates rapid 
+electron transfer and efﬁcient hydrogen atom or molecule dif- 
+fusion. Moreover, the hollow spherical structure of Bi2 Ti2 O7 , 
+with its high speciﬁc surface area, further contributes to the 
+presence of active sites, enhancing its catalytic performance 
+Please cite this article as: X. Yang, X. Wang, R. Liu et al., Enhancing hydrogen storage performance of MgH2 with hollow Bi2 Ti2 O7 catalyst: Synergistic 
+effects of Bi2 Mg3 alloy phase and Ti polyvalency, Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.06.014
+
+12 
+X. Yang, X. Wang, R. Liu et al. / Journal of Magnesium and Alloys xxx (xxxx) xxx 
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; July 14, 2025;13:16 ] 
+Fig. 8. Catalytic mechanism diagram of Bi2 Ti2 O7 effect on the hydrogen storage performance of MgH2 . 
+in both the dehydrogenation and hydrogenation reactions of 
+MgH2 . 
+4. Conclusions 
+In summary, the successful synthesis and application of 
+hollow Bi2 Ti2 O7 microspheres signiﬁcantly elevate the hy- 
+drogen storage performance of magnesium-based materials. 
+Experimental results reveal that the MgH2 -Bi2 Ti2 O7 compos- 
+ite demonstrates superior hydrogen storage capacity compared 
+to the separately mixed Bi2 O3 and TiO2 materials. This en- 
+hancement can be chieﬂy due to the synergistic catalytic effect 
+among the constituent elements. The interaction between Bi 
+and MgH2 promotes the formation of the Bi2 Mg3 alloy, which 
+accelerates hydrogen diffusion within the MgH2 , thereby fur- 
+ther improving its catalytic performance. Moreover, TiO2 and 
+the multivalent transition metal Ti not only provide catalytic 
+active sites but also facilitate efﬁcient electron transfer. The 
+transition metal oxide functions as an effective buffer, prevent- 
+ing powder agglomeration. As a result, the synergistic effects 
+within the composite material lead to a substantial improve- 
+ment in hydrogen storage performance. This study not only 
+presents a novel approach to catalyst structural design by en- 
+hancing hydrogen adsorption and diffusion facilitated by syn- 
+ergistic catalysis and enhanced surface area but also drives 
+MgH2 towards more efﬁcient and stable hydrogen storage, 
+laying the foundation for the wider application of hydrogen 
+energy technologies. 
+Declaration of competing interest 
+The authors declare that they have no known competing 
+ﬁnancial interests or personal relationships that could have 
+appeared to inﬂuence the work reported in this paper. 
+CRediT authorship contribution statement 
+Xiaoying Yang: Writing – review & editing, Writing 
+– original draft, Visualization, Methodology, Data curation. 
+Xinqiang Wang: Writing – review & editing, Visualiza- 
+tion, Supervision, Methodology, Investigation, Funding ac- 
+quisition. Ruijie Liu: Writing – review & editing, Method- 
+ology, Data curation. Yanxia Liu: Methodology, Funding 
+acquisition. Zhenglong Li: Methodology, Conceptualization. 
+Wengang Cui: Funding acquisition. Fulai Qi: Supervision, 
+Funding acquisition. Yaxiong Yang: Supervision, Method- 
+ology. Jian Chen: Funding acquisition, Conceptualization. 
+Hongge Pan: Supervision, Methodology, Funding acquisition, 
+Conceptualization. 
+Acknowledgments 
+The research was supported by the National Key Research 
+and Development Program of China (No. 2024YFB4007204 , 
+2022YFB4004301 ), the National Natural Science Founda- 
+tion of China (Grant Nos. 52477220 , 52301287 , 22005353 ), 
+the Two-chain Integration Key Project of Shaanxi Province 
+( 2021LLRH-09 ), the Key Research and Development Program 
+of Shaanxi Province (No. 2024CY2-GJHX-44 , 2024CY2- 
+GJHX-53 , 2024GX-ZDCYL-04–06 ), the Key Industrial 
+Chain Technology Research Program of Xi’an city ( 23LL- 
+RHZDZX0017 ). 
+Supplementary materials 
+Supplementary material associated with this article can be 
+found, in the online version, at doi:10.1016/j.jma.2025.06. 
+014. 
+References 
+[1] X. Zuo, X. Mo, W. Zhou, J. Zhang, C. Hu, W. Jiang, Int. J. Hydrogen 
+Energy 83 (2024) 1309–1319 . 
+[2] N.A. Ali, N.A. Sazelee, M.F. Md Din, M.M. Nasef, A.A. Jalil, H. Liu, 
+M. Ismail, J. Magnes. Alloys 11 (6) (2023) 2205–2215 . 
+[3] R. Zou, J.L. Li, W.J. Zhang, G.T. Lei, Z. Li, H.J. Cao, J. Mater. Chem. 
+A 11 (22) (2023) 11748–11754 . 
+[4] X. Zhang, K. Wang, X. Zhang, J. Hu, M. Gao, H. Pan, Y. Liu, Int. J. 
+Energy Res. 45 (2020) 3129–3141 . 
+[5] F. Bu, A. Wajid, N. Yang, M. Gu, X. Zhao, L. Huang, X. Ji, S. Ding, 
+Y. Cheng, J. Zhang, J. Mater. Chem. A 12 (20) (2024) 12190–12197 . 
+[6] L. Chen, X. Liu, L. Zheng, Y. Li, X. Guo, X. Wan, Q. Liu, J. Shang, 
+J. Shui, Appl. Catalysis B: Env. 256 (2019) 117849 . 
+[7] L. Zhang, Y. Zhang, F. Wu, Y. Jiang, Y. Wang, Inorg. Chem. 62 (14) 
+(2023) 5845–5853 . 
+Please cite this article as: X. Yang, X. Wang, R. Liu et al., Enhancing hydrogen storage performance of MgH2 with hollow Bi2 Ti2 O7 catalyst: Synergistic 
+effects of Bi2 Mg3 alloy phase and Ti polyvalency, Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.06.014
+
+X. Yang, X. Wang, R. Liu et al. / Journal of Magnesium and Alloys xxx (xxxx) xxx
+13 
+ARTICLE IN PRESS 
+JID: JMAA 
+[m5+; July 14, 2025;13:16 ] 
+[8] M. Chen, Y. Pu, Z. Li, G. Huang, X. Liu, Y. Lu, W. Tang, L. Xu, 
+S. Liu, R. Yu, J. Shui, Nano. Res. 13 (8) (2020) 2063–2071 . 
+[9] Z. Yuan, Y. Wang, X. Zhang, S. Guan, X. Wang, L. Ji, Q. Peng, S. Han, 
+Y. Fan, B. Liu, Nano. Res. 17 (8) (2024) 7117–7125 . 
+[10] L. Zhang, Z. Sun, Z. Yao, L. Yang, N. Yan, X. Lu, B. Xiao, X. Zhu, 
+L. Chen, Nanosc. Adv. 2 (2020) 1666–1675 . 
+[11] J. Zhang, Q. Hou, J. Chang, D. Zhang, Y. Peng, X. Yang, Solid State 
+Sci. 121 (2021) 106750 . 
+[12] Y. Chen, B. Sun, G. Zhang, Y. Wang, X. Li, Appl. Surf. Sci. 645 (2024) 
+158801 . 
+[13] X. Zhang, Y. Liu, Z. Ren, X. Zhang, J. Hu, Z. Huang, Y. Lu, M. Gao, 
+H. Pan, Energy Environ. Sci. 14 (4) (2021) 2302–2313 . 
+[14] Y. Pang, X. Wan, Y. Li, M. Song, X. Liu, J. Shang, L. Zheng, 
+J.J.A.M. Shui, Adv. Mater. 36 (2024) 2412942 . 
+[15] L. Dan, H. Wang, X. Yang, J. Liu, L. Ouyang, M. Zhu, ACS Appl. 
+Mater. Interf. 15 (25) (2023) 30372–30382 . 
+[16] Z. Yu, X. Liu, Y. Liu, Y. Li, Z. Zhang, K. Chen, S. Han, Fuel 357 
+(2024) 129726 . 
+[17] S. Ding, Y. Qiao, X. Cai, C. Du, Y. Wen, X. Shen, L. Xu, S. Guo, 
+W. Gao, T. Shen, J. Magnes. Alloys 12 (10) (2024) 4278–4288 . 
+[18] Q. Yuan, C. Peng, C. Yang, Y. Li, Q. Zhang, Y. Lv, G. Liu, D. Liu, 
+Int. J. Hydrogen Energy 85 (2024) 12–19 . 
+[19] Y. Liu, Y. Cao, L. Huang, M. Gao, H. Pan, J. Alloys Compd. 509 (3) 
+(2011) 675–686 . 
+[20] L. Wang, T. Zhong, F. Wu, D. Chen, Z. Yao, L. Chen, L. Zhang, Chem. 
+Engineer. J. 505 (2025) 159591 . 
+[21] L. Sun, R. Sun, J. Liu, M. Zhu, X. Zhang, D. Guo, K. Yin, Z. Zhuang, 
+X. Zhu, P. Xiao, Nanoscale 16 (42) (2024) 19873–19880 . 
+[22] P. Xiao, J. Liu, D. Guo, L. Yang, L. Sun, S. Li, L. Xu, H. Liu, J. Alloys 
+Compd. 955 (2023) 170297 . 
+[23] Q. Luo, J. Li, B. Li, B. Liu, H. Shao, Q. Li, J. Magnes. Alloys 7 (1) 
+(2019) 58–71 . 
+[24] H. Reardon, N. Mazur, D.H. Gregory, Prog. Natur. Sci.: Mater. Int. 23 
+(3) (2013) 343–350 . 
+[25] C.Q. Zhou, Q.A. Zhang, J. Alloys Compd. 804 (2019) 299–304 . 
+[26] H. Pan, Y. Liu, M. Gao, Y. Zhu, Y. Lei, Q. Wang, J. Alloys Compd. 
+351 (1) (2003) 228–234 . 
+[27] G. Liang, J. Huot, S. Boily, A. Van Neste, R. Schulz, J. Alloys Compd. 
+292 (1) (1999) 247–252 . 
+[28] B. Han, J. Wang, J. Tan, Y. Ouyang, Y. Du, L. Sun, J. Energy Stor. 83 
+(2024) 110612 . 
+[29] K. Xian, M. Wu, M. Gao, S. Wang, Z. Li, P. Gao, Z. Yao, Y. Liu, 
+W. Sun, H. Pan, Small 18 (43) (2022) 2107013 . 
+[30] X. Yang, J. Zhang, Q. Hou, X. Guo, Nanomaterials (Basel) 12 (14) 
+(2022) 2468 . 
+[31] H. Guan, Y. Lu, J. Liu, Y. Ye, Q. Li, F. Pan, ACS Catal 14 (22) (2024) 
+17159–17170 . 
+[32] Q. Hou, X. Yang, J. Zhang, W. Yang, E. Lv, J Alloys Compd 899 
+(2022) 163314 . 
+[33] H. Xiao, F. Qian, X. Zhang, H. Hu, R. Tang, C. Hu, W. Zhou, X. He, 
+Z. Pu, C. Ma, R. Wang, L. Yi, Q. Chen, Chem. Engineer. J. 494 (2024) 
+153203 . 
+[34] Y. Liu, K. Zhong, K. Luo, M. Gao, H. Pan, Q. Wang, J. Am. Chem. 
+Soc. 131 (5) (2009) 1862–1870 . 
+[35] M. Wu, M. Gao, S. Qu, Y. Liu, W. Sun, X. Zhang, C. Liang, X. Zhang, 
+Y. Yang, H. Pan, J. Magnes. Alloys 13 (2) (2024) 613–625 . 
+[36] J.-Q. Hu, W. Jiang, N. Si, Z. Wang, H. Zhang, Int. J. Hydrogen Energy 
+86 (2024) 445–455 . 
+[37] G. Kresse, J. Hafner, Phys. Rev. B 47 (1) (1993) 558–561 . 
+[38] J.P. Perdew, K. Burke, M. Ernzerhof, Phys. Rev. Lett. 77 (18) (1996) 
+3865–3868 . 
+[39] G. Kresse, D. Joubert, Phys. Rev. B 59 (3) (1999) 1758–1775 . 
+[40] P.E. Blöchl, Phys. Rev. B 50 (24) (1994) 17953–17979 . 
+[41] G. Liu, L. Wang, Y. Hu, C. Sun, H. Leng, Q. Li, C.J.J.O.A. Wu, Com- 
+pounds 881 (2021) 160644 . 
+[42] N.A. Ali, N.H. Idris, M.F.M. Din, M.S. Yahya, M. Ismail, J. Alloys 
+Compd. 796 (2019) 279–286 . 
+[43] X. Yang, H. Wan, S. Zhou, Y. Dai, Y.a. Chen, F.S. Pan, Int. J. Hydrog. 
+Energy (2023) 27726–27736 . 
+[44] Q. Meng, Y. Huang, J. Ye, G. Xia, G. Wang, L. Dong, Z. Yang, X. Yu, 
+J. Alloys Compd. 851 (2021) 156874 . 
+[45] S. Guemou, F. Wu, P. Chen, J. Zheng, T. Bian, D. Shang, A.P. Levtsev, 
+L. Zhang, Int. J. Hydrogen Energy 48 (62) (2023) 23943–23955 . 
+[46] H. Gao, R. Shi, Y. Shao, Y. Liu, Y. Zhu, J. Zhang, X. Hu, L. Li, Z. Ba, 
+J. Alloys Compd. 895 (2022) 162635 . 
+[47] Y. Meng, J. Zhang, S. Ju, Y. Yang, Z. Li, F. Fang, D. Sun, G. Xia, 
+H. Pan, X. Yu, J. Mater. Chem. A 11 (18) (2023) 9762–9771 . 
+[48] C. Liang, Y. Fan, Z. Wang, Y. Zhou, M. Zhang, C. Ma, Int. J. Hydrogen 
+Energy 96 (2024) 984–994 . 
+[49] N. Sazelee, M.F. Md Din, M. Ismail, Materials (Basel) 16 (6) (2023) 
+2176 . 
+[50] T. Huang, Y. Zhao, B. Wang, Y. Li, J. Zhang, X. Wang, Y. Wang, H. Du, 
+M. Fang and J. Zou. J. Magnes. Alloys , doi:10.1016/j.jma.2024.11.008 . 
+[51] X. Chen, C. Peng, Q. Zhang, Int. J. Hydrogen Energy 93 (2024) 
+1474–1486 . 
+[52] K. Nie, J. Li, H. Lu, R. Zhang, Y.A. Chen, F. Pan, Sep. Purif. Technol. 
+359 (2025) 130839 . 
+[53] Z. Liu, H. Ning, R. Liu, S. Ding, J. Yang, Y. Tan, Y. Fan, R. Li, P. Qing, 
+H. Liu, J. Guo, Z. Lan, Chem. Engineer. J. 499 (2024) 155877 . 
+[54] X. Huang, X. Xiao, X. Wang, C. Wang, X. Fan, Z. Tang, C. Wang, 
+Q. Wang, L. Chen, J. Phys. Chem. C 122 (49) (2018) 27973–27982 . 
+[55] Y. Pang, X. Wan, Y. Li, M. Song, X. Liu, J. Shang, L. Zheng, J. Shui, 
+Adv. Mater. 36 (50) (2024) 2412942 . 
+Please cite this article as: X. Yang, X. Wang, R. Liu et al., Enhancing hydrogen storage performance of MgH2 with hollow Bi2 Ti2 O7 catalyst: Synergistic 
+effects of Bi2 Mg3 alloy phase and Ti polyvalency, Journal of Magnesium and Alloys, https:// doi.org/ 10.1016/ j.jma.2025.06.014

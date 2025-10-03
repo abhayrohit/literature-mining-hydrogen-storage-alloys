@@ -1,0 +1,2717 @@
+Available online at www.keaipublishing.com/en/journals/journal-of-magnesium-and-alloys/ 
+Journal of Magnesium and Alloys 12 (2024) 4574–4593 
+www.elsevier.com/locate/jma 
+Full Length Article 
+Role of solute elements in Mg-Mg2 Ni hydrogen storage alloys: A 
+ﬁrst-principles calculation study 
+Min-Seok Yoon a , Jae Hur a , Seo-Hui Park a , Ui-Jong Lee a , Guanglong Xu b , Hyung-Ki Park c , 
+Byeong-Chan Suh d , ∗, Young Min Kim d , e , ∗, Won-Seok Ko a , ∗
+a Department of Materials Science and Engineering, Inha University, Incheon 22212, Republic of Korea 
+b College of Materials Science and Engineering, Nanjing Tech University, Nanjing 211816, China 
+c Functional Materials and Components R&D Group, Korea Institute of Industrial Technology, Gangneung 25440, Republic of Korea 
+d Advanced Metals Division, Korea Institute of Materials Science, Changwon 51508, Republic of Korea 
+e Advanced Materials Engineering, University of Science and Technology, Daejeon 34113, Republic of Korea 
+Received 8 September 2024; received in revised form 16 November 2024; accepted 18 November 2024 
+Available online 4 December 2024 
+Abstract 
+The effects of various alloying elements on the performance of Mg-Mg2 Ni hydrogen storage alloys were investigated by performing ﬁrst- 
+principles density functional theory calculations. We examined the important characteristics of hydrogen storage alloys by considering both 
+Mg-based solid solution and Mg2 Ni-based intermetallic compound phases, where the hydride forms are MgH2 and Mg2 NiH4 , respectively. 
+In particular, qualitatively valid information for predicting changes in plateau pressures in the pressure-composition-temperature (PCT) curve 
+was provided by calculating changes in the energy of related hydrogenation reactions. The effects of alloying elements on volume changes 
+due to hydrogenation reactions were also obtained to provide additional criteria for the practical use of hydrogen storage alloys. For the 
+Mg2 Ni-based intermetallic compound, we examined the site preference of each alloying element, considering the designated stoichiometry 
+of the base alloy. Based on the revealed site preferences, the effects of various possible alloying elements on the properties of Mg2 Ni-based 
+hydrides were also examined. Electronic structure analyses were further conducted to elucidate the detailed mechanisms underlying the role 
+of the additional solute elements. 
+© 2024 Chongqing University. Publishing services provided by Elsevier B.V. on behalf of KeAi Communications Co. Ltd. 
+This is an open access article under the CC BY-NC-ND license ( http://creativecommons.org/licenses/by-nc-nd/4.0/ ) 
+Peer review under responsibility of Chongqing University 
+Keywords: Mg-Mg2 Ni alloys; Density functional theory; Hydrogen storage alloys; Metal hydrides. 
+1. Introduction 
+Considering utilizing non-renewable energy sources, such 
+as fossil fuels, has depleted energy resources and caused en- 
+vironmental pollution, hydrogen has attracted increasing at- 
+tention as a renewable energy source. To enhance the hy- 
+drogen economy, developing technologies that realize the ef- 
+ﬁcient and safe storage and transportation of hydrogen is 
+highly desirable. Among several possible hydrogen storage 
+technologies, the storage of hydrogen in the solid state, such 
+∗Corresponding authors. 
+E-mail addresses: bcsuh@kims.re.kr (B.-C. Suh), ymkim@kims.re.kr 
+(Y.M. Kim), wonsko@inha.ac.kr (W.-S. Ko) . 
+as using hydrogen storage alloys, has attracted much atten- 
+tion owing to its high storage capacity and superior safety 
+compared to other storage technologies [ 1–5 ]. In particular, 
+Mg alloys are considered promising hydrogen storage mate- 
+rials owing to their lightweight, low cost, and high hydrogen 
+storage capacity ( ∼7.62 wt.%) properties [ 6 , 7 ]. For example, 
+pure Mg reacts with hydrogen to form magnesium hydride 
+(MgH2 ), which enables the transportation of large amounts 
+of hydrogen under ambient conditions. 
+Mg + H2 →Mg H2 
+(1) 
+However, MgH2 itself is not a promising hydrogen stor- 
+age material because it forms strong bonds with hydrogen 
+( H = ∼−74.5 kJ/mol H2 ) [ 8 , 9 ], making the dehydrogena- 
+https://doi.org/10.1016/j.jma.2024.11.019 
+2213-9567/© 2024 Chongqing University. Publishing services provided by Elsevier B.V. on behalf of KeAi Communications Co. Ltd. This is an open access 
+article under the CC BY-NC-ND license ( http://creativecommons.org/licenses/by-nc-nd/4.0/ ) Peer review under responsibility of Chongqing University 
+
+M.-S. Yoon, J. Hur, S.-H. Park et al. / Journal of Magnesium and Alloys 12 (2024) 4574–4593
+4575 
+tion process too challenging [ 10–13 ]. To enhance the dehy- 
+drogenation process of MgH2 , recent studies have focused on 
+ways to improve both the thermodynamic and kinetic proper- 
+ties. For instance, it was reported that combining LiBH4 and 
+YNi5 with MgH2 can signiﬁcantly enhance hydrogen storage 
+properties, achieving a reversible hydrogen storage capacity 
+of 6.42 wt.% after 110 cycles at 300 °C [ 14 ]. The forma- 
+tion of in-situ phase such as MgNi3 B2 was identiﬁed as a 
+critical factor in accelerating dehydrogenation kinetics while 
+maintaining high storage performance [ 14 ]. Moreover, the de- 
+velopment of one-step approaches for hydrogen generation, 
+storage, transportation, and application without the need for 
+hydrogen compression has been actively explored [ 15–17 ]. In 
+particular, hydrogen storage techniques using Mg or MgH2 
+as a reduction agent show signiﬁcant potential to simplify 
+systems and reduce costs. For example, previous studies re- 
+ported that the use of Mg/MgH2 for Li(Na)BH4 regeneration 
+provides a uniﬁed solution for hydrogen storage and gener- 
+ation [ 18 , 19 ]. These innovative Mg-based hydrogen storage 
+technologies play a crucial role in promoting the use of hy- 
+drogen as a next-generation clean energy source, providing 
+essential solutions for efﬁcient and safe energy storage. 
+The performance of hydrogen storage alloys is generally 
+ascertained by examining pressure-composition-temperature 
+(PCT) curves. The PCT curve illustrates the hydrogen storage 
+capacity, temperature, and pressure at which a material can 
+be operated. Thus, the relevant control of the PCT curve is 
+an important requirement in the practical implementation of 
+hydrogen storage alloys. However, MgH2 hydrides require ex- 
+tremely low desorption pressures or high temperatures above 
+325 °C to release hydrogen when reverting to pure Mg. 
+To address this issue, numerous studies have been con- 
+ducted [ 6 , 20–28 ] based on including alloying [ 6 , 29–32 ] and 
+catalytic addition [ 33 , 34 ], and the partial substitution of Mg 
+with other elements is considered the most promising route 
+to decrease the stability of hydrides. For example, adding 
+transition metals to Mg can effectively weaken the interac- 
+tions between Mg and H, forming intermetallic compounds 
+[ 8 ]. Among the possible choices for an additional element in 
+the binary combination, the most notable is Ni. For example, 
+Shen et al. [ 35 ] demonstrated that using nano-sized catalysts 
+like ultraﬁne Ni can signiﬁcantly enhance the kinetics and re- 
+versible hydrogen storage capacity of MgH2 -based compos- 
+ites. Moreover, the incorporation of Ni was reported to reduce 
+the dehydrogenation activation energy by up to 26.9 % com- 
+pared to pure Mg, enabling more efﬁcient hydrogen release 
+even at lower temperatures [ 35–38 ]. As shown in the binary 
+Mg-Ni phase diagram [ 39 ], the Mg-Ni system involves two 
+intermetallic compounds ( e.g. , Mg2 Ni and MgNi2 ). Among 
+various possible compositions of the Mg-Ni binary alloy, the 
+Mg-rich compositions within the two-phase stable region with 
+hcp solid solution phase and the Mg2 Ni compound have at- 
+tracted much attention because the Mg2 Ni can contribute to 
+improving the hydrogen desorption kinetics and reduce the 
+hydrogen desorption temperature to be ∼250 °C [ 40 ]. The 
+Mg2 Ni compound alone can be another hydrogen storage al- 
+loy because it can form a stable hydride (Mg2 NiH4 ) via the 
+following reaction [ 12 , 41–43 ]. 
+Mg2 Ni + 2H2 → Mg2 Ni H4 
+(2) 
+The dehydrogenation process of Mg2 Ni alloys has been 
+considerably improved compared to that of existing Mg-based 
+hydrogen storage alloys. With the appropriate selection of 
+composition and processing conditions, a lamellar eutectic 
+mixture with an Mg-rich hcp solid solution and Mg2 Ni com- 
+pound phases can be readily formed. The Mg-Mg2 Ni eutectic 
+structure with ﬁnely distributed interfaces facilitated the dis- 
+sociation of hydrogen molecules and the penetration of hy- 
+drogen atoms [ 44 ]. Thus, adding Ni forms a secondary phase 
+that acts as a ‘hydrogen pump’ during dehydrogenation pro- 
+cess [ 7 , 45–47 ]. 
+However, challenges remain in the development of prac- 
+tical Mg-Mg2 Ni hydrogen storage alloys, such as an overall 
+increase in the hydrogen storage capacity because the Mg2 Ni- 
+based hydride exhibits a lower hydrogen storage capacity 
+( ∼3.6 wt.%) [ 48 ] than the Mg-based hydride ( ∼7.62 wt.%) 
+[ 49 ]. Moreover, as the Mg2 Ni still exhibits a comparably high 
+stability of hydride phase ( H = ∼−64 kJ/mol H2 ), the sta- 
+bility of the hydride could be further decreased to achieve 
+optimal performance [ 50 ]. In particular, the dual tuning of 
+thermodynamic and kinetic properties through alloying pro- 
+cesses has emerged as a key solution to overcome these chal- 
+lenges [ 14 ]. Therefore, considering additional ternary alloying 
+elements is highly desirable for the practical application of 
+Mg-Mg2 Ni hydrogen storage alloys, and several experimental 
+studies were performed in this direction [ 6 , 38 , 51 , 52 ]. How- 
+ever, designing multicomponent alloys within the vast realm 
+of the compositional space only via experiments can be chal- 
+lenging. In particular, adding alloying elements can change 
+the properties of the Mg-rich solid solution phase ( i.e. , MgH2 
+hydride) as well as the properties of Mg2 Ni compounds ( i.e. , 
+Mg2 NiH4 hydride) to different degrees; however, there is not 
+enough information on the speciﬁc roles of various alloying 
+elements. 
+First-principles density functional theory (DFT) calcula- 
+tions can be an ideal method to supplement experiments by 
+determining the effects of alloying elements on properties re- 
+lated to the hydrogen storage. For example, Kelkar et al. [ 26 ] 
+utilized the DFT calculation to predict the effect of additional 
+Al and Si on the hydrogen adsorption properties of MgH2 
+hydrides and reported that adding Al and Si destabilizes the 
+hydride and enhances its dehydrogenation properties. Simi- 
+larly, Hussain et al. [ 27 ] investigated the doping effect of 
+transition metals (Al, Ti, Fe, Ni, Cu, and Nb) to modulate 
+the thermodynamic stability of MgH2 hydrides. Adding ele- 
+ments to Mg alloys effectively reduced the dehydrogenation 
+temperature and stability of the hydride. In the case of the 
+Mg2 Ni-based hydrogen storage alloys, several DFT studies 
+have explored the effects of alloying elements. For example, 
+Liu et al. [ 53 ] examined the effect of substitutional Si on the 
+stability of Mg2 NiH4 hydrides and reported that adding Si 
+destabilized the hydrides. Li et al. [ 24 ] reported that when Y 
+atoms occupy Mg sites, the stability of the Mg2 NiH4 hydride 
+is decreased. Zeng et al. [ 25 ] examined the doping effect of 
+
+4576 
+M.-S. Yoon, J. Hur, S.-H. Park et al. / Journal of Magnesium and Alloys 12 (2024) 4574–4593 
+Ag and Al and reported that substitutional Ag and Al atoms 
+at the Mg sites can destabilize the Mg2 NiH4 hydride. 
+Although several DFT studies have been performed for 
+selected alloying elements, systematic analysis of the role of 
+each solute element in Mg-Mg2 Ni hydrogen storage alloys 
+remains lacking. In this study, we conducted comprehensive 
+DFT calculations for a wide range of alloying elements to 
+provide substantial data for further alloying design processes. 
+In particular, identifying possible substitution positions ( i.e. , 
+site preferences) of solute elements in the Mg2 Ni structure 
+was prioritized because they signiﬁcantly determine the over- 
+all substitutional effects. Once the site preference of the solute 
+elements was determined, the enthalpy of the hydrogenation 
+reaction was calculated to ascertain the effect of the solute 
+elements on the changes in the PCT curve. Furthermore, the 
+volume change of the hydrogen storage alloy due to the hy- 
+drogenation reaction, an additional factor to be considered 
+in the practical alloying design process, was determined. Fi- 
+nally, the effects of the alloying elements on the electronic 
+properties and bonding characteristics were examined to gain 
+more detailed insights into the inﬂuence of solute elements on 
+the hydrogen storage properties. The results of this study are 
+expected to provide qualitatively valid information for design- 
+ing new Mg-Mg2 Ni hydrogen storage alloys with appropriate 
+performance for the required applications. 
+2. Methodology 
+DFT calculations were performed using the Vienna ab ini- 
+tio simulation package (VASP) code within the projector- 
+augmented wave (PAW) method [ 54 , 55 ]. The exchange- 
+correlation function was described utilizing the general- 
+ized gradient approximation (GGA) and the Perdew–Burke–
+Ernzerhof method [ 56 , 57 ]. A cutoff energy of 360 eV was 
+selected for the plane-wave basis set considering reasonable 
+convergence and computational efﬁciency. The Brillouin zone 
+was sampled via the Methfessel–Paxton smearing method, 
+with a smearing width of 0.1 eV [ 58 ]. A relevant set of - 
+centered k -point meshes, a density of approximately 9000 k - 
+points per reciprocal atom, was employed for each type of 
+supercell, as summarized in Table 1 . The selection of these 
+k -point meshes was based on convergence tests, where all su- 
+percells achieved energy convergence within an energy differ- 
+ence of < 10−5 eV/atom, conﬁrming that the selected k -point 
+densities are sufﬁcient for accurate energy calculations related 
+to target properties. We also conﬁrmed that this selection en- 
+sures reliable and consistent results for electronic property 
+calculations. All the DFT calculations were performed with 
+full relaxation of the atomic positions and cell parameters 
+( i.e. , the dimensions and angles of the supercell). Each struc- 
+ture was optimized under a convergence criterion of 10–6 eV 
+and 10–2 eV/ ˚A for energy and force, respectively. 
+While various elements of the periodic table (Ag, Al, As, 
+Au, Ba, Be, Bi, Ca, Cd, Ce, Co, Cr, Cs, Cu, Fe, Ga, Gd, Ge, 
+Hf, Hg, In, Ir, K, La, Li, Mg, Mo, Na, Nb, Nd, Ni, Os, P, Pb, 
+Pd, Pt, Rb, Re, Rh, Ru, S, Sb, Sc , Se, Si, Sn, Sr, Ta, Tc, Te, 
+Tl, V, W, Y, Zn, and Zr) were considered as candidates, only 
+the impact of substitutional solute elements was considered, 
+with interstitial forms excluded considering the storage capac- 
+ity of hydrogen. Inert gases, halogens, radioactive elements, 
+and several rare earth elements were excluded. Pseudopoten- 
+tials recommended by the VASP library were used in the 
+calculations. In the present study, zero-point vibration contri- 
+butions to the energy values were not considered because the 
+objective was to provide qualitatively valid information for 
+the rapid screening of candidate elements rather than provid- 
+ing quantitative data. 
+As aforementioned, Mg-based hydrogen storage alloys are 
+associated with a hydride form of MgH2 under the hydro- 
+gen charging condition. Fig. 1 shows a schematic of pure Mg 
+and MgH2 hydride structures used in the present DFT cal- 
+culations. Depending on temperature and pressure conditions, 
+MgH2 can crystallize as either α-MgH2 or γ -MgH2 . Under 
+the ambient conditions, a stable one is the rutile-type α-MgH2 
+structure, which has a crystal structure of tetragonal P42 /mnm 
+(space group No 136). The unit cell contains two Mg and four 
+H atoms while the Mg ²+ ion forms a bond with six equivalent 
+H1- ions to create a mixture of MgH6 octahedral ( Fig. 1 ). This 
+local structure involves two shorter (1.93 ˚A) and four longer 
+(1.94 ˚A) Mg-H bonds [ 59 ]. Supercells with 96 atoms ( i.e. , 32 
+Mg and 64 H atoms), generated by a 2 × 2 × 4 duplication 
+of the unit cell with six atoms, were used to calculate the 
+related properties. 
+When a pressure higher than ∼0.39 GPa is applied, α- 
+MgH2 transforms into the γ -MgH2 , which has a α-PbO2 -type 
+crystal structure of orthorhombic Pbcn (space group No 60) 
+[ 59–61 ]. The unit cell contains four Mg and eight H atoms, 
+where the H1- ions bonded with three equivalent Mg2 + ions in 
+a triangular plan as shown in Fig. 1 . In other words, there are 
+three different types of Mg-H bonds in this structure, each of 
+Table 1 
+Information on atomic structures and corresponding k -point meshes used in the present DFT calculation. 
+Structure 
+Space group 
+Purpose 
+Number of atoms 
+k -points 
+Total 
+Mg 
+Ni 
+H 
+hcp Mg 
+P63 /mmc 
+Volume expansion, enthalpy of reaction 
+32 
+32 
+–
+–
+7 × 7 × 6 
+α-MgH2 
+P42 /mnm 
+Volume expansion, enthalpy of reaction 
+96 
+32 
+–
+64 
+5 × 5 × 4 
+γ -MgH2 
+Pbcn 
+Volume expansion, enthalpy of reaction 
+96 
+32 
+–
+64 
+5 × 4 × 4 
+Mg2 Ni 
+P62 22 
+Site preference, volume expansion, enthalpy of reaction 
+72 
+48 
+24 
+–
+6 × 6 × 4 
+Mg2 NiH4 
+C2/c 
+Volume expansion, enthalpy of reaction 
+168 
+48 
+24 
+96 
+3 × 7 × 3 
+Density of states, electron localization function 
+168 
+48 
+24 
+96 
+7 × 9 × 7 
+
+M.-S. Yoon, J. Hur, S.-H. Park et al. / Journal of Magnesium and Alloys 12 (2024) 4574–4593
+4577 
+Fig. 1. Schematic illustration of hcp Mg, α-MgH2 , and γ -MgH2 structures used in the present DFT calculations. 
+Fig. 2. Schematic illustration of Mg2 Ni and Mg2 NiH4 structures used in the present DFT calculations. 
+which has a Mg-H bond length in the range of 1.90–1.99 ˚A. 
+To apply the same conditions as in α-MgH2 , a 2 × 2 × 2 du- 
+plication of the unit cell was performed. In this study, super- 
+cells with a total of 96 atoms ( e.g. , Mg32 H64 and Mg31 X1 H64 ) 
+for MgH2 hydrides and those with a total of 32 atoms for pure 
+Mg ( e.g. , Mg32 ) and solid solutions ( e.g. , Mg32 and Mg31 X1 ) 
+were consistently used to examine the inﬂuence of solute el- 
+ements. 
+Mg2 Ni has a crystal structure of hexagonal P62 22 (space 
+group No 180) [ 62 ]. As shown in Fig. 2 , the unit cell 
+of Mg2 Ni contains 12 Mg atoms and 6 Ni atoms. In this 
+study, a supercell containing 72 metal atoms, constructed by 
+a 2 × 2 × 1 duplication of the unit cell, was used for fur- 
+ther investigation. Mg2 NiH4 exhibits intriguing phase trans- 
+formation characteristics. At temperatures above 510 K, the 
+high-temperature (HT) cubic structure is maintained. At tem- 
+peratures below 510 K, it transforms into two low-temperature 
+(LT) structures. The ﬁrst is a monoclinic LT1 structure and the 
+second is a twinned orthorhombic LT2 structure [ 63 ]. Among 
+these LT hydrides, the present study focuses on the more ther- 
+modynamically stable LT1 phase, which has a crystal struc- 
+ture of C2/c (space group No 15) [ 64 ]. As shown in Fig. 2 , 
+the unit cell of Mg2 NiH4 contains 16 Mg atoms, 8 Ni atoms, 
+and 32 H atoms. Supercells containing 72 metal atoms and 96 
+H atoms, constructed by a 1 × 1 × 3 duplication of the unit 
+cell, were used for further examination to match the num- 
+ber of atoms between the hydride and the corresponding base 
+alloy conﬁgurations. 
+In the case of the Mg2 Ni compound, the position of the 
+solute atom in the sublattice structure critically determines the 
+related properties. To understand the inﬂuence of each solute 
+element, we used supercells with a solute atom in different 
+sublattices, e.g. , Mg47 X1 Ni24 and Mg47 X1 Ni24 H96 conﬁgura- 
+tions for the substitution of a Mg site and Mg48 Ni23 X1 and 
+Mg48 Ni23 X1 H96 conﬁgurations for the substitution of a Ni 
+site. The present study aims to provide only the qualitative 
+effect of alloying elements on the properties, considering the 
+substitution of only one atom in a supercell, without consid- 
+ering the detailed concentration effect. As shown in Fig. 2 , a 
+solute atom can be substituted at a single Ni site or three dif- 
+ferent Mg sites (Mg1, Mg2, and Mg3). Therefore, we treated 
+these three Mg sites separately in the property calculations 
+and derived an average value for further examination. 
+To validate the reliability of the present DFT calculations, 
+the optimized structural parameters of hcp Mg, α-MgH2 , 
+γ -MgH2 , Mg2 Ni, and Mg2 NiH4 structures were compared 
+with the experimentally reported values as listed in Table 2 . 
+The obtained results were consistent with the experimen- 
+
+4578 
+M.-S. Yoon, J. Hur, S.-H. Park et al. / Journal of Magnesium and Alloys 12 (2024) 4574–4593 
+Table 2 
+Structural parameters of hcp Mg, α- MgH2 , γ -MgH2 , Mg2 Ni, and Mg2 NiH4 phases predicted by the present DFT calculations compared with reported 
+experimental values. 
+Structure 
+Method 
+a ( ˚A) 
+b ( ˚A) 
+c ( ˚A) 
+( α, β, γ ) 
+Ref. 
+hcp Mg 
+DFT 
+3.195 
+3.187 
+5.118 
+α = β = 90 °, γ = 120 °
+Exp. 
+3.202 
+3.202 
+5.200 
+α = β = 90 °, γ = 120 °
+[ 65 ] 
+α- MgH2 
+DFT 
+4.483 
+4.483 
+3.000 
+α = β = γ = 90 °
+Exp. 
+4.501 
+4.501 
+3.010 
+α = β = γ = 90 °
+[ 59 , 66 ] 
+γ -MgH2 
+DFT 
+4.475 
+4.898 
+5.401 
+α = β = γ = 90 °
+Exp. 
+4.505 
+4.916 
+5.419 
+α = β = γ = 90 °
+[ 59 , 67 ] 
+Mg2 Ni 
+DFT 
+5.194 
+5.194 
+13.200 
+α = β = 90 °, γ = 120 °
+Exp. 
+5.200 
+5.200 
+13.162 
+α = β = 90 °, γ = 120 °
+[ 68 , 69 ] 
+Mg2 NiH4 
+DFT 
+14.249 
+6.363 
+6.438 
+α = γ = 90 °, β = 113.18 °
+Exp. 
+14.343 
+6.404 
+6.483 
+α = γ = 90 °, β = 113.52 °
+[ 70–73 ] 
+tal data, demonstrating the reliability of the present DFT 
+calculations. 
+3. Results and discussion 
+3.1. Energy of hydrogenation reactions of Mg-based storage 
+alloys 
+Magnesium-based hydrogen storage alloys undergo a spon- 
+taneous reaction with hydrogen, as shown in Eq. (1) , which 
+is associated with heat dissipation. To improve the practical 
+utility of Mg-based hydrogen storage alloys, it is crucial to 
+tailor the absorption and desorption characteristics of hydro- 
+gen in the PCT curve, particularly the location of the plateau 
+pressures. The plateau pressure ( Peq ) can be calculated using 
+the van’t Hoff equation: 
+ln 
+Peq 
+P0 
+
+= H0 
+RT −S0 
+R ,
+(3) 
+where Peq is the plateau pressure, P0 is the standard pressure 
+of 1 atm, R is the ideal gas constant, T is the temperature, 
+H0 is the standard reaction enthalpy, and S0 is the standard 
+reaction entropy. From Eq. (3) , it can be seen that the plateau 
+pressure is inﬂuenced by changes of the hydrogenation re- 
+action enthalpy and entropy. For example, a more negative 
+H0 indicates a lower plateau pressure and the stabilization 
+of the hydride phase, and vice versa . However, it is not trivial 
+to derive the exact value of the plateau pressure using DFT 
+calculations alone. This is because of the inherent difﬁculty 
+of DFT calculations in accurately predicting entropy changes. 
+Alternatively, DFT calculations can be readily performed to 
+obtain the energy difference between the metal and hydride 
+phases at 0 K, closely correlated with the enthalpy change 
+due to hydrogenation reactions. In other words, we can ob- 
+tain the energy difference between the base alloy and hydride 
+phase at 0 K by DFT calculation, roughly corresponding to 
+the H0 . 
+Speciﬁcally, we adopted a qualitative approach, where the 
+relative changes in the energy of the hydrogenation reaction 
+( Er ) are used to infer the variation trend of the plateau pres- 
+sure. In other words, a less negative Er indicates a reduced 
+stability of the hydride phase, which correlates with an in- 
+crease in the plateau pressure, indicating that the desorption 
+of hydrogen is more favorable at lower temperatures. Con- 
+versely, a more negative Er indicates an increased stability 
+of the hydride phase, which correlates with a decrease in 
+the plateau pressure. These trends align with the van’t Hoff 
+equation, which shows the correlation between the plateau 
+pressure and reaction enthalpy. Thus, while an exact quan- 
+titative prediction of plateau pressures is beyond the scope 
+of the present study, the qualitative trends inferred from Er 
+provide valuable insights for the alloy design to tune overall 
+hydrogen storage properties. The energy of the hydrogenation 
+reaction from Mg to MgH2 hydride was examined by DFT 
+calculations using the following equation: 
+Er = E( Mg32 H64 ) −E( Mg32 ) −32E( H2 ) 
+32 
+,
+(4) 
+where E (Mg32 H64 ) and E (Mg32 ), the energy values of the hy- 
+dride and pure Mg, respectively, were obtained from DFT 
+calculations for the supercell structures. The energy value of 
+H2 molecules, E (H2 ), was obtained by the calculation with 
+a sufﬁcient vacuum region in a cell. Table 3 lists the calcu- 
+lated Er for the hydrogenation reaction from pure Mg to 
+MgH2 hydride compared to the reported experimental value 
+and previous calculations. It should be noted that the energy 
+difference at 0 K obtained by DFT calculations does not ex- 
+actly correspond to the enthalpy change measured experimen- 
+tally because it can be affected by the temperature. There is 
+an overall discrepancy between the Hr measured by exper- 
+iments and Er predicted by usual DFT calculations. There- 
+fore, the primary objective of this study was not to provide 
+the absolute plateau pressure and enthalpy values but rather to 
+predict the relative change in energy due to the hydrogenation 
+reaction with the addition of alloying elements. 
+To examine the alloying effect, we considered a dilute con- 
+centration of solute elements in which a single substitution 
+atom was located in a supercell ( i.e. , Mg31 X1 H64 and Mg31 X1 
+where X is the solute element), and the Er values were ob- 
+tained by applying an equation similar to Eq. (4) . Calculations 
+for α-MgH2 and γ -MgH2 were independently performed, and 
+results are summarized in Table 4 and Fig. 3 . It should be 
+noted that the selected concentration considered in the present 
+study (1/32) would be impractical for some alloying elements 
+due to their very low solubility in Mg. DFT calculations of 
+such a composition are challenging because extremely low 
+
+M.-S. Yoon, J. Hur, S.-H. Park et al. / Journal of Magnesium and Alloys 12 (2024) 4574–4593
+4579 
+Table 3 
+Dissociation energy of H2 molecule, cohesive energy of pure Mg, hydrogenation reaction energies ( Er ) of MgH2 and Mg2 NiH4 hydrides, and enthalpy of 
+formation ( Ef ) of Mg2 Ni compound predicted by the present DFT calculations compared with reported experimental and DFT values. For the α-MgH2 and 
+Mg2 NiH4 hydride, Er values per 1 mole of H2 gas associated with the hydrogenation reactions deﬁned in Eqs. (4) and (12) are presented. 
+Structure 
+Property 
+Experiment 
+DFT (Previous) 
+DFT (Present) 
+H2 
+Dissociation energy of H2 molecule (eV) 
+4.56 a 
+4.56 a 
+4.527 
+hcp Mg 
+Cohesive energy (eV) 
+1.51 b 
+1.53 c 
+1.515 
+α-MgH2 
+Er (kJ/mol H2 ) 
+−74.5 d 
+−55.67 d , −62.90 e 
+−52.65 
+Mg2 NiH4 
+Er (kJ/mol H2 ) 
+−64 ± 4 f 
+−63.3 g , −52.78 e 
+−57.06 
+Mg2 Ni 
+Ef (kJ/gram-atom) 
+−17.3 h 
+−17.5 h 
+−17.35 
+a Ref. [ 74 ]. 
+b Ref. [ 75 ]. 
+c Ref. [ 76 ]. 
+d Ref. [ 77 ]. 
+e Ref. [ 78 ]. 
+f Ref. [ 20 ]. 
+g Ref. [ 53 ]. 
+h Ref. [ 22 ]. 
+Fig. 3. Visualization of the effect of additional alloying elements on the energy of hydrogenation reaction ( Er ) calculated by Eq. (4) . Results of substitution 
+in (a) α-MgH2 and (b) γ -MgH2 hydrides are presented. 
+solubility requires an excessively large supercell. Therefore, 
+the present study provides only qualitatively valid information 
+on the effects of the alloying elements. 
+Fig. 3 shows the calculated energy values for the hydro- 
+genation reaction. This shows that each solute element affects 
+the stability of the hydrides differently, but there is a general 
+trend for the hydride phases to become unstable with the addi- 
+tion of solute elements ( i.e. , an increase in plateau pressures). 
+In particular, group 15 and 16 elements ( e.g. , P, As, Sb, Bi, 
+S, and Se) exhibited pronounced destabilizing tendencies for 
+
+4580 
+M.-S. Yoon, J. Hur, S.-H. Park et al. / Journal of Magnesium and Alloys 12 (2024) 4574–4593 
+Table 4 
+Effect of additional alloying elements on the hydrogenation reaction energy 
+( Er ) and volume change ( V ) of α-MgH2 and γ -MgH2 hydrides due to 
+hydrogenation reactions. The calculated values of pristine MgH2 hydrides are 
+indicated in bold. 
+Element 
+α-MgH2 
+γ -MgH2 
+Er (kJ/ mol H2 ) 
+V (%) 
+Er (kJ/ mol H2 ) 
+V (%) 
+–
+−52.649 
+31.804 
+−52.473 
+29.395 
+Ag 
+−42.131 
+33.845 
+−41.878 
+31.653 
+Al 
+−47.273 
+32.931 
+−46.946 
+30.430 
+As 
+−37.479 
+34.026 
+−37.888 
+32.433 
+Ba 
+−53.221 
+29.723 
+−54.033 
+27.281 
+Be 
+−52.469 
+32.906 
+−52.352 
+30.428 
+Bi 
+−38.525 
+32.644 
+−38.633 
+30.507 
+Ca 
+−54.471 
+30.755 
+−54.818 
+28.057 
+Cd 
+−46.846 
+33.203 
+−46.689 
+30.807 
+Co 
+−49.673 
+34.387 
+−49.647 
+31.936 
+Cr 
+−51.315 
+33.818 
+−51.003 
+31.365 
+Cs 
+−45.259 
+29.456 
+−45.758 
+26.589 
+Cu 
+−45.045 
+34.148 
+−44.890 
+31.913 
+Fe 
+−53.137 
+33.799 
+−53.208 
+31.210 
+Ga 
+−44.262 
+33.585 
+−44.108 
+31.172 
+Gd 
+−50.553 
+31.194 
+−52.184 
+28.244 
+Ge 
+−43.723 
+34.492 
+−43.480 
+32.047 
+Hf 
+−49.172 
+32.908 
+−51.515 
+28.550 
+In 
+−42.919 
+33.480 
+−42.837 
+31.012 
+K 
+−45.660 
+30.449 
+−45.955 
+27.767 
+La 
+−50.449 
+30.359 
+−51.724 
+27.984 
+Li 
+−45.007 
+32.518 
+−44.834 
+30.240 
+Mn 
+−52.203 
+33.865 
+−51.993 
+31.374 
+Mo 
+−48.844 
+34.457 
+−49.277 
+29.665 
+Na 
+−44.757 
+31.576 
+−44.719 
+29.169 
+Nb 
+−48.289 
+33.829 
+−49.173 
+29.076 
+Nd 
+−49.904 
+30.918 
+−51.546 
+28.282 
+Ni 
+−46.401 
+34.145 
+−46.558 
+32.214 
+P 
+−37.572 
+33.992 
+−38.460 
+32.850 
+Pb 
+−43.671 
+33.469 
+−43.794 
+30.799 
+Pd 
+−42.780 
+34.901 
+−43.290 
+33.020 
+Rb 
+−45.681 
+29.891 
+−46.100 
+27.108 
+Rh 
+−46.649 
+35.422 
+−46.605 
+33.119 
+Ru 
+−51.581 
+34.964 
+−51.704 
+32.347 
+S 
+−32.318 
+32.569 
+−41.528 
+31.482 
+Sb 
+−37.409 
+33.301 
+−37.573 
+31.279 
+Sc 
+−51.498 
+31.940 
+−52.100 
+28.514 
+Se 
+−33.529 
+32.520 
+−39.716 
+31.249 
+Si 
+−44.029 
+34.346 
+−43.778 
+32.107 
+Sn 
+−42.503 
+34.002 
+−42.529 
+31.333 
+Sr 
+−54.368 
+30.030 
+−54.994 
+27.390 
+Ta 
+−48.753 
+33.972 
+−49.581 
+29.122 
+Tc 
+−49.915 
+34.871 
+−49.586 
+32.241 
+Ti 
+−50.676 
+33.185 
+−50.886 
+28.680 
+Tl 
+−41.185 
+33.550 
+−41.243 
+31.006 
+V 
+−50.758 
+33.690 
+−50.342 
+31.133 
+W 
+−49.254 
+34.686 
+−49.791 
+29.719 
+Y 
+−50.957 
+31.204 
+−52.349 
+28.146 
+Zn 
+−48.549 
+33.115 
+−48.401 
+30.709 
+Zr 
+−48.930 
+32.685 
+−51.311 
+28.538 
+the hydride phases. Conversely, adding elements in the same 
+group as Mg ( e.g. , Ca, Sr, and Ba) was found to lower the hy- 
+drogenation reaction energy more than that of MgH2 hydrides 
+( i.e. , decrease in plateau pressures). Comparing the α-MgH2 
+and γ -MgH2 hydrides, we observed no signiﬁcant difference 
+in the inﬂuence of solute elements. 
+Table 5 presents a comparison between the present DFT 
+predictions and reported experimental results, which enabled 
+us to ascertain our predictions of the impact of the solute 
+element on Mg-based hydrogen storage alloys. Although the 
+solute concentrations differed from the reported experimental 
+results, we could roughly estimate the impact of each solute 
+element. Previous experiments have mostly focused on can- 
+didate solute elements that can destabilize MgH2 hydride. As 
+shown in Table 5 , all the solute elements considered in previ- 
+ous studies demonstrated destabilization of the hydride phase, 
+which is consistent with the present DFT calculations. The 
+DFT prediction also reproduced the magnitude ( i.e. , labeled 
+as ‘strong, moderate, and weak’ in Table 5 ) of the changes, 
+emphasizing its predictive ability. For example, Zhong et al. 
+[ 79 ] reported that incorporating Al into Mg-based storage al- 
+loys resulted in a reduction in the dehydriding enthalpy and 
+an increase in plateau pressures. According to the work, the 
+reaction enthalpy of the Mg0.95 Al0.05 alloy is measured as 
+−72.1 kJ/mol H2 , where the stability of hydride is decreased 
+compared to that of pure Mg (−77.9 kJ/mol H2 ). Another 
+result on the Mg0.95 In0.05 alloy by Zhong et al. [ 81 ] reported 
+a more pronounced destabilizing effect of the hydride phase 
+(−67.8 kJ/mol H2 ) at the same solute composition. These re- 
+sults demonstrate that the presence of In atoms has a greater 
+destabilizing effect than the presence of Al atoms. As il- 
+lustrated in Fig. 3 , the present DFT calculation well repro- 
+duce this trend ( i.e. , −47.27 kJ/mol H2 for Mg31 Al1 H64 and 
+−42.92 kJ/mol H2 for Mg31 In1 H64 ). 
+Another aspect that should be considered in the design of 
+hydrogen storage alloys is the volume change caused by the 
+hydrogenation reaction ( i.e. , dilatation). When hydrogen stor- 
+age alloys transform into hydrides under hydrogen charging 
+conditions, they usually undergo dilatation. Such dilatation 
+results in signiﬁcant internal stress that can ultimately lead 
+to the fracture of materials, which is beneﬁcial for the ini- 
+tial activation caused by the exposure of the native surface 
+without oxides. Nevertheless, a greater dilatation is generally 
+not preferred when considering the practical applications of 
+hydrogen storage alloys because dilatation restricts the initial 
+ﬁlling density of the hydrogen storage alloy in the container 
+[ 88 ]. Consequently, a hydrogen storage alloy with low di- 
+latation is preferred to enhance its economic feasibility. The 
+dilation owing to the hydrogenation reaction was calculated 
+using the following equation: 
+V = Vh −Vm 
+Vm 
+,
+(5) 
+where Vm and Vh are the volumes of the hydrogen storage 
+alloy and hydride, respectively. These values at 0 K were 
+readily obtained by the DFT calculations. Fig. 4 presents the 
+results of dilatation due to the hydrogenation reaction involv- 
+ing MgH2 hydrides. The calculated values of 31.8 % for α- 
+MgH2 and 29.39 % for γ -MgH2 are in fairly good agreement 
+with experimentally reported volume changes of 31.4 % for 
+α-MgH2 and 29.1 % for γ -MgH2 [ 59 , 89 ]. As illustrated in 
+Fig. 4 , both α-MgH2 and γ -MgH2 exhibit a clear decrease 
+in the dilation when alkali metals (K, Rb, Cs) and alka- 
+
+M.-S. Yoon, J. Hur, S.-H. Park et al. / Journal of Magnesium and Alloys 12 (2024) 4574–4593
+4581 
+Table 5 
+Impact of solute elements on the stability of the α-MgH2 hydride predicted by the present DFT calculations compared to the 
+reported experimental trends. The magnitude of decrease in hydrogen plateau pressure is roughly indicated as “Strong,” “Mod- 
+erate,” and “Weak.” The present prediction on the stability of the hydride is taken from Table 4 and Fig. 3 . 
+Element 
+Experiment 
+Present prediction 
+Compared alloy 
+Stability of hydrides 
+Ref. 
+Stability of hydride 
+Al 
+Mg0.95 Al0.05 
+Destabilized (Moderate) 
+[ 79 ] 
+Destabilized (Moderate) 
+Al 
+Mg0.9 Al0.1 
+Destabilized (Moderate) 
+[ 79 ] 
+Destabilized (Moderate) 
+Cd 
+Mg0.95 Cd0.05 
+Destabilized (Moderate) 
+[ 80 ] 
+Destabilized (Moderate) 
+In 
+Mg0.95 In0.05 
+Destabilized (Strong) 
+[ 81 , 82 ] 
+Destabilized (Strong) 
+In 
+Mg0.9 In0.1 
+Destabilized (Strong) 
+[ 83 ] 
+Destabilized (Strong) 
+Ni 
+Mg0.99 Ni0.01 
+Destabilized (Moderate) 
+[ 84 ] 
+Destabilized (Moderate) 
+Ni 
+Mg0.95 Ni0.05 
+Destabilized (Moderate) 
+[ 84 ] 
+Destabilized (Moderate) 
+Sn 
+Mg95 Sn3 Zn2 
+Destabilized (Strong) 
+[ 85 ] 
+Destabilized (Strong) 
+Ti 
+Mg0.75 Ti0.25 
+Destabilized (Moderate) 
+[ 86 ] 
+Destabilized (Moderate) 
+Zn 
+Mg0.97 Zn0.03 
+Destabilized (Weak) 
+[ 87 ] 
+Destabilized (Weak) 
+Fig. 4. Visualization of the impact of additional alloy elements on the volume change ( V ) due to the hydrogenation reaction, as deﬁned in Eq. (5) . Results 
+of substitution in (a) α-MgH2 and (b) γ -MgH2 hydrides are presented. 
+line earth elements (Ca, Sr, Ba) are presented. However, it 
+is important to consider other important characteristics, such 
+as changes in the reaction energy ( Fig. 3 ) and the solubil- 
+ity limit of the alloying elements in Mg. The present study 
+provides only qualitative information, and a comprehensive 
+review of the characteristics of each alloying element is re- 
+quired for the proper design of Mg-based hydrogen storage 
+alloys. 
+
+4582 
+M.-S. Yoon, J. Hur, S.-H. Park et al. / Journal of Magnesium and Alloys 12 (2024) 4574–4593 
+3.2. Analysis of solute element sublattice site preference in 
+Mg2 Ni based on DFT calculations 
+We now examine the role of the solute elements in Mg2 Ni- 
+based hydrogen storage alloys. It is worth examining the de- 
+tailed site preference of each alloying element ﬁrst because 
+it can signiﬁcantly affect the overall performance of Mg2 Ni- 
+based hydrogen storage alloys. We examined the site prefer- 
+ence by considering possible off-stoichiometric compositions, 
+as well as the stoichiometric composition ( i.e. , Mg:Ni = 2:1). 
+First, the site preference of each alloying element when 
+present in the exact Mg2 Ni stoichiometric compound was cal- 
+culated based on the concept of standard defect formation 
+energy [ 90 ]. 
+EX→Mg site = 
+
+E( Mg47 X1 Ni24 ) + EMg 
+
+−
+
+E( Mg48 Ni24 ) + EX 
+
+(6) 
+EX→Ni site = 
+
+E( Mg48 Ni23 X1 ) + ENi 
+
+−
+
+E( Mg48 Ni24 ) + EX 
+
+(7) 
+Here, E (Mg48 Ni24 ) is the energy of the superlattice without 
+substitution. E (Mg47 X1 Ni24 ) and E (Mg48 Ni23 X1 ) represent the 
+energy values when the solute element (X) is present at the 
+Mg and Ni sites, respectively. The energy values obtained 
+using Eqs. (6) and (7) were compared to determine the relative 
+stabilities of the solute elements (X) at both sites using the 
+following equation: 
+EMg site →Ni site = EX→Ni site −EX→Mg site 
+(8) 
+A positive sign of EMg site → Ni site suggests that the solute 
+element (X) prefers the Mg site over the Ni site, and vice 
+versa . 
+Although predictions using standard defect formation ener- 
+gies provide valid information regarding the site preferences 
+of solute elements in intermetallic compounds, this method 
+has a limitation in that the tendency changes depending on 
+the arbitrary choice of the reference states of pure Mg and 
+Ni. Moreover, this method is valid only for the prediction of 
+stoichiometric compositions. If the composition of the com- 
+pound phase deviates from the Mg2 Ni stoichiometric compo- 
+sition ( i.e. , Mg- or Ni-rich compositions), the examined site 
+preferences may differ depending on the composition. If the 
+composition deviates from the Mg2 Ni stoichiometric compo- 
+sition, antisite defects or vacancies must be present in the 
+compound, and these defects can affect the site preference of 
+each alloying element. 
+Therefore, we additionally performed the investigation of 
+the site preference based on an alternative method that con- 
+siders off-stoichiometric compositions. We considered off- 
+stoichiometric compounds with only antisite defects, rather 
+than vacancies because we expect the number of vacancies 
+in the Mg2 Ni-based hydrogen storage alloy to be very small 
+compared to the number of antisite defects at the usual operat- 
+ing temperature, which is far below its melting point. Predic- 
+tions for the Mg- and Ni-rich alloys were individually made 
+using Eqs. (9) and (10) , respectively. 
+E ( Mg −rich ) 
+Mg site →Ni site = E
+
+( Mg48 ) , ( Ni23 X1 ) 
+
+−E
+
+( Mg47 X1 ) , ( Ni23 Mg1 ) 
+
+(9) 
+E ( Ni −rich ) 
+Mg site →Ni site = E
+
+( Mg47 Ni1 ) , ( Ni23 X1 ) 
+
+−E
+
+( Mg47 X1 ) , ( Ni24 ) 
+
+(10) 
+In Eq. (9) , E [(Mg48 ),(Ni23 X1 )] represents the energy of 
+a Mg-rich supercell with a solute X atom at the Ni site. 
+E [(Mg47 X1 ),(Ni23 Mg1 )] represents the energy of a Mg-rich 
+supercell with a solute X atom at the Mg site and an antisite 
+Mg atom at the Ni site. As these two energy values were 
+calculated based on supercells with exactly the same com- 
+position, there was no ambiguity in the predictions related 
+to the arbitrary choice of reference states. Eq. (10) can be 
+deﬁned similarly. The calculated results for the Mg- and Ni- 
+rich alloys are shown in Figs. 5 (c and d), respectively, and the 
+predicted site preferences are listed in Table 6 . Fig. 5(d) in- 
+dicates that all the solute elements exhibited a preference for 
+Mg sites in the Ni-rich compounds. This implies that the Ni 
+antisite defect present at the Mg site is highly unstable and 
+that the solute atom replacing the Ni antisite defect can lower 
+the overall energy value. 
+By calculating the site preference of alloys with off- 
+stoichiometric Mg- and Ni-rich compositions, we suggest an 
+alternative criterion for predicting stoichiometric Mg2 Ni com- 
+pounds. By averaging the values obtained from Eqs. (9) and 
+(10) , the site preferences of stoichiometric compounds can be 
+predicted. 
+EAverage 
+Mg site → Ni site =
+
+E ( Mg−rich ) 
+T i site → Mn site + E ( Ni−rich ) 
+T i site → Mn site 
+
+/ 2
+(11) 
+The prediction of the site preference obtained using 
+Eq. (11) is more advantageous than Eq. (8) because it is 
+independent of the selection of reference states for pure 
+Mg and Ni. The site preferences of stoichiometric com- 
+pounds predicted using Eq. (8) and the results predicted us- 
+ing Eq. (11) are compared in Fig. 5 (a and b), respectively. 
+The predictions of the stoichiometric compounds based on 
+both methods exhibited similar trends, whereas certain ele- 
+ments (As, Ge, Mn, Si, and Zn) exhibited a mismatch in sign. 
+However, the absolute values for these elements are relatively 
+small, which indicates the possibility that these elements can 
+be present at both Mg and Ni sites without a clear site pref- 
+erence. 
+The calculated predictions of the off-stoichiometric com- 
+pounds presented in Table 6 and Figs. 5 (c and d) indicate the 
+following tendency: if a Mg-rich base compound is consid- 
+ered, an additional solute element favors the Ni site rather 
+than the Mg site, and vice versa . This is because the Mg- 
+rich compound already contains Mg antisite defects in the 
+Ni sublattice. If a solute element is added to this Mg-rich 
+compound, there are two choices of substitution: the place- 
+ment of a solute atom substituting a Mg atom at the Mg 
+sublattice or the placement of a solute atom substituting an 
+
+M.-S. Yoon, J. Hur, S.-H. Park et al. / Journal of Magnesium and Alloys 12 (2024) 4574–4593
+4583 
+Fig. 5. Visualization of the predicted site preference of alloying elements in the Mg2 Ni compound. Predictions for (a) stoichiometric compound by Eq. (8) , 
+(b) stoichiometric compound by Eq. (11) , (c) Mg-rich compound by Eq. (9) , and (d) Ni-rich compound by Eq. (10) are presented. 
+
+4584 
+M.-S. Yoon, J. Hur, S.-H. Park et al. / Journal of Magnesium and Alloys 12 (2024) 4574–4593 
+Table 6 
+Site preferences of additional alloying elements in the Mg2 Ni compound predicted by the standard defect formation energy ( Eqs. (6)–(8) ) and the defect 
+formation energy based on the off-stoichiometric compounds ( Eqs. (9)–(11) ). The preferences of each element are presented considering the stoichiometric 
+Mg2 Ni, Mg-rich, and Ni-rich compositions. 
+Element 
+Standard defect 
+formation energy (eV) 
+Defect formation energy based on off-stoichiometric 
+compounds (eV) 
+Site preference 
+EMg site → Ni site 
+( Eq. (8) ) 
+EAverage 
+Mg site →Ni site 
+( Eq. (11) ) 
+E (Mg −rich ) 
+Mg site →Ni site 
+( Eq. (9) ) 
+E (Ni −rich ) 
+Mg site →Ni site 
+( Eq. (10) ) 
+Stoichiometric 
+alloy ( Eq. (11) ) 
+Mg-rich alloy 
+( Eq. (9) ) 
+Ni-rich alloy 
+( Eq. (10) ) 
+Ag 
+−0 .063 
+−0 .151 
+−0 .9 
+0.599 
+Ni site 
+Ni site 
+Mg site 
+Al 
+0 .731 
+0 .339 
+−0 .386 
+1.064 
+Mg site 
+Ni site 
+Mg site 
+As 
+0 .075 
+−0 .119 
+−0 .774 
+0.536 
+Ni site 
+Ni site 
+Mg site 
+Ba 
+2 .503 
+1 .722 
+1 .505 
+1.939 
+Mg site 
+Mg site 
+Mg site 
+Be 
+−0 .057 
+−0 .303 
+−0 .96 
+0.355 
+Ni site 
+Ni site 
+Mg site 
+Bi 
+0 .897 
+0 .614 
+−0 .076 
+1.303 
+Ni site 
+Ni site 
+Mg site 
+Ca 
+2 .219 
+1 .563 
+1 .176 
+1.949 
+Mg site 
+Mg site 
+Mg site 
+Cd 
+0 .447 
+0 .258 
+−0 .488 
+1.004 
+Mg site 
+Ni site 
+Mg site 
+Co 
+−0 .531 
+−0 .634 
+−1 .343 
+0.076 
+Ni site 
+Ni site 
+Mg site 
+Cr 
+0 .551 
+0 .129 
+−0 .576 
+0.834 
+Mg site 
+Ni site 
+Mg site 
+Cs 
+1 .991 
+1 .408 
+1 .105 
+1.711 
+Mg site 
+Mg site 
+Mg site 
+Cu 
+−0 .308 
+−0 .43 
+−1 .161 
+0.301 
+Ni site 
+Ni site 
+Mg site 
+Fe 
+−0 .278 
+−0 .462 
+−1 .174 
+0.251 
+Ni site 
+Ni site 
+Mg site 
+Ga 
+0 .325 
+0 .039 
+−0 .69 
+0.767 
+Mg site 
+Ni site 
+Mg site 
+Gd 
+2 .698 
+1 .848 
+1 .499 
+2.197 
+Mg site 
+Mg site 
+Mg site 
+Ge 
+0 .233 
+−0 .057 
+−0 .762 
+0.648 
+Ni site 
+Ni site 
+Mg site 
+Hf 
+2 .497 
+1 .645 
+1 .148 
+2.141 
+Mg site 
+Mg site 
+Mg site 
+In 
+0 .718 
+0 .437 
+−0 .302 
+1.176 
+Mg site 
+Ni site 
+Mg site 
+K 
+1 .802 
+1 .302 
+0 .965 
+1.639 
+Mg site 
+Mg site 
+Mg site 
+La 
+2 .83 
+1 .877 
+1 .633 
+2.12 
+Mg site 
+Mg site 
+Mg site 
+Li 
+0 .441 
+0 .276 
+−0 .432 
+0.984 
+Mg site 
+Ni site 
+Mg site 
+Mn 
+0 .077 
+−0 .225 
+−0 .955 
+0.506 
+Ni site 
+Ni site 
+Mg site 
+Mo 
+0 .985 
+0 .503 
+−0 .221 
+1.227 
+Mg site 
+Ni site 
+Mg site 
+Na 
+1 .036 
+0 .811 
+0 .176 
+1.445 
+Mg site 
+Mg site 
+Mg site 
+Nb 
+1 .761 
+1 .088 
+0 .483 
+1.693 
+Mg site 
+Mg site 
+Mg site 
+Nd 
+2 .711 
+1 .854 
+1 .544 
+2.163 
+Mg site 
+Mg site 
+Mg site 
+P 
+−0 .058 
+−0 .24 
+−0 .774 
+0.294 
+Ni site 
+Ni site 
+Mg site 
+Pb 
+0 .812 
+0 .541 
+−0 .164 
+1.245 
+Mg site 
+Ni site 
+Mg site 
+Pd 
+−0 .543 
+−0 .554 
+−1 .308 
+0.2 
+Ni site 
+Ni site 
+Mg site 
+Rb 
+1 .931 
+1 .377 
+1 .096 
+1.657 
+Mg site 
+Mg site 
+Mg site 
+Rh 
+−0 .616 
+−0 .635 
+−1 .404 
+0.135 
+Ni site 
+Ni site 
+Mg site 
+Ru 
+−0 .268 
+−0 .406 
+−1 .186 
+0.375 
+Ni site 
+Ni site 
+Mg site 
+S 
+−0 .282 
+−0 .218 
+−0 .599 
+0.164 
+Ni site 
+Ni site 
+Mg site 
+Sb 
+0 .755 
+0 .431 
+−0 .277 
+1.138 
+Mg site 
+Ni site 
+Mg site 
+Sc 
+2 .19 
+1 .506 
+0 .988 
+2.024 
+Mg site 
+Mg site 
+Mg site 
+Se 
+0 .058 
+−0 .003 
+−0 .599 
+0.593 
+Mg site 
+Ni site 
+Mg site 
+Si 
+0 .32 
+−0 .067 
+−0 .743 
+0.609 
+Ni site 
+Ni site 
+Mg site 
+Sn 
+0 .761 
+0 .439 
+−0 .287 
+1.165 
+Mg site 
+Ni site 
+Mg site 
+Sr 
+2 .488 
+1 .709 
+1 .472 
+1.946 
+Mg site 
+Mg site 
+Mg site 
+Ta 
+1 .993 
+1 .212 
+0 .629 
+1.794 
+Mg site 
+Mg site 
+Mg site 
+Tc 
+0 .29 
+−0 .014 
+−0 .802 
+0.774 
+Ni site 
+Ni site 
+Mg site 
+Ti 
+1 .758 
+1 .083 
+0 .515 
+1.65 
+Mg site 
+Mg site 
+Mg site 
+Tl 
+0 .599 
+0 .378 
+−0 .345 
+1.1 
+Mg site 
+Ni site 
+Mg site 
+V 
+1 .166 
+0 .595 
+−0 .037 
+1.226 
+Mg site 
+Ni site 
+Mg site 
+W 
+1 .206 
+0 .618 
+−0 .087 
+1.322 
+Mg site 
+Ni site 
+Mg site 
+Y 
+2 .673 
+1 .838 
+1 .475 
+2.201 
+Mg site 
+Mg site 
+Mg site 
+Zn 
+0 .156 
+−0 .061 
+−0 .798 
+0.676 
+Ni site 
+Ni site 
+Mg site 
+Zr 
+2 .418 
+1 .626 
+1 .12 
+2.131 
+Mg site 
+Mg site 
+Mg site 
+Mg antisite defect at the Ni sublattice; however, the latter 
+type of substitution is usually preferred because the anti- 
+site defect itself is somewhat unstable owing to its defec- 
+tive nature. However, this trend is not absolute, with different 
+trends observed for each element. For example, Ba, Ca, Cs, 
+Gd, Hf, K, La, Na, Nb, Nd, Rb, Sc , Sr, Ta, Ti, Y, and Zr 
+exhibit Mg site preferences regardless of the stoichiometry 
+of the base compound. For elements with a strongly pre- 
+ferred Mg site, the adjustment of the bulk composition of 
+the alloys is restricted to a Ni-rich composition to maintain 
+a single-phase compound. In other words, the bulk composi- 
+tion should be adjusted in the same manner as Mg(2-x) Tix Ni 
+
+M.-S. Yoon, J. Hur, S.-H. Park et al. / Journal of Magnesium and Alloys 12 (2024) 4574–4593
+4585 
+to maintain a single-phase hydrogen storage alloy. We expect 
+that the adjustment of the bulk composition deviates in this 
+manner ( i.e. , Mg2 Ni1-x Tix ), resulting in the presence of un- 
+wanted secondary phases ( e.g. , solid solutions, precipitates, 
+or inclusions) that can reduce the total hydrogen storage ca- 
+pacity or the presence of hcp Mg-rich solid solutions. Pre- 
+vious experiments on adding Ti to Mg2 Ni alloys with bulk 
+compositions of Mg1.9 Ni1 Ti0.1 [ 91 ], Mg2 Ni1-x Tix ( x = 0.08, 
+0.12, and 0.16) [ 42 ], and Mg2 Ni0.7 Ti0.3 [ 92 ] have reported this 
+predicted tendency. Among these, only the Mg1.9 Ni1 Ti0.1 al- 
+loy [ 91 ] exhibited the single-phase Mg2 Ni-based compound. 
+The Mg2 Ni1-x Tix ( x = 0.08, 0.12, and 0.16) alloy [ 42 ] ex- 
+hibited the dual phases of a solid solution and Mg2 Ni-based 
+compound, whereas the Mg2 Ni0.7 Ti0.3 alloy [ 92 ] exhibited the 
+dual phases of Mg3 TiNi2 and Mg2 Ni-based compounds. 
+3.3. Enthalpy of hydrogenation reactions for Mg2 Ni-based 
+storage alloys 
+Based on our understanding of the site preferences of each 
+alloying element, we extended our interest to the properties 
+of the Mg2 Ni-based compound phase. The methodology pre- 
+viously employed for the Mg-based solid solution phase was 
+similarly applied to the Mg2 Ni-based compound phase. Espe- 
+cially, DFT calculations were performed to obtain the energy 
+( Er ) changes due to the following hydrogenation reaction: 
+Er = E( Mg48 Ni24 H96 ) −E( Mg48 Ni24 ) −48 E( H2 ) 
+48 
+, (12) 
+where E (Mg48 Ni24 H96 ) and E (Mg48 Ni24 ) represent the DFT 
+energy values of the supercells with the hydride and com- 
+pound phases, respectively. To examine the effects of the 
+solute elements, a dilute concentration of solute elements, 
+where a single substitutional atom X is located in a super- 
+cell ( e.g. , Mg47 X1 Ni24 H96 and Mg48 Ni23 X1 H96 ), was consid- 
+ered. For the Mg sites of the Mg2 NiH4 hydride, three dis- 
+tinct sites (Mg1, Mg2, and Mg3, as shown in Fig. 2 ) were 
+treated separately as possible substitutional sites. The ob- 
+tained hydrogenation energy ( Er ) is presented in Table 7 and 
+Fig. 6 . 
+As listed in Table 3 , the Er of Mg2 Ni without a solute 
+atom was calculated to be −57.06 kJ/mol H2 ; this value is 
+presented in Table 7 as a reference. Several values in Ta- 
+ble 7 are shaded gray, which indicates impractical cases ac- 
+cording to the predicted site preference results in Fig. 5(b) . 
+These elements ( e.g. , Ba, Ca, Cs, Gd, Hf, K, La, Na, Nb, 
+Nd, Rb, Sc , Sr, Ta, Ti, Y, and Zr) always prefer Mg sites, re- 
+gardless of stoichiometry. As shown in Fig. 6 , the stability of 
+hydrides varies signiﬁcantly depending on the type of solute 
+element and its presented site ( i.e. , the Mg or Ni site). 
+The effect of solute elements on changes of the dilatation 
+( V ) due to the hydrogenation reaction of Mg2 Ni alloys is 
+also calculated and summarized in Table 7 and Fig. 7 . The 
+DFT results indicated that the Mg2 Ni compound without ad- 
+ditional solute elements resulted in a volume expansion of 
+30.49 % owing to the hydrogenation reaction. This prediction 
+is consistent with the reported experimental values of 31.9 % 
+[ 93 ] and 32.4 % [ 94 ], demonstrating the predictive accuracy 
+of the DFT calculations. The data enabled the comparison of 
+the dilatations resulting from the substitution of solute ele- 
+ments at different sites. 
+A comparison of the predictions by DFT calculations with 
+the reported experimental trends is presented in Table 8 , 
+which illustrates the impact of various solute elements on 
+the changes in the PCT curves of the ternary Mg2 Ni-based 
+hydrogen storage alloys. For example, an experimental work 
+on Mg2-x Alx Ni1 ( x = 0, 0.1) by Li et al. [ 95 ] reported that 
+adding Al destabilizes ( i.e. , increase in plateau pressures) the 
+hydride phase, consistent with the predicted DFT results; we 
+can interpret this tendency as follows: (i) The Mg2-x Alx Ni1 
+composition was selected to be Ni-rich compared to the stoi- 
+chiometric Mg2 Ni1 compound. (ii) We expect the Al atoms in 
+the Ni-rich alloy to be preferentially present at the Mg sites, 
+as shown in Table 6 . (iii) The Al atoms at the Mg sites re- 
+sults in the destabilization of the hydride phase ( i.e. , increase 
+in Er ) as shown in Table 7 . 
+As another example, we can compare the results of iden- 
+tifying the effect of Cu addition on alloys with a Mg-rich 
+composition. Moreover, the predictions for Ag, Cu, Ca, Cr, 
+Mn, Y, and Ti derived from the DFT calculations are also 
+in general agreement with the reported experimental trends. 
+According to an experimental study on Mg2 Ni1-x Cux ( x = 0–
+0.15) alloys by Si et al. [ 43 ], adding Cu resulted in an in- 
+crease in plateau pressures. Our DFT calculations predict that 
+additional Cu atoms in the Mg-rich alloy are preferentially 
+present at the Ni sites ( Table 6 ), and this addition results 
+in the destabilization of the hydride phase ( Table 7 ), which 
+is consistent with the experimental trend. In particular, the 
+agreement between the experimental results and DFT predic- 
+tions for the role of Ca, the only solute element showing 
+a stabilizing effect among the elements in Table 7 , empha- 
+sizes the credibility of the DFT prediction. Our DFT calcu- 
+lations predicted that Ca positioned at the Mg site stabilizes 
+the hydride phase—a trend also reported in a previous ex- 
+periment [ 97 ], which demonstrated that incorporating Ca in 
+Mg2 Ni compounds, e.g. , Mg62 Ca5 Ni33 , results in the lowering 
+of plateau pressures. 
+Moreover, it is interesting to note that the prediction 
+is not only valid for the direction of changes ( i.e. , stabi- 
+lization or destabilization) but also for the magnitude of 
+changes. For example, a previous experiment by Zhong et a l. 
+[ 92 ] reported that the increasing trend in the plateau pres- 
+sures of the Mg2 Ni0.7 Al0.3 alloy was greater than that of 
+the Mg2 Ni0.7 Mn0.3 alloy, and this trend was consistently ob- 
+served in DFT calculations. The overall agreement between 
+the present DFT calculations and the experimental trends 
+demonstrates the reliability of the present predictions, and 
+thus the present results provide useful information for adding 
+solute elements not yet explored in previous experiments. 
+3.4. Electronic properties of Mg2 NiH4 hydrides 
+Finally, we investigated the underlying mechanisms of the 
+effect of solute elements on the properties of hydrogen stor- 
+
+4586 
+M.-S. Yoon, J. Hur, S.-H. Park et al. / Journal of Magnesium and Alloys 12 (2024) 4574–4593 
+Table 7 
+Effect of additional alloy elements on the hydrogenation reaction energy ( Er ) and volume change due to the hydrogenation reaction ( V ) of Mg2 NiH4 
+hydride deﬁned in Eqs. (12) and (5) , respectively. Predictions for the reaction energy were performed considering different sites (Ni, Mg1, Mg2, and Mg3) 
+shown in Fig. 2 . Results at impractical conditions, expected from the site preference prediction results in Fig. 5 , are indicated in gray shading. The results 
+considering the predicted site preference of the stoichiometric Mg2 Ni compound in Fig. 5 (b) are emphasized in bold. 
+Element 
+Ni site 
+Mg1 site 
+Mg2 site 
+Mg3 site 
+Er (kJ/mol H2 ) 
+V (%) 
+Er (kJ/mol H2 ) 
+V (%) 
+Er (kJ/mol H2 ) 
+V (%) 
+Er (kJ/mol H2 ) 
+V (%) 
+Mg2 Ni 
+−57.06 
+30.49 
+−57.06 
+30.49 
+−57.06 
+30.49 
+−57.06 
+30.49 
+Ag 
+−51.484 
+30.761 
+−53.463 
+30.869 
+−53.342 
+31.294 
+−53.414 
+30.762 
+Al 
+−50.985 
+30.682 
+−52.945 
+31.019 
+−53.437 
+30.874 
+−52.672 
+31.244 
+As 
+−50.017 
+30.578 
+−51.297 
+30.694 
+−50.827 
+31.374 
+−50.583 
+31.058 
+Ba 
+−58.155 
+29.446 
+−59.689 
+30.222 
+−57.557 
+31.083 
+−58.422 
+30.687 
+Be 
+−52.516 
+31.217 
+−56.173 
+30.758 
+−55.544 
+31.165 
+−55.938 
+31.073 
+Bi 
+−50.188 
+29.492 
+−52.428 
+30.646 
+−51.483 
+31.460 
+−51.895 
+30.761 
+Ca 
+−55.355 
+29.809 
+−59.080 
+30.162 
+−58.769 
+30.151 
+−58.934 
+30.225 
+Cd 
+−50.929 
+30.453 
+−54.799 
+30.733 
+−54.855 
+31.076 
+−54.761 
+30.631 
+Co 
+−56.914 
+30.384 
+−54.579 
+30.872 
+−53.639 
+31.319 
+−55.023 
+30.848 
+Cr 
+−56.517 
+29.782 
+−54.841 
+30.007 
+−54.041 
+30.835 
+−55.138 
+30.599 
+Cs 
+−57.774 
+29.537 
+−57.670 
+30.648 
+−56.785 
+31.288 
+−56.672 
+31.369 
+Cu 
+−53.347 
+30.745 
+−53.815 
+31.095 
+−53.727 
+31.323 
+−53.959 
+30.952 
+Fe 
+−58.269 
+30.037 
+−54.842 
+30.387 
+−53.904 
+31.173 
+−55.752 
+30.540 
+Ga 
+−49.372 
+30.764 
+−52.952 
+31.079 
+−53.221 
+31.081 
+−52.273 
+31.221 
+Gd 
+−55.415 
+29.407 
+−56.695 
+30.076 
+−56.572 
+30.235 
+−56.937 
+30.026 
+Ge 
+−49.941 
+31.240 
+−52.440 
+31.269 
+−52.767 
+31.218 
+−51.919 
+31.316 
+Hf 
+−55.179 
+29.916 
+−54.420 
+30.155 
+−54.120 
+30.146 
+−55.029 
+29.737 
+In 
+−49.413 
+30.239 
+−53.247 
+30.629 
+−53.212 
+31.025 
+−52.764 
+30.810 
+K 
+−57.473 
+29.178 
+−58.243 
+30.091 
+−57.105 
+30.407 
+−57.476 
+30.420 
+La 
+−55.034 
+29.552 
+−56.874 
+30.080 
+−55.802 
+30.757 
+−56.502 
+30.469 
+Li 
+−54.552 
+30.511 
+−56.622 
+30.559 
+−56.492 
+30.633 
+−56.511 
+30.737 
+Mn 
+−56.983 
+29.813 
+−54.793 
+30.614 
+−54.430 
+30.959 
+−55.406 
+30.513 
+Mo 
+−57.113 
+29.679 
+−54.137 
+30.295 
+−53.178 
+30.804 
+−54.272 
+30.464 
+Na 
+−54.435 
+30.162 
+−57.027 
+30.366 
+−56.774 
+30.393 
+−56.776 
+30.500 
+Nb 
+−55.910 
+29.869 
+−53.969 
+30.317 
+−53.339 
+30.524 
+−54.354 
+30.407 
+Nd 
+−55.400 
+29.225 
+−56.819 
+29.920 
+−56.277 
+30.348 
+−56.896 
+30.094 
+P 
+−50.580 
+30.864 
+−52.448 
+31.054 
+−50.270 
+31.234 
+−49.971 
+31.388 
+Pb 
+−49.744 
+30.351 
+−54.029 
+30.843 
+−53.454 
+31.445 
+−53.614 
+31.219 
+Pd 
+−54.785 
+30.469 
+−52.809 
+31.209 
+−52.118 
+31.418 
+−52.966 
+30.843 
+Rb 
+−57.709 
+29.147 
+−58.368 
+30.196 
+−56.703 
+30.771 
+−57.341 
+30.611 
+Rh 
+−55.850 
+30.300 
+−53.215 
+31.207 
+−52.193 
+31.565 
+−53.579 
+30.967 
+Ru 
+−57.465 
+30.105 
+−53.961 
+30.515 
+−52.815 
+31.394 
+−54.913 
+30.772 
+S 
+−53.011 
+31.479 
+−52.962 
+31.067 
+−51.754 
+32.604 
+−51.603 
+32.336 
+Sb 
+−49.804 
+29.689 
+−51.140 
+30.866 
+−50.446 
+31.532 
+−50.596 
+30.877 
+Sc 
+−54.496 
+29.951 
+−56.285 
+30.318 
+−56.395 
+30.191 
+−56.469 
+29.944 
+Se 
+−51.794 
+31.262 
+−52.260 
+31.284 
+−50.057 
+31.877 
+−51.181 
+32.077 
+Si 
+−50.313 
+31.205 
+−51.633 
+31.260 
+−51.910 
+31.059 
+−50.705 
+31.452 
+Sn 
+−49.358 
+30.552 
+−52.588 
+30.953 
+−52.362 
+31.444 
+−52.101 
+31.223 
+Sr 
+−57.922 
+29.552 
+−59.730 
+29.966 
+−58.658 
+30.377 
+−59.145 
+30.302 
+Ta 
+−55.321 
+29.908 
+−53.864 
+30.089 
+−52.780 
+30.548 
+−53.922 
+30.306 
+Tc 
+−57.201 
+29.787 
+−53.959 
+30.716 
+−53.504 
+31.187 
+−54.535 
+30.527 
+Ti 
+−54.628 
+29.853 
+−54.877 
+30.306 
+−54.646 
+30.423 
+−55.277 
+30.427 
+Tl 
+−49.465 
+30.126 
+−53.832 
+30.707 
+−53.390 
+31.386 
+−53.314 
+31.015 
+V 
+−55.406 
+29.832 
+−54.593 
+30.103 
+−54.023 
+30.636 
+−55.033 
+30.532 
+W 
+−56.593 
+29.715 
+−53.744 
+30.303 
+−52.439 
+30.883 
+−53.875 
+30.342 
+Y 
+−55.384 
+29.471 
+−56.725 
+30.060 
+−56.662 
+30.145 
+−56.978 
+29.931 
+Zn 
+−51.192 
+31.339 
+−54.765 
+30.852 
+−54.807 
+30.939 
+−54.662 
+30.968 
+Zr 
+−55.585 
+29.450 
+−54.743 
+30.262 
+−54.513 
+30.234 
+−55.456 
+29.797 
+age alloys by analyzing the electronic properties of Mg2 NiH4 
+hydrides. In particular, we analyzed the role of the solute ele- 
+ments by evaluating the density of states (DOS) and bonding 
+characteristics using DFT calculations. Since there are a large 
+number of solutes considered in the present study, we selected 
+four example alloying elements considering tendencies of the 
+site preference and Er . For elements that preferentially sub- 
+stitute the Mg site, Sb and Ba were selected because of their 
+opposite tendencies to destabilize and stabilize the hydride 
+phase, respectively. For elements that preferentially substitute 
+the Ni sites, P and Ru were selected because of their oppo- 
+site tendencies to destabilize and stabilize the hydride phase, 
+respectively. Additionally, Na was selected as an example el- 
+ement that has only a marginal effect on hydride stability. 
+
+M.-S. Yoon, J. Hur, S.-H. Park et al. / Journal of Magnesium and Alloys 12 (2024) 4574–4593
+4587 
+Fig. 6. Visualization of the effect of additional alloying elements on the energy of hydrogenation reaction ( Er ) from data listed in Table 7 . Results considering 
+a substitutional solute atom at the (a) Mg site and (b) Ni site are presented. Averaged values for different Mg sites ( e.g. , Mg1, Mg 2, and Mg3 in Fig. 2 ) are 
+shown in (a). 
+Table 8 
+Impact of solute elements on the stability of Mg2 Ni hydrides predicted by the present DFT calculations compared to the reported experimental data. The 
+trends of decrease and increase in hydrogen plateau pressures are indicated as “Stabilized” and “Destabilized,” respectively. Roughly summarized trends in 
+the stability of the hydride ( Table 7 ) considering the predicted site preferences ( Table 6 ) are presented. 
+Element 
+Experiment 
+Present prediction 
+Base alloy 
+Compared alloy 
+Stability of hydrides 
+Ref. 
+Site preference 
+Stability of hydride 
+Al 
+Mg2 Ni 
+Mg1.9 Al0.1 Ni 
+Destabilized (Strong) 
+[ 95 ] 
+Mg site 
+Destabilized (Strong) 
+Al 
+Mg2 Ni 
+Mg2 Ni0.7 Al0.3 
+Destabilized (Strong) 
+[ 92 ] 
+Mg site 
+Destabilized (Strong) 
+Ag 
+Mg2 Ni 
+Mg1.95 Ag0.05 Ni 
+Destabilized (Strong) 
+[ 96 ] 
+Ni site 
+Destabilized (Strong) 
+Ag 
+Mg2 Ni 
+Mg1.9 Ag0.1 Ni 
+Destabilized (Strong) 
+[ 96 ] 
+Ni site 
+Destabilized (Strong) 
+Ca 
+Mg67 Ni33 
+Mg62 Ca5 Ni33 
+Stabilized (Strong) 
+[ 97 ] 
+Mg site 
+Stabilized (Strong) 
+Cr 
+Mg2 Ni 
+Mg2 Ni0.8 Cr0.2 
+Destabilized (Moderate) 
+[ 98 ] 
+Mg site 
+Destabilized (Moderate) 
+Cu 
+Mg2 Ni 
+Mg2 Ni0.9 Cu0.1 
+Destabilized (Moderate) 
+[ 43 ] 
+Ni site 
+Destabilized (Strong) 
+Cu 
+Mg2 Ni 
+Mg2 Ni0.8 Cu0.2 
+Destabilized (Moderate) 
+[ 99 ] 
+Ni site 
+Destabilized (Strong) 
+Mn 
+Mg2 Ni 
+Mg2 Ni0.8 Mn0.2 
+Destabilized (Weak) 
+[ 98 ] 
+Ni site 
+Destabilized (Weak) 
+Mn 
+Mg2 Ni 
+Mg2 Ni0.7 Mn0.3 
+Destabilized (Weak) 
+[ 92 ] 
+Ni site 
+Destabilized (Weak) 
+Ti 
+Mg2 Ni 
+Mg2 Ni0.88 Ti0.12 
+Destabilized (Moderate) 
+[ 42 ] 
+Mg site 
+Destabilized (Moderate) 
+Ti 
+Mg2 Ni 
+Mg1.9 Ni1 Ti0.1 
+Destabilized (Moderate) 
+[ 91 ] 
+Mg site 
+Destabilized (Moderate) 
+Ti 
+Mg2 Ni 
+Mg2 Ni0.7 Ti0.3 
+Destabilized (Weak) 
+[ 92 ] 
+Mg site 
+Destabilized (Moderate) 
+Y 
+Mg67 Ni33 
+Mg67 Ni30 Y3 
+Destabilized (Moderate) 
+[ 94 ] 
+Mg site 
+Destabilized (Weak) 
+Zn 
+Mg2 Ni 
+Mg2 Ni0.83 Zn0.17 
+Destabilized (Strong) 
+[ 100 ] 
+Ni site 
+Destabilized (Strong) 
+Zn 
+Mg2 Ni 
+Mg2 Ni0.83 Zn0.17 
+Destabilized (Strong) 
+[ 100 ] 
+Ni site 
+Destabilized (Strong) 
+Zr 
+Mg2 Ni 
+Mg2 Ni0.9 Zr0.1 
+Destabilized (Weak) 
+[ 101 ] 
+Mg site 
+Destabilized (Weak) 
+
+4588 
+M.-S. Yoon, J. Hur, S.-H. Park et al. / Journal of Magnesium and Alloys 12 (2024) 4574–4593 
+Fig. 7. Visualization of the impact of additional solute elements on the volume change due to the hydrogenation reaction ( V ) of Mg2 Ni alloys from data 
+listed in Table 7 . Results considering a substitutional solute atom at the (a) Mg site and (b) Ni site are presented. Averaged values for different Mg sites ( e.g. , 
+Mg1, Mg 2, and Mg3 in Fig. 2 ) are shown in (a). 
+Fig. 8 shows the examined DOS of the hydrides with- 
+out ( e.g. , Mg48 Ni24 H96 ) and with ( e.g. , Mg47 X1 Ni24 H96 and 
+Mg48 Ni23 X1 H96 ) solute atom X . The total density of states 
+(TDOS) and partial density of states (PDOS) are shown sep- 
+arately displayed in the ﬁgure. These analyses were conducted 
+to analyze the electronic structure and gain insight into the 
+detailed mechanisms of the inﬂuence of the solute elements. 
+Fig. 8(a) shows the TDOS of Mg48 Ni24 H96 and the partial 
+density of states (PDOS) of the constituent elements ( i.e. , 
+Mg, Ni, and H), which enable a comprehensive understand- 
+ing of the electronic structure of the Mg2 NiH4 hydride. Ex- 
+amination of the TDOS reveals a bandgap of approximately 
+1.53 eV between the valence and conduction bands, exhibit- 
+ing the characteristics of a semiconductor. The TDOS peak 
+in a range between the energy of −2.5 eV and the Fermi 
+energy ( Ef ) is predominantly characterized by the Ni d or- 
+bital. This range is also characterized by superposition with 
+Mg orbitals, whereas the overall DOS values are small. PDOS 
+analysis reveals that the Ni d orbital is the primary contrib- 
+utor to the electronic states near the Fermi level and plays 
+a signiﬁcant role in bonding with hydrogen atoms. The Ni d 
+orbitals have a higher spatial overlap with the H s orbitals, al- 
+lowing for stronger hybridization and more effective electron 
+sharing between the Ni and H atoms. This results in a deeper 
+potential well and stronger binding between Ni and H atoms. 
+Conversely, the Mg atoms primarily contribute through s and 
+p orbitals, which have less directional overlap with the H s 
+orbitals, resulting in weaker bonding interactions. The differ- 
+ence in bonding strength between Ni-H and Mg-H is crucial 
+to the thermodynamic stability of Mg2 NiH4 hydride, with the 
+stronger Ni-H bonds playing a signiﬁcant role in enhancing 
+the hydride’s overall stability. This ﬁnding is in accordance 
+with previous DFT results [ 102 , 103 ]. 
+Fig. 8 (c and d) illustrate the DOS of the hydrides with P 
+and Sb atoms at the Ni and Mg3 sites, respectively, which 
+exhibit a destabilization trend of the hydrides. Fig. 8 (e and f) 
+illustrate the DOS of the hydrides with Ru and Ba atoms at 
+the Ni and Mg3 sites, respectively, which exhibit a stabiliza- 
+tion trend of the hydrides. Upon the substitution of Mg with 
+Sb ( Fig. 8(d) ), a transition to metallic behavior is observed, 
+
+M.-S. Yoon, J. Hur, S.-H. Park et al. / Journal of Magnesium and Alloys 12 (2024) 4574–4593
+4589 
+Fig. 8. Total density of states (TDOS) and partial density of states (PDOS) of the (a) Mg48 Ni24 H96 , (b) Mg47 Na1 Ni24 H96 , (c) Mg48 Ni23 P1 H96 , (d) 
+Mg47 Sb1 Ni24 H96 , (e) Mg48 Ni23 Ru1 H96 , and (f) Mg47 Ba1 Ni24 H96 . A solute atom is presented at the Mg3 site for (b, d, f), while a solute atom is pre- 
+sented at the Ni site for (c, e). The energy of the Fermi level ( Ef ) is set to zero and indicated by a dashed line. 
+
+4590 
+M.-S. Yoon, J. Hur, S.-H. Park et al. / Journal of Magnesium and Alloys 12 (2024) 4574–4593 
+Fig. 9. Electron localization function (ELF) plots are illustrated on selected cross-sections of the hydride structure. (a, b) and (e, f) Plots of the Mg48 Ni24 H96 
+hydride considering different cross-sectional positions to focus on the positions of Mg and Ni atoms, respectively. (b, f) Additional plots with atomic positions. 
+(c) Mg47 Sb1 Ni24 H96 and (d) Mg47 Ba1 Ni24 H96 represent plots of the hydrides where a solute atom is presented at the Mg3 site. (g) Mg48 Ni23 P1 H96 and (h) 
+Mg48 Ni23 Ru1 H96 represent plots of the hydrides where a solute atom is presented at the Ni site. 
+characterized by the collapse of the band gap and the appear- 
+ance of states at the Fermi level. Moreover, the TDOS reveals 
+an increase in the density of states at higher energy levels, 
+particularly above the Fermi level, where the Sb p orbitals in- 
+troduce additional states that contribute to the destabilization 
+of the system. This destabilization is linked to an increase in 
+the DOS at elevated energy states, which enhances the elec- 
+tronic excitability and reduces the energy required for elec- 
+tron transitions, thereby facilitating a less stable electronic 
+environment. The increase in high-energy DOS reﬂects the 
+introduction of less-bound electronic states available for ther- 
+mal excitation and contributes to the overall instability of the 
+hydride. The presence of Sb atoms disrupts the original Ni- 
+H bonding network by introducing localized electronic states 
+that interfere with the cohesive forces between hydrogen and 
+the neighboring metal atoms. These additional states create 
+electron localization around Sb, weaken the Ni-H and Mg-H 
+interactions, and render the system more prone to electronic 
+ﬂuctuations and instability. The overall effect is to signiﬁ- 
+cantly reduce the stability of the hydrides, which aligns with 
+the goal of enhancing hydrogen release during the desorption 
+process. 
+In contrast, the substitution of Mg with Ba ( Fig. 8 (f)) main- 
+tains the semiconducting nature of the Mg2 NiH4 hydride, with 
+only a slight reduction in the band gap, preserving a rela- 
+tively stable electronic structure. The PDOS shows that the 
+Ba d orbitals enhance bonding interactions with hydrogen, 
+as evidenced by the increased contributions of Ba states be- 
+
+M.-S. Yoon, J. Hur, S.-H. Park et al. / Journal of Magnesium and Alloys 12 (2024) 4574–4593
+4591 
+low the Fermi level. This result indicates that the H atom 
+contributes signiﬁcantly to the valence electrons, suggesting 
+that the bonding interaction between H and the nearby metal 
+atoms is strengthened. In general, the greater the number of 
+bonding electrons, the stronger the charge interaction, which 
+increases the structural stability of the system [ 104 ]. This sug- 
+gests that although the Ba atom introduces some electronic 
+modiﬁcations, it predominantly reinforces the existing metal- 
+H bonding framework rather than destabilizing it. 
+The supporting observations from Fig. 8 (b, c and e) pro- 
+vide further insights into the contrasting effects of the so- 
+lute elements. Na substitution induces minimal changes in 
+the electronic structure, reﬂecting its limited impact on the 
+stability of the hydride, as shown in Fig. 8(b) . In contrast, 
+P substitution slightly reduces the band gap and introduces 
+states near the conduction band, partially destabilizing the 
+hydride, as shown in Fig. 8(c) . As illustrated in Fig. 8(e) , 
+the Ru substitution enhances the interaction between Ru and 
+H, leading to a localized electron density that contributes to 
+maintaining the stability of the hydride. 
+Overall, the results demonstrate that solute elements such 
+as Sb and P effectively destabilize Mg2 NiH4 hydride by mod- 
+ifying the electronic landscape, particularly through the intro- 
+duction of high-energy states that facilitate electronic instabil- 
+ity. In contrast, elements such as Ba and Ru either preserve 
+or slightly reinforce metal-H bonds, resulting in a more sta- 
+ble hydride phase. These ﬁndings highlight the importance of 
+selecting the appropriate alloying elements to tailor the elec- 
+tronic properties of hydrides. This approach helps achieve the 
+desired balance between the destabilization of hydrides for 
+enhanced hydrogen desorption and the maintenance of the 
+thermodynamic stability of hydrides for enhanced hydrogen 
+storage capacity, which is crucial for practical applications of 
+hydrogen storage alloys. 
+In the present study, the electron localization function 
+(ELF) was examined to elucidate the effect of solute atoms 
+on bonding characteristics. As illustrated in Fig. 9 , regions 
+with an ELF value near 1.0, represent a case where elec- 
+trons are fully localized. In regions with an ELF value below 
+0.5, the Pauli repulsion becomes more pronounced than in a 
+uniform electron gas, indicating that electrons are dispersed 
+and delocalized in those regions. Fig. 9 (a, b, e, and f) depict 
+the ELF plots of the Mg48 Ni24 H96 hydride. As illustrated in 
+Fig. 9 , red regions surrounding the H atoms, which exhibit 
+ELF values of 0.9–1.0, indicate that the electrons are highly 
+localized. In contrast, the blue regions at the positions of the 
+Ni and Mg atoms indicate that the metal atoms are in the 
+delocalization situation. Substantial ELF values between the 
+metal and H indicate the presence of a covalent-like bond, 
+while a certain level of ionic bonding also occurs as a result 
+of electron donation from the metal to the H atoms. Upon 
+examination of Fig. 9 (c and g) for solute elements (Sb and 
+P) that destabilize the hydride phase, the presence of those 
+atoms leads to an overall shrinkage of the highly localized 
+regions (ELF values of 0.9 – 1.0) near the H atoms. A reduc- 
+tion in the electron density surrounding the hydrogen atoms 
+indicates weakening of the interaction between hydrogen and 
+the metal atoms. Fig. 9 (d and h) illustrate a contrasting trend 
+for the solute elements (Ba and Ru) that stabilize the hydride 
+phase. The substitution of the Ba and Ru atoms resulted in 
+a more localized distribution of electrons around the hydro- 
+gen atoms. These observations explain why hydrogen storage 
+properties vary signiﬁcantly depending on the individual so- 
+lute elements. 
+4. Conclusion 
+First-principles DFT calculations were performed to ana- 
+lyze the impact of various solute elements on the performance 
+of Mg-Mg2 Ni hydrogen storage alloys. We investigated the 
+important characteristics of hydrogen storage alloys by con- 
+sidering both Mg-based solid solution and Mg2 Ni-based in- 
+termetallic compound phases, where the hydride forms are 
+MgH2 and Mg2 NiH4 , respectively. In particular, qualitatively 
+valid information for predicting changes in plateau pressures 
+in the PCT curve was provided by calculating changes in 
+the energy of related hydrogenation reactions. The effects of 
+alloying elements on volume changes due to hydrogenation 
+reactions were also obtained to provide additional criteria for 
+the practical use of hydrogen storage alloys. For the Mg2 Ni- 
+based intermetallic compound, we examined the site prefer- 
+ence of each alloying element, considering the designated sto- 
+ichiometry of the base alloy. Based on the revealed site pref- 
+erences, the effects of various possible alloying elements on 
+the properties of Mg2 Ni-based hydrides were also examined. 
+Electronic structure analyses were further conducted to eluci- 
+date the detailed mechanisms underlying the role of the addi- 
+tional solute elements. The results of this study provide mean- 
+ingful data for designing Mg-Mg2 Ni-based hydrogen storage 
+alloys. 
+Declaration of competing interest 
+The authors declare that they have no known competing 
+ﬁnancial interests or personal relationships that could have 
+appeared to inﬂuence the work reported in this paper. 
+CRediT authorship contribution statement 
+Min-Seok Yoon: Writing – review & editing, Writ- 
+ing – original draft, Visualization, Validation, Software, 
+Methodology, Investigation, Formal analysis, Data curation. 
+Jae Hur: Visualization, Validation, Methodology. Seo-Hui 
+Park: Visualization, Validation, Methodology. Ui-Jong Lee: 
+Visualization, Validation, Methodology.
+Guanglong Xu: 
+Writing –
+review & editing, Validation, Methodology. 
+Hyung-Ki Park: Methodology, Data curation, Conceptualiza- 
+tion. Byeong-Chan Suh: Writing – review & editing, Writing 
+– original draft, Resources, Project administration, Conceptu- 
+alization. Young Min Kim: Writing – review & editing, Writ- 
+ing – original draft, Resources, Project administration, Con- 
+ceptualization. Won-Seok Ko: Writing – review & editing, 
+Writing – original draft, Supervision, Project administration, 
+Funding acquisition, Conceptualization. 
+
+4592 
+M.-S. Yoon, J. Hur, S.-H. Park et al. / Journal of Magnesium and Alloys 12 (2024) 4574–4593 
+Acknowledgments 
+This research was supported by the National Research 
+Foundation of Korea (NRF) funded by the Ministry of Sci- 
+ence and ICT (Grant No. NRF-2022M3D1A2095313 ). This 
+research was also supported by the National Research Coun- 
+cil of Science & Technology (NST) grant by the Korea gov- 
+ernment (MSIT) (No. GTL24051–300 ). This research was 
+also supported by the Ministry of Trade, Industry and En- 
+ergy through machinery and equipment industry technology 
+development project (Grant No. 20018661). H.-K.P acknowl- 
+edges support from the Korea Institute of Industrial Technol- 
+ogy (KITECH EH - 24 - 0007). W.-S.K acknowledges support 
+from the National Supercomputing Center with supercomput- 
+ing resources including technical support (KSC-2021-CRE- 
+0402). 
+Data availability 
+Data supporting the ﬁndings of this study are available 
+from the corresponding author (wonsko@inha.ac.kr) upon re- 
+quest. 
+References 
+[1] X. Li, Z. Yuan, C. Liu, Y. Sui, T. Zhai, Z. Hou, Z. Han, Y. Zhang, Int 
+J Hydro Energy 50 (2024) 1401–1417 . 
+[2] T.R. Somo, M.V. Lototskyy, V.A. Yartys, M.W. Davids, S.N. Nyamsi, 
+J Energy Storage 73 (2023) 108969 . 
+[3] B. Sakintuna, F. Lamari-Darkrim, M. Hirscher, Int J Hydro Energy 32 
+(9) (2007) 1121–1140 . 
+[4] T. Matsunaga, F. Buchter, P. Mauron, M. Bielman, Y. Nakamori, 
+S. Orimo, N. Ohba, K. Miwa, S. Towata, A. Züttel, J Alloys Compd 
+459 (1–2) (2008) 583–588 . 
+[5] L. George, S.K. Saxena, Int J Hydro Energy 35 (11) (2010) 5454–5470 . 
+[6] H. Wan, L. Ran, H. Lu, J. Qiu, H. Zhang, Y. Yang, Y.a. Chen, J. Wang, 
+F. Pan, J Magnes Alloys (2024), doi: 10.1016/j.jma.2024.01.014. 
+[7] Y. Liu, M. Yue, Y. Guo, Y. Jiang, Y. Sun, L. Feng, Y. Wang, J Magnes 
+Alloys (2024), doi: 10.1016/j.jma.2024.04.031 . 
+[8] Q. Li, Y. Lu, Q. Luo, X. Yang, Y. Yang, J. Tan, Z. Dong, J. Dang, 
+J. Li, Y. Chen, B. Jiang, S. Sun, F. Pan, J Magnes Alloys 9 (6) (2021) 
+1922–1941 . 
+[9] Z. Ma, J. Zou, D. Khan, W. Zhu, C. Hu, X. Zeng, W. Ding, J Mater 
+Sci Technol 35 (10) (2019) 2132–2143 . 
+[10] A. Andreasen, Int J Hydrogen Energy 33 (24) (2008) 7489–7497 . 
+[11] J. Zhang, Y.N. Huang, P. Peng, C. Mao, Y.M. Shao, D.W. Zhou, Int J 
+Hydro Energy 36 (9) (2011) 5375–5382 . 
+[12] P.V. Jasen, E.A. González, G. Brizuela, O.A. Nagel, G.A. González, 
+A. Juan, Int J Hydro Energy 32 (18) (2007) 4943–4948 . 
+[13] M.J. van Setten, G.A. de Wijs, G. Brocks, Phys Rev B 76 (7) (2007) 
+075125 . 
+[14] S. Shen, W. Liao, Z. Cao, J. Liu, H. Wang, L. Ouyang, J Mater Sci 
+Technol 178 (2024) 90–99 . 
+[15] J. Garcia-Navarro, M.A. Isaacs, M. Favaro, D. Ren, W.J. Ong, 
+M. Grätzel, P. Jiménez-Calvo, Global Chall 8 (6) (2024) 2300073 . 
+[16] H. Zhong, L.Z. Ouyang, J.S. Ye, J.W. Liu, H. Wang, X.D. Yao, M. Zhu, 
+Energy Storage Mater 7 (2017) 222–228 . 
+[17] F. Mirshaﬁee, M. Rezaei, Int J Hydro Energy 48 (83) (2023) 
+32356–32370 . 
+[18] Y. Zhu, L. Ouyang, H. Zhong, J. Liu, H. Wang, H. Shao, Z. Huang, 
+M. Zhu, Angew Chem 132 (22) (2020) 8701–8707 . 
+[19] L. Ouyang, W. Chen, J. Liu, M. Felderhoff, H. Wang, M. Zhu, Adv 
+Energy Mater 7 (19) (2017) 1700299 . 
+[20] T. Káˇna, J. ˇCermák, L. Král, Int J Hydro Energy 46 (29) (2021) 
+15691–15701 . 
+[21] H. Zhang, S. Shang, J.E. Saal, A. Saengdeejing, Y. Wang, L.-Q. Chen, 
+Z.-K. Liu, Intermetallics 17 (11) (2009) 878–885 . 
+[22] L.W. Huang, O. Elkedim, R. Hamzaoui, J Alloys Compd 509 (2011) 
+S328–S333 . 
+[23] H. Sun, X. Gao, F. Zhao, Y. Li, Y. Zhang, H. Ren, Int J Hydro Energy 
+45 (53) (2020) 28974–28984 . 
+[24] Y. Li, G. Sun, Y. Mi, Am J Analyt Chem 7 (1) (2016) 67–74 . 
+[25] Y. Zeng, K. Fan, X. Li, B. Xu, X. Gao, L. Meng, Int J Hydro Energy 
+35 (19) (2010) 10349–10358 . 
+[26] T. Kelkar, S. Pal, J Mater Chem 19 (25) (2009) 4348–4355 . 
+[27] T. Hussain, T.A. Maark, S. Chakraborty, R. Ahuja, Chemphyschem 16 
+(12) (2015) 2557–2561 . 
+[28] Z. Han, Y. Wu, H. Yu, S. Zhou, J Magnes Alloys 10 (6) (2022) 
+1617–1630 . 
+[29] B. Li, X. Peng, Y. Yang, G. Wei, Q. Li, Y.a. Chen, F. Pan, Sep Purif 
+Technol 353 (2025) . 
+[30] Q. Luo, Y. Guo, B. Liu, Y. Feng, J. Zhang, Q. Li, K. Chou, J Mater 
+Sci Technol 44 (2020) 171–190 . 
+[31] X. Pang, L. Ran, Y.a. Chen, Y. Luo, F. Pan, J Magnes Alloys 10 (3) 
+(2022) 821–835 . 
+[32] N.A. Ali, M. Ismail, J Magnes Alloys 9 (4) (2021) 1111–1122 . 
+[33] Y. Jia, Y. Guo, J. Zou, X. Yao, Int J Hydro Energy 37 (9) (2012) 
+7579–7585 . 
+[34] L. Li, Z. Zhang, L. Jiao, H. Yuan, Y. Wang, Int J Hydro Energy 41 
+(40) (2016) 18121–18129 . 
+[35] S. Shen, L. Ouyang, J. Liu, H. Wang, X.-S. Yang, M. Zhu, J Magnes 
+Alloys 11 (9) (2023) 3174–3185 . 
+[36] H. Wan, L. Ran, H. Lu, J. Qiu, H. Zhang, Y. Yang, J. Wang, F. Pan, 
+J Magnes Alloys (2024), doi: 10.1016/j.jma.2024.01.014. 
+[37] T. Zhong, T. Xu, L. Zhang, F. Wu, Y. Jiang, X. Yu, J. Magnes. Alloys 
+(2024), doi: 10.1016/j.jma.2024.04.027 . 
+[38] X. Ding, R. Chen, X. Chen, H. Fang, Q. Wang, Y. Su, J. Guo, J 
+Magnes Alloys 11 (3) (2023) 903–915 . 
+[39] M. Mezbahul-Islam, M. Medraj, Calphad 33 (3) (2009) 478–486 . 
+[40] X.Q. Tran, S.D. McDonald, Q. Gu, T. Yamamoto, K. Shigematsu, 
+K. Aso, E. Tanaka, S. Matsumura, K. Nogita, J Power Sources 341 
+(2017) 130–138 . 
+[41] J. ˇCermák, L. Král, Acta Mater 56 (12) (2008) 2677–2686 . 
+[42] P. Wei, W. Huang, X. Ding, Y. Li, Z. Liu, T. Si, K. Wang, Q. Wang, 
+H.-W. Li, Q. Zhang, Dalton Trans 47 (25) (2018) 8418–8426 . 
+[43] T. Si, Y. Ma, Y. Li, D. Liu, Mater Chem Phys 193 (2017) 1–6 . 
+[44] Y.H. Cho, A.K. Dahle, Mater Sci Forum 638-642 (2010) 1085–1090 . 
+[45] Y. Li, Q. Gu, Q. Li, T. Zhang, Scr Mater 127 (2017) 102–107 . 
+[46] C. Lu, Y. Ma, F. Li, H. Zhu, X. Zeng, W. Ding, T. Deng, J. Wu, 
+J. Zou, J Mater Chem A 7 (24) (2019) 14629–14637 . 
+[47] Y. Qi, Z. Zhang, Q. Tang, J. Liu, R. Shi, J. Zhang, Y. Liu, J. Wang, 
+J. Zhang, S. Chen, Y. Zhu, Chem Mater 36 (12) (2024) 6288–6298 . 
+[48] Y. Zhang, T. Zhai, B. Li, H. Ren, W. Bu, D. Zhao, J. Mater. Sci. 
+Technol. 30 (10) (2014) 1020–1026 . 
+[49] Z. Lan, Z. Liu, H. Liang, W. Shi, R. Zhao, R. Li, Y. Fan, H. Liu, 
+J. Guo, J Mater Sci Technol 196 (2024) 12–24 . 
+[50] A. Zaluska, L. Zaluski, J.O. Ström-Olsen, J Alloys Compd 289 (1) 
+(1999) 197–206 . 
+[51] N.A. Niaz, I. Ahmad, W.S. Khan, S.T. Hussain, J. Mater Sci Technol 
+28 (5) (2012) 401–406 . 
+[52] X. Sun, X. Yang, Y. Lu, Q. Luo, C. Wu, Y. Zhang, T. Lyu, Q. Gu, 
+Q. Li, F. Pan, J Mater Sci Technol 202 (2024) 119–128 . 
+[53] B. Liu, S. Guo, Z. Hou, C. Li, X. Mu, L. Xu, D. Zhao, J Phys Chem 
+Solids 181 (2023) 111545 . 
+[54] P.E. Blochl, Phys Rev B 50 (24) (1994) 17953–17979 . 
+[55] G. Kresse, J. Hafner, Phys Rev B 49 (20) (1994) 14251–14269 . 
+[56] J.P. Perdew, K. Burke, M. Ernzerhof, Phys Rev Letters 77 (18) (1996) 
+3865 . 
+[57] H. Ding, S. Zhang, Y. Zhang, S. Huang, P. Wang, H. Tian, Int J Hydro 
+Energy 37 (8) (2012) 6700–6713 . 
+[58] M. Methfessel, A.T. Paxton, Phys Rev B 40 (6) (1989) 3616–3621 . 
+
+M.-S. Yoon, J. Hur, S.-H. Park et al. / Journal of Magnesium and Alloys 12 (2024) 4574–4593
+4593 
+[59] M. Bortz, B. Bertheville, G. Böttger, K. Yvon, J Alloys Compd 287 
+(1–2) (1999) L4–L6 . 
+[60] V. Charbonnier, K. Asano, H. Kim, K. Sakaki, Inorg Chem 59 (19) 
+(2020) 14263–14274 . 
+[61] P. Vajeeston, P. Ravindran, B. Hauback, H. Fjellvåg, A. Kjekshus, 
+S. Furuseth, M. Hanﬂand, Phys Rev B 73 (22) (2006) 224102 . 
+[62] M.V. Simi ˇci ´c, M. Zduji ´c, R. Dimitrijevi ´c, L. Nikoli ´c-Bujanovi ´c, 
+N.H. Popovi´c, J Power Sources 158 (1) (2006) 730–734 . 
+[63] F. Cuevas, J.F. Fernández, J.R. Ares, F. Leardini, M. Latroche, J Solid 
+State Chem 182 (10) (2009) 2890–2896 . 
+[64] G. Garcia, J. Abriata, J. Sofo, Phys Rev B 59 (18) (1999) 11746 . 
+[65] M. Liu, D. Qiu, M.-C. Zhao, G. Song, A. Atrens, Scr Mater 58 (5) 
+(2008) 421–424 . 
+[66] N. Novakovi´c, L. Matovi´c, J.G. Novakovi ´c, M. Manasijevi ´c, 
+N. Ivanovi´c, Mater Sci Eng B 165 (3) (2009) 235–238 . 
+[67] C. Shen, K.-F. Aguey-Zinsou, J Mater Chem A 5 (18) (2017) 
+8644–8652 . 
+[68] J. Töpler, H. Buchner, H. Säufferer, K. Knorr, W. Prandl, J Less-Com- 
+mon Met 88 (2) (1982) 397–404 . 
+[69] L. Ouyang, H. Dong, C. Peng, L. Sun, M. Zhu, Int. J Hydro Energy 
+32 (16) (2007) 3929–3935 . 
+[70] P. Zolliker, K. Yvon, J. Jorgensen, F. Rotella, Inorg Chem 25 (20) 
+(1986) 3590–3593 . 
+[71] J.L. Soubeyroux, D. Fruchart, A. Mikou, M. Pezat, B. Darriet, Mater 
+Res Bull 19 (9) (1984) 1119–1128 . 
+[72] Q. Lu, Z. Shao, C. Cui, G. Yang, L. Xu, H. Yang, Int J Hydro Energy 
+48 (35) (2023) 13236–13247 . 
+[73] D. Vyas, P. Jain, J. Khan, V. Kulshrestha, A. Jain, I.P. Jain, Int J Hydro 
+Energy 37 (4) (2012) 3755–3760 . 
+[74] E. van Steen, P. van Helden, J Phys Chem C 114 (13) (2010) 
+5932–5940 . 
+[75] M. Pozzo, D. Alfe, Phys Rev B 77 (10) (2008) 104103 . 
+[76] X. Li, Y. Qin, J. Fu, J. Zhao, Comput Mater Sci 98 (2015) 328–332 . 
+[77] T. Adit Maark, T. Hussain, R. Ahuja, Int J Hydro Energy 37 (11) 
+(2012) 9112–9122 . 
+[78] M.A. Salam, B. Abdullah, S. Suﬁan, F. Karimzadeh, J Nanomater 2014 
+(1) (2014) . 
+[79] H.C. Zhong, H. Wang, L.Z. Ouyang, Int. J. Hydrogen Energy 39 (7) 
+(2014) 3320–3326 . 
+[80] G. Liang, R. Schulz, J Mater Sci 39 (5) (2004) 1557–1562 . 
+[81] H.C. Zhong, H. Wang, J.W. Liu, D.L. Sun, M. Zhu, Scr Mater 65 (4) 
+(2011) 285–287 . 
+[82] C. Zhou, Z.Z. Fang, J. Lu, X. Luo, C. Ren, P. Fan, Y. Ren, X. Zhang, 
+J Phys Chem C 118 (22) (2014) 11526–11535 . 
+[83] C. Zhou, Z.Z. Fang, J. Lu, X. Zhang, J Am Chem Soc 135 (30) (2013) 
+10982–10985 . 
+[84] L.A. Bendersky, C. Chiu, V.M. Skripnyuk, E. Rabkin, Int J Hydro 
+Energy 36 (9) (2011) 5388–5399 . 
+[85] H. Zhong, J. Xu, Int J Hydro Energy 44 (5) (2019) 2926–2933 . 
+[86] X. Yang, W. Li, J. Zhang and Q. Hou, Materials , 16 (4), 2023, 1587. 
+[87] H.C. Zhong, Y.S. Huang, Z.Y. Du, H.J. Lin, X.J. Lu, C.Y. Cao, 
+J.H. Chen, L.Y. Dai, Int J Hydrogen Energy 45 (51) (2020) 
+27404–27412 . 
+[88] M. Lototskyy, V. Linkov, Int J Energ. Res. 46 (15) (2022) 
+22049–22069 . 
+[89] W. Zachariasen, C. Holley, J. Stamper, Acta Crystallogr 16 (5) (1963) 
+352–353 . 
+[90] W.-S. Ko, K.B. Park, H.-K. Park, J Mater Sci Technol 92 (2021) 
+148–158 . 
+[91] G. Liang, J. Huot, S. Boily, A. Van Neste, R. Schulz, J Alloys Compd 
+282 (1) (1999) 286–290 . 
+[92] H.-c. Zhong, J.-b. Xu, C.-h. Jiang, X.-j. Lu, Trans Nonferrous Met Soc 
+China 28 (12) (2018) 2470–2477 . 
+[93] F. Guo, T. Zhang, L. Shi, L. Song, J Magnes Alloys 11 (4) (2023) 
+1180–1192 . 
+[94] T. Zhang, W. Song, H. Kou, J. Li, Appl Surf Sci 371 (2016) 35–43 . 
+[95] Q. Li, Int J Hydrogen Energy 29 (13) (2004) 1383–1388 . 
+[96] L. Qian, L. Qin, J. Lijun, K.-C. Chou, Z. Feng, Z. Qiang, W. Xiuying, 
+J Alloys Compd 359 (1–2) (2003) 128–132 . 
+[97] A. Takasaki, K. Sasao, J Alloys Compd. 404-406 (2005) 431–434 . 
+[98] X. Liu, S. Wu, X. Cai, L. Zhou, Int J Hydrogen Energy 48 (45) (2023) 
+17202–17215 . 
+[99] F.-K. Hsu, C.-W. Hsu, J.-K. Chang, C.-K. Lin, S.-L. Lee, C.-E. Jiang, 
+Int J Hydro Energy 35 (24) (2010) 13247–13254 . 
+[100] S. Hai, X. Liu, W. Wang, Y. Liu, J. Li, Int J Hydro Energy 47 (47) 
+(2022) 20604–20616 . 
+[101] Y. Zhang, H. Yang, H. Yuan, E. Yang, Z. Zhou, D. Song, J Alloys 
+Compd 269 (1–2) (1998) 278–283 . 
+[102] W. Myers, L. Wang, T. Richardson, M. Rubin, J Appl Phys 91 (8) 
+(2002) 4879–4885 . 
+[103] U. Häussermann, H. Blomqvist, D. Noréus, Inorg Chem 41 (14) (2002) 
+3684–3692 . 
+[104] J. Nylén, F.J. Garcı`a Garcı`a, B.D. Mosel, R. Pöttgen, U. Häussermann, 
+Solid State Sci 6 (1) (2004) 147–155 . 

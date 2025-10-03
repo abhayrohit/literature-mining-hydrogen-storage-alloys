@@ -1,0 +1,12 @@
+﻿Alloy Name,Storage Capacity,Temperature Range,Pressure Range,Synthesis Method
+MgH2,-,325–400 °C,2.53–16.78 bar,-
+MgH2 + 20wt% Ni3 Mn-LMO,-,-,-,ball milling
+MgH2 + 9wt% Ni3 Mn-LDH,3.20wt% H2 (60 min) at 235 °C; 6.59wt% H2 (5 min) at 295 °C; 3.36wt% H2 (60 min) at 100 °C (absorption),"235–295 °C (desorption), 100 °C (absorption); 300–375 °C",1.61–10.54 bar,-
+MgH2 + 9wt% Ni3 Mn-LMO,"6.10wt% H2; 4.44wt% H2 (60 min) at 235 °C; 6.59wt% H2 (5 min) at 295 °C; 4.34wt% H2 (60 min) at 100 °C (absorption); 3.49wt% H2 (60 min) at 75 °C (absorption); 6.1wt% H2 (10 min) at 150 °C (absorption); 6.22wt%, 6.20wt% H2; 6.22wt%","190 °C; 235–295 °C (desorption), 28–150 °C (absorption); 295 °C; 190 °C to 295 °C",-,ball milling
+Nb2 O5 @MOF,6.2wt% hydrogen,275 °C,-,-
+Ni3 Mn-LDH,-,-,-,one-step hydrothermal method
+Ni3 Mn-LMO,-,-,-,annealing treatment under argon atmosphere (pyrolysis)
+Ni6 MnO8,-,-,-,ball milling
+NiMn-LDH,-,-,-,hydrothermal method
+NiMn-LMO,-,-,-,heat treatment; additional heat treatment
+TiNb2 O7,7.0wt% H2,300 °C,-,-

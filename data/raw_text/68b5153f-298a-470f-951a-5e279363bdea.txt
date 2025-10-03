@@ -1,0 +1,412 @@
+Citation: Li, M.; Hu, Y.; Kong, H.;
+Huang, Q.; Chen, Y.; Yan, Y. A Study
+on the Volume Expansion of
+Vanadium-Based Alloy Powders and
+Compacts During Hydrogen Sorption.
+Inorganics 2024, 12, 318. https://
+doi.org/10.3390/inorganics12120318
+Academic Editor: Rainer Niewa
+Received: 24 November 2024
+Accepted: 29 November 2024
+Published: 8 December 2024
+Copyright: © 2024 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license (https://
+creativecommons.org/licenses/by/
+4.0/).
+Article
+A Study on the Volume Expansion of Vanadium-Based Alloy
+Powders and Compacts During Hydrogen Sorption
+Mojia Li 1
+, Yunfeng Hu 2, Hanyang Kong 1, Qiuwei Huang 1, Yusong Chen 1 and Yigang Yan 1,*
+1
+Institute of New Energy and Low-Carbon Technology, Sichuan University, Chengdu 610207, China;
+limojia@stu.scu.edu.cn (M.L.); hanyang_kong@163.com (H.K.); huangqiuwei2022@163.com (Q.H.);
+ty505606@outlook.com (Y.C.)
+2
+Key Laboratory of Advanced Technologies of Materials, Ministry of Education, School of Materials Science
+and Engineering, Southwest Jiaotong University, Chengdu 610031, China; huyfeng@my.swjtu.edu.cn
+*
+Correspondence: yigang.yan@scu.edu.cn
+Abstract: Storing hydrogen in solid metal hydrides provides a safe and efficient storage approach.
+However, the large volume expansion of metal hydrides during hydrogen absorption imposes
+substantial stresses on the wall of a hydrogen storage tank. In this study, volume expansion behavior
+of a V-based hydrogen storage alloy, V61Cr24Ti12Ce3, with body-centered-cubic, was investigated
+using a self-developed in situ expansion testing device. The lattice expansion of the V61Cr24Ti12Ce3
+alloy after full hydrogenation was determined to be 37.85% using X-ray diffraction(XRD). The powder
+bed, composed of alloy powder with an average size of 3.35 mm in diameter, displays a large volume
+expansion ratio of 131% at the first hydrogen absorption cycle and 40–45% in the following four
+cycles. The stable compact bed, made of alloy powders, organic silicone gel, and graphite flakes,
+shows significantly smaller volume expansion ratio, which is 97% at the first cycle and 21% at the
+second cycle, and stabilizes at 13% in the following cycles. Also, the compact bed shows similar
+hydrogen absorption capacity, but faster absorption kinetics compared to the powder bed.
+Keywords: V-Ti-Cr alloy; volume expansion; metal hydride compact; organic silicone gel; graphite
+1. Introduction
+To achieve the sustainable development of our society, a stable supply of environ-
+mentally harmless clean energy is essential. Renewable energies like solar and wind have
+great potential, but the time-dependent and geography-dependent variability limits their
+application as power resources [1,2]. Hydrogen, as an ideal energy carrier, offers a solution
+for energy storage and transportation [3]. Metal hydrides, which can reversibly absorb hy-
+drogen in large quantity under mild conditions, have been attracting world-wide attention
+as the medium for hydrogen storage.
+Metal hydrides are categorized into interstitial (e.g., VH2 and LaNi5H6) and non-
+interstitial hydrides (e.g., MgH2). Vanadium (V)-based alloy, with body centered cubic
+(BCC) structure, is noteworthy for its high hydrogen storage density and fast hydrogen
+sorption kinetics [4,5]. Different V-based alloy systems have been developed, including
+V-Ti-Cr, V-Ti-Cr-Fe, and so on, which exhibits reversible capacities of ~2.5 wt.% under
+ambient conditions (e.g., 0–80 ◦C at 10 MPa H2) [4]. Furthermore, a big progress has been
+made in economical approaches to prepare V-based alloys, for example, from low-cost
+ferrovanadium master alloy or directly from oxides [4]. However, it is still a big distance
+from the practical application of vanadium-based alloys for hydrogen storage.
+The hydrogen absorption process is accompanied by significant volume expansion,
+particularly in interstitial hydrides. For instance, the volume of LaNi5 alloy can increase
+by about 20% after full hydrogenation [6], and the lattice of vanadium-based alloy can
+expand by approximately 40% [7]. Such large volume expansion would lead to the pul-
+verization of alloy particles and reduce the heat and mass transfer efficiency within the
+Inorganics 2024, 12, 318. https://doi.org/10.3390/inorganics12120318
+https://www.mdpi.com/journal/inorganics
+
+Inorganics 2024, 12, 318
+2 of 8
+tank [8], unavoidably imposing substantial stress on hydrogen storage tanks, potentially
+causing deformation or rupture [9,10]. Turning powders into compact after mixing with
+additives (such as binder and anti-expansion agent) could alleviate the impact of volume
+expansion of the metal hydrides [11–16]. For example, the LaNi5 compact, made from
+1 mm LaNi5 powders and resin, shows very stable structure with only a small amount of
+powder detached after 100 hydrogen sorption cycles [17]. Tarasov [18] et al. employed
+a graphene–nickel composite to enhance the desorption reaction of magnesium hydride.
+While the graphene–nickel material facilitated the magnesium hydride desorption reac-
+tion, the graphene component was prohibitively expensive for large-scale implementation.
+Compacts of Mg90Ni10 powder and Ti-Mn-based powder after mixing with expanded
+graphite (ENG) could increase the thermal conductivity of the metal hydride bed and
+reduce the stress during the hydrogen sorption process [19]. There are also some studies
+on the preparation of membranes with hydrogen selective permeability using polymers
+mixed with metal hydrides [20]. However, few investigations focusing on the volume
+expanding behaviors of V-based hydrogen storage alloys during hydrogen sorption have
+been reported.
+In the present study, we designed and constructed a dedicated expansion test appa-
+ratus to evaluate the in situ volume expansion of V-based alloy, V61Cr24Ti12Ce3 (at.%),
+during the hydrogen absorption process. Organic silicone gel, also known as PDMS, is a
+commercially available highly elastic polymer composed primarily of silicone oil and a
+curing agent. Its curing process is relatively straightforward, and it has been demonstrated
+to be non-toxic to V-Ti-Cr-Fe alloys [21]. So, the compact, composed of V61Cr24Ti12Ce3
+powders, organic silica gel (PDMS) [22] and graphite flakes, was designed to reduce the
+volume expansion.
+2. Results and Discussions
+The pressure–composition–temperature (PCT) curves of the V61Cr24Ti12Ce3 alloy
+for hydrogen absorption (Figure 1a) and desorption (Figure 1b) were measured at 0 ◦C,
+18 ◦C, and 50 ◦C, respectively. The hydrogen desorption plateau pressure (Peq) of the
+V61Cr24Ti12Ce3 alloy at 18 ◦C reaches 4.6 bar, which meets with the requirement of entry
+pressure for the operation of fuel cell. Based on the desorption PCT curves in Figure 1b, the
+V61Cr24Ti12Ce3 alloy achieves a reversible hydrogen storage capacity of 2.51 wt.% at 50 ◦C
+within the pressure region of 0.01–10 MPa. The van’t Hoff plots, obtained by plotting Peq
+versus 1/T, are shown in Figure 1c. The enthalpy change (∆H) and entropy change (∆S)
+are derived and listed in Table 1.
+ 
+Figure 1. The PCT curves (a,b) and van’t Hoff plots (c) of V61Cr24Ti12Ce3 alloy.
+Table 1. The enthalpy change (∆H) and the entropy change (∆S) of the V61Cr24Ti12Ce3 alloy.
+Properties
+Hydrogen Absorption
+Hydrogen Desorption
+∆H (kJ/mol H2)
+−31.18
+36.74
+∆S (J/mol H2)
+−129.36
+138.99
+
+Inorganics 2024, 12, 318
+3 of 8
+Figure 2a,b show the X-ray diffraction (XRD) patterns of the V61Cr24Ti12Ce3 alloy
+before and after hydrogenation, respectively. Before hydrogenation, the V61Cr24Ti12Ce3
+alloy shows the typical BCC structure, with a = 0.3031 (1) Å and V = 0.02785 Å3, as presented
+in Table 2. After hydrogenation, the minor V4H2.88-type BCT phase and the major VH2-type
+FCC phase are observed, attributed to subsequent phase transition from BCC to BCT and
+from BCT to FCC during the hydrogen absorption process (Figure 2c). The BCT phase
+shows the lattice parameters of a = 0.3143 (0) Å and c = 0.3148 (3) Å, and lattice volume
+increases up to V = 0.03110 Å3, with a lattice expansion ratio of 11.67% compared to the
+BCC phase. The FCC phase shows the lattice parameters of a = 0.4250 (3) Å, and lattice
+volume increases up to V = 0.07678 Å3, with an expansion ratio of 23.44% compared to the
+BCT phase and an expansion ratio of 37.85% compared to the BCC phase.
+Figure 2. The XRD patterns of the V61Cr24Ti12Ce3 alloy before (a) and after (b) hydrogenation, and
+the schematic diagram of the V61Cr24Ti12Ce3 alloy volume expansion (c).
+Table 2. Lattice constants BCC, BCT, and FCC phases in V61Cr24Ti12Ce3 alloy.
+Phase
+a (Å)
+b (Å)
+c (Å)
+V (Å3)
+BCC
+0.3031(1)
+0.3031(1)
+0.3031(1)
+0.02785
+BCT
+0.3143(0)
+0.3143(0)
+0.3148(3)
+0.03110
+FCC
+0.4250(3)
+0.4250(3)
+0.4250(3)
+0.07678
+Figure 3a,b show the hydrogen absorption plots of the pure powder bed and the
+compact bed with a diameter of 10 mm after five cycles. Both beds contain the same
+amount of alloy for testing. The first absorption reaction was conducted at 0 ◦C, and the
+rest of the absorption reactions were carried out at 20 ◦C. The powder bed shows the
+fast absorption kinetics at the first absorption cycle (Figure 3a), which reached saturation
+within 10 min with the absorption capacity of 3.5 wt.%. In the following four cycles, the
+powder bed could absorb hydrogen at ~2.0 wt.% within 10 min. In contrast, the compact
+bed shows slightly slower absorption kinetics at the first absorption cycle, which requires
+approximately 20 min to reach the saturation state with a capacity of 3.4 wt.%. In the
+subsequent four cycles, the powder bed displays much faster absorption kinetics with a
+
+Inorganics 2024, 12, 318
+4 of 8
+hydrogen absorption amount of ~2.0 wt.% within 5 min. Furthermore, the compact bed
+still maintains its structure after five cycles, as shown in Figure 3c,d.
+ 
+Figure 3. The hydrogen absorption plots of (a) the pure powder bed and (b) the compact bed within
+5 cycles; the images of compact bed: (c) initial state and (d) after 5 cycles.
+Figure 4a presents real-time data of position sensor for the V61Cr24Ti12Ce3 alloy
+powder bed during the five cycles of hydrogen absorption and desorption, which was
+measured using the self-made in situ expansion testing device shown in Figure 7. The time
+required for the powder bed to complete the hydrogen sorption reaction is 72, 49, 54, 58,
+and 59 min, for the first to fifth cycles, respectively. The powder bed was vibrated after
+the completion of each hydrogen absorption and desorption cycle. The volume expansion
+ratio in each cycle was calculated by comparing the height after hydrogen absorption of
+the current cycle with the height after hydrogen desorption in the initial cycle, as shown in
+Figure 4b. The alloy powder shows the highest expansion ratio of 131% at the first hydrogen
+absorption cycle, assigned to the phase evolution from BCC to FCC of V61Cr24Ti12Ce3. The
+expansion ratio decreases to 45% in the second cycle and stabilizes between 40% and 43%
+from the third to the fifth cycle. Figure 4c presents the particle size distribution of alloy
+powder after five hydrogen absorption/desorption cycles. The size of the majority of the
+powder decreases to below 0.355 mm, much smaller than the initial particle size of 3.35 mm.
+ 
+Figure 4. The height change (a) and volume expansion ratio (b) of the V61Cr24Ti12Ce3 alloy powder
+bed during the 5 cycles. The particle size (c) of V61Cr24Ti12Ce3 alloy powder after 5 cycles.
+Figure 5a presents real-time data from the position sensor for compact bed during the
+five cycles. The compact bed was vibrated after the completion of each hydrogen absorption
+and desorption cycle. Figure 5b shows the corresponding positional information of the
+position sensor and the volume expansion ratio of each cycle. The expansion ratio of the
+first hydrogen absorption cycle is calculated to be 97%, a reduction of 34% compared to
+the alloy powder bed. The volume expansion ratio of the second circle decreases to 21%
+and stabilizes at 13% afterwards. Additionally, the durations required for the compact
+bed to complete the hydrogen sorption reaction are 91, 39, 44, 41, and 33 min for the
+first to the fifth cycle, respectively, which are significantly shortened compared to the
+values for the alloy powder bed in Figure 4a. Hence, the conversion of powder bed to
+
+Inorganics 2024, 12, 318
+5 of 8
+compact bed accelerates the hydrogen absorption kinetics, probably attributed to improved
+effective thermal conductivity. Figure 5c,d show the initial state of the compact bed before
+and after five hydrogen sorption cycles, respectively. The shape of the compact bed was
+basically maintained.
+ 
+Figure 5. The height change (a) and volume expansion rate (b) of the compaction of V61Cr24Ti12Ce3
+alloy powder during the 5 cycles. The state of composite hydrogen storage material before hydrogen
+absorption (c) and after 5 cycles (d).
+For the two beds, the largest volume expansion was observed at the first cycle, which
+is attributed to lattice expansion during the phase transition of the V61Cr24Ti12Ce3 alloy
+from BCC to FCC structure. Since the second cycle, the volume expansion ratio of the
+powder bed almost stabilizes at 40–45%, accompanied with the phase transition from BCT
+to FCC. The compact bed shows a much smaller volume expansion ratio of 21% at the
+second cycle, which further decreases and stabilizes at 13% after the third cycle. The slight
+decrease in volume expansion ratio from the second to the third cycle may be attributed to
+continuous pulverization of V61Cr24Ti12Ce3 alloy powder or slow formation process of the
+stable silicone elastomers.
+Note that after the completion of each cycle, the powder bed and compact bed were vi-
+brated. The sensor positions after vibration are listed in Table 3. For the powder bed, sensor
+position after vibration decreases continuously from the first to the fifth cycle, implying that
+the bed became more compact after vibration probably owing to the pulverization of alloy
+powders. Differently, the sensor position of the compact bed changes slightly and keeps
+almost constant from the third to the fifth cycle, indicative of the formation of stable bed.
+Table 3. The sensor position after vibration for each circle.
+Sensor Movement Distance
+Caused by Vibration (mm)
+1st
+2nd
+3rd
+4th
+5th
+Powder bed
+42.88
+40.54
+38.99
+37.10
+36.00
+Compact bed
+53.95
+52.73
+51.99
+52.27
+51.86
+SEM and EDS analyses were conducted on the compact bed after five cycles, as il-
+lustrated in Figure 6. SEM and mapping results in Figure 6(a,a1,a2) reveal that graphite
+flakes and organosilicon gel are uniformly distributed on the surface of the alloy particles.
+Figure 6b–d demonstrate that the organic silica gel (PDMS) effectively binds the pulverized
+particles. Graphite has a lubricating effect, which could reduce the friction between parti-
+cles [23]. Organic silica gel (PDMS) cured like ethylene-vinyl acetate copolymer is highly
+elastomeric, which not only secures the graphite flakes tightly to the alloy particles but
+also fixes the alloy particles in situ. Accordingly, the utilization of a combination of alloy
+particles, organic silica gel (PDMS), and graphite flakes in the form of a compact bed not
+only effectively mitigates the volume expansion of the alloy bed but also contributes to the
+immobilization of the pulverized alloy powders.
+
+Inorganics 2024, 12, 318
+6 of 8
+Figure 6. (a–d) The SEM images of the compact bed after 5 cycles and elemental mapping (a1,a2) of
+Si and C corresponding to figure (a).
+3. Materials and Methods
+The V61Cr24Ti12Ce3 alloy was prepared via floating melting with raw materials of V
+(purity: 99.9%), Ti (purity: 99.6%), Cr (purity: 99.6%) and Fe (purity: 99.9%). The as-cast
+V61Cr24Ti12Ce3 alloy was annealed at 1400 ◦C for 0.5 h under dynamic vacuum. The
+as-annealed alloy was crushed to a powder size of ~3.35 mm using a jaw crusher under
+nitrogen atmosphere.
+The alloy powders were mixed with graphite flake (Macklin Biochemical Technology
+Co., Ltd., Shanghai, China) and organosilicon gel (Sylgard 184, Dow Corning, Midland, MI,
+America) with a mass ratio of 92%: 4%: 4%. The mixture was subjected to a pressing and
+molding process, with a pressure of 500 MPa maintained for a duration of one minute. Two
+types of compact bed, one with a diameter of 10 mm and another with an inner diameter of
+10 mm and an outer diameter of 45 mm, were prepared. Prior to the commencement of
+cycling tests, the compact bed was stored at room temperature for ≥24 h in an Ar-circulated
+glove box to allow the silicone gel to fully cure and form an elastomer.
+Alloy powders were loaded in a stainless-steel reactor for pressure–composition–
+temperature (PCT) measurement. To activate the alloy for hydrogen sorption, the alloy
+powders were evacuated for 1 h at room temperature, followed by the introduction of
+hydrogen at 7.5 MPa. The alloy powders could fast react with hydrogen at room tempera-
+ture. The hydrogen absorption PCT curves were measured at 0, 18, and 50 ◦C. To measure
+the hydrogen desorption PCT curves, the alloy powders were fully hydrogenated at 0 ◦C
+under 7.5 MPa H2, and subsequently, the temperature of the reactor was set to the targeting
+temperatures of 0, 18, and 50 ◦C, respectively. The measurement of hydrogen desorption
+PCT measurement started after the hydrogen pressure became stable. The X-ray diffraction
+(XRD) measurements were conducted using Cu Kα radiation (Rigaku, Tokyo, Japan), and
+the XRD data were analyzed using FullProf 2023 [24]. Microstructures was observed via
+scanning electron microscope (SEM, JSM-7800F, JEOL Ltd., Tokyo, Japan).
+To investigate the actual expansion of the V61Cr24Ti12Ce3 alloy during the hydrogen
+absorption process, an in situ expansion testing device was designed and a corresponding
+testing platform was established, as depicted in Figure 7. The testing device contains the
+expansion test reactor, two water baths, and a flow and pressure controller. A steel plate
+together with a position sensor was placed on top of the sample. The sensor could measure
+the position of the steel plate, which reflects the volume change in the tested sample. Two
+water baths were maintained to offer cold and hot water for the hydrogen absorption and
+desorption processes, respectively. The hydrogen flows and pressures during the testing
+process could be controlled and monitored from the test platform which was equipped
+with flow meters and pressure sensors. Before testing, the alloy powder bed or compact
+
+Inorganics 2024, 12, 318
+7 of 8
+bed was activated under vacuum for 2 h, followed by the introduction of 7.5 MPa H2 at
+5 ◦C. The hydrogen desorption was carried out under a dynamic vacuum at 80 ◦C. The
+hydrogen absorption and desorption cycle were repeated 5 times.
+ 
+Figure 7. The schematic image of in situ expansion testing tank (a) and the test platform (b).
+4. Conclusions
+We have demonstrated the volume expansion behavior of the V61Cr24Ti12Ce3 al-
+loy measured using the self-made volume expansion test device. Firstly, the maximum
+reversible capacity of V61Cr24Ti12Ce3 alloy is 2.51 wt.%, and the lattice expansion of
+V61Cr24Ti12Ce3 alloy in the saturated state of hydrogen absorption is found to be 37.85%
+and is analyzed via XRD test. The powder bed of the V61Cr24Ti12Ce3 alloy shows a large
+volume expansion ratio of 131% at the first hydrogen absorption cycle and 40~45% in
+the following four cycles. The compact bed, made of alloy powders, organic silicone gel
+(PDMS), and graphite flakes, shows a significantly smaller volume expansion ratio, which
+is 97% at the first cycle and 21% at the second cycle, and stabilizes at 13% in the following
+cycles. The highly elastic organic silicone gel (PDMS) serves to retain the graphite flakes on
+the alloy particles. Furthermore, the lubrication of the graphite flakes serves to reduce the
+interaction force between the powder particles. So, the addition of organic silicone gel and
+graphite flakes contributes to the formation of a stable bed of V61Cr24Ti12Ce3 alloy, which
+does not reduce the hydrogen absorption capacity but improves the hydrogen absorption
+kinetics after the second cycle.
+Author Contributions: Data curation, Q.H. and H.K.; testing, Y.H. and Y.C.; writing—original
+draft preparation, M.L.; editing, Y.Y. All authors have read and agreed to the published version of
+the manuscript.
+Funding: This study was financially supported by Sichuan Science and Technology Program (No.
+PG-PGFT-JFKF23-000009-0) and Xizang Autonomous Region Key R&D Program (XZ202401ZY0096).
+Data Availability Statement: All data generated or analyzed during this study are included in
+this article.
+Conflicts of Interest: The authors declare no conflicts of interest.
+References
+1.
+Chen, Z.; Ma, Z.; Zheng, J.; Li, X.; Akiba, E.; Li, H.W. Perspectives and challenges of hydrogen storage in solid-state hydrides.
+Chin. J. Chem. Eng. 2021, 29, 1–12. [CrossRef]
+2.
+Dieterich, M.; Pohlmann, C.; Bürger, I.; Linder, M.; Röntzsch, L. Long-term cycle stability of metal hydride-graphite composites.
+Int. J. Hydrogen Energy 2015, 40, 16375–16382. [CrossRef]
+3.
+Schlapbach, L.; Züttel, A. Hydrogen-storage materials for mobile applications. Nature 2001, 414, 353–358. [CrossRef]
+4.
+Kong, H.Y.; Xie, Q.F.; Wu, C.L.; Wang, Y.; Chen, Y.G.; Li, H.W.; Yan, Y.G. Vanadium-based alloy for hydrogen storage: A review.
+Rare Met. 2024, 6201–6232. [CrossRef]
+5.
+Matsushita, M.; Monde, M.; Mitsutake, Y. Experimental formula for estimating porosity in a metal hydride packed bed. Int. J.
+Hydrogen Energy 2013, 38, 7056–7064. [CrossRef]
+6.
+Cuscueta, D.J.; Silin, N.; Melnichuk, M. Stress reduction in a hydride container by the addition of a glidant agent. Int. J. Hydrogen
+Energy 2020, 45, 27452–27456. [CrossRef]
+
+Inorganics 2024, 12, 318
+8 of 8
+7.
+Luo, L.; Wu, C.; Yang, S.; Zhou, J.; Chen, Y.; Yang, F.; Xu, Y.; Liu, P. Decaying behaviors of V40(TiCr)51Fe8Mn hydrogen storage
+alloys with different particle sizes. J. Alloys Compd. 2015, 645, S178–S183. [CrossRef]
+8.
+Herbrig, K.; Pohlmann, C.; Gondek, Ł.; Figiel, H.; Kardjilov, N.; Hilger, A.; Manke, I.; Banhart, J.; Kieback, B.; Röntzsch, L.
+Investigations of the structural stability of metal hydride composites by in-situ neutron imaging. J. Power Sources 2015, 293,
+109–118. [CrossRef]
+9.
+Wu, Z.; Yang, C.; Yan, Y.; Wang, Y.; Tang, X.; Chen, Y.; Li, J.; Wang, M.; Xie, Q.; Chen, Y.; et al. Effect of dehydrogenation depth on
+cyclic hydrogen desorp tion properties of V40Ti25.5Cr26.5Fe8 alloy. J. Alloys Compd. 2023, 955, 170036. [CrossRef]
+10.
+Heubner, F.; Pohlmann, C.; Mauermann, S.; Kieback, B.; Röntzsch, L. Mechanical stresses originating from metal hydride
+composites during cyclic hydrogenation. Int. J. Hydrogen Energy 2015, 40, 10123–10130. [CrossRef]
+11.
+Charlas, B.; Gillia, O.; Doremus, P.; Imbault, D. Experimental investigation of the swelling/shrinkage of a hydride bed in a cell
+during hydrogen absorption/desorption cycles. Int. J. Hydrogen Energy 2012, 37, 16031–16041. [CrossRef]
+12.
+Wu, K.; Cai, B.; Fan, L.; Qin, L.; Chen, D.; Huang, Y. Stress measurement of MlNi4.5Cr0·45Mn0.05 alloy during hydrogen
+absorption-desorption process in a cylindrical reactor. Int. J. Hydrogen Energy 2020, 45, 28175–28182. [CrossRef]
+13.
+Gattia, D.M.; Jangir, M.; Jain, I.P. Behavior of Compacted Magnesium-Based Powders for Energy-Storage Applications. Inorganics
+2020, 8, 54. [CrossRef]
+14.
+Duan, W.; Du, J.; Wang, Z.; Niu, Y.; Huang, T.; Li, Z.; Pu, C.; Wu, Z. Strain variation on the reaction tank of high hydrogen content
+during hydrogen absorptiondesorption cycles. Int. J. Hydrogen Energy 2013, 38, 2347–2351. [CrossRef]
+15.
+Gabriel, R.A.N.; Cesar, A.G.B.; Daniel, R.L.; Luiz, A.P. Polyetherimide-LaNi5 composite films for hydrogen storage applications.
+Int. J. Hydrogen Energy 2021, 46, 32767–32778. [CrossRef]
+16.
+Shiraz, H.G.; Tavakoli, O. Investigation of graphene-based systems for hydrogen storage. Renew. Sustain. Energy Rev. 2017, 74,
+104–109. [CrossRef]
+17.
+Kazuya, K.; Yoshinori, K.; Hideaki, I. Development of large MH tank system for renewable energy storage. Int. J. Hydrogen Energy
+2017, 42, 22475–22479. [CrossRef]
+18.
+Tarasov, B.P.; Arbuzov, A.A.; Mozhzhuhin, S.A.; Volodin, A.A.; Fursikov, P.V. Composite materials with 2D graphene structures:
+Applications for hydrogen energetics and catalysis with hydrogen participation. J. Struct. Chem. 2018, 59, 830–838. [CrossRef]
+19.
+Carsten, P.; Lars, R.; Siarhei, K.; Thomas, H.; Bernd, K. Magnesium alloy-graphite composites with tailored heat conduction
+properties for hydrogen storage applications. Int. J. Hydrogen Energy 2010, 35, 12829–12836. [CrossRef]
+20.
+Strugova, D.V.; Zadorozhnyy, M.Y.; Berdonosova, E.A.; Yablokova, M.Y.; Konik, P.A.; Zheleznyi, M.V.; Semenov, D.V.; Milovzorov,
+G.S.; Padaki, M.; Kaloshkin, S.D.; et al. Novel process for preparation of metal-polymer composite membranes for hydrogen
+separation. Int. J. Hydrogen Energy 2018, 43, 12146–12152. [CrossRef]
+21.
+Zheng, X.; Kong, H.Y.; Chu, D.S.; Hu, F.P.; Wang, Y.; Yan, Y.G.; Wu, C.L. Stress Reduction of a V-Based BCC Metal Hydride Bed
+Using Silicone Oil as a Glidant. Inorganics 2022, 10, 167. [CrossRef]
+22.
+Marc, P.W.; Georgette, B.; Salieb, B.; Patrick, H. PDMS with designer functionalities-properties, modifications strategies, and
+applications. Prog. Polym. Sci. 2018, 83, 97–134. [CrossRef]
+23.
+Warfsmann, J.; Puszkiel, J.A.; Passing, M.; Krause, P.S.; Wienken, E.; Taube, K.; Klassen, T.; Pistidda, C.; Jepsen, J. Applying wash
+coating techniques for swelling-induced stress reduction and thermal improvement in metal hydrides. J. Alloys Compd. 2023, 950,
+169814. [CrossRef]
+24.
+Rodríguez-Carvajal, J. Recent advances in magnetic structure determination by neutron powder diffraction. Phys. B Condens.
+Matter 1993, 192, 55–69. [CrossRef]
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.

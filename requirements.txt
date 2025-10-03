@@ -1,0 +1,11 @@
+pandas>=2.2.2
+PyMuPDF>=1.24.9
+# NumPy 1.24.x doesn't support Python 3.13; use a newer version.
+numpy>=2.0.0
+python-dotenv==1.0.0
+fastapi==0.110.0
+uvicorn==0.27.0.post1
+python-multipart==0.0.9
+requests>=2.31.0
+setuptools>=68.0.0
+wheel>=0.41.0

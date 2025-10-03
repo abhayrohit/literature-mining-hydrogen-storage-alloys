@@ -1,0 +1,772 @@
+Available online at www.keaipublishing.com/en/journals/journal-of-magnesium-and-alloys/ 
+Journal of Magnesium and Alloys 13 (2025) 148–160 
+www.elsevier.com/locate/jma 
+Full Length Article 
+Designing multivalent NiMn-based layered nanosheets with high speciﬁc 
+surface area and abundant active sites for solid-state hydrogen 
+storage in magnesium hydride 
+Tao Zhong a , # , Tian Xu b , # , Liuting Zhang a , ∗, Fuying Wu a , Yiqun Jiang c , Xuebin Yu b , ∗
+a School of Energy and Power, Instrumental Analysis Center, Jiangsu University of Science and Technology, Zhenjiang 212003, China 
+b Department of Materials Science, Fudan University, Shanghai 200433, China 
+c Max Planck Institute for Iron Research, 40237 Düsseldorf, Germany 
+Received 6 February 2024; received in revised form 1 April 2024; accepted 19 April 2024 
+Available online 8 May 2024 
+Abstract 
+Catalytic doping of magnesium hydride (MgH2 ) to improve its hydrogen ab/desorption kinetic properties is considered to be an effective 
+and feasible method. In solid-phase catalysis, the extent of contact between the catalyst and the substrate determines the catalytic reaction 
+in a great sense. With large speciﬁc surface area and abundant active sites, two-dimensional (2D) nanomaterials are promising catalysts 
+for MgH2 via providing numerous pathways for the diffusion and dissociation of hydrogen. In this regard, 2D NiMn-based layered double 
+hydroxide and layered metallic oxide (LMO) are designed and introduced into MgH2 to improve its hydrogen storage properties. Simultaneous 
+enhancement in interfacial contact, desorption temperature and kinetics are achieved. The MgH2 + 9wt% Ni3 Mn-LMO composites begin to 
+discharge hydrogen at only 190 °C and 6.10wt% H2 could be charged in 600 s at 150 °C. The activation energy for de/hydrogenation is 
+reduced by 42.43% and 46.56%, respectively, compared to pure MgH2 . Even at a low operating temperature of 235 °C, the modiﬁed system 
+was still able to release 4.44wt% H2 in an hour, which has rarely been reported in previous studies. Microstructure observations and density 
+functional theory calculations revealed that ﬁrst, the hydrogen pumping effect of Mg2 Ni/Mg2 NiH4 promotes the adsorption and desorption 
+of hydrogen molecules on the surface of MgH2 , second, MnOx drew electrons from Mg2 Ni, producing a new Density of State structure 
+with a lower d-bond center. This unique change further strengthens the Mg2 Ni/Mg2 NiH4 pump effect on MgH2 . Our work indicates that 
+the application of 2D metal-based catalysts is a feasible and promising approach towards MgH2 for solid-state hydrogen storage to meet 
+technical and scientiﬁc requirements. 
+© 2024 Chongqing University. Publishing services provided by Elsevier B.V. on behalf of KeAi Communications Co. Ltd. 
+This is an open access article under the CC BY-NC-ND license ( http://creativecommons.org/licenses/by-nc-nd/4.0/ ) 
+Peer review under responsibility of Chongqing University 
+Keywords: Hydrogen storage; Magnesium hydride; Layered metal oxides; Multivalent catalysis. 
+1. Introduction 
+The demand for clean energy has been increasing due to 
+the depletion of fossil resources and growing environmental 
+concerns. Hydrogen energy has attracted widespread attention 
+because of its high combustion caloriﬁc value and abundant 
+∗Corresponding authors. 
+E-mail addresses: zhanglt89@just.edu.cn (L. Zhang), 
+yuxuebin@fudan.edu.cn (X. Yu) . 
+# Tao Zhong and Tian Xu contributed equally. 
+sources [ 1-3 ]. Especially, the storage of hydrogen is crucial 
+for its critical role in bridging hydrogen production and ap- 
+plication [ 4 , 5 ]. Due to the excellent volumetric density (110.0 
+kg ·m−3 ) and gravimetric hydrogen density (7.6wt%), MgH2 
+has been widely investigated as a safe and efﬁcient solid- 
+state hydrogen storage material [ 6 , 7 ]. However, strong metal- 
+hydrogen bonds and kinetic barriers restricted its further de- 
+velopment and practical applications [ 8 ]. To address the above 
+challenges, researchers have investigated various strategies to 
+enhance the hydrogen storage capability of MgH2 . Nanotech- 
+nology [ 9 , 10 ], alloying [ 11 , 12 ], and compositing [ 13 , 14 ] are 
+https://doi.org/10.1016/j.jma.2024.04.027 
+2213-9567/© 2024 Chongqing University. Publishing services provided by Elsevier B.V. on behalf of KeAi Communications Co. Ltd. This is an open access 
+article under the CC BY-NC-ND license ( http://creativecommons.org/licenses/by-nc-nd/4.0/ ) Peer review under responsibility of Chongqing University 
+
+T. Zhong, T. Xu, L. Zhang et al. / Journal of Magnesium and Alloys 13 (2025) 148–160
+149 
+demonstrated to effectively enhance the hydrogen storage per- 
+formance. 
+Catalytic modiﬁcation is also adopted as a feasible ap- 
+proach to improve the kinetic properties of MgH2 by 
+reducing the energy barrier for hydrogen ab/desorption 
+[ 15-17 ]. Recently, the emergence of transition metal hy- 
+droxides/oxides with uniform distribution of active sites and 
+the ability to undergo fast and reversible redox reactions 
+lights great hope for pushing the performance of MgH2 
+into advanced levels [ 18-21 ]. In our previous study [ 22 ], 
+MOF-supported Nb2 O5 nanoparticles were designed and the 
+MgH2 + 7wt%Nb2 O5 @MOF could release 6.2wt% hydrogen 
+in 2.6 min at 275 °C. Samuel [ 23 ] et al. introduced Ni6 MnO8 
+into MgH2 by ball milling, and the multivalent state changes 
+of Ni and Mn during hydrogen absorption and desorption 
+were considered to be an essential factor in improving the 
+hydrogen storage properties of MgH2 . Meng [ 24 ] et al. 
+synthesized V4 Nb18 O55 microspheres composed of tens of 
+nanometer-sized nanoparticles, the distinctive molecular-scale 
+Nb/V interface largely reduced the dehydrogenation energy 
+barrier of MgH2 . Such oxides would be reduced to low- 
+valent metal oxides or even zero-valent metals during the 
+MgH2 hydrogen storage process, resulting in a multi-element 
+or multi-valent chemical environment. Separately, Large spe- 
+ciﬁc surface area is assumed to be important for the cat- 
+alytic efﬁciency of dehydrogenation and hydrogenation. For 
+example, Chen [ 25 ] et al. synthesized graphene-like TiO2 
+(B) nanosheets with a monoclinic structure, the metallic Ti 
+nanoparticles and wrinkled Ti2 O3 generated during the hy- 
+drogen adsorption and desorption process created numerous 
+boundary interfaces between MgH2 and the catalysts to fa- 
+cilitate the hydrogen diffusion. Xian [ 26 ] et al. prepared a 
+2D bimetallic oxide TiNb2 O7 , which enabled MgH2 to emit 
+7.0wt% H2 when heated to 300 °C and a capacity retention 
+of as high as 96% was achieved after 30 cycles. Furthermore, 
+Ni is generally considered to react with Mg/MgH2 to form 
+Mg2 Ni/Mg2 NiH4 during hydrogen uptake and release to lower 
+the reaction barrier. On the other hand. Mn can easily form 
+different oxides on the catalyst surface and undergo reversible 
+transformation between different oxidation states, participat- 
+ing in the redox reaction and improving the catalytic activity. 
+Two-dimensional layered compounds are known as layered 
+double hydroxides (LDHs) [ 27-29 ]. Heat treatment of LDHs 
+can obtained corresponding metal oxides (layered metal ox- 
+ides, LMOs) with an enlarged high active surface area while 
+maintaining the original layered structure [ 30-32 ]. Inspired 
+by the abundance of active sites in high speciﬁc surface area 
+of 2D materials, the multivalent chemical environments of 
+the oxides, and efﬁcient catalysis by Ni and Mn, we pre- 
+pared NiMn-LDH by a hydrothermal method, and NiMn- 
+LMO was obtained by additional heat treatment. As expected, 
+both of them improved the hydrogen storage performance 
+of MgH2 , and kinetic analyses demonstrated that the cat- 
+alytic performance of LMO was better than that of LDH. 
+Microscopic characterization revealed that the generation of 
+Mg2 Ni/Mg2 NiH4 , and the multivalent changes of Mn syner- 
+gistically improved the performance of MgH2 . 
+2. Results and discussion 
+2.1. Microstructure of Ni3 Mn-LDH and NiMn-LMO 
+The synthetic procedure of Ni3 Mn-LDH and Ni3 Mn-LMO 
+is illustrated in Fig. 1 (a). The XRD patterns of Nix Mn-LDH 
+( x = 1, 2, 3) are shown in Fig. 1 (b) and Fig. S1. The crystal 
+structures of NiMn-LDH prepared by one-step hydrothermal 
+method are all consistent with those reported in the literature 
+[ 33 ], indicating the successful preparation of NiMn-LDH. The 
+diffraction peaks at 37.32 °, 43.36 ° and 62.99 ° of Ni3 Mn-LMO 
+prepared after annealing treatment under argon atmosphere 
+can be attributed to the (111), (210), and (220) faces of NiO 
+(JCPDS No 75-0197). The remaining four diffraction peaks 
+can be assigned to the (111), (220), (311), and (511) crys- 
+tal planes of NiMn2 O4 (JCPDS No 01-1110), which demon- 
+strates that the annealed sample is composed of NiO and 
+NiMn2 O4 composite metallic oxides. Besides, the Rietveld 
+reﬁnement result of Ni3 Mn-LMO revealed that the mass per- 
+centage of NiO and NiMn2 O4 are 88.9wt% and 11.1wt%, 
+respectively. The transformation of Ni3 Mn-LDH into Ni3 Mn- 
+LMO via pyrolysis is further conﬁrmed by Raman spec- 
+troscopy (Fig. S2). Ni3 Mn-LDH exhibited Raman peaks typi- 
+cal of those belonging to LDH. While Ni3 Mn-LMO exhibited 
+ﬁrst-order and second-order optical phonon peaks character- 
+ized at ≈565–616 and 1100 cm−1 , respectively, indicating the 
+presence of NiO [ 34 ]. The chemical compositions and bind- 
+ing states of different atoms of the prepared Ni3 Mn-LDH and 
+Ni3 Mn-LMO were analyzed by XPS as shown in Figs. S5, 
+S6. The spectral peaks of C 1s, O 1s, Ni 2p, and Mn 2p can 
+be observed from Fig. S5. Figure S6 (a) shows two major spin 
+orbitals in the high-resolution Ni 2p spectra of 856.1 eV and 
+873.7 eV, which are attributed to the Ni 2p3/2 and Ni 2p1/2 
+binding energy of Ni. The spin energy interval is 17.6 eV, 
+indicating that Ni2 + is in an oxidized state in both Ni3 Mn- 
+LDH and Ni3 Mn-LMO [ 40 ]. The Mn 2p spectrum is shown 
+in Fig. S6 (b) and consists of two main peaks, the 2p3/2 and 
+2p1/2 spin orbitals at 643.4 eV and 654.8 eV, respectively. 
+In addition, the presence of three different oxidation states 
+of Mn in both Ni3 Mn-LDH and Ni3 Mn-LMO can be ob- 
+tained by using XPS split-peak ﬁtting [ 44 ]. Therefore, it can 
+be hypothesized that the presence of various valence forms 
+of Mn may be beneﬁcial for the hydrogen ab/desorption of 
+MgH2 . 
+To conﬁrm the geometric morphology of Ni3 Mn-LDH and 
+Ni3 Mn-LMO, scanning electron microscopy (SEM) are em- 
+ployed in Fig. 1 (d) and Fig. 1 (e). It is obvious that the as- 
+synthesized Ni3 Mn-LDH presents a hierarchical structure con- 
+sisting of 2D layered nanosheets. SEM images of NiMn-LDH 
+with different Ni/Mn ratios also showed the same geometri- 
+cal shape (Fig. S3, S4). TEM images of Ni3 Mn-LDH simi- 
+larly indicate ultrathin lattice structures ( Fig. 2 A (a, b)). As 
+shown in Fig. 2 A (c), the high-resolution transmission elec- 
+tron microscopy (HRTEM) image of Ni3 Mn-LDH exhibits a 
+d spacing of 0.23 nm for the lattice stripes, which can be re- 
+ferred to selected regions of the (015) plane of Ni3Mn-LDH. 
+The electron diffraction (SAED) image ( Fig. 2 A (e)) shows 
+
+150 
+T. Zhong, T. Xu, L. Zhang et al. / Journal of Magnesium and Alloys 13 (2025) 148–160 
+Fig. 1. Schematic diagram for the synthesis of Ni3 Mn-LDH and Ni3 Mn-LMO (a); XRD patterns and the reﬁned results of Ni3 Mn-LDH (b), Ni3 Mn-LMO 
+(c); SEM of Ni3 Mn-LDH (d), Ni3 Mn-LMO (e). 
+the reﬂected rings in the (110) and (015) planes of Ni3 Mn- 
+LDH. The EDS mapping results in Fig. 1 d further conﬁrm the 
+uniform distribution of Ni, Mn and O in Ni3 Mn-LDH. After 
+heat treatment, Ni3 Mn-LMO maintained the layered structure 
+( Fig. 1 (e)). The removal of water molecules and anions be- 
+tween the LDH layers [ 35 ] leads to a lower degree of aggrega- 
+tion and thickness of the nanosheets and more surface defects. 
+TEM images of Ni3 Mn-LMO similarly show that the lami- 
+nar structure was preserved Fig. 2 B (a, b). From Fig. 2 B (c), 
+lattice stripes with plane spacing of 0.208 nm and 0.253 nm 
+corresponding to the (200) plane of NiO and (311) plane of 
+NiMn2 O4 are clearly observed, which is consistent with the 
+XRD results. The SAED image ( Fig. 2 B (e)) further demon- 
+strates that the (111), (222) planes of NiO and the (400), 
+(440) planes of NiMn2 O4 . 400), (440) planes. In addition, the 
+EDS mapping in Fig. 2 B (d) also demonstrated that Ni, Mn 
+and O were equally uniformly distributed in the Ni3 Mn-LMO 
+catalyst. In addition, the N2 adsorption-desorption isotherms 
+(Fig. S7(a), Supporting Information) of both Ni3 Mn-LDH and 
+Ni3 Mn-LMO are of typical iv-type, indicating the presence of 
+meso– and micropores. Fig. S7(b) demonstrates the pore size 
+distribution curves of Ni3 Mn-LDH and Ni3 Mn-LMO, and it is 
+clear that Ni3 Mn-LMO produces more pore structures, lead- 
+ing to an increase in speciﬁc surface area. Some of these pore 
+structures were generated by the conversion of stripped CO3 2−
+to CO2 under thermal treatment [ 31 ], indicating the genera- 
+tion of more catalytically active sites. The speciﬁc surface 
+area and pore volume data calculated based on the Brunauer- 
+Emmett - Teller (BET) method is summarized in Table S1. 
+Hereby, Ni3 Mn-LDH and Ni3 Mn-LMO composed of ultrathin 
+nanosheets were successfully fabricated, which might provide 
+a larger speciﬁc surface area and more catalytically active 
+sites for hydrogen storage in MgH2 [ 36 ]. 
+2.2. Effect of NiMn-LDH and NiMn-LMO nanosheets on the 
+dehydrogenation reaction of MgH2 
+According to the non-isothermal hydrogen desorption 
+curves in Fig. 3 (a) and Fig. S9, the dynamic properties are all 
+substantially improved as a result of catalyst addition. After 
+considering both the amount of hydrogen release and the on- 
+set of dehydrogenation temperature, we selected a 9wt% addi- 
+tion ratio for the following experiments. The dehydrogenation 
+temperature curves of the MgH2 system with different molar 
+ratio of Ni2 + /Mn2 + additions reveal that the onset and ter- 
+minal dehydrogenation temperatures of the modiﬁed MgH2 
+system were all greatly reduced. Speciﬁcally, as the molar 
+ratio of Ni2 + increases, the onset dehydrogenation tempera- 
+ture of MgH2 decreases gradually and the dehydrogenation 
+rate is accelerated. Of these, MgH2 + 9wt% Ni3 Mn-LDH has 
+the lowest onset dehydrogenation temperature with the most 
+rapid dehydrogenation rate. It started discharging at 210 °C, 
+which is 140 °C lower than the pristine MgH2 , and can dis- 
+charge 6.63wt% of H2 at 350 °C, where pure MgH2 only 
+began to release hydrogen. After annealing, the Ni3 Mn-LMO 
+further reduced the starting dehydrogenation temperature of 
+MgH2 to 190 °C and the dehydrogenation rate was ulteriorly 
+accelerated ( Fig. 3 (b)). 
+
+T. Zhong, T. Xu, L. Zhang et al. / Journal of Magnesium and Alloys 13 (2025) 148–160
+151 
+Fig. 2. (A): TEM images (a, b), HRTEM images (c), elemental mapping (d) and SAED (e) of Ni3 Mn-LDH; (B): TEM images (a, b), HRTEM images (c), 
+elemental mapping (d) and SAED (e) of Ni3 Mn-LMO. 
+The isothermal dehydrogenation curves between the modi- 
+ﬁed MgH2 with pristine MgH2 were compared in Fig. 3 (c-f). 
+Generally, the dehydrogenation performance of MgH2 + 9wt% 
+Ni3 Mn-LMO was superior to that of MgH2 + 9wt% Ni3 Mn- 
+LDH at all temperatures, while the pristine MgH2 per- 
+formed worse than both. Both MgH2 + 9wt% Ni3 Mn-LDH and 
+MgH2 + 9wt% Ni3 Mn-LMO can discharge hydrogen at tem- 
+peratures as low as 235 °C, with 3.20wt% and 4.44wt% of 
+hydrogen in 60 min, respectively. Raising the temperature to 
+250 °C, the dehydrogenation kinetics became much faster. 
+Speciﬁcally, as shown in Fig. 3 (f) and its inset, the rate of 
+MgH2 + 9wt% Ni3 Mn-LMO for releasing 5wt% H2 is 4.57 
+times larger than that of MgH2 + 9wt% Ni3 Mn-LDH. Remark- 
+ably, MgH2 + 9wt% Ni3 Mn-LMO was able to emit 6.59wt% 
+H2 in just 5 min at 295 °C, while at the same temperature, 
+MgH2 + 9wt% Ni3 Mn-LDH required 10 min to release the 
+same amount of H2 . 
+In order to gain insight into the mechanism of de- 
+hydrogenation kinetics, isothermal dehydrogenation curves 
+of MgH2 , MgH2 + 9wt% Ni3 Mn-LDH, and MgH2 + 9wt% 
+Ni3 Mn-LMO were ﬁtted to the Chou-model [ 37 ] to derive the 
+rate-controlling steps of the dehydrogenation reaction. The de- 
+hydrogenation process of MgH2 in the Chou-model consists 
+mainly of two models, penetration and diffusion, with the 
+penetration model being the slower step in the hydrogen re- 
+lease process compared to the diffusion model. As shown in 
+Fig. 4 (a-b) and Fig. S10(a-b), the penetration model dom- 
+inates the rate control step for pristine MgH2 as well as 
+for MgH2 + 9wt% Ni3 Mn-LDH, which is in accordance with 
+the experimental results. For MgH2 + 9wt% Ni3 Mn-LMO, the 
+rate control step of the Chou-model transforms into a dif- 
+fusion step ( Fig. 4 (c) and Fig. S10(c)), which also provides 
+strong evidence that the catalytic performance with Ni3 Mn- 
+LMO is superior to that of Ni3 Mn-LDH. In addition, we 
+calculated the dehydrogenation activation energies of MgH2 , 
+MgH2 + 9wt% Ni3 Mn-LDH, and MgH2 + 9wt% Ni3 Mn-LMO 
+using the Arrhenius equation [ 38 ] to further illustrate the im- 
+provement on kinetics. The results are shown in Fig. 4 (d) 
+and Fig. S12(a-c). The dehydrogenation activation energy of 
+pristine MgH2 was 150.90 ± 2.58 kJ ·mol−1 , which was re- 
+duced to 103.68 ± 5.24 kJ ·mol−1 with the addition of 9wt% 
+Ni3 Mn-LDH, and the dehydrogenation activation energy was 
+further reduced with the addition of 9wt% Ni3 Mn-LMO to 
+86.88 ± 6.48 kJ ·mol−1 . The greatly reduced activation en- 
+ergy further supports the excellent hydrogen desorption capa- 
+bility of MgH2 + 9wt% Ni3 Mn-LMO. In particular, the dehy- 
+
+152 
+T. Zhong, T. Xu, L. Zhang et al. / Journal of Magnesium and Alloys 13 (2025) 148–160 
+Fig. 3. Desorption curves of MgH2 , MgH2 + 9wt% Nix Mn-LDH ( x = 1, 2, 3) (a), MgH2 + 9wt% Ni3 Mn-LDH, and MgH2 + 9wt% Ni3 Mn-LMO in non-isothermal 
+mode (b); desorption curves of MgH2 (c) , MgH2 + 9wt% Ni3 Mn-LDH (d), MgH2 + 9wt% Ni3 Mn-LMO (e) , MgH2 + 9wt% Ni3 Mn-LDH and MgH2 + 9wt% 
+Ni3 Mn-LMO at 250 °C in isothermal mode (f). 
+Fig. 4. Experimental points of hydrogen release and curves obtained by Chou-model prediction for MgH2 (a), MgH2 + 9wt% Ni3 Mn-LDH (b), and 
+MgH2 + 9wt% Ni3 Mn-LMO (c) at different temperatures; corresponding dehydrogenation activation energy (d); mechanism diagram of hydrogen penetration and 
+diffusion (e). 
+
+T. Zhong, T. Xu, L. Zhang et al. / Journal of Magnesium and Alloys 13 (2025) 148–160
+153 
+Fig. 5. Absorption curves of MgH2 , MgH2 + 9wt% Ni3 Mn-LDH, and MgH2 + 9wt% Ni3 Mn-LMO in non-isothermal mode (a); absorption curves of MgH2 (b), 
+MgH2 + 9wt% Ni3 Mn-LDH (c), MgH2 + 9wt% Ni3 Mn-LMO (d), MgH2 + 9wt% Ni3 Mn-LDH and MgH2 + 9wt% Ni3 Mn-LMO at 150 °C in isothermal mode 
+(e); corresponding rehydrogenation activation energy (f). 
+drogenation activation energy is much lower than that of other 
+magnesium matrix composites (Table S2), which explains the 
+source of its excellent hydrogen release properties. Combining 
+the Chou-model and the activation energy, Fig. 4 (e) vividly 
+depicts the hydrogen release of MgH2 in different environ- 
+ments. It can be summarized that the layered metallic oxide 
+is an efﬁcient catalyst that well enhanced the dehydrogenation 
+ability of MgH2 . 
+2.3. Effect of NiMn-LDH and NiMn-LMO nanosheets on the 
+hydrogen absorption reaction of MgH2 
+Hydrogen absorption experiments including non-isothermal 
+and isothermal hydrogenation were performed on MgH2 , 
+MgH2 + 9wt% Ni3 Mn-LDH, and MgH2 + 9wt% Ni3 Mn-LMO 
+to evaluate the hydrogen absorption performance. Fig. 5 (a) 
+illustrates the non-isothermal hydrogen absorption curves, 
+which show the onset of hydrogen absorption of pristine 
+MgH2 was 120 °C. With the introducing of 9wt% Ni3 Mn- 
+LDH and 9wt% Ni3 Mn-LMO, the onset hydrogen absorp- 
+tion temperatures decreased to 50 °C and 28 °C, respec- 
+tively. The results of isothermal hydrogen absorption tests 
+performed at different temperatures are shown in Fig. 5 (b-e). 
+The fully dehydrogenated MgH2 + 9wt% Ni3 Mn-LDH could 
+absorb 3.36wt% H2 in 60 min at 100 °C, while MgH2 + 9wt% 
+Ni3 Mn-LMO could charge 4.34wt% H2 at identical condition, 
+and 3.49wt% H2 could be absorbed in 60 min at a lower 
+temperature of 75 °C. The hydrogen absorption rates were 
+compared at the same temperature of 150 °C ( Fig. 5 (e)). For 
+the same absorption of 5wt% H2 , the rate of MgH2 + 9wt% 
+Ni3 Mn-LMO is 4.56 times higher than that of MgH2 + 9wt% 
+Ni3 Mn-LDH. Encouragingly, MgH2 + 9wt% Ni3 Mn-LMO can 
+charge even as much as 6.1wt% of H2 at 150 °C in only 
+10 min. In contrast, undoped MgH2 requires a higher operat- 
+ing temperature to achieve the same rehydrogenation perfor- 
+mance of the doped samples. 
+The rehydrogenation activation energies of MgH2 , 
+MgH2 + 9wt% Ni3 Mn-LDH, and MgH2 + 9wt% Ni3 Mn-LMO 
+calculated by the Arrhenius equation are shown in Fig. 5 (f) 
+and Fig. S12(d-f). The activation energy for rehydrogenation 
+of pristine MgH2 was 73.75 ± 0.48 kJ ·mol−1 , which de- 
+creased to 54.37 ± 0.51 kJ ·mol−1 and 39.41 ± 0.31 kJ ·mol−1 
+after the addition of 9wt% Ni3 Mn-LDH and 9wt% Ni3 Mn- 
+LMO, respectively. In order to understand the rate-controlling 
+steps of the rehydrogenation reaction, isothermal hydrogen 
+absorption curves were ﬁtted with the Chou-model as well. 
+As shown in Fig. S11, the hydrogen uptake of pristine MgH2 
+is mainly dominated by the penetration equation at lower tem- 
+peratures of 210 °C, 230 °C, and 250 °C, and the dominant 
+step changes from penetration to diffusion as the temperature 
+rises up to 270 °C. This is due to the fact that the hydrogen 
+uptake process of MgH2 is more sensitive to temperature. In 
+the case of MgH2 + 9wt% Ni3 Mn-LDH, the controlling step is 
+dominated by penetration at 100 °C, whereas it changes from 
+penetration to diffusion at the low temperature of 150 °C. Re- 
+garding MgH2 + 9wt% Ni3 Mn-LMO, the main step controlling 
+its rehydrogenation, also at 100 °C, is the diffusion model, 
+which is consistent with the results of the rehydrogenation 
+
+154 
+T. Zhong, T. Xu, L. Zhang et al. / Journal of Magnesium and Alloys 13 (2025) 148–160 
+Fig. 6. Isothermal dehydrogenation/hydrogenation curves of MgH2 + 9wt% Ni3 Mn-LMO composite at 295 °C for 20 cycles. 
+experiments in Fig. 4 . The above results support strongly the 
+conclusion that the hydrogen uptake of MgH2 + 9wt% Ni3 Mn- 
+LMO is superior to that of MgH2 + 9wt% Ni3 Mn-LDH. 
+2.4. Inﬂuence of Ni3 Mn-LDH and Ni3 Mn-LMO on 
+thermodynamics of MgH2 
+The thermodynamic properties of Ni3 Mn-LDH and Ni3 Mn- 
+LMO modiﬁed MgH2 were further investigated by determin- 
+ing the equilibrium hydrogen pressures of MgH2 , MgH2 + 9 
+wt% Ni3 Mn-LDH and MgH2 + 9 wt% Ni3 Mn-LMO at dif- 
+ferent temperatures as shown in Fig. S13(a-c). The desorp- 
+tion plateau pressures of MgH2 were 2.53, 4.66, 9.82, and 
+16.78 bar at 325 °C, 350 °C, 375 °C, and 400 °C. The plateau 
+pressures of MgH2 + 9wt% Ni3 Mn-LDH were 1.61, 3.06, 5.86 
+and 10.54 bar at 300 °C, 325 °C, 350 °C, and 375 °C, respec- 
+tively, while the plateau pressures of MgH2 + 9wt% Ni3 Mn- 
+LMO had plateau pressures of 1.55, 2.94, 5.50 and 10.24 bar, 
+respectively. The corresponding enthalpies of hydrogen de- 
+composition ( H) were calculated by the Van’t Hoff equation 
+as shown in Fig. S13(d). The value of H for MgH2 was es- 
+timated to be 83.08 ± 2.43 kJ/mol. However, even after the 
+addition of Ni3 Mn-LDH (78.04 ± 2.17 kJ/mol) and Ni3 Mn- 
+LMO (76.84 ±0.91 kJ/mol) the calculated value of H was 
+also slightly lower than that of the prepared MgH2 . There- 
+fore, like other previously reported catalysts Ni3 Mn-LDH and 
+Ni3 Mn-LMO can signiﬁcantly improve the kinetic properties 
+of MgH2 , but have little effect on the thermodynamic prop- 
+erties of MgH2 . 
+2.5. Cycling feature of MgH2 –9wt% Ni3 Mn-LMO 
+The cycling characteristics of composites are considered 
+to be an important indicator for assessing hydrogen stor- 
+age performance and are necessary for practical applica- 
+tions. Since MgH2 + 9wt% Ni3 Mn-LMO has better hydrogen 
+storage properties than MgH2 + 9wt% Ni3 Mn-LDH or pris- 
+tine MgH2 , we carried out up to 20 isothermal hydrogen 
+ab/desorption experiments at 295 °C to investigate the cyclic 
+stability of MgH2 + 9wt% Ni3 Mn-LMO. After 20 cycles, the 
+MgH2 + 9wt% Ni3 Mn-LMO composite was still able to des- 
+orb and absorb 6.22wt%, 6.20wt% H2 , which indicate excel- 
+lent reversibility and stability of the MgH2 + 9wt% Ni3 Mn- 
+LMO composite. The decrease in reversible hydrogen storage 
+capacity is due to the fact that nanoscale MgH2 is highly 
+susceptible to particle aggregation and growth during hydro- 
+gen uptake and release, leading to capacity decay and kinetic 
+degradation. In addition, as the number of cycles increases, a 
+small portion of the Mg nucleation and growth leads to the 
+inability to be hydrogenated, which will directly lead to a 
+decrease in the cycling capacity ( Fig. 6 ). 
+2.6. Mechanism for the improved hydrogen storage 
+properties 
+To identify the catalytic mechanism of LMO in compos- 
+ites, the microstructural changes of the materials in the pro- 
+cess of dehydrogenation and rehydrogenation were investi- 
+gated in detail. XRD results demonstrate that reversible trans- 
+formations of MgH2 and Mg dominate during hydrogen des- 
+orption and adsorption ( Fig. 7 (a, b)). It is noteworthy that 
+due to the high activity of LMO, it reacts with MgH2 dur- 
+ing ball milling, leading to the appearance of peaks belong- 
+ing to metallic nickel. During the hydrogen release process, 
+MgH2 further reacts with metal Ni to form Mg2 Ni, which in 
+the subsequent rehydrogenation reacts with hydrogen to form 
+Mg2 NiH4 . The generation of Mg2 Ni and Mg2 NiH4 increases 
+the free energy and reactivity of the system, which provides 
+extra energy for the resolution and adsorption of hydrogen. 
+In addition, it acts as a low-energy barrier region for hydro- 
+gen diffusion, reducing the hydrogen ad/desorption reaction 
+energy barriers of MgH2 . In addition, the XRD pattern of the 
+rehydrogened state after 20 cycles is shown in Fig. S15 (a), 
+the appearance of the Mg peaks conﬁrms the decrease of the 
+capacity during the cycling process. 
+However, no diffraction peaks were found for compounds 
+about Mn, which may be due to the in situ reduction of Mn 
+or its low content [ 24 ]. Therefore, the changes of Ni and 
+Mn in LMO were further analyzed by XPS measurement. 
+It should be noted that during the characterization of XPS, 
+
+T. Zhong, T. Xu, L. Zhang et al. / Journal of Magnesium and Alloys 13 (2025) 148–160
+155 
+Fig. 7. XRD patterns of MgH2 + 9wt% Ni3 Mn-LMO composite: ball milled, dehydrogened, rehydrogened (a) and its local enlargement (b), Full region XPS 
+spectra of MgH2 + 20wt% Ni3 Mn-LMO composite: ball milled, dehydrogened, rehydrogened (c), Ni 2p (d) and Mn 2p XPS (e) spectra of MgH2 + 20wt% 
+Ni3 Mn-LMO after milled, dehydrogenated, and rehydrogenated. 
+the percentage of catalyst was increased to 20wt% in or- 
+der to ensure the effective identiﬁcation of the Ni and Mn 
+states. The non-isothermal hydrogen release curves with the 
+addition of 20wt% LMO are comparable to the addition of 
+9wt% LMO (Fig. S14), suggesting that the evolution of Ni 
+and Mn in the reaction is consistent. Full region XPS spectra 
+displayed the signals of Mg 1s, Ni 2p, Mn 2p, O 1s, and 
+C 1s in Fig. 7 (c). After ball milling, the peaks of Ni0 2p 
+(852.7 and 870.1 eV) [ 39 ] can be clearly detected by XPS 
+( Fig. 7 (d)), indicating that metallic Ni was generated during 
+the ball milling process, which is in agreement with the re- 
+sults of XRD. The peaks of Ni2 + 2p (855.5 and 872.2 eV) 
+and Ni3 + 2p (856.86 and 874 eV) [ 40 , 41 ] belong to unreacted 
+NiO and NiMn2 O4 . After dehydrogenation, peaks belonging 
+to Ni2 + and Ni3 + disappeared due to reduction, with Ni0 2p 
+(852.4 and 869.8 eV) belonging to Mg2 Ni observed in Ni 2p 
+XPS spectra [ 42 ]. After rehydrogenation, the peaks of Ni0 
+2p (852.4 and 869.8 eV) belonging to Mg2 NiH4 still existed 
+[ 43 ]. The evolution of Mg2 Ni and Mg2 NiH4 agrees well with 
+the XRD results. In contrast, the different valence states of 
+Mn in LMO were consistently observed during the whole re- 
+action ( Fig. 7 (e)). In the ball-milled state, peaks belonging 
+to MnO (640.0 and 650.3 eV), Mn2 O3 (642.2 and 652.5 eV), 
+and MnO2 (644.5 and 654.8 eV) can be observed [ 44 , 45 ]. Af- 
+
+156 
+T. Zhong, T. Xu, L. Zhang et al. / Journal of Magnesium and Alloys 13 (2025) 148–160 
+Fig. 8. (A): TEM images (a -c), HRTEM images (d -f), and elemental mapping (g) of MgH2 + 9wt% Ni3 Mn-LMO after dehydrogenation; (B): TEM images 
+(a -c), HRTEM images (d -f), and elemental mapping (g) of MgH2 + 9wt% Ni3 Mn-LMO after rehydrogenation. 
+ter subsequent dehydrogenation and rehydrogenation, partial 
+reduction of Mn3 + and Mn4 + leads to an increase in Mn2 + 
+content. The XPS of the rehydrogenated state after 20 cy- 
+cles is also shown in Fig. S15 (b-d), the same Ni0 2p (852.4 
+and 869.8 eV) peaks belonging to Mg2 NiH4 are observed as 
+in the rehydrogenated state. While after 20 cycles, a further 
+increase in Mn2 + content was observed in the Mn 2p XPS 
+spectra due to the reducing effect. Consequently, it could be 
+concluded that the multivalent state changes of Ni and Mn 
+in LMO could promote the process of H2 desorption and ad- 
+sorption of MgH2 . 
+Subsequently, the evolution of the microstructure of MgH2 
+catalyzed by LMO was investigated using TEM and HRTEM 
+( Fig. 8 (A, B) and Fig. S16, S17). The TEM and HRTEM of 
+ball-milled MgH2 + 9wt% Ni3 Mn-LMO is displayed in Fig. 
+S16, in the same results as the XRD that besides the obser- 
+vation of MgH2 , facets belonging to Ni are also observed. 
+The microscopic morphology of MgH2 after dehydrogenation 
+is shown in Fig. 8 A(a-c). It can be observed that the LMO 
+nanosheets introduced into MgH2 are fragmented into ﬁne 
+sheets. From the HRTEM images ( Figs. 8 A(d, f) and 8B(e, f)), 
+the (102), (100) planes corresponding to Mg and the (002), 
+(200) planes of MgH2 can be observed. This indicates that 
+the reversible transformation of Mg and MgH2 occurs during 
+the H2 desorption and adsorption process, which is in good 
+agreement with the XRD results. During the initial dehydro- 
+genation process, HRTEM images ( Fig. 8 A(d, f)) illustrate 
+the obvious interplanar distance of 0.191 nm and 0.278 nm, 
+which belong to the (102) and (100) planes of Mg. It’s worth 
+noting that lattice spacings of 0.205 nm could be indexed 
+to the (114) planes of Mg2 Ni, in supportive with the XRD 
+and XPS results. After the hydrogenation process, new lattice 
+spacings of 0.230 nm can be observed ( Fig. 8 B(d, f)), point- 
+ing to the (220) planes of Mg2 NiH4 . Furthermore, the dehy- 
+drogenated and rehydrogenated HRTEM image show distinct 
+lattice spacings of 0.157, 0.215, and 0.196 nm, which can 
+be pointed to the (220) face of metallic MnO, the (133) face 
+of Mn2 O3 , and the (210) face of MnO2 , respectively, which 
+are also in good agreement with the XPS results. The TEM 
+pattern of the rehydrogened state after 20 cycles is shown in 
+Fig. S17. It can be observed that after 20 cycles, the grain 
+size of MgH2 has grown. which is the reason for the decay 
+of hydrogen storage after cycling. In addition, the results of 
+the EDS mapping ( Fig. 8 (A, B)(g)) revealed that elements 
+of Ni, Mn, and O were uniformly dispersed on the surface 
+of Mg and MgH2 , which conﬁrms that the LMO has sufﬁ- 
+
+T. Zhong, T. Xu, L. Zhang et al. / Journal of Magnesium and Alloys 13 (2025) 148–160
+157 
+Fig. 9. (a-d) Energy change curves for different reaction processes; stepwise reaction functions and schematic 3D model for (e) H2 adsorption and (f) H2 
+desorption. 
+cient contact with Mg/MgH2 during the reaction process. The 
+in-situ formed Mg2 Ni/Mg2 NiH4 and Mn species of (MnO, 
+Mn2 O3 , MnO2 ) collaborate to exhibit a signiﬁcant impact in 
+the catalysis procedure to boost the kinetics of the Mg/MgH2 
+system. 
+Theoretical calculations based on Density Functional The- 
+ory (DFT) are utilised to elucidate the catalytic mechanism 
+of NiMn-LMO in the hydrogen storage of MgH2 . The afore- 
+mentioned NiMn-LMO acts in dual capacities: as a hydrogen 
+pump and as an efﬁcient catalyst. The presence of Mg2 Ni fa- 
+cilitates a more straightforward two-step hydrogen storage re- 
+action, as opposed to a direct reaction with Mg. Concurrently, 
+MnOx catalysis expedites these processes, making them more 
+stable and efﬁcient. A two-step model is employed to sim- 
+ulate both adsorption and desorption reactions ( Fig. 9 (e, f)). 
+Lower energy barriers are evident in models with MnOx , con- 
+sistent with experimental ﬁndings ( Fig. 9 (e, f)). Inﬂuenced 
+by MnOx , the reaction’s intermediary product, Mg2 Ni-H, ex- 
+hibits a higher total energy. This typically indicates a less 
+stable structure, predisposed to easy bond dissociation, which 
+results in a quicker hydrogen transformation from Mg2 NiH4 
+to Mg during H2 adsorption, and simpler dehydrogenation in 
+the desorption process. A comparative analysis was conducted 
+on the state structure of Mg2 Ni with and without MnOx , to 
+further understand why MnOx can weaken the bond between 
+the catalyst and hydrogen. Density of State (DOS) analysis re- 
+veals a signiﬁcant change in state structure induced by MnOx 
+(Fig. S19(a)). More speciﬁcally, Mg2 Ni with MnOx has a 
+lower d-bond center at −1.581 eV compared to −0.941 eV 
+of pure Mg2 Ni (Fig. S18 (b)). According to the d-bond the- 
+ory proposed by Norskov [ 46 ], a lower d-bond center forms 
+a lower antibonding orbital, which is more easily ﬁlled by 
+electrons, thereby reducing the overall bonding strength. The 
+alteration in the state structure is attributed to the electron ex- 
+change between MnOx and Mg2 Ni, visible in Fig. S19. Table 
+S3 provides a detailed charge distribution among each atom. 
+In comparison to an isolated situation, MnOx draws 6.395 
+electrons from Mg2 Ni, causing the aforementioned state struc- 
+
+158 
+T. Zhong, T. Xu, L. Zhang et al. / Journal of Magnesium and Alloys 13 (2025) 148–160 
+Fig. 10. Mechanism diagram of dehydrogenation and rehydrogenation of the Ni3 Mn-LMO catalyzed MgH2 /Mg system. 
+ture change. In summary, MnOx draws electrons from Mg2 Ni, 
+producing a new DOS structure with a lower d-bond center. 
+This unique change weakens the bond between hydrogen and 
+Mg2 Ni pump. Macroscopically, this results in a more moder- 
+ate hydrogen absorption and release temperature, along with 
+a faster rate. 
+Combined with XRD, XPS, TEM, and DFT analysis, 
+the catalytic mechanism is presented in Fig. 10 . The LMO 
+nanosheets with large speciﬁc surface area are in close con- 
+tact with MgH2 , which creates a favorable environment (a 
+large number of activation sites and diffusion channels) for 
+the catalysis of solid-state dehydrogenation/hydrogenation re- 
+actions. Ni produced by reduction during ball milling reacts 
+well with MgH2 during dehydrogenation to produce Mg2 Ni, 
+which is converted to Mg2 NiH4 during rehydrogenation. The 
+formation of Mg2 Ni/Mg2 NiH4 acts as a “hydrogen pump”
+to promote the hydrogen storage process in MgH2 [ 47 , 48 ]. 
+Speciﬁcally, the enthalpy of formation of Mg2 Ni/Mg2 NiH4 is 
+lower than that of Mg/MgH2 , and thus takes the lead to react 
+with hydrogen during hydrogen absorption and desorption. In 
+addition, Mg2 Ni/Mg2 NiH4 can provide a large number of low- 
+energy barrier H diffusion channels to accelerate the adsorp- 
+tion and desorption of hydrogen. Meanwhile, the multivalent 
+chemical environment of Mn during hydrogen absorption and 
+desorption also greatly contributes to the kinetic properties 
+of MgH2 . LMO owns the advantages of high speciﬁc surface 
+area and abundant active sites of 2D materials. Besides, the 
+in-suit generated Mg2 Ni/Mg2 NiH4 served as nano-hydrogen 
+pumps and the multivalent state of Mn accelerated the elec- 
+tron transfer during catalysis. Therefore, LMO exerts excellent 
+catalytic effect on Mg-based hydrogen storage materials. 
+3. Conclusion 
+In this work, 2D NiMn-LDH and NiMn-LMO were suc- 
+cessfully synthesized. Both Ni3 Mn-LDH and Ni3 Mn-LMO 
+signiﬁcantly improved the hydrogen storage properties of 
+MgH2 . In particular, MgH2 + Ni3 Mn-LMO has better hydro- 
+gen uptake and discharge kinetics. The kinetic analysis of 
+the Chou model revealed that the dehydrogenation process of 
+the LMO-modiﬁed MgH2 was transformed from penetration- 
+controlled step to diffusion-controlled step. MgH2 + 9wt% 
+Ni3 Mn-LMO started to release hydrogen at as low as 190 °C 
+and was able to release 6.59wt% hydrogen in 5 min at a con- 
+stant temperature of 295 °C. Even at as low as 250 °C it was 
+able to release 5.02wt% hydrogen in 11 min, and the acti- 
+vation energy of dehydrogenation of MgH2 + 9wt% Ni3 Mn- 
+LMO was reduced to 86.88 ±6.48 kJ ·mol−1 . After 20 cy- 
+cles, MgH2 + 9wt% Ni3 Mn-LMO still had a reversible capac- 
+ity of 6.22wt%, exhibiting good cycling performance. Mi- 
+crostructural analysis illustrated that the high speciﬁc sur- 
+face area of LMO, abundant active sites, reversible conver- 
+sion of Mg2 Ni/Mg2 NiH4 , and multivalent chemical environ- 
+ment of Mn synergistically promoted the improvement of 
+hydrogen storage performance of MgH2 . And DFT calcu- 
+lations indicated that Mg2 Ni/Mg2 NiH4 acted as a hydrogen 
+pump to reduce the adsorption energy of hydrogen molecules 
+on the MgH2 surface and promote the dissociation of ad- 
+sorbed hydrogen molecules into hydrogen atoms. In turn, 
+the presence of manganese oxides can absorb electrons from 
+Mg2 Ni/Mg2 NiH4 , producing a new DOS structure with lower 
+d-bonding centers. This unique change further weakens the 
+bond between hydrogen and Mg2 Ni/Mg2 NiH4 leading to a 
+further decrease in the energy barrier for hydrogen adsorption 
+and dissociation. Our research provides a simple and efﬁcient 
+strategy to synthesize layered metal oxides with high speciﬁc 
+surface area and high catalytic activity and demonstrates an 
+effective method to improve the hydrogen storage properties 
+of MgH2 . 
+Declaration of competing interest 
+The authors declare no interest conﬁct. They have no 
+known competing ﬁnancial interests or personal relationships 
+that could have appeared to inﬂuence the work reported in 
+this paper. 
+
+T. Zhong, T. Xu, L. Zhang et al. / Journal of Magnesium and Alloys 13 (2025) 148–160
+159 
+CRediT authorship contribution statement 
+Tao Zhong: Writing – review & editing, Writing – original 
+draft, Visualization, Methodology, Investigation, Data cura- 
+tion, Conceptualization. Tian Xu: Writing – original draft, Vi- 
+sualization, Data curation, Conceptualization. Liuting Zhang: 
+Writing – review & editing, Resources, Funding acquisition. 
+Fuying Wu: Writing – review & editing, Data curation. 
+Yiqun Jiang: Writing – review & editing, Resources. Xuebin 
+Yu: Writing – review & editing, Resources, Funding acquisi- 
+tion, Formal analysis. 
+Acknowledgments 
+The authors appreciatively acknowledge the ﬁnancial sup- 
+ports from the National Key R&D Program of China 
+(2020YFA0406204), the National Natural Science Foundation 
+of China (Grant No 51801078 ). 
+Supplementary materials 
+Supplementary material associated with this article can be 
+found, in the online version, at doi:10.1016/j.jma.2024.04. 
+027 . 
+References 
+[1] M. Song, L. Zhang, F. Wu, H. Zhang, H. Zhao, L. Chen, H. Li, J. Mater. 
+Sci. Technol. 149 (2023) 99–111, doi: 10.1016/j.jmst.2022.11.032. 
+[2] L. Ren, Y. Li, N. Zhang, Z. Li, X. Lin, W. Zhu, C. Lu, W. Ding, J. Zou, 
+Nano-Micro Lett. 15 (2023) 93, doi: 10.1007/s40820- 023- 01041- 5 . 
+[3] T. He, P. Pachfule, H. Wu, Q. Xu, P. Chen, Nat. Rev. Mater. 1 (2016) 
+16059, doi: 10.1038/natrevmats.2016.59 . 
+[4] J. Yuan, H. Huang, Z. Jiang, Y. Lv, B. Liu, B. Zhang, Y. Yan, Y. Wu, 
+ACS Appl. Nano Mater. 4 (2021) 1604–1612, doi: 10.1021/acsanm. 
+0c02738 . 
+[5] T. Sadhasivam, H. Kim, S. Jung, S. Roh, J. Park, H. Jung, Renew. Sust. 
+Energy Rev. 72 (2017) 523–534, doi: 10.1016/j.rser.2017.01.107 . 
+[6] N. Xu, K. Wang, Y. Zhu, Adv. Mater. 38 (2023) 2303173, doi: 10.1002/ 
+adma.202303173 . 
+[7] X. Lu, L. Zhang, H. Yu, Z. Lu, J. He, J. Zheng, F. Wu, L. Chen, Chem. 
+Eng. J. 422 (2021) 130101, doi: 10.1016/j.cej.2021.130101 . 
+[8] L. Ren, Y. Li, Z. Li, X. Lin, C. Lu, W. Ding, J. Zou, Nano-Micro Lett. 
+16 (2024) 160, doi: 10.1007/s40820- 024- 01375- 8 . 
+[9] X.L. Zhang, Y.F. Liu, X. Zhang, J.J. Hu, M.X. Gao, H.G. Pan, Mater. 
+Today Nano 9 (2020) 100064, doi: 10.1016/j.mtnano.2019.100064. 
+[10] Z. Ding, Y.T. Li, H. Yang, et al., J. Magnes. Alloy. 10 (2022) 2946, 
+doi: 10.1016/j.jma.2022.09.028 . 
+[11] S. Li, Y. Zhu, Y. Liu, Y. Zhang, H. Lin, J. Zhang, W. Qiu, L. Li, J. 
+Alloys Compd. 819 (2020) 153020, doi: 10.1016/j.jallcom.2019.153020. 
+[12] J. Cermak, L. Kral, P. Roupcova, Renew. Energy 188 (2022) 411, doi: 10. 
+1016/j.renene.2022.02.021 . 
+[13] Y. Zhong, X.F. Wan, Z. Ding, L.L. Shaw, Int. J. Hydrog. Energy 41 
+(2016) 22104, doi: 10.1016/j.ijhydene.2016.09.195 . 
+[14] G. Mulas, R. Campesi, S. Garroni, et al., J. Alloys Compd. 536 (2012) 
+S236, doi: 10.1016/j.jallcom.2011.12.042. 
+[15] Z. Lu, J. He, M. Song, Y. Zhang, F. Wu, J. Zheng, L. Zhang, 
+L. Chen, Int. J. Min. Met. Mater. 30 (2023) 44–53, doi: 10.1007/ 
+s12613- 021- 2372- 5 . 
+[16] L. Wang, L. Zhang, X. Lu, F. Wu, X. Sun, H. Zhao, Q. Li, Chem. Eng. 
+J. 465 (2023) 142766, doi: 10.1016/j.cej.2023.142766 . 
+[17] J. Liu, Z. Ma, Z. Liu, Q. Tang, Y. Zhu, H. Lin, Y. Zhang, J. Zhang, 
+Y. Liu, L. Li, Int. J. Hydrog. Energy 45 (2020) 16622–16633, doi: 10. 
+1016/j.ijhydene.2020.04.104. 
+[18] H. Fu, J. Hu, Y. Lu, X. Li, Y. Chen, F. Pan, ACS Appl. Mater. Interfaces 
+14 (2022) 33161–33172, doi: 10.1021/acsami.2c06642. 
+[19] C. Duan, X. Wang, H. Wang, M. Wu, Y. Fan, J. Wu, T. Qu, B. Liu, 
+L. Hu, P. Liang, F. Wang, Y. Wu, J. Mater. Sci. Technol. 189 (2024) 
+77–85, doi: 10.1016/j.jmst.2023.11.072. 
+[20] C. Duan, Y. Tian, X. Wang, J. Wu, B. Liu, D. Fu, Y. Zhang, W. Lv, 
+L. Hu, F. Wang, X. Zhang, Y. Wu, Nano Energy 113 (2023) 108536, 
+doi: 10.1016/j.nanoen.2023.108536 . 
+[21] D. Gao, L. Zhang, M. Song, F. Wu, J. Wang, H. Zhao, H. Li, Int. J. 
+Hydrog. Energy 25 (2023) 9390–9400, doi: 10.1016/j.ijhydene.2022.12. 
+032. 
+[22] L. Zhang, F.M. Nyahuma, H. Zhang, C. Cheng, J. Zheng, F. Wu, 
+L. Chen, Green Energy. Environ. 2 (2023) 589–600, doi: 10.1016/j.gee. 
+2021.09.004. 
+[23] S. Guemou, F. Wu, P. Chen, J. Zheng, T. Bian, D. Shang, A.P. Levtsev, 
+L. Zhang, Int. J. Hydrog. Energy 62 (2023) 23943–23955, doi: 10.1016/ 
+j.ijhydene.2023.03.243 . 
+[24] Y. Meng, S. Ju, W. Chen, X. Chen, G. Xia, D. Sun, X. Yu, Small Struct 
+10 (2022) 2200119, doi: 10.1002/sstr.202200119 . 
+[25] M. Chen, X. Xiao, M. Zhang, J. Mao, J. Zheng, M. Liu, X. Wang, 
+L. Chen, Mater. Today Energy 16 (2020) 100411, doi: 10.1016/j.mtener. 
+2020.100411 . 
+[26] K. Xian, M. Wu, M. Gao, S. Wang, Z. Li, P. Gao, Z. Yao, 
+Y. Liu, W. Sun, H. Pan, Small 43 (2022) 2107013, doi: 10.1002/smll. 
+202107013 . 
+[27] C. Ning, S. Bai, J. Wang, Z. Li, Z. Han, Y. Zhao, D. O’Hare, Y. Song, 
+Chem. Rev. 480 (2023) 215008, doi: 10.1016/j.ccr.2022.215008 . 
+[28] F. Wang, P. Zou, Y. Zhang, W. Pan, Y. Li, L. Liang, C. Chen, 
+H. Liu, S. Zheng, Nat. Commun. 14 (2023) 6019, doi: 10.1038/ 
+s41467- 023- 41706- 8 . 
+[29] Y. Li, H. Guo, J. Zhao, Y. Zhang, L. Zhao, R. Song, Chem. Eng. J. 464 
+(2023) 142604, doi: 10.1016/j.cej.2023.142604. 
+[30] G. Huang, Y. Lu, X. Liu, W. Tang, X. Li, F. Wang, J. Shui, R. Yu, J. 
+Magnes. Alloy (2023), doi: 10.1016/j.jma.2023.10.003 . 
+[31] Y. Wang, Q. Pan, Y. Qiao, X. Wang, D. Deng, F. Zheng, B. Chen, 
+J. Qiu, Adv. Mater. 15 (2023) 2210871, doi: 10.1002/adma.202210871 . 
+[32] D. Yang, J. Huang, Z. Hu, Y. Miao, F. Wang, Z. Zhang, Y. Xie, S. Liu, 
+Q. Wang, C.U. Pittman, Fuel 357 (2024) 129982, doi: 10.1016/j.fuel. 
+2023.129982. 
+[33] X. Wang, J. Zhang, S. Yang, H. Yan, X. Hong, W. Dong, Y. Liu, 
+B. Zhang, Z. Wen, Electrochim. Acta 295 (2019) 1–6, doi: 10.1016/j. 
+electacta.2018.10.021 . 
+[34] L. Qiao, C. Xi, C. Li, K. Zhang, Q. Li, J. Han, Y. Ding, Adv. Funct. 
+Mater. (2024) 2402286, doi: 10.1002/adfm.202402286 . 
+[35] C. Yuan, J. Li, L. Hou, X. Zhang, L. Shen, X. (David) Lou, Adv. Funct. 
+Mater. 21 (2012) 4592–4597, doi: 10.1002/adfm.201200994. 
+[36] K. Kalantar-zadeh, J. Ou, T. Daeneke, A. Mitchell, T. Sasaki, 
+M.S. Fuhrer, Appl. Mater. Today 5 (2016) 73–89, doi: 10.1016/j.apmt. 
+2016.09.012. 
+[37] K. Chou, Q. Li, Q. Lin, L. Jiang, K. Xu, Int. J. Hydrog. Energy 3 
+(2005) 301–309, doi: 10.1016/j.ijhydene.2004.04.006 . 
+[38] E. Xu, H. Li, X. You, C. Bu, L. Zhang, Q. Wang, Z. Zhao, Int. J. 
+Hydrog. Energy 12 (2017) 8057–8062, doi: 10.1016/j.ijhydene.2016.12. 
+102. 
+[39] B. Zhang, X. Xie, Y. Wang, C. Hou, X. Sun, Y. Zhang, X. Yang, R. Yu, 
+W. Du, J. Magnes. Alloy (2022), doi: 10.1016/j.jma.2022.07.004. 
+[40] C. Mochizuki, Y. Inomata, S. Yasumura, M. Lin, A. Taketoshi, 
+T. Honma, N. Sakaguchi, M. Haruta, K. Shimizu, T. Ishida, T. Mu- 
+rayama, ACS Catal. 12 (2022) 6149–6158, doi: 10.1021/acscatal. 
+2c00108 . 
+[41] L. Dong, G. Chang, Y. Feng, X. Yao, X. Yu, Rare Metals 41 (2022) 
+1583–1594, doi: 10.1007/s12598- 021- 01881- 3 . 
+[42] M. Sun, J. Wang, J. Mater. Chem. A 11 (2023) 21420–21428, doi: 10. 
+1039/D3TA03473A. 
+[43] S. Shen, L. Ouyang, J. Liu, H. Wang, X. Yang, M. Zhu, J. Magnes. 
+Alloy 9 (2023) 3174–3185, doi: 10.1016/j.jma.2021.12.003 . 
+[44] H. Jia, Y. Li, L. Fu, U. Ali, B. Liu, L. Zhang, H. Wang, L. Li, H. Wang, 
+C. Wang, Small 46 (2023) 2303593, doi: 10.1002/smll.202303593 . 
+
+160 
+T. Zhong, T. Xu, L. Zhang et al. / Journal of Magnesium and Alloys 13 (2025) 148–160 
+[45] X. Li, Q. Zhou, Z. Yang, X. Zhou, D. Qiu, H. Qiu, X. Huang, 
+Y. Yu, Energy. Environ. Mater. 3 (2023) e12378, doi: 10.1002/eem2. 
+12378 . 
+[46] J..K. Nørskov, F. Studt, F. Abild-Pedersen, T. Bligaard, Angew. Chem. 
+Int. Edit. 54 (2015) 10404–10405, doi: 10.1002/anie.201506018 . 
+[47] L. Ren, W. Zhu, Q. Zhang, C. Lu, F. Sun, X. Lin, J. Zou, Chem. Eng. 
+J. 434 (2022) 134701, doi: 10.1016/j.cej.2022.134701 . 
+[48] X. Zhang, Y. Sun, S. Ju, J. Ye, X. Hu, W. Chen, L. Yao, G. Xia, 
+F. Fang, D. Sun, X. Yu, Adv. Mater. 2 (2023) 2206946, doi: 10.1002/ 
+adma.202206946 . 

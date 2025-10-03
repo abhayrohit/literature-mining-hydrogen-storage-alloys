@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hydrogen Storage Alloy Extractor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Hydrogen Storage Alloy Extractor</h1>
+    <p class="subtitle">Upload a research PDF and get a structured alloy property table.</p>
+  </header>
+  <main>
+    <section class="panel">
+      <form id="uploadForm">
+        <label class="file-label">Choose PDF
+          <input type="file" name="file" id="fileInput" accept="application/pdf" required />
+        </label>
+        <button type="submit" id="submitBtn">Extract</button>
+      </form>
+      <div id="status"></div>
+    </section>
+
+    <section id="resultSection" class="hidden">
+      <h2>Extracted Alloy Table</h2>
+      <div id="download"></div>
+      <div class="table-wrapper">
+        <table id="resultTable"></table>
+      </div>
+      <pre id="rawCsv" class="raw"></pre>
+    </section>
+  </main>
+
+  <footer>
+    <small>Frontend only. Backend API endpoints: <code>/extract</code>, <code>/health</code>, <code>/config</code>.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

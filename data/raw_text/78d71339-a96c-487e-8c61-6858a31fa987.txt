@@ -1,0 +1,1851 @@
+Article
+https://doi.org/10.1038/s41467-024-47077-y
+Atomic reconstruction for realizing stable
+solar-driven reversible hydrogen storage of
+magnesium hydride
+Xiaoyue Zhang1, Shunlong Ju
+1, Chaoqun Li1, Jiazheng Hao2,3, Yahui Sun1,
+Xuechun Hu1, Wei Chen1, Jie Chen2,3, Lunhua He
+2,4,5, Guanglin Xia
+1
+,
+Fang Fang
+1
+, Dalin Sun1 & Xuebin Yu
+1
+Reversible solid-state hydrogen storage of magnesium hydride, traditionally
+driven by external heating, is constrained by massive energy input and low
+systematic energy density. Herein, a single phase of Mg2Ni(Cu) alloy is
+designed via atomic reconstruction to achieve the ideal integration of pho-
+tothermal and catalytic effects for stable solar-driven hydrogen storage of
+MgH2. With the intra/inter-band transitions of Mg2Ni(Cu) and its hydrogenated
+state, over 85% absorption in the entire spectrum is achieved, resulting in the
+temperature up to 261.8 °C under 2.6 W cm−2. Moreover, the hydrogen storage
+reaction of Mg2Ni(Cu) is thermodynamically and kinetically favored, and the
+imbalanced distribution of the light-induced hot electrons within CuNi and
+Mg2Ni(Cu) facilitates the weakening of Mg-H bonds of MgH2, enhancing the
+“hydrogen pump” effect of Mg2Ni(Cu)/Mg2Ni(Cu)H4. The reversible genera-
+tion of Mg2Ni(Cu) upon repeated dehydrogenation process enables the con-
+tinuous integration of photothermal and catalytic roles stably, ensuring the
+direct action of localized heat on the catalytic sites without any heat loss,
+thereby achieving a 6.1 wt.% H2 reversible capacity with 95% retention under
+3.5 W cm−2.
+Hydrogen is a potential clean energy carrier for developing a carbon-
+neutral system and of great signiﬁcance for realizing a global transition
+to a sustainable energy economy. Unfortunately, the absence of a safe
+and efﬁcient hydrogen storage method remains a major bottleneck for
+the extensive utilization of hydrogen energy1–4. In comparison with
+hydrogen storage in pressurized tanks or cryogenic containers, the
+reversible storage of hydrogen into solid-state light-weight metal
+hydrides holds the intrinsic advantages of high safety, low-cost, and
+exceptional hydrogen storage capacity5–8. Among them, magnesium
+hydride (MgH2) that has a gravimetric and volumetric hydrogen den-
+sity of 7.6 wt.% and 110 kg m−3, respectively, and excellent reversibility,
+is particularly favored9–12. Large energy input, however, is required to
+drive hydrogen storage reaction of metal hydrides due to their high
+thermodynamic stability and activation energy13–15. Particularly, a the-
+oretical operating temperature of ~280 °C should be supplied to rea-
+lize reversible hydrogen storage of MgH2 and the extra high kinetic
+barrier would lead to even higher operating temperature of 400 °C16,17.
+As a result, the reversible hydrogen storage of MgH2 mainly relies on
+external energy input by intricate electric heating apparatus that
+would unavoidably not only decrease the hydrogen storage capacity of
+the whole system but also induce high energy consumption and costs
+for their practical large-scale applications.
+In order to solve this critical issue, we have recently proposed the
+concept of solar-driven reversible hydrogen storage of metal hydrides
+Received: 15 June 2023
+Accepted: 14 March 2024
+Check for updates
+1Department of Materials Science, Fudan University, Shanghai, China. 2Spallation Neutron Source Science Center, Dongguan, China. 3Institute of High Energy
+Physics, Chinese Academy of Sciences, Beijing, China. 4Beijing National Laboratory for Condensed Matter Physics, Institute of Physics, Chinese Academy of
+Sciences, Beijing, PR China. 5Songshan Lake Materials Laboratory, Dongguan, PR China.
+e-mail: xiaguanglin@fudan.edu.cn; f_fang@fudan.edu.cn;
+yuxuebin@fudan.edu.cn
+Nature Communications|   (2024) 15:2815 
+1
+1234567890():,;
+1234567890():,;
+
+by using solar energy as the sustainable and unlimited energy
+source18,19. It is realized by coupling the photothermal effect of light
+adsorber (i.e., MXene and Cu) that could generate heat for elevating
+the temperature of MgH2 and catalytic effect of thermochemical cat-
+alysts (i.e., Ti/TiHx) that could decrease the operating temperature of
+MgH2 by reducing kinetic barriers. Undoubtedly, the match of the
+photothermal effect and the catalytic effect is a prerequisite for rea-
+lizing solar-driven reversible hydrogen storage of MgH2. The light
+adsorber and thermal catalysts are physically separated and the phase
+separation of thermochemical catalysts, light adsorber, and MgH2,
+however, inevitably leads to the delay of the transfer of thus-generated
+heat from photothermal materials towards catalytic sites and the loss
+of heat, which results in poor catalytic activity and light-to-heat con-
+version efﬁciency. Moreover, both the photothermal effect of MXene
+and Cu and the catalytic effect of Ti/TiHx is limited and hence an
+extremely high light intensity of 4.0 W cm−2 is required for driving
+reversible hydrogen storage reaction of MgH2.
+Theoretically, it is an ideal solution to enhance solar-driven
+hydrogen storage performance of MgH2 by introducing a single-
+component phase that simultaneously holds photothermal and cat-
+alytic effects. Herein, an in situ alloying reaction between MgH2 and
+CuNi is developed to achieve the integration of the photothermal
+effect with full-spectrum light absorption and the catalytic effect that
+could signiﬁcantly lower the apparent activation energy of hydrogen
+storage reaction. Under UV–vis irradiation, the strong localized sur-
+face plasmon resonance (LSPR) effect of CuNi alloys would generate
+localized heat at the catalytic sites of CuNi alloys, leading to superior
+initial H2 desorption performance than that driven by traditional
+heating. Together with the initial dehydrogenation process, the
+in situ alloying reaction between Mg and CuNi results in simulta-
+neous atomic reconstruction, leading to the formation of Mg2Ni(Cu)
+ternary alloy that has the metallic properties and the combined effect
+of intra/inter-band transitions. Therefore, an over 85% absorption in
+the entire spectrum could be achieved for MgH2 catalyzed by CuNi
+after the initial dehydrogenation process, which, due to the pro-
+moted light-to-heat conversion efﬁciency, results in a high surface
+temperature of 261.8 °C under 2.6 W cm−2, 15 °C higher than that
+before cycling under identical condition. On the other hand, in
+comparison with MgH2, the hydrogen storage reaction of Mg2Ni(Cu)
+is thermodynamically and kinetically favored resulting from the
+weakening of Mg–H bonds and the low migration barrier of hydrogen
+atoms in both Mg2Ni(Cu) and Mg2Ni(Cu)H4, which in turn provides a
+facile pathway for the spontaneous breaking of Mg–H bonds of
+MgH2. More importantly, attributed to the smaller work function of
+Cu than that of Ni and the larger work function of Cu than that of Mg,
+the hot electrons generated by the LSPR effect of Cu could be
+transferred to Ni inside of both CuNi and Mg2Ni(Cu) alloys, leading to
+an increase in electron density around Ni during light irradiation. The
+uneven distribution of light-induced hot electrons within CuNi and
+Mg2Ni(Cu) alloy contributes to the effective weakening of Mg–H
+bonds of MgH2 and hence enhances the “hydrogen pump” effect of
+Mg2Ni(Cu)/Mg2Ni(Cu)H4, which improves cycling hydrogenation and
+dehydrogenation of MgH2 and signiﬁcantly reduces the apparent
+activation energy required for driving hydrogen storage in MgH2. As
+a result, the in situ atomic reconstruction of Mg2Ni(Cu) enables the
+integration
+of
+photothermal
+and
+catalytic
+roles
+in
+a
+single-
+component phase, which allows the direct action of localized pho-
+tothermal heat on the catalytic sites without any heat loss, resulting
+in the complete dehydrogenation of MgH2 with a reversible capacity
+of 6.1 wt.% within 15 min under 3.5 W cm−2. More importantly, the
+stable reversible generation of Mg2Ni(Cu) during cycling hydrogen
+storage process results in well-preserved photothermal and catalytic
+effects in improving repeated hydrogenation and dehydrogenation
+of MgH2, delivering a reversible H2 storage capacity of 6.1 wt.% with a
+capacity retention of 95% after ten cycles using solar energy.
+Results
+Preparation and characterization of CuNi alloys
+CuNi bimetallic alloys are ﬁrst synthesized via a one-step solvothermal
+calcination method as shown in Supplementary Fig. 1. Nitrate salts
+containing Cu and Ni ions are added and evenly dispersed in a mixed
+aqueous solution of glycerol and propanediol, which is then hydro-
+thermally treated at 150 °C for 3 h. After washing and thermal reduc-
+tion, CuNi alloys encapsulated in carbon layers could be obtained. By
+changing the appropriate amount of the precursors, the ratio of Cu
+and Ni atoms in the thus-obtained alloy could be facile controlled,
+resulting in the synthesis of Cu1Nix (Cu: Ni atomic ratio of 1:x), Cu, and
+Ni, respectively. Inductively coupled plasma-optical emission spec-
+troscopy (ICP-OES) indicates that the atomic ratios of Cu1Ni1, Cu1Ni2,
+and Cu1Ni3 are 1:1.03, 1:2.01, and 1:3.01 (Supplementary Table 1),
+respectively, which demonstrates the successful synthesis of CuNi
+alloys with controllable atomic ratios by facile adjusting the ratio of
+precursors.
+According to X-ray diffraction (XRD) results (Fig. 1a), all the as-
+synthesized catalysts exhibit three distinct diffraction peaks, indicat-
+ing the formation of typical face-centered-cubic (FCC) crystal phase
+with (111), (200), and (220) planes. The diffraction peaks of CuNi alloys
+show no splitting and only slight shifts in the region between the dif-
+fraction peaks of Cu (PDF#00-004-0836) and Ni (PDF#04-003-6597)
+could be observed for CuNi alloys, which is attributed to the slight
+change of crystal plane spacing caused by various Cu/Ni molar ratio20.
+Among them, the diffraction peaks of Cu1Ni1 are located at 43.86°,
+51.09°, and 75.17°, respectively, matching the standard diffraction
+peaks of Cu0.5Ni0.5 (PDF#04-002-1345) ideally, thereby conﬁrming the
+successful synthesis of Cu1Ni1 alloys. Moreover, the presence of Cu and
+Ni in CuNi alloys is conﬁrmed in X-ray photoelectron spectroscopy
+(XPS) survey spectra (Supplementary Fig. 2a). High-resolution Cu 2p
+and Ni 2p XPS spectra (Fig. 1b, c and Supplementary Fig. 2c, d)
+demonstrate that Cu and Ni are present mainly in their zero-valent
+state, consistent with the XRD results. Particularly, the binding ener-
+gies of Cu0 and Ni0 in CuNi alloys exhibit shifts compared to pure Cu
+and Ni due to the electronegativity difference, indicating the electronic
+interactions inside of CuNi alloys21,22. The weak peaks of Cu2+ and Ni2+
+could be attributed to the slight oxidation of CuNi alloys during
+measurement (Supplementary Table 2) and no chemical interaction
+between the outer carbon layer and CuNi alloys could be observed in
+the high-resolution C 1 s XPS spectra (Supplementary Fig. 2b).
+Scanning electron microscopy (SEM) image (Fig. 1d) illustrates
+that Cu1Ni1 is composed of densely packed spherical particles with an
+average particle size of approximately 20 nm (Fig. 1g). High-resolution
+transmission electron microscopy (HRTEM) images (Fig. 1e and Sup-
+plementary Fig. 3a–d) conﬁrm that Cu1Ni1 alloys are wrapped by a
+carbon layer of 3 nm with a weight percent of approximately 9% as
+evidenced by thermogravimetric analysis (TGA) (Supplementary
+Fig. 5a). The lattice spacing inside of Cu1Ni1 is calculated to be
+0.206 nm, corresponding to the (111) crystal plane of Cu1Ni1. The
+selected area electron diffraction (SAED) pattern in Fig. 1f conﬁrms
+the polycrystal structure of Cu1Ni1 alloys and the diffraction rings
+could be well recorded to (111), (200), and (220) crystal planes. In
+addition, the lattice spacing measured from HRTEM images (Supple-
+mentary Fig. 4a–d) presents a lattice spacing (0.206 nm) of Cu1Ni1 (111)
+that is between the lattice spacing (0.210 nm) of Cu (111) and the lattice
+spacing (0.203 nm) of Ni (111) with a periodic pattern, implying the
+successful synthesis of Cu1Ni1 alloys wrapped with ultrathin carbon
+layers. Furthermore, energy dispersive X-ray spectroscopy (EDS) ele-
+mental mapping and line scanning of two adjacent particles (Fig. 1h–j
+and Supplementary Fig. 3e–j) results conﬁrm the homogeneous dis-
+tribution of Cu and Ni, which coincides well with the morphology of
+particles, further validating the uniform synthesis of CuNi alloys. In
+addition, the morphology, particle size (Supplementary Fig. 6a–f), and
+carbon content (Supplementary Fig. 5b, c) of Cu1Ni2, Cu1Ni3, and Ni are
+Article
+https://doi.org/10.1038/s41467-024-47077-y
+Nature Communications|   (2024) 15:2815 
+2
+
+similar to those of Cu1Ni1, while the particle size of Cu is approximately
+50 nm (Supplementary Fig. 6g, h).
+Solar-driven hydrogen storage performance of MgH2
+The hydrogen storage performance using conventional electrical
+heating method demonstrates that, in comparison to MgH2 catalyzed
+by Ni nanoparticles, MgH2 under the catalysis of CuNi alloys exhibits
+superior hydrogen storage performance of further decreased operat-
+ing temperature with lower kinetic barriers and enhanced kinetics of
+H2 desorption and absorption. The speciﬁc experimental results with
+detailed analysis could be found in the Supplementary Information
+(Supplementary Figs. 7–10). Attributed to the decrease of H2 deso-
+rption activation energy to 80 kJ mol−1, the peak temperature of H2
+desorption from MgH2 catalyzed by CuNi is reduced down to
+approximately 245 °C, and complete H2 desorption could be achieved
+within 30 min at 250 °C. Moreover, under a hydrogen pressure of
+1 MPa at 250 °C, 6.1 wt.% H2 could be recharged within 10 min, and 95%
+reversible capacity is maintained after ten cycles of H2 absorption and
+desorption. Although the activation energy of heat-driven reversible
+H2 storage of MgH2 catalyzed by CuNi has been lowered tremendously,
+it still requires external thermal energy input towards realizing the
+operating temperature of over 200 °C. Therefore, attempting to use
+inexhaustible solar energy to drive H2 absorption and desorption of
+CuNi-catalyzed MgH2 is a highly promising and environmentally-
+friendly alternative. To investigate the solar-driven H2 storage perfor-
+mance of MgH2, solar energy serves as the only energy input source
+without external heating, which aligns with our goal of completely
+replacing the electric heating with solar energy, via the apparatus
+shown in Supplementary Fig. 11.
+After the ball-milling process of MgH2 with the addition of cata-
+lysts with a weight percent of 10%, an obvious color difference could be
+observed (Fig. 2a). Pure MgH2 is essentially white and it turns into
+yellowish-brown, and becomes darker and ﬁnally dark-black after the
+addition of Ni, CuNi alloys with the increasing Cu content, and Cu,
+respectively, indicating the increase of light absorption potential. It
+could be directly supported by the ultraviolet–visible–near-infrared
+(UV–vis–NIR) absorption spectra (Fig. 2b), which demonstrates that
+MgH2 catalyzed by Cu has the highest overall absorbance capability
+and the absorbance of MgH2 after the addition of CuNi alloys increases
+as the relative Cu content in these catalysts increases, where Cu1Ni2
+20
+30
+40
+50
+60
+70
+80
+43.43°
+43.91°
+Cu3Ni1
+Cu1Ni1
+43.29°
+43.86°
+44.02°
+Cu1Ni2
+Cu1Ni3
+Ni
+Cu
+44.51°
+Cu1Ni1
+Cu 2p
+960
+950
+940
+930
+Cu
+Cu0 2p1/2
+Cu2+ 2p1/2
+Cu2+ 2p3/2
+Cu0 2p3/2
+875
+870
+865
+860
+855
+850
+Ni
+Ni0 2p1/2
+Ni2+ 2p1/2
+sat. peaks
+Ni2+ 2p3/2
+Ni0 2p3/2
+Cu1Ni1
+Ni 2p
+=
+Intensity (arb. units)
+2 (degree) 
+Intensity (arb. units)
+Binding Energy (eV)
+Intensity (arb. units)
+Binding Energy (eV)
+=
+10 nm
+Cu
+Ni
+250 nm
+a
+b
+c
+d
+e
+g
+ h
+i
+j
+Cu1Ni1
+Carbon Layers
+5 nm
+Cu1Ni1 (111)
+0.206 nm
+(220)
+(200)
+(111)
+5 1/nm
+f
+10
+15
+20
+25
+30
+35
+Cu1Ni1
+Particle Size (nm)
+d=20.34 ± 3.36 nm
+Fig. 1 | Characterization of the properties and structures of CuNi alloys. a XRD
+patterns of the as-synthesized of CuNi alloys, including Ni and Cu for comparison.
+The red arrows represent the direction of characteristic peak shifts with increasing
+Cu content. High-resolution b Cu 2p and c Ni 2p XPS spectra of Cu1Ni1, with Cu and
+Ni for comparison. d SEM and e HRTEM images with the measured lattice spacing
+inset of Cu1Ni1. f SAED pattern of Cu1Ni1 with the raw pattern in lightened region on
+the left side for comparison. g the corresponding particle size distribution of Cu1Ni1
+alloys with Gaussian ﬁtting. h–j EDS elemental mapping images with line scanning
+of Cu1Ni1 alloys. Source data are provided as a source data ﬁle.
+Article
+https://doi.org/10.1038/s41467-024-47077-y
+Nature Communications|   (2024) 15:2815 
+3
+
+falls between those of Cu1Ni3 and Cu1Ni1. Notably, MgH2 under the
+catalysis of Cu exhibits a characteristic absorption peak from 400 to
+800 nm due to the LSPR effect of Cu nanoparticles (Supplementary
+Fig. 12a)23. By comparison, a slight red-shift of the LSPR characteristic
+peak of Cu is observed for MgH2 catalyzed by Cu1Ni1 owing to the size
+changes of nanocrystals24. The FDTD simulations further demonstrate
+that plasmonic “hot spot” regions could be clearly observed around
+particles in both Cu and CuNi alloys, which validates the strong LSPR-
+induced localized electric ﬁeld of Cu and CuNi (Supplementary
+Fig. 12e–g). In addition, the relatively weaker absorption observed in
+the NIR region also increases with higher Cu content, which could be
+attributed to the scattering effect induced by the LSPR coupling of Cu
+particles (Fig. 2b and Supplementary Fig. 12b)25–27.
+Herein, with the consideration of maximizing the differences
+brought by photothermal effects under similar catalytic performance,
+Cu1Ni1 and Cu1Ni3 are selected as representatives in the following.
+Correspondingly, under the same intensity (2.5 W cm−2 and 3.0 W cm−2)
+of solar irradiation, the surface temperature of MgH2 also increases
+with the addition of catalysts that has more relative content of Cu
+(Fig. 2c and Supplementary Fig. 12a). These results validate that, due to
+the strong LSPR effect of metal nanoparticles of Cu and Ni, the intro-
+duction of CuNi alloys endows MgH2 with overall stronger light
+absorption and hence better photothermal effect under solar
+irradiation.
+As expected, induced by this photothermal effect, the surface
+temperature of MgH2 catalyzed by Cu1Ni1 reaches 230.1 °C within
+10 min under a solar irradiation intensity of 2.5 W cm−2, which could
+drive the H2 desorption of MgH2 catalyzed by Cu1Ni1 (Fig. 2c),
+achieving a rapid H2 desorption of 4.9 wt.% within 30 min (Fig. 2d). In
+comparison to Cu1Ni1 alloys, MgH2 catalyzed by Cu1Ni3 exhibits the
+same signiﬁcant decrease in dehydrogenation temperature and faster
+kinetics in traditional heat-driven experiments compared to MgH2
+catalyzed by Cu1Ni1 (Fig. 2e and Supplementary Fig. 7a). However,
+under 2.5 W cm−2 illumination, MgH2 catalyzed by Cu1Ni3 only reaches
+a surface temperature of 224.8 °C, corresponding to a H2 desorption
+capacity of 4.6 wt.%, which is even 0.3 wt.% lower than that of MgH2
+catalyzed by Cu1Ni1 (Fig. 2d). In addition, the difference of the dehy-
+drogenation kinetics of MgH2 catalyzed by Cu1Ni1 and Cu1Ni3 becomes
+0
+10
+20
+30
+180
+200
+220
+240
+260
++ Cu1Ni1
++ Ni
++ Cu1Ni3
++ Cu
+2.5 W cm-2
+Temperature (°C)
+Time (min)
+26%
+27%
+29%
+31%
+33%
+33%
+33%
+33%
+41%
+40%
+37%
+36%
+4%
+9%
+9%
+18%
+15%
+27%
+31%
+39%
+82%
+65%
+60%
+43%
+0
+20
+40
+60
+80
+100
+Heat-Driven
+Solar-Driven 
+Completeness (%)
+0
+2
+4
+6
+3.0 W/cm2
+2.8 W cm-2
+2.6 W cm-2
+260 C
+250 C
+240 C
+230 C
+2.5 W cm-2
+H2 Capacity (wt.%)
+Time
+30 min
+10 min
+5 min
+0
+10
+20
+30
+-6
+-4
+-2
+0
++ 10% Cu1Ni1
+Solar-Driven: 2.8 W cm-2
+Heat-Driven: 250 oC
+H2 Capacity (wt.%)
+Time (min)
+0
+10
+20
+30
+-6
+-4
+-2
+0
+2.4 W cm-2
+2.5 W cm-2
+2.65 W cm-2
+2.8 W cm-2
+3.0 W cm-2
+H2 Capacity (wt.%)
+Time (min)
++ 10% Cu1Ni1
+0
+10
+20
+30
+-6
+-4
+-2
+0
+2.5 W cm-2
++ Cu1Ni1
++ Ni
++ Cu1Ni3
++ Cu
+MgH2 at 3.0 W cm-2
+H2 Capacity (wt.%)
+Time (min)
+400
+800
+1200
+1600
+2000
+0.0
+0.3
+0.6
+0.9
++ Cu1Ni1
++ Ni
++ Cu1Ni2
++ Cu
++ Cu1Ni3
+ BM MgH2
+Absorbance (arb. units)
+Wavelength (nm)
+0
+20
+40
+60
+-6
+-4
+-2
+0
+Dehydrogenation at 250 C
+Heat-Driven 
++ Cu1Ni3
++ Cu1Ni1
++ Ni
++ Cu
+H2 Capacity (wt.%)
+Time (min)
+BM MgH2
+a
+b
+c
+d
+e
+f
+g
+h
+Cu1
+Ni3
+Cu1
+Ni2
+Cu1
+Ni1
+Cu3
+Ni1
+Cu
+Ni
+Fig. 2 | The initial solar-driven dehydrogenation performance of MgH2 cata-
+lyzed by CuNi alloy. a The color, b UV–vis–NIR absorption spectra, c the response
+of temperature to light irradiation, d the corresponding solar-driven H2 desorption
+curves of MgH2, and e the heat-driven isothermal dehydrogenation curves at250 °C
+of MgH2 under the catalysis of CuNi alloys, Ni, and Cu, respectively, including ball-
+milled MgH2 (BM MgH2) for comparison. f H2 desorption curves of MgH2 catalyzed
+by Cu1Ni1 under different light intensities. g Completeness ratio over time using
+solar energy and direct heating with normalized H2 release capacity of MgH2 under
+the catalysis of Cu1Ni1 at varying light intensities (or corresponding temperatures).
+The pentagrams represent H2 capacity. h H2 desorption curves of MgH2 catalyzed
+by Cu1Ni1 using solar energy (light intensity: 2.8 W cm−2, corresponding to a tem-
+perature of 250 °C) and electrical heating (250 °C), respectively. Source data are
+provided as a source data ﬁle.
+Article
+https://doi.org/10.1038/s41467-024-47077-y
+Nature Communications|   (2024) 15:2815 
+4
+
+almost negligible under the solar irradiation of 2.5 W cm−2 and
+3.0 W cm−2 (Fig. 2d and Supplementary Fig. 13b). This result suggests
+that the higher content of Cu in CuNi alloys, which brings about a
+stronger photothermal effect, leads to further improvement of H2
+desorption performance under solar irradiation compared to those
+driven by direct heating, which provides direct evidence to the crucial
+role of photothermal effect in enhancing solar-driven hydrogen sto-
+rage of MgH2.
+Upon the elevation of the irradiation intensity, the surface tem-
+perature of MgH2 catalyzed by Cu1Ni1 would increase, which is capable
+of promoting the degree and rate of H2 desorption from MgH2 (Fig. 2f
+and Supplementary Fig. 14a, b). The dehydrogenation instantaneous
+rate peaks within the initial 100 seconds under solar irradiation, and
+the relationship between initial H2 release rates and light intensities is
+exponential (Supplementary Fig. 14c, d), consistent with the Arrhenius
+empirical equation28,29, which suggests that the photothermal effect
+primarily operates as a plasma heating. Comparing the amount of H2
+desorption at various temperatures and light intensities (Supplemen-
+tary Fig. 14e), the H2 desorption performance under solar energy is
+similar to that driven by thermal heating, that is, H2 release from MgH2
+through a photothermal pathway induced by the light-to-heat con-
+version ability of CuNi alloys rather than photocatalytic principle30. In
+addition, the apparent activation energy under solar irradiation ﬁtted
+by the Johnson–Mehl–Avrami (JMA) equation joint with the Arrhenius
+equation is calculated to be 81.23 ± 3.35 kJ mol−1, which is comparable
+to that driven by thermal heating (i.e., 81.56 ± 2.00 kJ mol−1) (Supple-
+mentary Figs. 14f and 15h). These results validate that the solar-driven
+dehydrogenation of MgH2 is mainly achieved based on the localized
+heat produced by photothermal effect of CuNi alloys with the com-
+bination of its catalytic effect.
+To further highlight the advantages of solar-driven dehy-
+drogenation over heat-driven dehydrogenation, the normalized H2
+desorption capacities at various light intensities (or corresponding
+surface temperatures) are calculated to intuitively demonstrate the
+differences in H2 desorption ratio over time. MgH2 catalyzed by Cu1Ni1
+could release 60% of H2 within 10 min under 2.5 W cm−2 irradiation
+(Fig. 2g), while only 20% of H2 is released from MgH2 in 10 min under
+electrical heating. Particularly, the superiority of fast response and
+rate of H2 desorption under solar irradiation over direct heating
+could
+be
+consistently
+observed
+for
+MgH2
+in
+the
+range
+of
+2.5 W cm−2 to 3.0 W cm−2 (Fig. 2g and Supplementary Fig. 15g). In
+strong contrast, H2 desorption kinetics of MgH2 using direct heating
+strongly depends on adopted temperatures induced by the low
+thermal conductivity of MgH2 (<1 W m−1 K−1)31. The advantages of solar-
+driven dehydrogenation over heat-driven H2 desorption in realizing
+fast dehydrogenation are also measured and evaluated using the glass
+tube
+with
+contact-type
+thermocouple
+method
+(Supplementary
+Figs. 11c, d and 15a–f), and demonstrated in MgH2 catalyzed by Cu1Ni3,
+Ni, and Cu, respectively (Supplementary Fig. 16a–f).
+Speciﬁcally, when the light intensity is increased to 3.0 W cm−2, the
+surface temperature of MgH2 catalyzed by Cu1Ni1 and Cu1Ni3 could
+reach 251.6 °C and 248.9 °C, respectively, delivering a H2 desorption
+capacity of 6.3 wt.% and 6.1 wt.% H2, respectively, corresponding to
+almost
+complete
+dehydrogenation
+of
+MgH2
+(Supplementary
+Fig. 13a, b). In contrast, no H2 desorption could be observed from the
+ball-milled MgH2 without CuNi alloys under the identical condition,
+which directly demonstrates the vital role of CuNi alloys that act
+simultaneously as light adsorber and thermochemical catalysts in
+enabling solar-driven H2 desorption from MgH2. By comparison,
+although the addition of Cu to MgH2 could obtain a higher surface
+temperature of up to 260 °C under 3.0 W cm−2 light intensity induced
+by the strong photothermal effect of Cu nanoparticles, only a capacity
+of 4.6 wt.% could be achieved at 3.0 W cm−2 due to the negligible cat-
+alytic effect of Cu in enhancing H2 desorption performance of MgH2
+(Fig. 2c and Supplementary Fig. 7). Nonetheless, it is noteworthy that
+the H2 desorption capacity of MgH2 catalyzed by Cu at 3.0 W cm−2 is
+signiﬁcantly higher than the 0.7 wt.% H2 capacity under the heat-driven
+temperature of 260 °C (Supplementary Fig. 16e). This result further
+highlights the signiﬁcant role of LSPR effect of metal nanoparticles in
+producing intense localized heat for driving H2 desorption of MgH2
+under solar illumination. CuNi alloys, evenly distributed on the MgH2
+matrix, could generate localized heat under solar irradiation that could
+directly act on the catalytic center that is itself while the poor thermal
+conductivity of “MgH2” could reduce the temperature gradient near
+CuNi alloys, which is capable of promoting rapid H2 desorption from
+MgH2
+18. Therefore, MgH2 catalyzed by Cu1Ni1 releases 5.3 wt.% H2
+within 10 min under 2.8 W cm−2 irradiation, whereas the time to
+achieve identical H2 desorption capacity using external heating is
+doubled (Fig. 2h). Furthermore, upon increasing the loading ratio of
+Cu1Ni1 to 20%, the temperature of MgH2 could be elevated to 238.1 °C,
+7.7 °C higher than that with a loading ratio of Cu1Ni1 of 10% (Supple-
+mentary Fig. 17a). The extent of dehydrogenation increases to 93.05%
+under 2.5 W cm−2, compared with 83.28% under the addition of 10%
+Cu1Ni1, together with a faster dehydrogenation rate (Supplementary
+Fig. 17b, c), which could be attributed to the enhanced photo-to-
+thermal effect combined with the catalytic effect in further reducing
+the dehydrogenation temperature (Supplementary Fig. 17d). This fur-
+ther validates that, with the increase ratio of CuNi alloys, the simulta-
+neous enhancement of photothermal and catalytic effects of CuNi
+alloys
+would
+mutually
+contribute
+to
+the
+better
+solar-driven
+performance.
+Subsequently, the reversible H2 storage performance of MgH2
+under the catalysis of CuNi is investigated, which is a critical challenge
+in practical applications of solid-state hydrogen storage materials.
+Interestingly, after the initial hydrogenation process, the color of
+MgH2 catalyzed with Cu1Ni1, Cu1Ni2, and Cu1Ni3 turns deep black,
+similar to that with Cu, while MgH2 catalyzed by Ni remains yellowish-
+brown (Fig. 3a, inset). Surprisingly, MgH2 catalyzed by CuNi after the
+initial hydrogenation process not only maintains strong absorption in
+the ultraviolet–visible range, like that after ball-milling, but also exhi-
+bits the signiﬁcant increase of overall absorbance in the near-infrared
+region, with a relative absorbance from ~0.5 to ~0.9 (absorption ratio
+from ~70 to ~86%) at a wavelength of 2000 nm (Fig. 3b). As a result, the
+overall absorbance of MgH2 catalyzed by CuNi after cycling even
+exceeds that of MgH2 catalyzed by Cu (Fig. 3a). In comparison, the
+overall increase in absorbance of MgH2 catalyzed by Cu and Ni after
+cycling is limited compared to that of CuNi (Supplementary Fig. 18).
+This enables MgH2 catalyzed by CuNi to utilize the near-infrared irra-
+diation (from 800 to 2000 nm) that accounts for 52% of the solar
+spectrum and the enhanced full-spectrum (from 250 to 2000 nm)
+absorption capability after cycling is achieved32, which is critical for
+enhancing solar energy utilization efﬁciency and hence light-to-heat
+performance.
+Owing to the increased overall absorption in the near-infrared
+range, the surface temperature of cycled MgH2 catalyzed by Cu1Ni1 is
+higher than that of the ball-milled state under light irradiation (Fig. 3c).
+Signiﬁcantly, under the irradiation intensity of 2.6 W cm−2
+, the surface
+temperature of MgH2 catalyzed by Cu1Ni1 after cycling is increased to
+261.8 °C, which is 6.1% higher than that after ball-milling process,
+correspondingly leading to the enhancement of H2 desorption rate of
+the cycled MgH2. The ball-milled MgH2 catalyzed by Cu1Ni1 releases
+5.39 wt.% H2 within 30 min, while the time required to release the same
+H2 capacity could be shortened to 25 min with more H2 capacity for
+MgH2 catalyzed by Cu1Ni1 after cycling (Fig. 3d and Supplementary
+Fig. 19f). Similar phenomena of the increase of the surface temperature
+(with a 3.7% increase) and the acceleration of H2 desorption could also
+be observed for MgH2 under the catalysis of Cu1Ni2 and Cu1Ni3 after
+cycling under the identical light intensity (Supplementary Fig. 19a, b).
+In contrast, the elevation of the surface temperature of MgH2 catalyzed
+by Cu or Ni after cycling is only around 2% (Supplementary Fig. 19c, d).
+Article
+https://doi.org/10.1038/s41467-024-47077-y
+Nature Communications|   (2024) 15:2815 
+5
+
+These results validate the signiﬁcant enhancement of photothermal
+performance for MgH2 with the catalysis of CuNi after cycling, which
+could further promote the hydrogen storage kinetics of MgH2.
+Under the light density of 3.5 W cm−2, the operating temperatures
+for H2 desorption and absorption of MgH2 are determined to be 277 °C
+and 265 °C, respectively, in the ﬁrst cycle, and the corresponding
+temperatures reach 288 °C and 270 °C in the second cycle (Supple-
+mentary Fig. 20a, b). Impressively, a reversible capacity of 6.1 wt.%
+could be achieved for MgH2 catalyzed by Cu1Ni1 after ten cycles of H2
+adsorption and desorption, corresponding to a capacity retention of
+95% (Fig. 3e). This result ﬁts well with the stable cycling performance of
+MgH2 under the catalysis of Cu1Ni1 upon direct heating (Supplemen-
+tary Fig. 10a, b), which indirectly demonstrates the excellent stability
+of the catalytic effect under solar irradiation. On the other hand, it
+could be clearly observed that nearly no change of the absorbance
+performance could be observed for MgH2 under the catalysis of Cu1Ni1
+after ten cycles compared with that after the initial hydrogenation
+process (Supplementary Fig. 21a), corresponding to the stable
+enhancement of surface temperature after cycling (Supplementary
+Fig. 21b), indicating the well-preserved photothermal effect, which is
+indispensable to realize stable solar-driven reversible hydrogen sto-
+rage of MgH2. These results indicate that, the stable full-spectrum light
+0
+10
+20
+30
+-6
+-4
+-2
+0
+Time (min)
+H2 Capacity (wt.%)
+Before Cycling
+After Cycling
++ 10% Cu
+2.6 W cm-2
+210
+240
+270
+300
+Temperature (C)
+246.8
+234.1
+231.5
+249.9
+223.4
+276.2
+261.8
+242.8
+240
+254.4
+228.1
+288.4
+220
+240
+260
+280
+300
+3.5 W cm-2
++ 3.7%
+Cu1Ni3
++ 3.7%
++ 1.8%
++ 2.1%
++ 4.4%
+2.6 W cm-2
+Cu1Ni1
+Ni
+Cu
+Cu1Ni2
+Temperature (C)
+Before Cycling
+After Cycling
+Cu1Ni1
++ 6.1%
+0
+5
+10
+15
+20
+Absolute Variation (C)
+400
+800
+1200
+1600
+2000
+0.0
+0.3
+0.6
+0.9
+After Cycling
+Before Cycling
+Before vs. After Cycling
++ Cu1Ni1
++ Cu1Ni3
++ Cu1Ni3
+Absorbance (arb. units)
+Wavelength (nm)
+400
+800
+1200
+1600
+2000
+0.0
+0.3
+0.6
+0.9
+After Cycling
++ Cu1Ni1
++ Cu1Ni2
++ Cu1Ni3
++ Ni
++ Cu
+Absorbance (arb. units)
+Wavelength (nm)
+-6
+-4
+-2
+0
++ 10% Cu1Ni1
+de10
+de9
+de8
+de7
+de6
+de5
+de4
+de3
+de2
+1st
+3.5 W cm-2
+Number of Cycles
+H2 Capacity (wt.%)
+6.1
+Cu
+Cu1
+Ni1
+Cu1
+Ni2
+Cu1
+Ni3
+Ni
+a
+b
+c
+d
+e
+Fig. 3 | The reversible solar-driven H2 storage performance of MgH2 catalyzed
+by CuNi alloys. a UV–vis–NIR absorption spectra of MgH2 under the catalysis of
+Cu1Ni1, Cu1Ni2, Cu1Ni3, Ni, and Cu after rehydrogenation. The inset shows the color
+of their cycled states. b UV–vis–NIR absorption spectra of MgH2 under the catalysis
+of Cu1Ni1, Cu1Ni2, and Cu1Ni3 after cycling, in comparison with their pristine ball-
+milled states (before cycling). The inset exhibits solar irradiation distribution of
+natural sunlight. c The signal data of temperature to light irradiation of MgH2 after
+cycling under the catalysis of Cu1Ni1, Cu1Ni2, Cu1Ni3, Ni, and Cu, respectively, with
+their pristine ball-milled states (before cycling) included for comparison. The
+shaded tan area corresponds to the values under 3.5 W cm−2 and the half-ﬁlled
+triangles represent to the absolute temperature variation. d The response of tem-
+perature with corresponding H2 desorption curves of MgH2 under the catalysis of
+Cu1Ni1 under 2.6 W cm−2 before and after cycling. e Cycling H2 desorption curves of
+MgH2 under the catalysis of Cu1Ni1 using a light intensity of 3.5 W cm-2. The de1 to
+de10 represent the 1st to the 10nd dehydrogenation of cycles. Source data are
+provided as a source data ﬁle.
+Article
+https://doi.org/10.1038/s41467-024-47077-y
+Nature Communications|   (2024) 15:2815 
+6
+
+absorption capability after cycling, combined with the excellent sta-
+bility of the catalytic effect, enables MgH2 catalyzed by CuNi to achieve
+stable hydrogen storage reversibility driven by solar energy.
+Although the relatively high light intensity is required to drive the
+reversible hydrogen storage of MgH2 even under the catalysis of Cu1Ni1
+alloys, the low-intensity light (～0.5 W cm−2) could be concentrated to
+over 3.5 W cm−2 via Fresnel lens (Supplementary Fig. 22a), which makes
+it possible to drive reversible hydrogen storage reactions by natural
+light. To further demonstrate the feasibility of H2 desorption using
+natural solar energy, an outdoor experiment of solar-driven H2 deso-
+rption of MgH2 under the catalysis of Cu1Ni1 alloys are performed via a
+low-cost PMMA Fresnel lens. A striking emergence of hydrogen bub-
+bles from the pipe could be observed (Supplementary Fig. 22b and
+Supplementary Movie 1), and the predominant phase in the XRD pat-
+tern transforms into pure Mg following H2 desorption process (Sup-
+plementary Fig. 22c), which offers direct evidence to the potential for
+driving solid-state hydrogen storage of MgH2 by natural solar energy.
+Mechanism of photothermal and catalytic effects
+To disclose the evolution of the photothermal and catalytic effects of
+CuNi, the phase and morphology change of MgH2 catalyzed by CuNi
+before and after cycling is investigated. Direct observation of the
+characteristic peaks other than MgH2 in XRD is challenging due to the
+amorphization of the samples and/or the ultralow content of CuNi
+(Supplementary Fig. 23b)33. Cu1Ni1 alloys with the characteristic lattice
+spacing of Cu1Ni1, however, could be found in HRTEM (Supplementary
+Fig. 24) with uniform distribution of Mg, Ni, Cu, and C elements,
+indicating that Cu1Ni1 alloys still existsin the original state and
+are evenly embedded inside of MgH2 after ball-milling. The initial
+dehydrogenation of MgH2 under the catalysis of Ni and Cu leads to the
+formation of Mg2Ni (PDF#00-035-1225) and Mg2Cu (PDF#04-008-
+6025), respectively. By comparison, the characteristic peaks of
+Mg2Ni(Cu) between Mg2Ni and Mg2Cu could be clearly observed with
+the presence of a weak peak at around 38~39°, which provides addi-
+tional evidence for the formation of Mg2Ni(Cu) during the initial
+dehydrogenation of MgH2 catalyzed by Cu1Ni1 (Supplementary
+Figs. 23d, e and 25a, b). The reﬁned structure of powder neutron dif-
+fraction (PND) of MgH2 catalyzed by CuNi after total dehydrogenation
+also conﬁrms the presence of the solid solution phase Mg2Ni1-x(Cu)x,
+where Cu enters Ni1(0.5,0,0) and Ni2(0,0,0) sites within Mg2Ni (Sup-
+plementary Fig. 26 and Supplementary Tables 4 and 5). The (200) and
+(203) planes of Mg2Ni(Cu) are detected in HRTEM with a slight increase
+compared to the corresponding planes of Mg2Ni (Supplementary
+Fig. 27). These results indicate that, upon initial dehydrogenation
+process, CuNi alloys would react with Mg at an atomic ratio of 2:1,
+resulting in the in situ formation of Mg2Ni with Cu solution, i.e.,
+Mg2Ni(Cu) ternary alloy. After rehydrogenation, the characteristic XRD
+peaks of Mg2NiH4 and MgCu2 are detected (Fig. 4a and Supplementary
+Fig. 23c), which agrees with the lattice fringes detected in TEM with the
+observation of uniform distribution of MgCu2 and Mg2NiH4 within the
+catalyst region (Supplementary Fig. 28). In addition, during the re-
+dehydrogenation process, MgCu2 and Mg2NiH4 undergo solid solution
+at the initial stage (less than 30% reaction progress), and a gradual low-
+angle shift of Mg2NiH4 lattice towards the characteristic peak of
+Mg2Ni(Cu) alloy could be observed due to the solid solution of Cu,
+which demonstrates the presence of an intermediate state of
+Mg2Ni(Cu)(H) during the hydrogenation process (Fig. 4b and Supple-
+mentary Fig. 25c, d). More importantly, the characteristic peaks of
+Mg2Ni(Cu) could still be clearly detected and remain unchanged in
+XRD patterns even after ten cycles of H2 absorption and desorption.
+No phase separation between Cu and Ni is observed in the EDS ele-
+mental mapping results with uniform distribution of the characteristic
+(200) lattice fringes of Mg2Ni(Cu) within Mg matrix. These results
+provide direct evidence for the reversible formation of Mg2Ni(Cu)
+upon cycling dehydrogenation, wherein structurally stable phases of
+Mg2NiH4 and MgCu2 would form after hydrogenation, and they would
+then rapidly transform into an intermediate state of Mg2Ni(Cu)(H)
+during the subsequent dehydrogenation process, accompanied by
+gradual alloying into single phase of Mg2Ni(Cu). Therefore, the rever-
+sible formation of Mg2Ni(Cu) with a Cu atomic ratio of x in CuNi during
+H2 desorption/absorption could be summarized:
+2Mg2Ni1xCux + ð4  xÞH2 $ 2Mg2Ni1xðCuÞxðHÞ
+$ ð2  2xÞMg2NiH4 + 3xMgH2 + xMgCu2
+A similar reversible transformation between Mg2Ni(Cu), Mg2NiH4,
+and MgCu2 during H2 desorption/absorption is also observed in MgH2
+catalyzed by equimolar ratios of Cu and Ni, further validating the
+reversible formation of Mg2Ni(Cu) (Supplementary Fig. 23f, g). In
+addition, a loss in H2 capacity of the above system could nearly be
+neglected under the catalysts of CuNi alloys with a loading ratio less
+than 10% (Supplementary Table 6). After the initial hydrogenation
+process, numerous interfaces and lattice distortions are observed at
+the area between MgCu2, Mg2NiH4, and MgH2. In addition, the pre-
+sence of embedded MgCu2 and atomic disorder are even found within
+MgH2 lattice (Supplementary Fig. 28). After ten cycles of H2 deso-
+rption, more lattice distortions and dislocations exist both at the
+interfaces and within the alloys, and speciﬁcally, dislocation analysis at
+region (4) reveals thatthese regions exhibit a higher degree of disorder
+than Mg matrix (Supplementary Fig. 29). This is attributed to the solid-
+state diffusion of Mg required for the transition between Mg2Ni(Cu)
+and MgCu2
+34, and the lattice distortions and disorders generated
+during
+H2
+storage
+reactions
+could
+reduce
+local
+thermal
+conductivity35,36, which also helps to enhance the local thermal ﬁeld.
+To reveal the mechanism behind the enhancement of solar
+absorption of MgH2 under the catalysis of CuNi alloys before and after
+cycling, the electronic density of states (DOS) is investigated. In terms
+of pure MgH2, the valence band is mainly contributed by H(s) (79.3%)
+with strong hybridization with Mg(sp) (20.7%) and the conduction
+band is composed of 63.1% Mg(sp) and 36.9% H(s) (Supplementary
+Fig. 30a). Strong ionic bonding occurs between Mg2+ and H−, resulting
+in electrons primarily distributed around H atoms (Supplementary
+Fig. 31a), while the electron distribution near the Fermi level approa-
+ches zero, indicating distinct insulating properties (Supplementary
+Figs. 30b and 32a, b). After adding CuNi alloys into MgH2, strong
+absorption peaks in the visible light range could be ascribed to the
+LSPR effect due to intra-band absorption (Supplementary Fig. 12a),
+which occurs by the excitation of free electrons of conduction elec-
+trons near the Fermi surface from sp-d hybridized atomic orbitals of Cu
+(Supplementary Fig. 33), implying that the initial dehydrogenation
+process is driven by the LSPR effectof CuNi. As mentioned above, CuNi
+alloys would react with Mg during the dehydrogenation process,
+leading to the formation of Mg2Ni(Cu) alloy and then the transfor-
+mation of Mg2NiH4, MgCu2, and Mg2Ni(Cu)H4 upon reversible hydro-
+genation. In comparison to the ionic bonding of MgH2, covalent bonds
+between Ni(Cu) metal atoms and their neighbor H atoms exist in
+Mg2NiH4 and Mg2Ni(Cu)H4 with clear electrons sharing (Supplemen-
+tary Fig. 31b, c), leading to the weakening of Mg–H bonds and uniform
+distribution of s-p band. Near the Fermi level, a relatively weak dis-
+tribution of electrons could be observed in Mg2NiH4 with semi-
+conductor properties (Fig. 4c, d and Supplementary Fig. 32c–e), while,
+due to the solubility of Cu, a more ﬂattened hybridized orbital,
+resembling a “ﬂat band”, appears, which is mainly Ni(d) orbitals
+hybridized with weaker Mg(sp) and H(s) (Fig. 4e, f and Supplementary
+Fig. 32f–h). As a result, a continuous band structure ﬁlls the vacant
+Fermi level in Mg2Ni(Cu)H4 with metallic properties, together with
+MgCu2 (Supplementary Fig. 30c), which induces the facile excitation of
+electrons under light irradiation. Attributed to the robust hybridiza-
+tion of Cu(d) and Ni(d) orbitals within the valence band, the d-band is
+Article
+https://doi.org/10.1038/s41467-024-47077-y
+Nature Communications|   (2024) 15:2815 
+7
+
+extended, which facilitates hybridization of them with Mg(sp) and H(s)
+orbitals, thereby providing facile pathway for inter-/intra-band transi-
+tions of electrons (including s-p and d orbitals) and leading to a broad
+absorption spectrum within the visible to near-infrared range37–39. In
+addition, the d electrons may undergo transitions to a higher energy
+state when absorbing photons with more probability due to the
+overlap of the localization of d orbitals, thereby inducing stronger
+inter-band absorption40,41. More importantly, the localization of d
+electrons introduced by the presence of Ni and Cu could be well-
+preserved even after the formation of Mg2Ni(Cu) alloy after dehy-
+drogenation. These results indicate that the observed broad absorp-
+tion spectrum of the hydrogenated state after cycling results from the
+synergistic effect of intra-band and inter-band transitions, and the
+in situ formation of Mg2Ni(Cu) alloy expands the range of photo-
+thermal effects.
+On the other hand, although it is well known that Mg2Ni/Mg2NiH4
+could function as the “hydrogen pump” to enhance hydrogen storage
+performance of MgH2
+42–44 as evidenced by the signiﬁcant decrease of
+H2 desorption temperature of MgH2 induced by the catalysis of Ni, the
+catalytic effect of CuNi in enhancing hydrogen storage performance of
+MgH2 is even superior (Supplementary Fig. 7). To unveil the catalytic
+mechanism of Mg2Ni(Cu)/Mg2Ni(Cu)H4 on MgH2, theoretical calcula-
+tions are conducted based on density functional theory (DFT). The
+average length of Mg–H bonds in Mg2Ni(Cu)H4 is calculated to be
+2.03 Å, much longer than that in both MgH2 (1.93 Å) and Mg2NiH4
+(1.95 Å) (Supplementary Fig. 34). This result demonstrates that, in
+comparison to MgH2 and Mg2NiH4, the dehydrogenation of Mg2Ni(Cu)
+H4 to form Mg2Ni(Cu) is thermodynamically favored, which corre-
+sponds to the preferred formation of Mg2Ni(Cu) alloy at the initial
+stage of re-dehydrogenation process (Fig. 4b). After the initial dehy-
+drogenation of Mg2Ni(Cu)H4, under the presence of thus-formed
+Mg2Ni(Cu) alloy, the barrier of H2 desorption from MgH2 is sig-
+niﬁcantly reduced down to 1.13 eV, while this value reaches 3.12 eV for
+pristine MgH2, validating the catalytic role of Mg2Ni(Cu) alloy in
+improving the dehydrogenation performance of MgH2 (Fig. 5a, b and
+Supplementary Fig. 35). More importantly, H atoms released from
+MgH2 are spontaneously transferred into Mg2Ni(Cu) alloy, which
+provides direct evidenceforthe “hydrogen pump” roleof Mg2Ni(Cu) in
+38
+40
+42
+44
+46
+Intensity (arb. units)
+2 (degree)
+Redehydrogenation Process
+Mg2Ni(Cu)(H)
+Mg2NiH4
+MgCu2
+20
+30
+40
+50
+60
+70
+80
+Intensity (arb. units)
+*
+# #
+*
+*
+After 10th Dehydrogenation
+After 1st Dehydrogenation
+After Ball-milling
+After Rehydrogenation
++ 20% Cu1Ni1
+MgH2
+Mg
+2 (degree)
+@ Mg2Ni(Cu)
+# MgCu2
+Mg2NiH4
+*
+@
+@
+@
+@
+@
+@
+8
+4
+0
+-4
+-8
+0
+10
+20
+Ni
+Ni(s)
+Ni(p)
+Ni(d)
+E-Efermi (eV)
+0
+1
+2
+H(s)
+0.0
+0.4
+0.8
+Mg
+Mg(s)
+Mg(p)
+0
+10
+20
+PDOS (states/eV)
+Total
+Γ
+X|Y
+Γ
+Z|R_2
+Γ
+T_2|U_2
+Γ
+V_2
+-8
+-4
+0
+4
+8
+Ni & Cu
+K-Points
+Mg2Ni(Cu)H4
+E-Efermi (eV)
+a
+b
+Γ
+Z
+D
+B
+Γ
+A
+E
+Z
+C_2 Y_2
+Γ
+-8
+-4
+0
+4
+8
+Ni
+E-Efermi (eV)
+K-Points
+Mg2NiH4
+c
+d
+e
+f
+8
+4
+0
+-4
+-8
+0
+5
+10
+Cu
+Cu(s)
+Cu(p)
+Cu(d)
+E-Efermi (eV)
+0
+5
+10
+Ni
+Ni(s)
+Ni(p)
+Ni(d)
+0
+1
+2
+H(s)
+0.0
+0.4
+0.8
+Mg
+Mg(s)
+Mg(p)
+0
+10
+20
+Total
+PDOS (states/eV)
+Fig. 4 | Phase changes at different states and the electronic structures of cat-
+alytic phases. a XRD patterns of MgH2 under the catalysis of Cu1Ni1 at different
+states. b Contour plots of XRD patterns during re-dehydrogenation process of
+MgH2 under the catalysis of Cu1Ni1. c Band structures of Ni-orbitals and d partial
+densities of states (PDOS) of corresponding atoms for Mg2NiH4. e Band structures
+of Ni(Cu)-orbitals and f partial densities of states (PDOS) of corresponding atoms
+for Mg2Ni(Cu)H4. Source data are provided as a source data ﬁle.
+Article
+https://doi.org/10.1038/s41467-024-47077-y
+Nature Communications|   (2024) 15:2815 
+8
+
+improving the dehydrogenation of MgH2. In addition, the chemical
+disorders introduced by the interfaces and lattice distortions in the
+Mg–Cu lattice during cycling could enhance the reactivity of Mg and
+Mg2Ni(Cu) due to the formation of the diffusion pathways of H atoms,
+and
+serve
+as
+preferential
+catalytic
+sites
+for
+H2
+dissociation/
+recombination45,46, which corresponds well with the theoretical cal-
+culation results that the diffusion energy barriers of H atoms inside of
+Mg2Ni(Cu) is slightly lower than that in the bulk phases of Mg2Ni. After
+hydrogenation, the diffusion energy barrier of H atoms inside of
+Mg2Ni(Cu)H4 (i.e., 0.62 eV) is signiﬁcantly lower than that of Mg2NiH4
+(i.e., 1.48 eV) (Supplementary Fig. 36), which endows Mg2Ni(Cu)/
+Mg2Ni(Cu)H4 superior “hydrogen pump” effect in improving hydrogen
+storage performance of MgH2 than traditional Mg2Ni/Mg2NiH4. Hence,
+the in situ stable formation of Mg2Ni(Cu) offers a kinetically favored
+pathway for repeated dehydrogenation an hydrogenation of MgH2.
+Furthermore, upon light irradiation, the presence of hot electrons
+induces internal disparities in electron distribution within CuNi and
+Mg2Ni(Cu) alloys as observed via in situ irradiated XPS (ISI-XPS)
+(Supplementary Fig. 37a–e). Attributed to the work function differ-
+ence, the hot electrons generated by the LSPR effect of Cu transferred
+to Ni, leading to an increase in electron density around Ni (Supple-
+mentary Fig. 38a, b), which enables Ni sites to contribute more elec-
+trons to H bonded to Mg atoms of MgH2 (Supplementary Fig. 39a–d),
+and hence leads to the weakening Mg–H bonds (Supplementary
+Fig. 39e–h). As a result, compared to pure Ni with uniform electron
+distribution, the electron enrichment at the Ni sites in CuNi and
+Mg2Ni(Cu) alloys facilitates the elongation of Mg–H bonds from 1.87 Å
+to 1.91 Å and 2.00 Å, respectively, while the impact of Cu sites remains
+unchanged. The internal uneven electron distribution within CuNi and
+Mg2Ni(Cu) alloys is conducive to promoting the dissociation of Mg–H
+bonds
+and
+hence
+improving
+the
+“hydrogen
+pump”
+effect
+of
+Mg2Ni(Cu)/Mg2Ni(Cu)H4. In addition, Mg does not affect the electron
+transfer between CuNi under light irradiation due to its positive
+charge, ensuring the promotion of Mg–H bonds dissociation by the
+in situ well-preserved Mg2Ni(Cu) during cycling. These hot electrons
+could be generated continuously under light irradiation and, however,
+cannot be directly participate in the MgH2 dehydrogenation process,
+which subsequently would decay into localized thermal energy47, act-
+ing on catalytic sites in the form of heat, thereby elevating the local
+temperature of catalytic sites and enhancing their catalytic effects.
+Therefore, the in situ formation of Mg2Ni(Cu) alloys induces not
+only photothermal effect via broadening the light absorption range to
+cover the entire solar spectrum but also a light-enhanced “hydrogen
+pump” role in improving reversible hydrogen storage performance of
+MgH2 (Fig. 5c). More importantly, the in situ atomic reconstruction of
+Mg2Ni(Cu) single phase upon repeated dehydrogenation process
+realizes the continuous integration of photothermal and catalytic roles
+to ensure the direct action of localized heat on the catalytic sites
+without any heat loss, thereby achieving the ideal coupling of photo-
+thermal and catalytic effects for driving reversible hydrogen storage of
+MgH2 using solar energy.
+Discussion
+In summary, a single-component phase of Mg2Ni(Cu) ternary alloy via
+atomic reconstruction is designed to achieve the ideal integration of
+photothermal and catalytic effects to enhance the solar-driven
+hydrogen storage performance of MgH2. Taking advantage of the
+strong LSPR effect of CuNi alloys, the formation of Mg2Ni(Cu) ternary
+Cu
+Ni
+-- -
++
+- -
++ + +
++
+MgH2
+Desorption
+Reabsorption
+Desorption
+Reversible
+H2 storage
+Mg2Ni(Cu)
+CuNi
+H2
+H2
+Mg2Ni(Cu)(H)
+Near-infrared
+Visible
+Ultraviolet
+UV-vis-NIR broad absorption
+UV-vis absorption
+Before Cycling
+After Cycling
+continuous in-situ atomic reconstruction 
+MgH2
+MgH2
+Mg
+0
+20
+40
+60
+80
+100
+0
+1
+2
+3
+Relative Energy (eV)
+Reaction Coordinate (%)
+MgH2@Mg2Ni(Cu)
+MgH2
+Reaction Coordinate
+20%
+60%
+100%
+MgH2
+Mg2Ni(Cu) alloy
+Mg
+Ni
+Cu
+Migrated H
+a
+b
+c
+Fig. 5 | The mechanism ofthe integration of photothermal and catalytic effects.
+a Schematic illustration of H2 desorption and H diffusion pathway of MgH2 on the
+surface of Mg2Ni(Cu) alloy and b the corresponding energy proﬁles. c Schematic
+diagram of the ideal integration of photothermal and catalytic effects via con-
+tinuous in situ atomic reconstruction upon repeated dehydrogenation process.
+Source data are provided as a source data ﬁle.
+Article
+https://doi.org/10.1038/s41467-024-47077-y
+Nature Communications|   (2024) 15:2815 
+9
+
+alloy is realized through in situ alloying reaction between MgH2 and
+CuNi alloys during the initial dehydrogenation process of MgH2 under
+solar irradiation. Interestingly, Mg2Ni(Cu) alloy and its hydrogenated
+state (i.e., Mg2Ni(Cu)H4) exhibit metallic properties with strengthened
+intra/inter-band transitions, resulting in over 85% absorption in the
+full-spectrum range, which effectively elevate the surface temperature
+of MgH2 to 261.8 °C under 2.6 W cm−2 due to the promoted light-to-
+heat conversion efﬁciency. More importantly, in comparison with
+MgH2, the hydrogen storage reaction of Mg2Ni(Cu) is thermo-
+dynamically and kinetically favored resulting from the weakening of
+Mg–H bonds and the low migration barrier of hydrogen atoms in both
+Mg2Ni(Cu) and Mg2Ni(Cu)H4, which in turn provides a facile pathway
+for the spontaneous breaking of Mg–H bonds of MgH2. The uneven
+distribution of the light-induced hot electrons within CuNi and
+Mg2Ni(Cu) alloys also contributes to the effective weakening of Mg–H
+bonds of MgH2 and the accelerated formation of Mg2Ni(Cu)/
+Mg2Ni(Cu)H4, hence resulting in a light-enhanced “hydrogen pump”
+effect in improving cycling hydrogenation and dehydrogenation of
+MgH2 and the signiﬁcant decrease of the apparent activation energy
+required for driving hydrogen storage of MgH2. As a result, the
+reversible formation of Mg2Ni(Cu) ideally integrates the photothermal
+and catalytic effects to ensure that the direct action of localized heat
+on the catalytic sites without any heatloss, which leads to the complete
+dehydrogenation of MgH2 within 15 min under the irradiation intensity
+of 3.5 W cm−2. Moreover, the stable reversibility between Mg2Ni(Cu)
+could be well-preserved during cycling H2 desorption and adsorption,
+which results in the excellent stability of photothermal effect with full-
+spectrum light absorption and catalytic effect, leading to a reversible
+hydrogen storage capacity of 6.1 wt.% with a capacity retention of 95%.
+Our work expands the functionality of the alloying strategy to modify
+metal hydrides under solar irradiation and may enlighten the design of
+efﬁcient photothermal-catalytic solar-driven reversible hydrogen sto-
+rage systems and solar-chemical energy reactions.
+Methods
+Materials
+Copper nitrate hydrate (Cu(NO3)2·3H2O), nickel nitrate hexahydrate
+(Ni(NO3)2·6H2O), tartaric acid (C4H6O6), glycerol (C3H8O3), and poly-
+ethylene glycol were all purchased from Sinopharm chemical reagent
+co., Ltd. Magnesium hydride (MgH2) was purchased from Alfa Aesar.
+All chemicals were used without further puriﬁcation.
+Synthesis of CuNi alloys
+CuNi alloys were synthesized by a one-step solvothermal calcination
+method.
+Firstly,
+386.6 mg
+of
+Cu(NO3)2·3H2O,
+465.5 mg
+of
+Ni(NO3)2·6H2O, and 1200 mg of tartaric acid were added to 8 mL of
+deionized water and stirred until completely dissolved, referred to as
+Solution 1. Subsequently, 2 g of polyethylene glycol, 20 ml of glycerol,
+and 5 ml of deionized water were mixed and sonicated for 10 min,
+referred to as Solution 2. The two obtained solutions were mixed and
+stirred for 1 h to achieve uniform dispersion and transferred to a Teﬂon
+stainless-steel autoclave and heated at 150 °C for 3 h. The resulting
+product was centrifuged at about 3500×g and washed three times with
+anhydrous ethanol to remove excess reactants and impurities. The
+centrifuged product was then dried completely in an 80 °C oven for
+12 h. The dried product was placed in a tube furnace and heated at a
+rate of 3 °C min−1 in an H2/Ar atmosphere (with 5% H2) up to 800 °C for
+2 h. CuNi alloys with encapsulated carbon layer were obtained through
+the gas reduction method, with a Cu to Ni atomic ratio of 1:1, denoted
+as Cu1Ni1. By varying the relative ratios of Cu and Ni salts added to
+precursor Solution 1, the ratio of CuNi alloys could be adjusted. Under
+the same reaction conditions, adding 184.74 mg Cu(NO3)2·3H2O with
+667.1 mg Ni(NO3)2·6H2O yielded Cu1Ni3 with a Cu-to-Ni atomic ratio of
+1:3. Without adding Cu(NO3)2·3H2O or Ni(NO3)2·6H2O, Ni and Cu were
+obtained.
+Synthesis of MgH2 catalyzed by CuNi alloys
+CuNi–MgH2 composite was synthesized via mechanical milling. Com-
+mercially available MgH2 with 10 wt.% catalysts were added in a 100-mL
+stainless-steel container under an argon atmosphere. The ball-to-
+powder weight ratio was controlled to be 100:1, and the rotation speed
+of the miller was maintained at 500 rpm (alternate clockwise and
+counterclockwise rotation) for 12 h (5-min-stop every 30 min). Ball-
+milled MgH2, Cu–MgH2, and Ni–MgH2 composites were also prepared
+under identical processing conditions. All samples were handled in an
+argon-ﬁlled glovebox with O2 and H2O <0.1 ppm.
+Materials characterization
+X-ray diffraction (XRD, D8 advance, Bruker AXS, USA) with Cu Kα
+radiation (1.542 Å) at 40 kV and 40 mA was used to determine the
+phase compositions. The materials were protected against oxidation
+from the air by adhesive tape (amorphous with a broad peak around
+2θ ≈20°). X-ray photoelectron spectroscopy (XPS) results were
+obtained on a Thermo Scientiﬁc K-Alpha system equipped with a dual
+X-raysource, adopting an Al Kα (1486.6 eV) anode with a hemispherical
+energy analyzer. In situ irradiated XPS (ISI-XPS) were performed on a
+Thermoﬁsher ESCALAB 250Xi under Xe lamp irradiation. Time-of-
+ﬂight (TOF) powder neutron diffraction (NPD) data were collected
+from a general-purpose powder diffractometer (GPPD) (90° bank) at
+the China Spallation Neutron Source (CSNS), Dongguan, China. Neu-
+tron diffraction patterns were recorded at room temperature. Rietveld
+reﬁnements of the NPD patterns were performed using the GSAS
+software. The morphologies of the synthesized catalysts and MgH2
+catalyzed by CuNi with different states were observed by scanning
+electron microscopy (SEM, JEOL 7500FA, Japan) and transmission
+electron microscopy (TEM, JEOL JEM-2100F, Japan). The Cu and Ni
+contents of samples were measured by an inductively coupled plasma
+source mass spectrometer (ICP-MS, Agilent ICPOES730, USA). The
+absorption
+spectra
+of
+samples
+in
+the
+wavelength
+range
+of
+200~2200 nm
+were
+determined
+using
+a
+UV–vis–NIR
+Spectro-
+photometer (Lambda 750, Perkin-Elmer, USA). The content of carbon
+and alloy were analyzed by thermogravimetric analysis (TGA, Dis-
+covery TGA 550, USA) from room temperature to 800 °C at a rate of
+10 °C min−1 in the air.
+The light source was a 300 W Xenon lamp (Perfect Light Co., Ltd.,
+China), and the light intensity was adjusted by tuning the current of the
+light source and the distance between the light source and the sample.
+The light intensity of the 300 W Xenon lamp was measured by an
+optical power meter (PL-MW2000, Perfect Light Co., Ltd., China). A
+short-wave infrared thermometer (DGE44N, range: 75~50 °C, DIAS,
+Germany) was used to measure the surface temperature of the com-
+posites during the reaction process under vacuum conditions through
+a sapphire window.
+Hydrogen storage measurements
+Temperature-programmed
+desorption
+(TPD),
+isothermal
+dehy-
+drogenation tests, and corresponding hydrogenation process of the
+as-prepared samples were conducted on a home-built high-pressure
+gas sorption apparatus (HPSA-auto), which was carefully calibrated by
+adopting LaNi5 as a reference sample in terms of hydrogen storage
+capacity and guaranteed accuracy of ± 1%. All samples’ hydrogen
+capacity (wt.%) is calculated based on the total mass of MgH2 and the
+additives.
+As for electric heating, for each volumetric temperature-
+programmed desorption measurement, approximately 30 mg of ball-
+milled sample were conducted under vacuum from room temperature
+to preset temperature (400 °C) at a heating rate of 5 °C min−1 under an
+initial pressure lower than 0.0001 bar, with an electric heater to
+determine the hydrogen release properties of the MgH2 materials
+brieﬂy. The isothermal H2 desorption and absorption test were han-
+dled by rapidly heating up to the target temperature followed by
+Article
+https://doi.org/10.1038/s41467-024-47077-y
+Nature Communications|   (2024) 15:2815 
+10
+
+keeping at the preset temperature. In the isothermal H2 absorption
+experiment, ~80 mg of samples were used for hydrogenation under
+the hydrogen pressure of 10 atm.
+As for light irradiation, customized solar-driven H2 absorption and
+desorption equipment (Supplementary Fig. 11) was used to perform
+experiments under solar energy. The adjustment of the light intensity
+was realized by changing the current intensity. The light was incident
+through the above sapphire window, and the outlet of the reactor was
+connected to the PCT equipment. The temperature of the material
+during the H2 absorption and desorption was measured by a short-
+wave infrared thermometer. About 30 mg samples were taken each
+time and pressed into pieces with a diameter of 15 mm under a pres-
+sure of 5 tons to ensure the stability of the test and the comparability of
+the results. Glass ﬁber sheets made up of mainly SiO2 with low thermal
+conductivity, which have limited absorption of solar energy, were
+placed at the bottom of the reactor to reduce the heat dissipation of
+the material to the outside. The sample was placed on an Al2O3 ceramic
+sheet, which could be isolated from the glass ﬁber to prevent the
+sample from oxidizing by reacting with the insulation layer due to the
+high temperature during the reaction. The expansion of internal gases
+within the reactor due to solar irradiation has a negligible impact on
+the H2 capacity results, as a large chamber, 25 times the volume of the
+reactor, was opened during the dehydrogenation tests to minimize
+testing errors. The hydrogen pressure used for H2 absorption under
+solar irradiation was consistent with that using electric heating.
+Theoretical calculations
+Density functional theory (DFT) calculations were carried out using the
+Vienna ab initio simulation package (VASP)48,49. Core-valence electron
+interaction was described by the projector-augmented wave (PAW)
+method50, and electron exchange-correlation was processed by gen-
+eralized gradient approximation (GGA) of Perdew-Burke-Ernzerhof
+(PBE) functional51–53. The van der Waals (vdW) correction DFT-D3 pro-
+posed
+by
+Grimme
+was
+employed
+to
+include
+the
+dispersion
+interaction54. A plane wave energy cutoff of 520 eV and Gamma-
+centered k-point meshes (3 × 3 × 1) with same density were applied to
+surface calculations. A 7 × 7 × 7 Gamma-centered k-point meshes is
+used for the dos calculation of Cu, MgH2, Mg2NiH4, Mg2Ni(Cu)H4, and
+10 × 10 × 10 is used for the dos calculation of CuNi. For all slab struc-
+tures, a 20 Å vacuum layer in the z-direction is added to prevent surface
+interactions between the upper and lower surfaces. In energy band
+calculation, the number of k-points is uniformly 20, and the k-path and
+energy band information are exported by the VASP post-processing
+tool VASPKIT. The Gaussian smearing method was used with a width of
+0.05 eV, and spin polarization was considered in all calculations. The
+structures were relaxed until the forces and total energy on all atoms
+were converged to less than 0.05 eV Å−1 and 1 × 10−5 eV. The MgH2 dis-
+sociation and diffusions of H in various crystal lattices are simulated
+using the climbing-image nudged elastic band (CI-NEB) method55. The
+climbing-image nudged elastic band (Cl-NEB) method developed by
+Henkelman et al. was employed to locate the transition states of the
+MgH2 dissociation and diffusions of H in various crystal lattice56,57.
+Reporting summary
+Further information on research design is available in the Nature
+Portfolio Reporting Summary linked to this article.
+Data availability
+The data that support the ﬁndings of the study are included in the main
+text and supplementary information ﬁles. All the raw data are provided
+in the Source Data ﬁle. Source data are provided with this paper.
+References
+1.
+Schlapbach, L. & Züttel, A. Hydrogen-storage materials for mobile
+applications. Nature 414, 353–358 (2001).
+2.
+Staffell, I. et al. The role of hydrogen and fuel cells in the global
+energy system. Energy Environ. Sci. 12, 463–491 (2019).
+3.
+He, T., Cao, H. & Chen, P. Complex hydrides for energy storage,
+conversion, and utilization. Adv. Mater. 31, 1902757 (2019).
+4.
+Eberle, U., Felderhoff, M. & Schueth, F. Chemical and physical
+solutions for hydrogen storage. Angew. Chem. Int. Ed. 48,
+6608–6630 (2009).
+5.
+Nazir, G. et al. Recent advances and reliable assessment of solid‐
+state materials for hydrogen storage: a step forward toward a sus-
+tainable H2 economy. Adv. Sustain. Syst. 6, 2200276 (2022).
+6.
+Yu, X., Tang, Z., Sun, D., Ouyang, L. & Zhu, M. Recent advances and
+remaining challenges of nanostructured materials for hydrogen
+storage applications. Prog. Mater. Sci. 88, 1–48 (2017).
+7.
+Zhang, X., Sun, Y., Xia, G. & Yu, X. Light-weight solid-state hydrogen
+storage materials characterized by neutron scattering. J. Alloy.
+Compd. 899, 163254 (2022).
+8.
+Zhao, L. et al. Enhanced hydrogen storage of alanates: recent pro-
+gress and future perspectives. Prog. Nat. Sci. Mater. Int. 31,
+165–179 (2021).
+9.
+Shin, C.-H., Lee, H.-Y., Gyan-Barimah, C., Yu, J.-H. & Yu, J.-S.
+Magnesium: properties and rich chemistry for new material
+synthesis and energy applications. Chem. Soc. Rev. 52,
+2145–2192 (2023).
+10.
+Ren, L. et al. Nanostructuring of Mg-based hydrogen storage
+materials: recent advances for promoting key applications. Nano-
+Micro Lett. 15, 93 (2023).
+11.
+Sun, Y. et al. Tailoring magnesium based materials for hydrogen
+storage through synthesis: current state of the art. Energy Storage
+Mater. 10, 168–198 (2018).
+12.
+Zhang, X. et al. Empowering hydrogen storage performance of
+MgH2 by nanoengineering and nanocatalysis. Mater. Today Nano 9,
+100064 (2020).
+13.
+Jia, Y. et al. Combination of nanosizing and interfacial effect: future
+perspective for designing Mg-based nanomaterials for hydrogen
+storage. Renew. Sustain. Energy Rev. 44, 289–303 (2015).
+14.
+Wang, Y. et al. Heterostructures built in metal hydrides for
+advanced hydrogen storage reversibility. Adv. Mater. 32,
+2002647 (2020).
+15.
+Meng, Y. et al. Design of bifunctional Nb/V interfaces for improving
+reversible hydrogen storage performance of MgH2. Small Struct. 3,
+2200119 (2022).
+16.
+Ding, Z. et al. Tailoring MgH2 for hydrogen storage through
+nanoengineering and catalysis. J. Magnes. Alloy. 10, 2946–2967
+(2022).
+17.
+Aguey-Zinsou, K.-F. & Ares-Fernández, J.-R. Hydrogen in magne-
+sium: new perspectives toward functional stores. Energy Environ.
+Sci. 3, 526–543 (2010).
+18.
+Zhang, X. et al. Solar‐driven reversible hydrogen storage. Adv.
+Mater. 35, 2206946 (2023).
+19.
+Sun, Y. et al. Light‐driven reversible hydrogen storage in light‐
+weight metal hydrides enabled by photothermal effect. Small 18,
+2202978 (2022).
+20. Wei, C. et al. Surface composition dependent ligand effect in tuning
+the activity of nickel–copper bimetallic electrocatalysts toward
+hydrogen evolution in alkaline. J. Am. Chem. Soc. 142,
+7765–7775 (2020).
+21.
+Yu, W. et al. Laser-controlled tandem catalytic sites of CuNi alloy
+with ampere-level electrocatalytic nitrate to ammonia activity for
+Zn–nitrate battery. Energy Environ. Sci. 16, 2991–3001 (2023).
+22. Han, S. et al. Ultralow overpotential nitrate reduction to
+ammonia via a three-step relay mechanism. Nat. Catal. 6,
+402–414 (2023).
+23. Marimuthu, A., Zhang, J. & Linic, S. Tuning selectivity in propylene
+epoxidation by plasmon mediated photo-switching of Cu oxidation
+state. Science 339, 1590–1593 (2013).
+Article
+https://doi.org/10.1038/s41467-024-47077-y
+Nature Communications|   (2024) 15:2815 
+11
+
+24. Singh, M., Sinha, I., Singh, A. & Mandal, R. LSPR and SAXS studies of
+starch stabilized Ag–Cu alloy nanoparticles. Colloids Surf. A: Phy-
+sicochem. Eng. Asp. 384, 668–674 (2011).
+25. Bobinger, M. et al. Infrared, transient thermal, and electrical prop-
+erties of silver nanowire thin ﬁlms for transparent heaters and
+energy‐efﬁcient coatings. Phys. Status Solidi (A) 214,
+1600466 (2017).
+26. Mayer, K. M. & Hafner, J. H. Localized surface plasmon resonance
+sensors. Chem. Rev. 111, 3828–3857 (2011).
+27.
+Ding, X. et al. Surface plasmon resonance enhanced light absorp-
+tion and photothermal therapy in the second near-infrared window.
+J. Am. Chem. Soc. 136, 15684–15693 (2014).
+28. Xin, Y. et al. Copper‐based plasmonic catalysis: recent advances
+and future perspectives. Adv. Mater. 33, 2008145 (2021).
+29. Wang, F. et al. Photothermal-enhanced catalysis in core–shell
+plasmonic hierarchical Cu7S4 microsphere@zeolitic imidazole
+framework-8. Chem. Sci. 7, 6887–6893 (2016).
+30. Chen, G. et al. Alumina‐supported CoFe alloy catalysts derived
+from layered‐double‐hydroxide nanosheets for efﬁcient photo-
+thermal CO2 hydrogenation to hydrocarbons. Adv. Mater. 30,
+1704663 (2018).
+31.
+Xia, G. et al. Monodisperse magnesium hydride nanoparticles uni-
+formly self‐assembled on graphene. Adv. Mater. 27,
+5981–5988 (2015).
+32. Jiang, L. et al. Near‐infrared light responsive TiO2 for efﬁcient solar
+energy utilization. Adv. Funct. Mater. 32, 2108977 (2022).
+33. Cermak, J., Kral, L. & Roupcova, P. Signiﬁcantly decreased stability
+of MgH2 in the Mg-In-C alloy system: long-period-stacking-ordering
+as a new way how to improve performance of hydrogen storage
+alloys? Renew. Energy 150, 204–212 (2020).
+34. Jurczyk, M., Okonska, I., Iwasieczko, W., Jankowska, E. & Drulis, H.
+Thermodynamic and electrochemical properties of nanocrystalline
+Mg2Cu-type hydrogen storage materials. J. Alloy. Compd. 429,
+316–320 (2007).
+35. Caro, M., Béland, L. K., Samolyuk, G. D., Stoller, R. E. & Caro, A.
+Lattice thermal conductivity of multi-component alloys. J. Alloy.
+Compd. 648, 408–413 (2015).
+36. Abere, M. J. et al. A predictive analytical model of thermal con-
+ductivity for aluminum/transition metal high-entropy alloys. Scr.
+Mater. 208, 114330 (2022).
+37. Li, X. et al. Accessing parity-forbidden d-d transitions for photo-
+catalytic CO2 reduction driven by infrared light. Nat. Commun. 14,
+4034 (2023).
+38. Yang, B. et al. Flatband λ-Ti3O5 towards extraordinary solar steam
+generation. Nature 622, 499–506 (2023).
+39. Aslam, U., Rao, V. G., Chavez, S. & Linic, S. Catalytic conversion of
+solar to chemical energy on plasmonic metal nanostructures. Nat.
+Catal. 1, 656–665 (2018).
+40. Li, Y. et al. High-entropy-alloy nanoparticles with enhanced inter-
+band transitions for efﬁcient photothermal conversion. Angew.
+Chem. Int. Ed. 60, 27113–27118 (2021).
+41.
+Jian, C.-c, Zhang, J. & Ma, X. Cu–Ag alloy for engineering properties
+and applications based on the LSPR of metal nanoparticles. RSC
+Adv. 10, 13277–13285 (2020).
+42. Cui, J. et al. Mg–TM (TM: Ti, Nb, V, Co, Mo or Ni) core–shell like
+nanostructures: synthesis, hydrogen storage performance and
+catalytic mechanism. J. Mater. Chem. A 2, 9645–9655 (2014).
+43. Ma, Z. et al. In situ catalyzed and nanoconﬁned magnesium hydride
+nanocrystals in a Ni-MOF scaffold for hydrogen storage. Sustain.
+Energy Fuels 4, 4694–4703 (2020).
+44. Yang, X., Hou, Q., Yu, L. & Zhang, J. Improvement of the hydrogen
+storage characteristics of MgH2 with a ﬂake Ni nano-catalyst com-
+posite. Dalton Trans. 50, 1797–1807 (2021).
+45. Hongo, T. et al. Signiﬁcance of grain boundaries and stacking faults
+on hydrogen storage properties of Mg2Ni intermetallics processed
+by high-pressure torsion. Acta Mater. 92, 46–54 (2015).
+46. Ma, Z. et al. Insights into thermodynamic destabilization in Mg-In-D
+hydrogen storage system: a combined synchrotron X-ray and
+neutron diffraction study. Energy Storage Mater. 56,
+432–442 (2023).
+47. Zhang, J., Chen, H., Duan, X., Sun, H. & Wang, S. Photothermal
+catalysis: from fundamentals to practical applications. Mater. Today
+68, 234–253 (2023).
+48. Kresse, G. & Furthmüller, J. Efﬁciency of ab-initio total energy cal-
+culations for metals and semiconductors using a plane-wave basis
+set. Comput. Mater. Sci. 6, 15–50 (1996).
+49. Kresse, G. & Hafner, J. Ab initio molecular-dynamics simulation of
+the liquid-metal-amorphous-semiconductor transition in germa-
+nium. Phys. Rev. B 49, 14251–14269 (1994).
+50. Blochl, P. E. Projector augmented-wave method. Phys. Rev. B 50,
+17953–17979 (1994).
+51.
+John, P. P., Kieron, B. & Matthias, E. Generalized gradient approx-
+imation made simple. Phys. Rev. Lett. 77, 3865 (1996).
+52. Kresse, G. & Joubert, D. From ultrasoft pseudopotentials to the
+projector augmented-wave method. Phys. Rev. B 59, 1758
+(1999).
+53. Langreth, D. C. & Mehl, M. Beyond the local-density approximation
+in calculations of ground-state electronic properties. Phys. Rev. B
+28, 1809 (1983).
+54. Grimme, S., Antony, J., Ehrlich, S. & Krieg, H. A consistent and
+accurate ab initio parametrization of density functional dispersion
+correction (DFT-D) for the 94 elements H-Pu. J. Chem. Phys. 132,
+154104 (2010).
+55. Heyden, A., Bell, A. T. & Keil, F. J. Efﬁcient methods for ﬁnding
+transition states in chemical reactions: comparison of improved
+dimer method and partitioned rational function optimization
+method. J. Chem. Phys. 123, 224101 (2005).
+56. Henkelman, G. & Jónsson, H. Improved tangent estimate in the
+nudged elastic band method for ﬁnding minimum energy paths
+and saddle points. J. Chem. Phys. 113, 9978–9985 (2000).
+57. Henkelman, G., Uberuaga, B. P. & Jónsson, H. A climbing image
+nudged elastic band method for ﬁnding saddle points and mini-
+mum energy paths. J. Chem. Phys. 113, 9901–9904 (2000).
+Acknowledgements
+This work was ﬁnancially supported by the National Key R&D Program
+of China (no. 2020YFA0406204 to X. Yu), the National Natural Sci-
+ence Foundation of China (no. U2130208 and 22279020 to G. Xia,
+22109026 to Y. Sun), the Science and Technology Commission of
+Shanghai Municipality (no. 21ZR1407500 and 23ZR1406500 to
+G. Xia).
+Author contributions
+G. Xia and X. Yu conceived the study and supervised this work. X. Zhang
+performed the material synthesis, characterization, hydrogen storage
+measurements and analyzed the data. S. Ju and C. Li performed the
+theoretical calculations. J. Hao, J. Chen, and L. He, carried
+out NPD measurements and analyzed the data. S. Ju, C. Li, and X. Hu
+helped to analyze the data. Y. Sun and W. Chen contributed to the
+design of the reactor. G. Xia, D. Sun, F. Fang, and X. Yu revised the
+manuscript. X. Yu, G. Xia, and X. Zhang co-wrote the paper with input
+from all the authors. All authors contributed to the discussion.
+Competing interests
+The authors declare no competing interests.
+Article
+https://doi.org/10.1038/s41467-024-47077-y
+Nature Communications|   (2024) 15:2815 
+12
+
+Additional information
+Supplementary information The online version contains
+supplementary material available at
+https://doi.org/10.1038/s41467-024-47077-y.
+Correspondence and requests for materials should be addressed to
+Guanglin Xia, Fang Fang or Xuebin Yu.
+Peer review information Nature Communications thanks the anon-
+ymous reviewers for their contribution to the peer review of this work.
+A peer review ﬁle is available.
+Reprints and permissions information is available at
+http://www.nature.com/reprints
+Publisher’s note Springer Nature remains neutral with regard to jur-
+isdictional claims in published maps and institutional afﬁliations.
+Open Access This article is licensed under a Creative Commons
+Attribution 4.0 International License, which permits use, sharing,
+adaptation, distribution and reproduction in any medium or format, as
+long as you give appropriate credit to the original author(s) and the
+source, provide a link to the Creative Commons licence, and indicate if
+changes were made. The images or other third party material in this
+article are included in the article’s Creative Commons licence, unless
+indicated otherwise in a credit line to the material. If material is not
+included in the article’s Creative Commons licence and your intended
+use is not permitted by statutory regulation or exceeds the permitted
+use, you will need to obtain permission directly from the copyright
+holder. To view a copy of this licence, visit http://creativecommons.org/
+licenses/by/4.0/.
+© The Author(s) 2024
+Article
+https://doi.org/10.1038/s41467-024-47077-y
+Nature Communications|   (2024) 15:2815 
+13

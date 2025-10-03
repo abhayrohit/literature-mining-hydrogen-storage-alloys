@@ -1,0 +1,1018 @@
+ 
+Contents lists available at ScienceDirect
+Acta Materialia
+journal homepage: www.elsevier.com/locate/actamat
+ 
+Full length article
+Predicting hydrogen storage properties of multicomponent metal hydrides: 
+Modeling of pressure, capacity, hysteresis, and slope
+Peter Hannappel a,b
+,∗, Marcus Vogt a, Felix Heubner a
+,∗, Mateusz Balcerzak a,c, 
+Thomas Weißgärber a,b
+a Fraunhofer Institute for Manufacturing Technology and Advanced Materials IFAM, Dresden Branch, Dresden, Germany
+b TUD Dresden University of Technology, Faculty Mechanical Engineering, Institute of Materials Science, Chair Powder Metallurgy, Dresden, Germany
+c Institute of Materials Science and Engineering, Poznan University of Technology, Poznań 61-138, Poland
+A R T I C L E  I N F O
+Keywords:
+Calphad thermodynamics
+Ce-La-Ni-Al-Fe-Mn-H
+Metal hydrides
+PCI
+Database
+ 
+A B S T R A C T
+Metal hydrides are considered as an important group of materials in the future hydrogen-based economy. 
+Their development is mostly based on time-consuming experimental trial-and-error methods. This work 
+accelerates this pathway using a computational framework for the thermodynamic modeling of metal 
+hydrides under para-equilibrium conditions. By employing the CALPHAD method on a six-component AB5-type 
+(Ce, La)(Ni, Al, Fe, Mn)5–H system, we are able to make precise predictions regarding hydrogen absorption 
+enthalpies, plateau pressures, and hydrogen sorption capacities. Additionally, this is the first time the 
+hydrogenation/dehydroganation hysteresis effect has been successfully modeled using separate thermodynamic 
+databases for hydrogen absorption and desorption. Furthermore, we introduce a method to directly calculate 
+sloped pressure–composition–temperature (PCT) curves from X-ray diffraction data. This validation demon-
+strates the framework’s capability to assess the hydrogen storage properties of complex multi-component 
+systems in an efficient manner. This work lays the groundwork for future metal hydride thermodynamic 
+studies on a variety of material classes, as well as optimization of alloys for applications even beyond classical 
+hydrogen storage.
+1. Introduction
+Hydrogen plays a crucial role in the shift towards sustainable energy 
+systems due to its clean energy potential and versatile applications. 
+Nevertheless, the issue of efficient and safe hydrogen storage remains 
+a significant challenge. Metal hydrides, such as AB5-type alloys, offer 
+a promising solution, enabling reversible hydrogen storage at rea-
+sonable pressures and temperatures [1–3]. The storage properties are 
+critical because hydrogen storage must be feasible under conditions 
+that align with practical applications, such as ambient or moderately 
+elevated temperatures and pressures suitable for transportation and 
+stationary applications. Moreover, metal hydrides have proven valuable 
+in hydrogen compression, thermal management systems and hydro-
+gen purification showcasing their versatility beyond classical storage 
+applications [4,5]. By substituting elements on the A and B sites, 
+the hydrogenation properties of AB5-type alloys – including plateau 
+pressures, hydrogen capacity, and reaction enthalpy – can be precisely 
+tuned and therefore optimized for specific applications [2].
+The necessity of modeling these sorption properties with computa-
+tional tools is apparent from the considerable amount of recent research 
+∗Corresponding authors.
+E-mail addresses: peter.hannappel@ifam-dd.fraunhofer.de (P. Hannappel), felix.heubner@ifam-dd.fraunhofer.de (F. Heubner).
+in this field [1,6]. The complex multi-component nature of metal 
+hydrides presents a significant challenge in predicting their behavior. 
+The CALPHAD (CALculation of PHAse Diagrams) method is a long-
+established approach for modeling and predicting the thermodynamic 
+properties of such systems [7]. As it integrates both experimental 
+data and thermodynamic principles, the incorporation of predictive 
+tools such as density functional theory further enhances its capability 
+for future advancements in the field. This combination allows for a 
+substantial reduction in the experimental effort required to identify 
+new alloy compositions and material classes for hydrogen applications, 
+with the potential for a transformative impact on metal hydride-based 
+research.
+Recently, the authors published a computational tool to calcu-
+late the challenging para-equilibrium state and assess experimental 
+data in a more automated procedure [8]. It was introduced on a 
+basic ternary (Ce,La)Ni5–H system. To further validate the proposed 
+method, in the current work we chose the six-component
+(Ce,La)(Ni,Al,Fe,Mn)5–H system, as it finds significant relevance in the 
+metal hydride field and sufficient experimental data is present. Here we 
+https://doi.org/10.1016/j.actamat.2025.121226
+Received 6 February 2025; Received in revised form 28 May 2025; Accepted 6 June 2025
+Acta Materialia 296 (2025) 121226 
+Available online 23 June 2025 
+1359-6454/© 2025 The Authors. 
+Published by Elsevier Inc. 
+on behalf of Acta Materialia Inc. 
+This is an open access article under the CC BY license 
+( http://creativecommons.org/licenses/by/4.0/ ). 
+
+P. Hannappel et al.
+focus on the important hydrogenation characteristics from a practical 
+point of view. This includes the pressure–composition–temperature 
+triplets (seen on an ideal stoichiometric alloy) and, for the first time, 
+the prediction of pressure hysteresis between the absorption and des-
+orption process as well as the plateau slope of non-stoichiometric 
+alloys.
+To address these challenges, this work includes the following con-
+tributions:
+1. A step-by-step guide on modeling and predicting ideal hydro-
+genation properties of multi-component metal-hydride systems 
+within the CALPHAD framework and the recently published 
+program [8].
+2. A novel approach to model the hysteresis of the absorption and 
+desorption processes.
+3. A new framework to incorporate X-ray diffraction (XRD) mea-
+surements into the CALPHAD method for predicting sloping 
+plateaus.
+4. Validation 
+of 
+the 
+proposed 
+methods 
+on 
+the
+(Ce,La)(Ni,Al,Fe,Mn)5–H system.
+2. Design process
+2.1. Design parameters
+To meet the diverse requirements of different applications of metal 
+hydrides, a modeling tool needs to be able to predict and optimize a 
+complex set of sorption properties. In our case, we want to optimize 
+an alloy for a thermochemical systems. Therefore, we aimed to design 
+an AB5 alloy with the desired hydrogen sorption properties - a high 
+hydrogen capacity together with a high reaction enthalpy. First we 
+established the compositional boundaries for the AB5 metal phase (ex-
+cluding hydrogen) (see Table 1). Within these boundaries, we modeled 
+key hydrogenation properties, including hydrogen capacity at specific 
+pressures and temperatures, plateau pressure, and reaction enthalpy. 
+Furthermore, coupling of this thermodynamic model with the phase 
+stability limits allowed us to optimize the alloy compositions to achieve 
+the desired hydrogen storage properties.
+2.1.1. Stability of the AB5 metal phase
+The 
+only 
+stable 
+binary 
+alloys 
+within 
+the 
+investigated
+(Ce,La)(Ni,Al,Fe,Mn)5 system are CeNi5 and LaNi5. They both crystal-
+lize in the P6/mmm phase and are at room temperature approximately 
+stoichiometric compounds [9]. La and Ce are fully soluble on the A 
+site (in AB5-type alloy), allowing complete substitution of one for the 
+other [10]. Contrary to the A site elements, the substitution of Ni on the 
+B site is limited in the ternary LaNi5-xMx and CeNi5-xMx phases (with 
+M = Al, Fe, Mn). The boundaries for the B-side substitution of Ni were 
+investigated thoroughly, elsewhere [2]. The substitutional limits of Al, 
+Fe, and Mn in the LaNi5-xMx phase are summarized in Table 1.
+For the CeNi5-xAlx system, the substitutional limits are reported to 
+be higher than for the LaNi5-xAlx system. Yamagishi et al. observed 
+stable CeNi5-xAlx alloys with 𝑥 up to 2 [11]. Noticeably the lattice 
+parameters have a discontinuity at around 𝑥 = 1 to 1.25 and the 
+hydrogenation properties start to degrade drastically. This means, al-
+though the CeNi5-xAlx metal phase seems to have a higher solubility 
+limit than the LaNi5-xAlx phase, the hydride phase remains unstable 
+above CeNi3.75Al1.25Hx. Due to the lack of available experimental data 
+for the other CeNi5-xMx systems and the inconsistencies reported in 
+the CeNi5-xAlx system, we leveraged the chemical similarity of La 
+and Ce (for example similar ionic radii and electronic configuration) 
+and develop the design rule based on the LaNi5-xMx systems (Table 
+1). The substitutional limit xtotal of a hypothetical multicomponent 
+(Ce,La)Ni5-x,iMx,i alloy with i components equals to 
+𝑥total =
+∑
+𝑖
+𝑥𝑖
+𝑥limit,𝑖
+(1)
+Table 1
+Experimental substitutional limits of elements M = Al, Fe, Mn in the metal phase 
+LaNi5-xMx.
+ Element
+Al
+Fe
+Mn
+ 
+ Substitutional limit xlimit
+1.25 [12]
+1.2 [13]
+2 [14] 
+where 𝑥𝑖 is the number of atoms per formula unit of the substitutional 
+element 𝑖, and 𝑥limit,𝑖 is the substitutional limit of this element. Thus, 
+assuming a linear dependence of phase stability on xtotal, any alloy 
+composition with a substitutional element ratio resulting in 𝑥total ≤1 is 
+expected to retain a stable, single-phase P6/mmm structure. Composi-
+tions with 𝑥total > 1 will likely result in the formation of secondary 
+phases. The formulation of Eq. (1) with the experimental values of 
+Table 1 yields a composition of CexLa1-xNi3.59Al0.47Fe0.47Mn0.47 (based 
+on an equimolar ratio among the substitutional elements — Al, Fe, Mn), 
+which approaches the threshold of 𝑥total = 1. Any further increase in the 
+substitutional element content beyond this composition would exceed 
+the threshold and likely lead to the formation of secondary phases.
+2.1.2. Thermodynamic modeling of the hydride phase
+Within the defined substitutional limits of the metal phase the 
+hydrogenated phase can be described by the hexagonal P63mc struc-
+ture [15]. To model the hydrogenation properties of the
+metal-hydrogen system, the Compound–Energy–Formalism within the 
+CALPHAD framework was adopted [16]. The modeling process and 
+the associated program were described in a previous paper by the 
+authors [8]. In addition to the sorption properties that can be derived 
+from the phase diagram (pressure–composition–temperature (PCT)
+triplets), the authors demonstrate a methodology for modeling the 
+sloped PCT isotherms of non-stoichiometric compounds and the hys-
+teresis of the absorption and desorption process (see below).
+2.1.3. Ideal sorption properties
+To establish a foundation for predicting the complete PCT curve, 
+including hysteresis and slope characteristics, it is essential to first 
+model the sorption properties of ideal, stoichiometric compounds.
+The PCT relationship can be calculated by the partial equilibrium 
+of the (temperature- and pressure-dependent) Gibbs energy curve of 
+the metal-hydride phase and the hydrogen gas phase. The CALPHAD 
+method extrapolates these equilibria from thermodynamic quantities: 
+The enthalpy and entropy of formation, 𝐻𝑓 and 𝑆𝑓, the mixing en-
+thalpy 𝐻mix and the configurational entropy 𝑆conf, which are subse-
+quently used to calculate the Gibbs energy curve for the metal-hydride 
+phase 𝐺MH:
+𝐺MH(𝐜, 𝑇) = 𝐻𝑓(𝐜, 𝑇) −𝑇⋅𝑆𝑓(𝐜, 𝑇) + 𝐻mix(𝐜, 𝑇) −𝑇⋅𝑆conf(𝐜, 𝑇)
+(2)
+Here, c represents the composition vector, consisting of the molar 
+fractions of the metal elements and hydrogen.
+The AB5(H,Va)1(H,Va)6 sublattice model described by Hannappel 
+et al. is used, as it shows good capabilities of modeling the sorption 
+properties within the Ce1-xLaxNi5-H system [8,17,18]. Here, Va stands 
+for vacancies and therefore (H,Va) is a hydrogen-vacancy sublattice.
+The first assessment is done on experimental data, where absorption 
+and desorption data are present. The logarithmic mean of the pressure 
+values and the linear mean of the capacities are used to optimize the 
+size and values of the thermodynamic database.
+2.1.4. Hysteresis
+Multiple theories for the origin of the differences between hydro-
+gen absorption and desorption curves were developed. One of them, 
+formulated by Schwarz and Khachaturyan, relates the hysteresis to an 
+energetic barrier resulting from the elastic stresses created during the 
+phase transition (from metallic phase to the hydride phase) [19]. This 
+assumes that the E-Modulus and the mismatch in the unit cell sizes of 
+the metal and hydride phase correlates directly with the hysteresis.
+Acta Materialia 296 (2025) 121226 
+2 
+
+P. Hannappel et al.
+Fig. 1. Schematic representation of the proposed method for converting XRD microstrain data into sloped PCT curves. The diffraction angle-dependent peak broadening is correlated 
+with microstrain, which is then converted into a Gaussian distribution of compositions (phase width, Eqs. (4)–(6)). Finally, the distribution of composition vectors is transformed 
+into a sloped plateau by superimposing multiple ideal PCT curves (Eq. (8)).
+In contrary, Flanagan and Clewley related the hysteresis to the 
+inelastic stresses. In this case, dislocations must be formed due to the 
+size mismatches during phase transition [20]. Therefore, the hysteresis 
+scales with the number of dislocations and the formation enthalpy of 
+the dislocations.
+In any way, the different sorption pressures for absorption and 
+desorption can be translated to a difference in the Gibbs energy for 
+absorption and desorption: 
+1
+2𝑘𝑇ln
+( 𝑝abs
+𝑔
+𝑝des
+𝑔
+)
+= 𝛿𝐺abs
+𝛿𝑁H
+−𝛿𝐺des
+𝛿𝑁H
+(3)
+Here, 𝑝g is the partial pressure of the hydrogen gas and 𝑁H is the 
+amount of hydrogen in mole. The hysteresis can now be modeled with 
+the CALPHAD method by generating two parameter sets that represent 
+the Gibbs energy of the metal hydride during hydrogen absorption and 
+desorption, 𝐺abs and 𝐺des, respectively. Elastic and inelastic stresses 
+primarily affect the enthalpy due to the energy stored in lattice distor-
+tions and dislocation formation, which directly impact the Gibbs energy 
+surface of the system. Therefore, we fix the entropy for both absorption 
+and desorption to that of the standard entropy of hydrogen gas (130 
+J/mol-H2K) and allow the enthalpy of formation and mixing enthalpy 
+to be optimized between absorption and desorption [21].
+While it is questionable whether a thermodynamic modeling tool 
+can meaningfully predict kinetic effects, this is the first known attempt 
+to use such a method. From a practical perspective, this approach al-
+lows to model the relevant observable sorption properties, and to select 
+on this basis the optimized materials with predetermined hydrogen 
+storage properties.
+2.1.5. Plateau slope
+The slope of the pressure plateau is an application-relevant sorption 
+property. In many application scenarios, the slope significantly limits 
+the usable capacity. The origin of the plateau slope is commonly 
+attributed to a distribution of the alloy composition around the nominal 
+stoichiometry [22]. This means the sloped plateau is a superposition 
+of several plateaus corresponding to compositions slightly deviating 
+from the nominal one. By extracting information about the microstrain 
+distribution from XRD data and combining it with a thermodynamic 
+model, the slope can be quantitatively predicted. Here, we briefly 
+describe the method to get sloped PCT curves from XRD measurements, 
+which is schematically shown in Fig. 1 and described in the following 
+paragraphs.
+According to the TOPAS reference manual [23], the refined mi-
+crostrain parameter 𝜖0 obtained from the Double Voigt approach (cf. 
+Materials and Methods section) is defined as the distribution width 
+within which 50 % of the material’s microstrain values are found. As 
+long as the nominal alloy composition is not near a substitutional limit, 
+it is reasonable to assume that the compositional distribution adheres to 
+Gaussian statistics (as anisotropic microstrain broadening has not been 
+observed). In Gaussian normal distributions, 50 % of the area under the 
+curve lies within ±0.6745𝜎. 
+𝜖0 = 𝛥𝑑
+𝑑0
+= 0.6745 ⋅𝜎
+(4)
+Here, 𝛥𝑑 is the distorted lattice parameter, 𝑑0 is the lattice param-
+eter of the nominal composition, and 𝜎 the standard deviation.
+Microstrain is usually correlated to defects, such as vacancies, dis-
+locations, or impurity atoms. With XRD measurements on the stoichio-
+metric LaNi5 and CeNi5 compounds, the influence of dislocations on the 
+peak broadening (introduced during alloy preparation) is quantified. 
+This results in a correlation of the magnitude of the distorted lattice 
+parameter with the phase width.
+In the hexagonal unit cell of the P6/mmm phase, only the lattice 
+parameters a and c are independent, with other parameters being 
+constrained by symmetry. Therefore, 𝜖0 can be translated to a Gaussian 
+distribution of the phase width 𝑃𝑊 with the boundary conditions: 
+𝜖0,𝑎+ 𝜖0,𝑐
+2
+= 𝜖0
+(5)
+and 
+𝜎PW(𝜖0,𝑎) = 𝜎PW(𝜖0,𝑐)
+(6)
+In Chapter S1 of the Supplementary Information (SI), the depen-
+dence of the lattice parameters a and c on the chemical composition 
+of the ternary systems is presented. From the ternary systems, we can 
+extrapolate linearly to the mean change of the lattice parameter in 
+dependence on the nominal composition:
+𝛥𝑑(̄𝑥) =
+∑
+𝐴
+(
+𝑥𝐴
+∑
+𝐵≠Ni
+(𝑥𝐵𝛥𝑑(𝑥𝐴Ni5−𝑥𝐵𝑥)))
++ ∑
+𝐴≠Ce
+(𝑥𝐴𝛥𝑑(𝑥Ce1−𝑥A𝑥Ni5))
+(∑
+𝐴≠Ce,𝐵≠Ni 𝑥𝑖
+)
+(7)
+Here, 𝑥𝑖 is the atomic fraction of the component 𝑖, on the 𝐴 or 𝐵 site, 
+and 𝛥𝑑(𝑥ternary) is the change in the lattice parameter per atom change 
+in the ternary systems, as summarized in Table 2. This equation results 
+in a mean change of the lattice parameter 𝑎 or 𝑐 per mean atom ̄𝑥. A 
+detailed expression of this equation for the applied multi-component 
+system is given in Chapter S1 in the SI.
+Once the parameter 𝜎PW is determined, the sloping PCT curve is 
+calculated by weighting the ideal stoichiometric PCT curves with the 
+probabilities of the Gaussian function: 
+𝑐H =
+∑
+𝑖
+𝑐H,𝑖⋅𝑝𝑖
+(8)
+where 𝑐𝐻,𝑖 is the capacity of an ideal stoichiometric alloy with com-
+position 𝑖, and 𝑝𝑖 is the probability of the composition 𝑖 within the 
+distribution of the non-ideal alloy from Eq. (4).
+Acta Materialia 296 (2025) 121226 
+3 
+
+P. Hannappel et al.
+Table 2
+Extracted changes of the lattice parameters a and c of the ternary metal phases (also 
+see Chapter S1 in SI).
+ System i
+𝛥𝑑𝑖,𝑎
+𝛥𝑑𝑖,𝑐
+ 
+ LaNi5-xAlx
+0.04861
+0.08745 
+ CeNi5-xAlx
+0.06906
+0.07695 
+ LaNi5-xFex
+0.03478
+0.03403 
+ LaNi5-xMnx
+0.08046
+0.08229 
+ CeNi5-xMnx
+0.06229
+0.07886 
+ Ce1-xLaxNi5
+0.12973
+−0.02212 
+2.1.6. Review of existing experimental data
+By extracting hydrogen sorption properties of quasi-binary
+(CeNi5–H, LaNi5–H) and quasi-ternary (Ce1-xLaxNi5–H, LaNi5-xMx–H,
+CeNi5-xMx–H) systems, the thermodynamic database is build. This 
+database enables extrapolation to higher-order multicomponent sys-
+tems.
+A summary of the hydrogen sorption properties of the (Ce,La)Ni5-H 
+system has been made by Hannappel et al. [8]. The substitution of Al, 
+Fe and Mn for Ni reduces the plateau pressure and the hydrogen storage 
+capacity. Additionally, the substitution of Ni in the La(Ni,Al,Fe,Mn)5
+system increases the hysteresis. Contrary, in the Ce(Ni,Al,Fe,Mn)5 sys-
+tem the substitution of Ni with Al, Fe and Mn is reducing the hystere-
+sis [12,14,24,25].
+PCT data for the optimization of two quasi-binary systems
+(CeNi5–H and LaNi5–H) and 5 ternary systems (La(Ni,Al)5–H,
+Ce(Ni,Al)5–H, La(Ni,Mn)5–H, Ce(Ni,Mn)5–H, La(Ni,Fe)5–H) were taken 
+from the literature [8–12,14,24–34].
+In the evaluated ternary systems within the LaNi5-xMx – system, data 
+over sufficient ranges of composition and temperature are available. 
+For the complementary CeNi5-xMx – system data is scarce. This is partic-
+ularly critical for the CeNi5-xFex – system, where no experimental data 
+is available. While an option would be to take higher order systems into 
+account for the optimization (e.g. the Ce1-xLaxNi5-yFey – system [32]) 
+the current state of the assessment program does not include this func-
+tionality. Another possibility is to calculate the missing thermodynamic 
+parameters from first-principle calculations. Because of the chemical 
+similarity of Ce and La, the authors decided to mitigate this prob-
+lem by choosing for the CeNi5-xFex – system the same thermodynamic 
+parameters as for the LaNi5-xFex – system.
+3. Materials and methods
+The following synthesis and materials characterization were con-
+ducted to determine the proper experimental data for validating the 
+predictions on the material properties, derived from the design process 
+described in Section 2.
+3.1. Material selection
+Three material compositions were examined to validate the preci-
+sion of the thermodynamic model in different positions in the
+(Ce,La)(Ni,Al,Fe,Mn)5 compositional space. First, the model was used 
+to find an alloy composition optimized to be used as a thermochemical 
+heat source. Two boundary conditions were applied:
+1. Plateau pressure during desorption at 333 K of 1 bar.
+2. Maximize the enthalpy capacity during absorption.
+The enthalpy capacity 𝐻𝑐 is defined as 
+𝐻𝑐= 𝛥𝐻⋅𝑛H2,𝑝
+(9)
+Here, 𝛥𝐻 is the partial molar enthalpy of hydrogen in the plateau 
+region in kJ/molH2, and 𝑛H2,𝑝 is the hydrogen capacity at a certain 
+pressure p in molH2/gmetal. The partial molar enthalpy of hydrogen 
+can be calculated with the van’t Hoff equation [35]. These bound-
+ary conditions yield an optimized Alloy_1 (see below) composition 
+of (Ce0.1La0.9)(Ni4.47Al0.06Fe0.2Mn0.27), with an enthalpy capacity of 
+0.21 kJ/gmetal at 40 bar.
+Additionally, the boundaries of the model are evaluated by cast-
+ing Alloy_2 and Alloy_3, which incorporate high amounts of B-side 
+substitution elements Al, Fe, and Mn, with total substitution values 
+of 𝑥total = 0.85 for Alloy_2 and 𝑥total = 1.07 for Alloy_3 (one alloy 
+exceeding and one not exceeding the substitution threshold — see Eq. 
+(1)).
+In conclusion, three compositions are examined for validating the 
+thermodynamic model within the (Ce,La)(Ni,Al,Fe,Mn)5–H system:
+1. (Ce0.1La0.9)(Ni4.47Al0.06Fe0.2Mn0.27) (𝐻𝑐= 0.21 kJ/g)
+2. (Ce0.65La0.35)(Ni3.8Al0.4Fe0.4Mn0.4) (xtotal = 0.85)
+3. (Ce0.65La0.35)(Ni3.5Al0.5Fe0.5Mn0.5) (xtotal = 1.07)
+Each of the three compositions are evaluated in two states: as-
+cast and heat-treated. Therefore, a total of six distinct samples are 
+examined in this study, labeled as Alloy_x_y, where 𝑥 reflects the 
+chemical composition number (1, 2 or 3) and 𝑦 the alloy state (as-cast 
+or heat-treated). This approach allows for comprehensive validation of 
+the thermodynamic model within the (Ce,La)(Ni,Al,Fe,Mn)5–H system.
+3.2. Material synthesis
+The samples were synthesized from high-purity elemental met-
+als: Ce (99.9%, Osnabruegge GmbH), La (99.9%, VWR International 
+GmbH), Ni (99.95%, Thermo Fisher GmbH), Al (99.9%, Thermo Fisher 
+GmbH), Fe (99.97%, Thermo Fisher GmbH) and Mn (99.9%, Thermo 
+Fisher GmbH). Metal pieces ranging from 1...10mm were used. The 
+arc-melting method was employed under an argon atmosphere with 
+an actively cooled Cu-crucible (AM500, Edmund Bühler GmbH). The 
+metals were melted three times per side for two minutes and flipped in 
+between.
+Additionally, one-half of the as-cast samples were heat-treated un-
+der Argon atmosphere at 1273 K for 7 days (Alloy_x_heat-treated). The 
+heat treatment leads to cast homogenization and, therefore, reduces 
+the microstrain. These samples were used to examine the change of 
+plateau slope due to the annealing process. The samples were stored 
+and prepared in an inert argon atmosphere.
+The single-phase crystal structure and oxygen impurities
+were proven with XRD analysis and Hot Gas Extraction (Fig. 4 and 
+Supplementary Information, Section S2).
+3.3. X-ray diffraction
+XRD was conducted on as-cast and heat treated samples using 
+Empyrean diffractometer (Malvern Panalytical GmbH, Mo-K𝛼-radiation 
+(𝜆K𝛼1
+=
+0.713609 Å, 𝜆K𝛼2
+=
+0.709319 Å), 2𝜃: 4–80 ◦, step size: 
+0.0072 ◦, time per step: 1600 s, Detector: Galipix 2D (Active length: 
+7.167 ◦), Anti-scatter slit: 1∕2◦, Divergence slit: 1∕8◦, Primary Soller 
+slit: 0.02 rad, Secondary Soller slit: 0.04 rad) and the obtained data 
+were analyzed using the Rietveld method.
+Rietveld refinements of the diffraction data were performed using 
+TOPAS 5 software [23] employing the fundamental parameters ap-
+proach. All fundamental parameters were kept constant for different 
+refinements. Crystallite size (CS) and strain microstructure effects (𝜖0) 
+were separated using the Double Voigt approach which utilizes convo-
+lutions of a Gaussian and Lorentzian profile function for both crystallite 
+size and strain. Anisotropic microstructure broadening was negligible 
+and therefore disregarded. To increase refinement reliabilities and 
+differential precision of refined values, only a minimum set of variables 
+Acta Materialia 296 (2025) 121226 
+4 
+
+P. Hannappel et al.
+Fig. 2. Comparison of the CALPHAD model with the experimentally measured PCT curves for the as-cast and heat-treated samples for three alloy compositions: (a) Alloy_1 
+Ce0.1La0.9(Ni4.47Al0.06Fe0.2Mn0.27) – 373 K, (b) Alloy_2 (Ce0.65La0.35)(Ni3.8Al0.4Fe0.4Mn0.4) – 393 K, (c) Alloy_3 (Ce0.65La0.35)(Ni3.5Al0.5Fe0.5Mn0.5) – 433 K.
+Table 3
+Comparison of predicted and measured values for Alloy_1 – (Ce0.1La0.9)(Ni4.47Al0.06Fe0.2Mn0.27) 373 K, Alloy_2 – (Ce0.65La0.35)
+(Ni3.8Al0.4Fe0.4Mn0.4) 393 K and Alloy_3 – (Ce0.65La0.35)(Ni3.5Al0.5Fe0.5Mn0.5) 433 K. The hysteresis factor was taken at the hydrogen content, 
+where 𝑝𝑎𝑏𝑠,𝑎𝑠−𝑐𝑎𝑠𝑡= 𝑝𝑎𝑏𝑠,ℎ𝑡. The values in brackets correspond to the relative error 
+|𝑦model−𝑦exp|
+𝑦model
+.
+ Composition
+Capacity (at max. pressure)
+Absorption pressure at
+Reaction enthalpy
+Hysteresis factor
+ 
+𝑐max/wt.%-H2
+0.5 ⋅𝑐max, 𝑝abs/bar
+𝛥𝐻abs/kJmol−1
+H2
+ln(𝑝abs∕𝑝des)
+ 
+Experimental
+Model
+Experimental
+Model
+Experimental
+Model
+Experimental
+Model 
+ Alloy_1_as-cast
+1.36 (4%)
+1.31
+11.5 (46%)
+7.89
+−31.3 (3%)
+−32.11
+0.33 (45%)
+0.60  
+ Alloy_1_heat-treated
+1.33 (2%)
+11.6 (47%)
+−30.2 (6%)
+0.54 (10%)
+ 
+ Alloy_2_as-cast
+1.11 (8%)
+1.21
+7.09 (8%)
+7.71
+−38.2 (4%)
+−36.9
+0.08 (89%)
+0.73  
+ Alloy_2_heat-treated
+1.11 (8%)
+7.66 (1%)
+−36.5 (1%)
+0.18 (75%)
+ 
+ Alloy_3_as-cast
+1.01 (13%)
+1.16
+7.20 (21%)
+5.95
+−39.3 (4%)
+−40.9
+0.04 (93%)
+0.61  
+ Alloy_3_heat-treated
+1.05 (10%)
+6.20 (4%)
+−40.5 (1%)
+0.06 (90%)
+ 
+was used for each refinement: 12 background parameters (Chebyshev 
+polynomial), zero shift, lattice parameters, thermal parameters, 6 pa-
+rameters to describe the preferred orientation of crystallites and scale 
+factors. Site occupancies and atomic positions were kept fixed. All 
+refinements were carefully checked for any parameter correlations. 
+Any residual correlations between Gaussian contributions of strain and 
+crystallite size were less or equal 62 % for all refinements. All other 
+refined variables were correlated by less than 81 %. All refinements 
+yielded good agreement between the observed and calculated patterns. 
+𝜒2 (𝑅wp∕𝑅exp) of the refinements were between 5.30 and 6.95.
+To introduce during preparation as little external strain as possible, 
+the samples were manually ground in small batches and sieved with a 
+65 μm sieve. The material that passed through the sieve was collected, 
+while the coarser fraction with the particle size remaining above 65 μm 
+was carefully crushed and sieved again until 80 % of the material 
+passed. Since this poses the risk of separating different phases, initial 
+tests were conducted with and without sieving, and no phase separation 
+was detected.
+3.4. Sorption measurements
+The samples were activated by alternating cycles of high (above 
+plateau pressure) hydrogen pressure and vacuum at 293 K until no 
+difference in the measured capacities could be observed. Between each 
+cycle, the vacuum (10−3 Pa) was maintained for at least 30 min. Hydro-
+gen sorption tests were conducted by detecting the weight differences 
+during sorption. The threshold to define equilibrium was set as a mass 
+change rate of 10 μg/min over a period of 10 min. This equals a relative 
+mass change of 5 × 10−3 wt.% per minute. Each of the six Alloy_x_y 
+were measured at three different temperatures. The experiments were 
+performed up to 80 bar at different temperatures using a magnetic 
+suspension balance (Waters GmbH). These experiments are used to 
+calculate the reaction enthalpy by applying the van’t Hoff equation. 
+The sample preparation was done in air as a bulk piece of around 2 g.
+4. Results and discussion
+This chapter presents the results of modeling available experimental 
+data (from the literature) using a recently published program [8]. 
+Then the model predictions are evaluated with the properties of all six 
+Alloy_x_y: in terms of pressure, capacity and reaction enthalpy. Last, 
+the proposed technique to predict the pressure hysteresis and plateau 
+slope is analyzed.
+4.1. Modeling results
+The digitized database is available in the supplementary material 
+and in table format in Chapter S3 in the SI. A detailed comparison of 
+the calculated sorption properties with the experimental training data 
+is given in Figure S3 in the SI.
+The seven evaluated systems (CeNi5-xMx and LaNi5-xMx (with M = 
+Al, Fe, Mn) and Ce1-xLaxNi5) produced 4031 different parameter sets 
+with a calculation effort of 22,394 core hours. The Arcaice Information 
+Criterion algorithm to compensate for excessive use of interactive 
+parameters results in a maximum of four interaction terms in the 
+quasi-binary LaAl5-H system and three interaction terms in the quasi-
+ternary La(Ni,Al)5-H system. Contrarily for the LaMn5-H, CeMn5-H, 
+La(Ni,Mn)5-H and Ce(Ni,Mn)5-H systems, only one interaction param-
+eter is needed to represent each experimental data set. In total, 54 
+parameters were assessed to describe the 6-component system.
+4.2. Prediction of PCT curves
+The PCT curves for the six different Alloys_x_y are plotted in Fig. 
+2 The most important data has been summarized in Table 3 and 
+visualized in Fig. 3. The results of hydrogen absorption/desorption 
+experiments performed at other temperatures can be found in Chapter 
+S4 the SI. As expected, the plateau pressures and hydrogen capacities 
+are similar between the as-cast and heat-treated samples Fig. 2. The 
+Acta Materialia 296 (2025) 121226 
+5 
+
+P. Hannappel et al.
+Fig. 3. Capacity, absorption pressure, reaction enthalpy and hysteresis factor measured 
+and modeled for three studied alloys (in two stats: as-cast and heat-treated). Capacity 
+and reaction enthalpy changes approximately linearly, while the plateau pressure 
+changes exponentially with composition. The model is not predicting the diminishing 
+hysteresis in the highly substituted samples (2–3).
+main difference is the sloping of the PCT curve, which is much stronger 
+for the as-cast samples than for the heat-treated ones.
+Overall, the heat-treated samples show greater consistency with 
+the CALPHAD model than the as-cast alloys. Although most of the 
+experimental input data taken from literature is not annealed, the ther-
+modynamic model predicts quantities regarding their thermodynamic 
+(para-) equilibrium. Therefore, it is logical, that the annealed samples 
+are closer to the equilibrated state.
+The (Ce0.1La0.9)(Ni4.47Al0.06Fe0.2Mn0.27) alloy samples (as-cast and 
+heat-treated) with the lowest substitution content (xtotal  =  0.53) show 
+the most precise results regarding the hydrogen capacity with a mean 
+error of 3 % (see Table 3). The reaction enthalpy is predicted with 
+a similar error. When looking at the target variable for Alloy_1, the 
+enthalpy capacity 𝐻𝑐, we predicted this value with an accuracy of 1 % 
+for the as-cast and 5 % for the heat-treated sample. This underlines 
+the ability of the methodology, to predict alloys precisely for diverse 
+hydrogen applications.
+The prediction accuracy evolves differently for the distinct sorption 
+properties, when going to higher amounts of substitutional elements 
+(Alloy_2 and 3). The main strength of the computational method is 
+the ability of modeling the plateau pressures. Even with substitution 
+amounts close to the boundary of phase stability (𝑥total ∼1), the 
+errors of the predicted absorption pressures are very small. Espe-
+cially for the heat-treated samples, which resemble the more equili-
+brated state, the errors for the (Ce0.65La0.35)(Ni3.8Al0.4Fe0.4Mn0.4) and 
+(Ce0.65La0.35)(Ni3.5Al0.5Fe0.5Mn0.5) samples are 4 % and 1 %, respec-
+tively (see Table 3). The fact, that only binary interaction parameters 
+are included for quasi-binary and -ternary systems underlines the abil-
+ity of the CALPHAD method to extrapolate the sorption properties to 
+higher-order systems.
+The reaction enthalpy is deduced from the measurements of the 
+absorption plateau pressures, which is why the prediction shows similar 
+trends as for the absorption plateau pressures.
+The error of the predicted hydrogen capacities is increasing with 
+higher substitutional contents (2–4 % for (Ce0.1La0.9)(Ni4.47Al0.06Fe0.2
+Mn0.27), 10–13 % for (Ce0.65La0.35)(Ni3.5Al0.5Fe0.5Mn0.5), see Table 3). 
+While the largest error is at 13 %, this trend underlines the observation 
+made in our previous work, that modeling of the plateau boundaries 
+(phase boundaries of the alpha and beta phase) is a much more difficult 
+task [17].
+The model for the AB5 system was expanded to better represent 
+the plateau boundaries, evolving from an (A)(B)5(H,Va)7 sublattice 
+model [17,18] to an (A)(B)5(H,Va)1(H,Va)6 configuration [8]. Possibly 
+a more complex structure, where either the B side or the (H,Va)6 site 
+can be split into their distinct Wyckoff sites 6c1 and 6c2, could improve 
+this capability even more. As the number of model parameters rises 
+exponentially (∼2𝑛) with the increase of the number of sublattices 
+𝑛, while experimental data stays scarce, additional ab initio data is 
+necessary to fill the parameters with physically meaningful quantities. 
+Already with this sublattice model, the utilized parameter set is mini-
+mal compared to the vast parameter space, suggesting that the model 
+may be overly complex and potentially overparameterized for the 
+available data. Therefore, adding more hydrogen-vacancy sublattices 
+will result in optimization problems due to overfitting.
+4.3. Modeling of the pressure hysteresis
+The best prediction regarding the pressure hysteresis shows the 
+Alloy_1 with composition (Ce0.1La0.9)(Ni4.47Al0.06Fe0.2Mn0.27) (Fig. 2a 
+and Fig. 3) . Here, the heat-treated sample has an error of 10 % (see 
+Table 3). In general, the heat-treated samples show a higher hysteresis 
+factor, than the as-cast materials. It must be emphasized that the alloys 
+have been properly activated until no changes in the PCT curves can 
+be detected, as during the activation cycles the hysteresis can decrease. 
+The cause of the hysteresis is still under debate, and these results 
+emphasize the complex nature of this effect [36]. If the hysteresis 
+would be purely an elastic effect, the model would yield proper results, 
+as material properties such as the Young’s modulus vary smoothly 
+with composition and are in fact, thermodynamically modelable and 
+therefore predictable [37].
+With higher substitutional ratios the model does not reflect the 
+decreasing hysteresis. It is astonishing that the highly substituted alloys 
+yield hysteresis factors, that are more than a power of magnitude lower 
+than of the low-hysteresis LaNi5 alloy [10].
+Our model predicts the hysteresis based on two different thermo-
+dynamical databases. This means, that besides the sublattice model 
+and the parameter set, there is no physical connection between the 
+two databases, which could also cause the random predictions. A more 
+sophisticated model would include a hysteresis factor that is added to 
+the reference Gibbs energy terms. Then, this term could be modeled 
+and reflect changes due to temperature and composition. Furthermore, 
+if the physical cause for the hysteresis effect can be found, thermody-
+namic quantities, for example, the bulk modulus, can be calculated with
+ab initio methods and integrated into a future model.
+4.4. Modeling of the PCT curves slope
+The results of the structural characterization of the as-cast and heat-
+treated alloys are summarized in Table 4. The diffraction profiles show 
+a single P6/mmm structure for all of the compounds, indicating no 
+secondary phases formed. Even for the compounds with a 𝑥total slightly 
+above 1, no other phase could be detected.
+Acta Materialia 296 (2025) 121226 
+6 
+
+P. Hannappel et al.
+Fig. 4. Results of the X-ray experiments (a, c, e) and the corresponding PCT experiments (b, d, f) of the as-cast alloys: (a, b) Alloy_1 (Ce0.1La0.9)(Ni4.47Al0.06Fe0.2Mn0.27), (c, d) 
+Alloy_2 (Ce0.65La0.35)(Ni3.8Al0.4Fe0.4Mn0.4), (e, f) Alloy_3 (Ce0.65La0.35)(Ni3.5Al0.5Fe0.5Mn0.5). Insets show the parts of XRD patterns representing the most intensive reflections. On 
+the right, the CALPHAD data is generated from the assessed database and the experimentally measured microstrain parameter.
+The higher the concentration of substituent elements is, the higher 
+the microstrain is (which is mainly an artifact of the phase width). The 
+annealed samples show a reduction in the microstrain, likely dominated 
+by the homogenization of the alloy.
+In Fig. 4 and Figure S6 in the SI the result of the X-ray diffraction 
+and sorption experiments are shown. The results show good agreement 
+with the calculated PCT curves. The simulated slope is slightly smaller 
+than experimentally measured in the PCT curves. In XRD measurements 
+on the stoichiometric compounds LaNi5 and CeNi5 the influence of the 
+dislocations on the microstrain was quantified to 𝜖0,disl = 0.00006 −
+0.00016. As this effect was neglected in our model the difference of 
+simulation to experiment would increase accordingly to the measured 
+𝜖0 values. This brings the conclusion, that other effects, such as kinetic 
+limitations contribute to the sloping of the plateaus. The magnitude 
+of this contribution can be approximated by the difference of the 
+simulated and measured slopes in Fig. 4.
+This result gives the opportunity, that with a single XRD measure-
+ment, the full non-ideal PCT curve of a metal alloy can be reasonably 
+Acta Materialia 296 (2025) 121226 
+7 
+
+P. Hannappel et al.
+Table 4
+Extracted changes of the lattice parameters a and c of the ternary metal phases (also 
+see Chapter S1 in SI).
+ Composition
+𝑎/Å
+𝑐/Å
+𝜖0
+ 
+ Alloy_1_as-cast
+5.02837 (12)
+4.01498 (12)
+0.00083 (1) 
+ Alloy_1_heat-treated
+5.03060 (8)
+4.02166 (7)
+0.00039 (1) 
+ Alloy_2_as-cast
+4.99528 (17)
+4.07742 (17)
+0.00183 (2) 
+ Alloy_2_heat-treated
+4.99300 (3)
+4.08130 (4)
+0.00017 (2) 
+ Alloy_3_as-cast
+5.01271 (20)
+4.09314 (19)
+0.00191 (2) 
+ Alloy_3_heat-treated
+5.01462 (3)
+4.09375 (3)
+0.00016 (1) 
+well reconstructed. From the engineering point of view, this is a nec-
+essary information to assess the suitability of an alloy to a certain 
+application.
+5. Conclusions
+This work establishes a crucial foundation for the thermodynamic 
+modeling of metal hydrides under para-equilibrium conditions, demon-
+strating for the first time the successful integration of complex, multi-
+component metal-hydride systems into a coherent computational frame-
+work. The challenges associated with modeling the hydrogen sorption 
+properties of metal hydrides, particularly under conditions of partial 
+equilibrium, have been addressed through the development of a novel 
+computational approach, introduced recently by the authors. The de-
+veloped approach allows for the rapid assessment of many-component 
+systems. In this paper, we validated the approach with precise predic-
+tions of reaction enthalpies, plateau pressures, and sorption capacities 
+in a six-component system.
+The implementation of different databases for absorption and des-
+orption showed for the first time the capabilities representing the 
+hysteresis effect with the CALPHAD method. Furthermore, the direct 
+calculation of sloped PCT curves from X-ray diffraction data is another 
+step in facilitating the development process of new hydrogen storage 
+alloys. This paper contributes to addressing the ongoing questions 
+about the origin of these non-ideal sorption properties. This work lies 
+a foundation to model hysteresis between absorption and desorption. 
+Our investigation emphasizes the need to link the two datasets with a 
+physical component. Within our CALPHAD workflow, the sloping PCT 
+is well reconstructed by the measurement of the phase width.
+The methodology presented in this paper is not an endpoint but the 
+beginning of a much broader application. This framework can be fur-
+ther expanded to other material systems, such as high-entropy-alloys, 
+AB2, and AB-type metal hydrides. Another necessary step to keep this 
+modeling technique competitive with the increasing demand for predic-
+tive methods is to incorporate complementary computational tools. The 
+usage of ab initio data can improve thermodynamic predictions where 
+experimental data is scarce or difficult to obtain.
+CRediT authorship contribution statement
+Peter Hannappel: Writing – review & editing, Writing – orig-
+inal draft, Visualization, Validation, Software, Methodology, Inves-
+tigation, Formal analysis, Data curation, Conceptualization. Marcus 
+Vogt: Writing – review & editing, Software, Methodology. Felix Heub-
+ner: Writing – review & editing, Supervision, Funding acquisition, 
+Conceptualization. Mateusz Balcerzak: Writing – review & editing, 
+Visualization, Data curation. Thomas Weißgärber: Resources, Project 
+administration, Funding acquisition.
+Declaration of competing interest
+The authors declare that they have no known competing finan-
+cial interests or personal relationships that could have appeared to 
+influence the work reported in this paper.
+Acknowledgments
+This work is part of the ThermOSS and HYPHAD projects.
+Project HYPHAD was selected in the Joint Transnational Call 2023 
+of M-ERA.NET 3, which is an EU-funded network of about 49 fund-
+ing organizations (Horizon 2020 grant agreement No 958174). The 
+project is funded by the Korea Institute for Advancement of Tech-
+nology, South Korea, the National Science Centre, Poland, and the 
+Sächsisches Staatsministerium für Wissenschaft, Kultur und Tourismus, 
+Germany. This project is co-financed with tax revenue on the basis of 
+the budget adopted by the Saxon State Parliament. This research was 
+financially supported by the Ministry of Trade, Industry and Energy 
+(MOTIE) and Korea Institute for Advancement of Technology (KIAT) 
+through the International Cooperative R&D program No. P0027799. 
+This research was partially funded by the National Science Centre, 
+Poland, number: 2023/05/Y/ST3/00249 under the M-ERA.NET 3 Call 
+2023.
+Project ThermOSS is funded by the European Union and is co-
+financed with tax revenue on the basis of the budget adopted by the 
+Saxon State Parliament.
+The authors gratefully acknowledge the computing time made avail-
+able to them on the high-performance computer at the NHR Center 
+of TU Dresden. This center is jointly supported by the Federal Min-
+istry of Education and Research (BMBF) and the state governments 
+participating in the NHR.
+Appendix A. Supplementary data
+Supplementary material related to this article can be found online 
+at https://doi.org/10.1016/j.actamat.2025.121226.
+Data availability
+The Electronic Supplementary Information attached to this arti-
+cle contains the raw and processed data necessary to reproduce the 
+findings.
+References
+[1] N. Klopčič, I. Grimmer, F. Winkler, M. Sartory, A. Trattner, A review on metal 
+hydride materials for hydrogen storage, J. Energy Storage 72 (2023) 108456, 
+http://dx.doi.org/10.1016/j.est.2023.108456.
+[2] J.-M. Joubert, V. Paul-Boncour, F. Cuevas, J. Zhang, M. Latroche, LaNi5 related 
+AB5 compounds: Structure, properties and applications, J. Alloys Compd. 862 
+(2021) 158163, http://dx.doi.org/10.1016/j.jallcom.2020.158163.
+[3] C. Pistidda, Solid-state hydrogen storage for a decarbonized society, Hydrogen 2 
+(4) (2021) 428–443, http://dx.doi.org/10.3390/hydrogen2040024.
+[4] M. Lototskyy, V. Yartys, B. Pollet, R. Bowman, Metal hydride hydrogen com-
+pressors: A review, Int. J. Hydrog. Energy 39 (11) (2014) 5818–5851, http:
+//dx.doi.org/10.1016/j.ijhydene.2014.01.158.
+[5] B. Chandrakala, K. Sarath Babu, E. Anil Kumar, Thermodynamic analysis of 
+La and Mm based metal hydride pairs for solar energy-driven cold storage 
+applications, Therm. Sci. Eng. Prog. 50 (2024) 102548, http://dx.doi.org/10.
+1016/j.tsep.2024.102548.
+[6] K. Nivedhitha, T. Beena, N. Banapurmath, M. Umarfarooq, V. Ramasamy, 
+M.E.M. Soudagar, Ü. Ağbulut, Advances in hydrogen storage with metal 
+hydrides: Mechanisms, materials, and challenges, Int. J. Hydrog. Energy 
+61 (2024) 1259–1273, http://dx.doi.org/10.1016/j.ijhydene.2024.02.335, URL 
+https://www.sciencedirect.com/science/article/pii/S036031992400778X.
+[7] Z.-K. Liu, Thermodynamics and its prediction and CALPHAD modeling: Review, 
+state of the art, and perspectives, Calphad 82 (2023) 102580, http://dx.doi.org/
+10.1016/j.calphad.2023.102580, URL https://www.sciencedirect.com/science/
+article/pii/S0364591623000524.
+[8] P. Hannappel, F. Heubner, M. Balcerzak, T. Weißgärber, Advancing the thermo-
+dynamic modeling of multicomponent phases in hydrogen-para-equilibrium, Acta 
+Mater. 284 (2025) 120529, http://dx.doi.org/10.1016/j.actamat.2024.120529, 
+URL https://www.sciencedirect.com/science/article/pii/S1359645424008784.
+[9] H. Senoh, N. Takeichi, H.T. Takeshita, H. Tanaka, T. Kiyobayashi, N. Kuriyama, 
+Hydrogenation properties of RNi5 (R: rare earth) intermetallic compounds with 
+multi pressure plateaux, Mater. Trans. 44 (9) (2003) 1663–1666, http://dx.doi.
+org/10.2320/matertrans.44.1663.
+Acta Materialia 296 (2025) 121226 
+8 
+
+P. Hannappel et al.
+[10] P. Zhou, J. Zhang, J. Bi, X. Xiao, Z. Cao, L. Zhan, H. Shen, M. Lu, Z. Li, 
+Y. Zhao, L. Wang, M. Yan, L. Chen, Underlying factors of mega pressure 
+hysteresis in cerium-rich CaCu5-type metal hydrides and effective modification 
+strategies, J. Mater. Chem. A 11 (2023) 25963–25972, http://dx.doi.org/10.
+1039/D3TA06351H.
+[11] R. Yamagishi, T. Kojima, S. Kameoka, D. Okuyama, T.J. Sato, C. Nishimura, 
+A.-P. Tsai, Creating the hydrogen absorption capability of CeNi5 through the 
+addition of Al, Int. J. Hydrog. Energy 42 (34) (2017) 21832–21840, http:
+//dx.doi.org/10.1016/j.ijhydene.2017.07.072.
+[12] H. Diaz, A. Percheron-Guégan, J. Achard, C. Chatillon, J. Mathieu, Thermo-
+dynamic and structural properties of LaNi5-yAly compounds and their related 
+hydrides, Int. J. Hydrog. Energy 4 (5) (1979) 445–454, http://dx.doi.org/10.
+1016/0360-3199(79)90104-6.
+[13] J. Lamloumi, A. Percheron-Guegan, J. Achard, G. Jehanno, D. Givord, Study 
+of the pseudobinary compounds LaNi5-x fe x (x ≤ 1.2) by X-ray diffraction, 
+mössbauer spectroscopy and magnetic measurements, J. Phys. Fr. 45 (10) (1984) 
+1643–1652, http://dx.doi.org/10.1051/jphys:0198400450100164300.
+[14] C. Lartigue, A. Percheron-Guégan, J. Achard, F. Tasset, Thermodynamic and 
+structural properties of LaNi5-xMnx compounds and their related hydrides, 
+J. the Less Common Met. 75 (1) (1980) 23–29, http://dx.doi.org/10.1016/
+0022-5088(80)90365-3, URL https://www.sciencedirect.com/science/article/pii/
+0022508880903653.
+[15] A. Al Alam, S. Matar, M. Nakhl, N.O. ni, Investigation of changes in crystal and 
+electronic structures by hydrogen within LaNi5 from first-principles, Solid State 
+Sci. 11 (6) (2009) 1098–1106, http://dx.doi.org/10.1016/j.solidstatesciences.
+2009.02.026.
+[16] M. Hillert, The compound energy formalism, J. Alloys Compd. 320 (2) 
+(2001) 161–176, http://dx.doi.org/10.1016/S0925-8388(00)01481-X, Materials 
+Constitution and Thermochemistry. Examples of Methods, Measurements and 
+Applications. In Memoriam Alan Prince.
+[17] P. Hannappel, E. Alvares, F. Heubner, C. Pistidda, P. Jerabek, T. Weißgärber, 
+Thermodynamic assessment of the CeH and CeNi5 H system, Calphad 85 (2024) 
+102701, http://dx.doi.org/10.1016/j.calphad.2024.102701.
+[18] M. Palumbo, J. Urgnani, D. Baldissin, L. Battezzati, M. Baricco, Thermodynamic 
+assessment of the H–La–Ni system, Calphad 33 (1) (2009) 162–169, http://dx.
+doi.org/10.1016/j.calphad.2008.09.003.
+[19] R.B. Schwarz, A.G. Khachaturyan, Thermodynamics of open two-phase systems 
+with coherent interfaces: Application to metal–hydrogen systems, Acta Mater. 54 
+(2) (2006) 313–323, http://dx.doi.org/10.1016/j.actamat.2005.08.044.
+[20] T.B. Flanagan, W. Luo, J. Clewley, Calorimetric enthalpies of absorption and 
+desorption of protium and deuterium by palladium, J. Less Common Met. 
+172–174 (1991) 42–55, http://dx.doi.org/10.1016/0022-5088(91)90431-3.
+[21] J.-M. Joubert, CALPHAD modeling of metal–hydrogen systems: A review, JOM 
+64 (12) (2012) 1438–1447, http://dx.doi.org/10.1007/s11837-012-0462-6.
+[22] C.-N. Park, S. Luo, T.B. Flanagan, Analysis of sloping plateaux in alloys and 
+intermetallic hydrides: I. Diagnostic features, J. Alloys Compd. 384 (1) (2004) 
+203–207, http://dx.doi.org/10.1016/j.jallcom.2004.04.101, URL https://www.
+sciencedirect.com/science/article/pii/S0925838804006097.
+[23] A.A. Coelho, TOPAS and TOPAS-Academic: an optimization program in-
+tegrating computer algebra and crystallographic objects written in C++, 
+J. Appl. Crystallogr. 51 (1) (2018) 210–218, http://dx.doi.org/10.1107/
+S1600576718000183.
+[24] J. Lamloumi, A. Percheron-Guegan, C. Lartigue, J. Achard, G. Jehanno, 
+Thermodynamic, structural and magnetic properties of LaNi5 - xFex hy-
+drides, J. the Less Common Met. 130 (1987) 111–122, http://dx.doi.org/
+10.1016/0022-5088(87)90093-2, URL https://www.sciencedirect.com/science/
+article/pii/0022508887900932 Proceedings of the International Symposium on 
+the Properties and Applications of Metal Vydrides V.
+[25] F. Pourarian, W. Wallace, The effect of substitution of Mn or Al on the 
+hydrogen sorption characteristics of CeNi5, Int. J. Hydrog. Energy 10 (1) 
+(1985) 49–58, http://dx.doi.org/10.1016/0360-3199(85)90135-1, URL https://
+www.sciencedirect.com/science/article/pii/0360319985901351.
+[26] E.R. Pinatel, M. Palumbo, F. Massimino, P. Rizzi, M. Baricco, Hydrogen sorption 
+in the LaNi5-xAlx-H system (0 ≤ x ≤ 1), Intermetallics 62 (2015) 7–16, http:
+//dx.doi.org/10.1016/j.intermet.2015.03.002.
+[27] T. Kodama, The thermodynamic parameters for the LaNi5-xAlx–H2 and MmNi5-
+xAlx–H2 systems, J. Alloys Compd. 289 (1) (1999) 207–212, http://dx.doi.org/
+10.1016/S0925-8388(99)00173-5.
+[28] A.N. Kazakov, I.A. Romanov, A.V. Bezdudny, A.A. Eronin, D.V. Blinov, Low 
+temperature AB5 alloys for thermal energy storage systems, Int. J. Hydrog. 
+Energy 58 (2024) 627–632, http://dx.doi.org/10.1016/j.ijhydene.2024.01.242.
+[29] S. Luo, J. Clewley, T.B. Flanagan, R. Bowman, L. Wade, Further studies of 
+the isotherms of LaNi5-xSnx–H for x=0–0.5, J. Alloys Compd. 267 (1) (1998) 
+171–181, http://dx.doi.org/10.1016/S0925-8388(97)00536-7.
+[30] V.K. Sharma, E. Anil Kumar, Effect of measurement parameters on thermody-
+namic properties of La-based metal hydrides, Int. J. Hydrog. Energy 39 (11) 
+(2014) 5888–5898, http://dx.doi.org/10.1016/j.ijhydene.2014.01.174.
+[31] H. Dhaou, F. Askri, M. Ben Salah, A. Jemni, S. Ben Nasrallah, J. Lamloumi, 
+Measurement and modelling of kinetics of hydrogen sorption by LaNi5 and two 
+related pseudobinary compounds, Int. J. Hydrog. Energy 32 (5) (2007) 576–587, 
+http://dx.doi.org/10.1016/j.ijhydene.2006.07.001.
+[32] W.-l. Mi, Z.-s. Liu, T. Kimura, A. Kamegawa, H.-l. Wang, Crystal structure and 
+hydrogen storage properties of (La,Ce)Ni5−xMx (M=Al, Fe, or Co) alloys, Int. J. 
+Miner. Met. Mater. 26 (1) (2019) 108–113, http://dx.doi.org/10.1007/s12613-
+019-1714-z.
+[33] J.F. Lakner, T.S. Chow, Hydrides of CeNi5, MmNi5, Ca0.2(Ce0.65Mm0.35)0.8Ni5, 
+Ca0.2Ce0.8Ni5, Ca0.2Mm0.8Ni5, and Mixed CeNi5/MmNi5, Report, University of 
+North Texas Libraries, UNT Digital Library, 1982, URL https://digital.library.
+unt.edu/ark:/67531/metadc1212316/, (Accessed 5 January 2024).
+[34] S. Klyamkin, V. Verbetsky, A. Karih, Thermodynamic particularities of some 
+CeNi5-based metal hydride systems with high dissociation pressure, J. Al-
+loys Compd. 231 (1) (1995) 479–482, http://dx.doi.org/10.1016/0925-8388(95)
+01869-7.
+[35] C. Rongeat, I. Llamas-Jansa, S. Doppiu, S. Deledda, A. Borgschulte, L. Schultz, 
+O. Gutfleisch, Determination of the heat of hydride formation/decomposition 
+by high-pressure differential scanning calorimetry (HP-DSC), J. Phys. Chem. 
+B 111 (46) (2007) 13301–13306, http://dx.doi.org/10.1021/jp075954r, PMID: 
+17973422.
+[36] N.J. Weadock, P.W. Voorhees, B. Fultz, Interface pinning causes the hysteresis 
+of the hydride transformation in binary metal hydrides, Phys. Rev. Mater. 5 (1) 
+(2021) http://dx.doi.org/10.1103/PhysRevMaterials.5.013604.
+[37] J. Ling, Z. Wen, G. Yang, Y. Wang, W. Chen, A CALPHAD-type Young’s modulus 
+database of ti-rich Ti–Nb–Zr–Mo system, Calphad 73 (2021) 102255, http://dx.
+doi.org/10.1016/j.calphad.2021.102255, URL https://www.sciencedirect.com/
+science/article/pii/S0364591621000067.
+Acta Materialia 296 (2025) 121226 
+9 
